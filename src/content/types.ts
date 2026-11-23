@@ -5,6 +5,44 @@ export interface SiteContent {
     descriptor: string;
     copyright: string;
   };
+  // Announcement bar above the header / 顶部公告条
+  announcement: string;
+  // Virtual try-on band on the home page / 首页虚拟试妆分区
+  tryOn: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    link: string;
+    image: string;
+    imageAlt: string;
+  };
+  // Social lookbook grid (SHOP OUR IG style, masonry) / 社媒妆容网格（SHOP OUR IG 风格，瓦片流）
+  social: {
+    eyebrow: string;
+    title: string;
+    handle: string;
+    items: Array<{
+      image: string;
+      alt: string;
+      size?: "tall" | "wide" | "square";
+    }>;
+  };
+  // Holiday fan-faves: horizontal shoppable video-card carousel / 热门单品：横向可滑动视频卡轮播
+  fanFaves: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    shopLabel: string;
+    items: Array<{ image: string; alt: string; label: string }>;
+  };
+  // Email signup band (prototype only, nothing is sent) / 邮件订阅分区（仅原型，不会发送）
+  newsletter: {
+    title: string;
+    description: string;
+    placeholder: string;
+    button: string;
+    note: string;
+  };
   nav: Array<{
     label: string;
     href: string;
@@ -102,6 +140,7 @@ export interface SiteContent {
     steps: string;
     relatedProducts: string;
     shopNow: string;
+    emailLabel: string;
   };
   meta: {
     title: string;

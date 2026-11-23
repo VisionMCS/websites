@@ -1,5 +1,6 @@
 import { site, page } from "./content";
 import { Header } from "./components/Header";
+import { AnnouncementBar } from "./sections/AnnouncementBar";
 import { Contact } from "./sections/Contact";
 import registry from "./pages/registry.json";
 import { components } from "./pages/components";
@@ -12,6 +13,7 @@ export function App() {
       <a className="skip-link" href="#main">
         {site.ui.skip}
       </a>
+      <AnnouncementBar />
       <Header />
       <main id="main">
         <Page />

@@ -5,6 +5,49 @@
     "descriptor": "值得复刻的妆容。",
     "copyright": "LUMIÈRE · 品牌展示示例"
   },
+  "announcement": "全场妆容，顺丰包邮",
+  "tryOn": {
+    "eyebrow": "虚拟试妆",
+    "title": "上脸之前，先找到你的色号。",
+    "description": "用自己的照片试唇、腮红与高光，发现下一个本命色。",
+    "link": "立即体验",
+    "image": "images/look-dewy.jpg",
+    "imageAlt": "模特在虚拟试妆中预览柔和有色唇妆"
+  },
+  "social": {
+    "eyebrow": "入手同款妆容",
+    "title": "来自社群的真实演绎。",
+    "handle": "@lumiere.beauty",
+    "items": [
+      { "image": "images/look-soft-glam.jpg", "alt": "社群成员复刻的柔雾日常妆", "size": "wide" },
+      { "image": "images/look-sunset.jpg", "alt": "社群分享的落日妆", "size": "square" },
+      { "image": "images/look-red-lip.jpg", "alt": "红毯妆的正红唇", "size": "tall" },
+      { "image": "images/look-smoky.jpg", "alt": "暗夜烟熏眼妆", "size": "square" },
+      { "image": "images/look-editorial.jpg", "alt": "杂志大片风秀场妆", "size": "square" },
+      { "image": "images/look-dewy.jpg", "alt": "水光裸感日常妆", "size": "tall" }
+    ]
+  },
+  "fanFaves": {
+    "eyebrow": "人气妆容",
+    "title": "百看不厌的人气之选。",
+    "description": "社群反复回看、反复上手的那些妆容。",
+    "shopLabel": "入手本妆",
+    "items": [
+      { "image": "images/look-soft-glam.jpg", "alt": "柔雾日常妆视频预览", "label": "柔雾日常" },
+      { "image": "images/look-sunset.jpg", "alt": "落日妆视频预览", "label": "落日妆" },
+      { "image": "images/look-red-lip.jpg", "alt": "红毯妆视频预览", "label": "红毯妆" },
+      { "image": "images/look-smoky.jpg", "alt": "暗夜烟熏妆视频预览", "label": "暗夜烟熏" },
+      { "image": "images/look-dewy.jpg", "alt": "水光裸感妆视频预览", "label": "水光裸感" },
+      { "image": "images/look-editorial.jpg", "alt": "杂志大片妆视频预览", "label": "杂志大片" }
+    ]
+  },
+  "newsletter": {
+    "title": "第一时间获取新妆容。",
+    "description": "新妆容、新色号与上妆心得，直达你的邮箱。",
+    "placeholder": "邮箱地址",
+    "button": "订阅",
+    "note": "仅为原型演示 — 此表单不会发送或存储任何信息。"
+  },
   "nav": [
     {
       "label": "妆容手册",
@@ -294,7 +337,8 @@
     "collectionIntro": "妆容介绍",
     "steps": "如何复刻",
     "relatedProducts": "入手同款",
-    "shopNow": "立即购买"
+    "shopNow": "立即购买",
+    "emailLabel": "邮箱地址"
   },
   "meta": {
     "title": "LUMIÈRE — 流动之美",

@@ -15,17 +15,22 @@ var __exportAll = (all, no_symbols) => {
 //#endregion
 //#region src/content/locales/en-US.json
 var en_US_exports = /* @__PURE__ */ __exportAll({
+	announcement: () => announcement$2,
 	brand: () => brand$2,
 	collections: () => collections$2,
 	contact: () => contact$2,
 	default: () => en_US_default,
+	fanFaves: () => fanFaves$2,
 	faq: () => faq$2,
 	hero: () => hero$2,
 	manifesto: () => manifesto$2,
 	meta: () => meta$2,
 	nav: () => nav$2,
+	newsletter: () => newsletter$2,
 	products: () => products$2,
+	social: () => social$2,
 	story: () => story$2,
+	tryOn: () => tryOn$2,
 	ui: () => ui$2
 });
 var brand$2 = {
@@ -33,6 +38,97 @@ var brand$2 = {
 	"english": "BEAUTY IN MOTION",
 	"descriptor": "Looks worth recreating.",
 	"copyright": "LUMIÈRE · Demonstration brand"
+};
+var announcement$2 = "Enjoy complimentary shipping on every look";
+var tryOn$2 = {
+	"eyebrow": "VIRTUAL TRY-ON",
+	"title": "Find your shade before you wear it.",
+	"description": "Try lipsticks, blushes and highlighters on your own photo to discover your next favourite.",
+	"link": "Discover now",
+	"image": "images/look-dewy.jpg",
+	"imageAlt": "Model previewing a soft tinted lip during a virtual try-on"
+};
+var social$2 = {
+	"eyebrow": "SHOP THE LOOKBOOK",
+	"title": "As worn by our community.",
+	"handle": "@lumiere.beauty",
+	"items": [
+		{
+			"image": "images/look-soft-glam.jpg",
+			"alt": "Soft glam look recreated by a community member",
+			"size": "wide"
+		},
+		{
+			"image": "images/look-sunset.jpg",
+			"alt": "Sunset glam look shared on social",
+			"size": "square"
+		},
+		{
+			"image": "images/look-red-lip.jpg",
+			"alt": "Red carpet look with a bold red lip",
+			"size": "tall"
+		},
+		{
+			"image": "images/look-smoky.jpg",
+			"alt": "Smoky night eye look",
+			"size": "square"
+		},
+		{
+			"image": "images/look-editorial.jpg",
+			"alt": "Editorial runway-inspired look",
+			"size": "square"
+		},
+		{
+			"image": "images/look-dewy.jpg",
+			"alt": "Dewy fresh everyday look",
+			"size": "tall"
+		}
+	]
+};
+var fanFaves$2 = {
+	"eyebrow": "FAN-FAVE LOOKS",
+	"title": "Loved and rewatched.",
+	"description": "The looks our community reaches for again and again.",
+	"shopLabel": "Shop the look",
+	"items": [
+		{
+			"image": "images/look-soft-glam.jpg",
+			"alt": "Soft glam look video preview",
+			"label": "Soft Glam"
+		},
+		{
+			"image": "images/look-sunset.jpg",
+			"alt": "Sunset glam look video preview",
+			"label": "Sunset Glam"
+		},
+		{
+			"image": "images/look-red-lip.jpg",
+			"alt": "Red carpet look video preview",
+			"label": "Red Carpet"
+		},
+		{
+			"image": "images/look-smoky.jpg",
+			"alt": "Smoky night look video preview",
+			"label": "Smoky Night"
+		},
+		{
+			"image": "images/look-dewy.jpg",
+			"alt": "Dewy fresh look video preview",
+			"label": "Dewy Fresh"
+		},
+		{
+			"image": "images/look-editorial.jpg",
+			"alt": "Editorial look video preview",
+			"label": "Editorial"
+		}
+	]
+};
+var newsletter$2 = {
+	"title": "Get the next look first.",
+	"description": "New looks, shade drops and styling notes, straight to your inbox.",
+	"placeholder": "Email address",
+	"button": "Sign up",
+	"note": "Prototype only — this form does not send or store any information."
 };
 var nav$2 = [
 	{
@@ -372,7 +468,8 @@ var ui$2 = {
 	"collectionIntro": "About this look",
 	"steps": "How to recreate it",
 	"relatedProducts": "Shop the look",
-	"shopNow": "Shop now"
+	"shopNow": "Shop now",
+	"emailLabel": "Email address"
 };
 var meta$2 = {
 	"title": "LUMIÈRE — Beauty in motion",
@@ -380,6 +477,11 @@ var meta$2 = {
 };
 var en_US_default = {
 	brand: brand$2,
+	announcement: announcement$2,
+	tryOn: tryOn$2,
+	social: social$2,
+	fanFaves: fanFaves$2,
+	newsletter: newsletter$2,
 	nav: nav$2,
 	hero: hero$2,
 	manifesto: manifesto$2,
@@ -394,17 +496,22 @@ var en_US_default = {
 //#endregion
 //#region src/content/locales/ko-KR.json
 var ko_KR_exports = /* @__PURE__ */ __exportAll({
+	announcement: () => announcement$1,
 	brand: () => brand$1,
 	collections: () => collections$1,
 	contact: () => contact$1,
 	default: () => ko_KR_default,
+	fanFaves: () => fanFaves$1,
 	faq: () => faq$1,
 	hero: () => hero$1,
 	manifesto: () => manifesto$1,
 	meta: () => meta$1,
 	nav: () => nav$1,
+	newsletter: () => newsletter$1,
 	products: () => products$1,
+	social: () => social$1,
 	story: () => story$1,
+	tryOn: () => tryOn$1,
 	ui: () => ui$1
 });
 var brand$1 = {
@@ -412,6 +519,97 @@ var brand$1 = {
 	"english": "움직이는 아름다움",
 	"descriptor": "다시 하고 싶은 메이크업 룩.",
 	"copyright": "LUMIÈRE · 데모 브랜드"
+};
+var announcement$1 = "모든 룩 무료 배송";
+var tryOn$1 = {
+	"eyebrow": "버추얼 트라이온",
+	"title": "바르기 전에, 당신 컬러를 찾아보세요.",
+	"description": "당신의 사진으로 립, 블러시, 하이라이터를 시도해 다음 최애 컬러를 찾아보세요.",
+	"link": "지금 둘러보기",
+	"image": "images/look-dewy.jpg",
+	"imageAlt": "버추얼 트라이온으로 틴티드 립을 미리 보는 모델"
+};
+var social$1 = {
+	"eyebrow": "룩북으로 쇼핑",
+	"title": "커뮤니티가 함께한 룩.",
+	"handle": "@lumiere.beauty",
+	"items": [
+		{
+			"image": "images/look-soft-glam.jpg",
+			"alt": "커뮤니티가 재현한 소프트 글램 룩",
+			"size": "wide"
+		},
+		{
+			"image": "images/look-sunset.jpg",
+			"alt": "소셜에 공유된 선셋 글램 룩",
+			"size": "square"
+		},
+		{
+			"image": "images/look-red-lip.jpg",
+			"alt": "볼드한 레드 립의 레드 카펫 룩",
+			"size": "tall"
+		},
+		{
+			"image": "images/look-smoky.jpg",
+			"alt": "스모키 나이트 아이 룩",
+			"size": "square"
+		},
+		{
+			"image": "images/look-editorial.jpg",
+			"alt": "에디토리얼 런웨이 룩",
+			"size": "square"
+		},
+		{
+			"image": "images/look-dewy.jpg",
+			"alt": "듀이 프레시 데일리 룩",
+			"size": "tall"
+		}
+	]
+};
+var fanFaves$1 = {
+	"eyebrow": "팬페이브 룩",
+	"title": "다시 보고, 다시 하는 룩.",
+	"description": "커뮤니티가 계속 선택하는 시그니처 룩.",
+	"shopLabel": "이 룩 담기",
+	"items": [
+		{
+			"image": "images/look-soft-glam.jpg",
+			"alt": "소프트 글램 룩 영상 미리보기",
+			"label": "소프트 글램"
+		},
+		{
+			"image": "images/look-sunset.jpg",
+			"alt": "선셋 글램 룩 영상 미리보기",
+			"label": "선셋 글램"
+		},
+		{
+			"image": "images/look-red-lip.jpg",
+			"alt": "레드 카펫 룩 영상 미리보기",
+			"label": "레드 카펫"
+		},
+		{
+			"image": "images/look-smoky.jpg",
+			"alt": "스모키 나이트 룩 영상 미리보기",
+			"label": "스모키 나이트"
+		},
+		{
+			"image": "images/look-dewy.jpg",
+			"alt": "듀이 프레시 룩 영상 미리보기",
+			"label": "듀이 프레시"
+		},
+		{
+			"image": "images/look-editorial.jpg",
+			"alt": "에디토리얼 룩 영상 미리보기",
+			"label": "에디토리얼"
+		}
+	]
+};
+var newsletter$1 = {
+	"title": "다음 룩을 가장 먼저.",
+	"description": "새로운 룩, 컬러 드롭, 스타일링 노트를 메일로 받아보세요.",
+	"placeholder": "이메일 주소",
+	"button": "구독",
+	"note": "프로토타입 안내 — 이 양식은 어떤 정보도 전송하거나 저장하지 않습니다."
 };
 var nav$1 = [
 	{
@@ -751,7 +949,8 @@ var ui$1 = {
 	"collectionIntro": "이 룩에 대하여",
 	"steps": "재현하는 방법",
 	"relatedProducts": "이 룩의 제품",
-	"shopNow": "담기"
+	"shopNow": "담기",
+	"emailLabel": "이메일 주소"
 };
 var meta$1 = {
 	"title": "LUMIÈRE — 움직이는 아름다움",
@@ -759,6 +958,11 @@ var meta$1 = {
 };
 var ko_KR_default = {
 	brand: brand$1,
+	announcement: announcement$1,
+	tryOn: tryOn$1,
+	social: social$1,
+	fanFaves: fanFaves$1,
+	newsletter: newsletter$1,
 	nav: nav$1,
 	hero: hero$1,
 	manifesto: manifesto$1,
@@ -773,17 +977,22 @@ var ko_KR_default = {
 //#endregion
 //#region src/content/locales/zh-CN.json
 var zh_CN_exports = /* @__PURE__ */ __exportAll({
+	announcement: () => announcement,
 	brand: () => brand,
 	collections: () => collections,
 	contact: () => contact,
 	default: () => zh_CN_default,
+	fanFaves: () => fanFaves,
 	faq: () => faq,
 	hero: () => hero,
 	manifesto: () => manifesto,
 	meta: () => meta,
 	nav: () => nav,
+	newsletter: () => newsletter,
 	products: () => products,
+	social: () => social,
 	story: () => story,
+	tryOn: () => tryOn,
 	ui: () => ui
 });
 var brand = {
@@ -791,6 +1000,97 @@ var brand = {
 	"english": "流动之美",
 	"descriptor": "值得复刻的妆容。",
 	"copyright": "LUMIÈRE · 品牌展示示例"
+};
+var announcement = "全场妆容，顺丰包邮";
+var tryOn = {
+	"eyebrow": "虚拟试妆",
+	"title": "上脸之前，先找到你的色号。",
+	"description": "用自己的照片试唇、腮红与高光，发现下一个本命色。",
+	"link": "立即体验",
+	"image": "images/look-dewy.jpg",
+	"imageAlt": "模特在虚拟试妆中预览柔和有色唇妆"
+};
+var social = {
+	"eyebrow": "入手同款妆容",
+	"title": "来自社群的真实演绎。",
+	"handle": "@lumiere.beauty",
+	"items": [
+		{
+			"image": "images/look-soft-glam.jpg",
+			"alt": "社群成员复刻的柔雾日常妆",
+			"size": "wide"
+		},
+		{
+			"image": "images/look-sunset.jpg",
+			"alt": "社群分享的落日妆",
+			"size": "square"
+		},
+		{
+			"image": "images/look-red-lip.jpg",
+			"alt": "红毯妆的正红唇",
+			"size": "tall"
+		},
+		{
+			"image": "images/look-smoky.jpg",
+			"alt": "暗夜烟熏眼妆",
+			"size": "square"
+		},
+		{
+			"image": "images/look-editorial.jpg",
+			"alt": "杂志大片风秀场妆",
+			"size": "square"
+		},
+		{
+			"image": "images/look-dewy.jpg",
+			"alt": "水光裸感日常妆",
+			"size": "tall"
+		}
+	]
+};
+var fanFaves = {
+	"eyebrow": "人气妆容",
+	"title": "百看不厌的人气之选。",
+	"description": "社群反复回看、反复上手的那些妆容。",
+	"shopLabel": "入手本妆",
+	"items": [
+		{
+			"image": "images/look-soft-glam.jpg",
+			"alt": "柔雾日常妆视频预览",
+			"label": "柔雾日常"
+		},
+		{
+			"image": "images/look-sunset.jpg",
+			"alt": "落日妆视频预览",
+			"label": "落日妆"
+		},
+		{
+			"image": "images/look-red-lip.jpg",
+			"alt": "红毯妆视频预览",
+			"label": "红毯妆"
+		},
+		{
+			"image": "images/look-smoky.jpg",
+			"alt": "暗夜烟熏妆视频预览",
+			"label": "暗夜烟熏"
+		},
+		{
+			"image": "images/look-dewy.jpg",
+			"alt": "水光裸感妆视频预览",
+			"label": "水光裸感"
+		},
+		{
+			"image": "images/look-editorial.jpg",
+			"alt": "杂志大片妆视频预览",
+			"label": "杂志大片"
+		}
+	]
+};
+var newsletter = {
+	"title": "第一时间获取新妆容。",
+	"description": "新妆容、新色号与上妆心得，直达你的邮箱。",
+	"placeholder": "邮箱地址",
+	"button": "订阅",
+	"note": "仅为原型演示 — 此表单不会发送或存储任何信息。"
 };
 var nav = [
 	{
@@ -1130,7 +1430,8 @@ var ui = {
 	"collectionIntro": "妆容介绍",
 	"steps": "如何复刻",
 	"relatedProducts": "入手同款",
-	"shopNow": "立即购买"
+	"shopNow": "立即购买",
+	"emailLabel": "邮箱地址"
 };
 var meta = {
 	"title": "LUMIÈRE — 流动之美",
@@ -1138,6 +1439,11 @@ var meta = {
 };
 var zh_CN_default = {
 	brand,
+	announcement,
+	tryOn,
+	social,
+	fanFaves,
+	newsletter,
 	nav,
 	hero,
 	manifesto,
@@ -1420,6 +1726,19 @@ function Header() {
 	});
 }
 //#endregion
+//#region src/sections/AnnouncementBar.tsx
+function AnnouncementBar() {
+	return /* @__PURE__ */ jsx("div", {
+		className: "announcement",
+		role: "region",
+		"aria-label": site.announcement,
+		children: /* @__PURE__ */ jsx("div", {
+			className: "container announcement-inner",
+			children: /* @__PURE__ */ jsx("p", { children: site.announcement })
+		})
+	});
+}
+//#endregion
 //#region src/sections/Contact.tsx
 function Contact() {
 	const email = business.email;
@@ -1592,6 +1911,191 @@ function Collections({ collection = false }) {
 	});
 }
 //#endregion
+//#region src/sections/FanFaves.tsx
+function FanFaves() {
+	const trackRef = useRef(null);
+	const scrollBy = (direction) => {
+		const track = trackRef.current;
+		if (!track) return;
+		const card = track.querySelector(".fanfave-card");
+		const step = card ? card.offsetWidth + 24 : track.clientWidth * .8;
+		track.scrollBy({
+			left: direction * step,
+			behavior: "smooth"
+		});
+	};
+	return /* @__PURE__ */ jsx("section", {
+		className: "fanfaves section",
+		"aria-labelledby": "fanfaves-title",
+		children: /* @__PURE__ */ jsxs("div", {
+			className: "container",
+			children: [/* @__PURE__ */ jsxs("div", {
+				className: "section-head-center",
+				children: [
+					/* @__PURE__ */ jsx("p", {
+						className: "eyebrow",
+						children: site.fanFaves.eyebrow
+					}),
+					/* @__PURE__ */ jsx("h2", {
+						id: "fanfaves-title",
+						children: site.fanFaves.title
+					}),
+					/* @__PURE__ */ jsx("p", {
+						className: "fanfaves-desc",
+						children: site.fanFaves.description
+					})
+				]
+			}), /* @__PURE__ */ jsxs("div", {
+				className: "fanfaves-shell",
+				children: [
+					/* @__PURE__ */ jsx("div", {
+						className: "fanfaves-track",
+						ref: trackRef,
+						children: site.fanFaves.items.map((item, index) => /* @__PURE__ */ jsxs("a", {
+							className: "fanfave-card",
+							href: pageUrl("collections"),
+							"aria-label": `${site.fanFaves.shopLabel}: ${item.label}`,
+							children: [
+								/* @__PURE__ */ jsx("img", {
+									src: asset(item.image),
+									alt: item.alt,
+									width: "600",
+									height: "800",
+									loading: "lazy"
+								}),
+								/* @__PURE__ */ jsx("span", {
+									className: "fanfave-play",
+									"aria-hidden": "true",
+									children: /* @__PURE__ */ jsx("svg", {
+										viewBox: "0 0 24 24",
+										width: "22",
+										height: "22",
+										children: /* @__PURE__ */ jsx("path", {
+											d: "M8 5v14l11-7z",
+											fill: "currentColor"
+										})
+									})
+								}),
+								/* @__PURE__ */ jsx("span", {
+									className: "fanfave-bag",
+									"aria-hidden": "true",
+									children: /* @__PURE__ */ jsx("svg", {
+										viewBox: "0 0 24 24",
+										width: "18",
+										height: "18",
+										fill: "none",
+										children: /* @__PURE__ */ jsx("path", {
+											d: "M6 8h12l-1 12H7L6 8Zm3 0a3 3 0 0 1 6 0",
+											stroke: "currentColor",
+											strokeWidth: "1.6",
+											strokeLinejoin: "round"
+										})
+									})
+								}),
+								/* @__PURE__ */ jsx("span", {
+									className: "fanfave-label",
+									children: item.label
+								})
+							]
+						}, index))
+					}),
+					/* @__PURE__ */ jsx("button", {
+						type: "button",
+						className: "fanfaves-arrow fanfaves-prev",
+						onClick: () => scrollBy(-1),
+						"aria-label": site.ui.backTop,
+						children: "‹"
+					}),
+					/* @__PURE__ */ jsx("button", {
+						type: "button",
+						className: "fanfaves-arrow fanfaves-next",
+						onClick: () => scrollBy(1),
+						"aria-label": site.ui.allCollections,
+						children: "›"
+					})
+				]
+			})]
+		})
+	});
+}
+//#endregion
+//#region src/sections/TryOn.tsx
+function TryOn() {
+	return /* @__PURE__ */ jsx("section", {
+		className: "tryon section",
+		"aria-labelledby": "tryon-title",
+		children: /* @__PURE__ */ jsxs("div", {
+			className: "container tryon-inner",
+			children: [/* @__PURE__ */ jsxs("div", {
+				className: "tryon-copy",
+				children: [
+					/* @__PURE__ */ jsx("p", {
+						className: "eyebrow",
+						children: site.tryOn.eyebrow
+					}),
+					/* @__PURE__ */ jsx("h2", {
+						id: "tryon-title",
+						children: site.tryOn.title
+					}),
+					/* @__PURE__ */ jsx("p", { children: site.tryOn.description }),
+					/* @__PURE__ */ jsxs("a", {
+						className: "button-primary",
+						href: pageUrl("collections"),
+						children: [site.tryOn.link, /* @__PURE__ */ jsx(Arrow, { diagonal: true })]
+					})
+				]
+			}), /* @__PURE__ */ jsx("div", {
+				className: "tryon-image",
+				children: /* @__PURE__ */ jsx("img", {
+					src: asset(site.tryOn.image),
+					alt: site.tryOn.imageAlt,
+					width: "900",
+					height: "1125",
+					loading: "lazy"
+				})
+			})]
+		})
+	});
+}
+//#endregion
+//#region src/sections/SocialGrid.tsx
+function SocialGrid() {
+	return /* @__PURE__ */ jsx("section", {
+		className: "social section",
+		"aria-labelledby": "social-title",
+		children: /* @__PURE__ */ jsxs("div", {
+			className: "container",
+			children: [/* @__PURE__ */ jsxs("div", {
+				className: "section-head-center",
+				children: [
+					/* @__PURE__ */ jsx("p", {
+						className: "eyebrow",
+						children: site.social.eyebrow
+					}),
+					/* @__PURE__ */ jsx("h2", {
+						id: "social-title",
+						children: site.social.title
+					}),
+					/* @__PURE__ */ jsx("span", {
+						className: "social-handle",
+						children: site.social.handle
+					})
+				]
+			}), /* @__PURE__ */ jsx("div", {
+				className: "social-grid",
+				children: site.social.items.map((item, index) => /* @__PURE__ */ jsx("figure", {
+					className: `social-item social-${item.size ?? "square"}`,
+					children: /* @__PURE__ */ jsx("img", {
+						src: asset(item.image),
+						alt: item.alt,
+						loading: "lazy"
+					})
+				}, index))
+			})]
+		})
+	});
+}
+//#endregion
 //#region src/sections/Story.tsx
 function Story() {
 	return /* @__PURE__ */ jsxs("section", {
@@ -1624,6 +2128,54 @@ function Story() {
 	});
 }
 //#endregion
+//#region src/sections/Newsletter.tsx
+function Newsletter() {
+	const [value, setValue] = useState("");
+	return /* @__PURE__ */ jsx("section", {
+		className: "newsletter section",
+		"aria-labelledby": "newsletter-title",
+		children: /* @__PURE__ */ jsxs("div", {
+			className: "container newsletter-inner",
+			children: [
+				/* @__PURE__ */ jsxs("div", {
+					className: "newsletter-copy",
+					children: [/* @__PURE__ */ jsx("h2", {
+						id: "newsletter-title",
+						children: site.newsletter.title
+					}), /* @__PURE__ */ jsx("p", { children: site.newsletter.description })]
+				}),
+				/* @__PURE__ */ jsxs("form", {
+					className: "newsletter-form",
+					onSubmit: (event) => event.preventDefault(),
+					children: [
+						/* @__PURE__ */ jsx("label", {
+							className: "visually-hidden",
+							htmlFor: "newsletter-email",
+							children: site.ui.emailLabel
+						}),
+						/* @__PURE__ */ jsx("input", {
+							id: "newsletter-email",
+							type: "email",
+							value,
+							placeholder: site.newsletter.placeholder,
+							onChange: (event) => setValue(event.target.value)
+						}),
+						/* @__PURE__ */ jsx("button", {
+							className: "button-primary",
+							type: "submit",
+							children: site.newsletter.button
+						})
+					]
+				}),
+				/* @__PURE__ */ jsx("p", {
+					className: "newsletter-note",
+					children: site.newsletter.note
+				})
+			]
+		})
+	});
+}
+//#endregion
 //#region src/pages/HomePage.tsx
 function HomePage() {
 	return /* @__PURE__ */ jsxs(Fragment, { children: [
@@ -1641,7 +2193,11 @@ function HomePage() {
 			]
 		}),
 		/* @__PURE__ */ jsx(Collections, {}),
-		/* @__PURE__ */ jsx(Story, {})
+		/* @__PURE__ */ jsx(FanFaves, {}),
+		/* @__PURE__ */ jsx(TryOn, {}),
+		/* @__PURE__ */ jsx(SocialGrid, {}),
+		/* @__PURE__ */ jsx(Story, {}),
+		/* @__PURE__ */ jsx(Newsletter, {})
 	] });
 }
 //#endregion
@@ -1855,6 +2411,7 @@ function App() {
 				href: "#main",
 				children: site.ui.skip
 			}),
+			/* @__PURE__ */ jsx(AnnouncementBar, {}),
 			/* @__PURE__ */ jsx(Header, {}),
 			/* @__PURE__ */ jsxs("main", {
 				id: "main",

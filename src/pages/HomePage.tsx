@@ -1,6 +1,10 @@
 import { Hero } from "../sections/Hero";
 import { Collections } from "../sections/Collections";
+import { FanFaves } from "../sections/FanFaves";
+import { TryOn } from "../sections/TryOn";
+import { SocialGrid } from "../sections/SocialGrid";
 import { Story } from "../sections/Story";
+import { Newsletter } from "../sections/Newsletter";
 import { site } from "../content";
 export function HomePage() {
   return (
@@ -12,7 +16,11 @@ export function HomePage() {
         <p>{site.manifesto.description}</p>
       </section>
       <Collections />
+      <FanFaves />
+      <TryOn />
+      <SocialGrid />
       <Story />
+      <Newsletter />
     </>
   );
 }

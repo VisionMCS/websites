@@ -5,6 +5,49 @@
     "descriptor": "Looks worth recreating.",
     "copyright": "LUMIÈRE · Demonstration brand"
   },
+  "announcement": "Enjoy complimentary shipping on every look",
+  "tryOn": {
+    "eyebrow": "VIRTUAL TRY-ON",
+    "title": "Find your shade before you wear it.",
+    "description": "Try lipsticks, blushes and highlighters on your own photo to discover your next favourite.",
+    "link": "Discover now",
+    "image": "images/look-dewy.jpg",
+    "imageAlt": "Model previewing a soft tinted lip during a virtual try-on"
+  },
+  "social": {
+    "eyebrow": "SHOP THE LOOKBOOK",
+    "title": "As worn by our community.",
+    "handle": "@lumiere.beauty",
+    "items": [
+      { "image": "images/look-soft-glam.jpg", "alt": "Soft glam look recreated by a community member", "size": "wide" },
+      { "image": "images/look-sunset.jpg", "alt": "Sunset glam look shared on social", "size": "square" },
+      { "image": "images/look-red-lip.jpg", "alt": "Red carpet look with a bold red lip", "size": "tall" },
+      { "image": "images/look-smoky.jpg", "alt": "Smoky night eye look", "size": "square" },
+      { "image": "images/look-editorial.jpg", "alt": "Editorial runway-inspired look", "size": "square" },
+      { "image": "images/look-dewy.jpg", "alt": "Dewy fresh everyday look", "size": "tall" }
+    ]
+  },
+  "fanFaves": {
+    "eyebrow": "FAN-FAVE LOOKS",
+    "title": "Loved and rewatched.",
+    "description": "The looks our community reaches for again and again.",
+    "shopLabel": "Shop the look",
+    "items": [
+      { "image": "images/look-soft-glam.jpg", "alt": "Soft glam look video preview", "label": "Soft Glam" },
+      { "image": "images/look-sunset.jpg", "alt": "Sunset glam look video preview", "label": "Sunset Glam" },
+      { "image": "images/look-red-lip.jpg", "alt": "Red carpet look video preview", "label": "Red Carpet" },
+      { "image": "images/look-smoky.jpg", "alt": "Smoky night look video preview", "label": "Smoky Night" },
+      { "image": "images/look-dewy.jpg", "alt": "Dewy fresh look video preview", "label": "Dewy Fresh" },
+      { "image": "images/look-editorial.jpg", "alt": "Editorial look video preview", "label": "Editorial" }
+    ]
+  },
+  "newsletter": {
+    "title": "Get the next look first.",
+    "description": "New looks, shade drops and styling notes, straight to your inbox.",
+    "placeholder": "Email address",
+    "button": "Sign up",
+    "note": "Prototype only — this form does not send or store any information."
+  },
   "nav": [
     {
       "label": "Lookbook",
@@ -318,7 +361,8 @@
     "collectionIntro": "About this look",
     "steps": "How to recreate it",
     "relatedProducts": "Shop the look",
-    "shopNow": "Shop now"
+    "shopNow": "Shop now",
+    "emailLabel": "Email address"
   },
   "meta": {
     "title": "LUMIÈRE — Beauty in motion",

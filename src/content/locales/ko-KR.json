@@ -5,6 +5,49 @@
     "descriptor": "다시 하고 싶은 메이크업 룩.",
     "copyright": "LUMIÈRE · 데모 브랜드"
   },
+  "announcement": "모든 룩 무료 배송",
+  "tryOn": {
+    "eyebrow": "버추얼 트라이온",
+    "title": "바르기 전에, 당신 컬러를 찾아보세요.",
+    "description": "당신의 사진으로 립, 블러시, 하이라이터를 시도해 다음 최애 컬러를 찾아보세요.",
+    "link": "지금 둘러보기",
+    "image": "images/look-dewy.jpg",
+    "imageAlt": "버추얼 트라이온으로 틴티드 립을 미리 보는 모델"
+  },
+  "social": {
+    "eyebrow": "룩북으로 쇼핑",
+    "title": "커뮤니티가 함께한 룩.",
+    "handle": "@lumiere.beauty",
+    "items": [
+      { "image": "images/look-soft-glam.jpg", "alt": "커뮤니티가 재현한 소프트 글램 룩", "size": "wide" },
+      { "image": "images/look-sunset.jpg", "alt": "소셜에 공유된 선셋 글램 룩", "size": "square" },
+      { "image": "images/look-red-lip.jpg", "alt": "볼드한 레드 립의 레드 카펫 룩", "size": "tall" },
+      { "image": "images/look-smoky.jpg", "alt": "스모키 나이트 아이 룩", "size": "square" },
+      { "image": "images/look-editorial.jpg", "alt": "에디토리얼 런웨이 룩", "size": "square" },
+      { "image": "images/look-dewy.jpg", "alt": "듀이 프레시 데일리 룩", "size": "tall" }
+    ]
+  },
+  "fanFaves": {
+    "eyebrow": "팬페이브 룩",
+    "title": "다시 보고, 다시 하는 룩.",
+    "description": "커뮤니티가 계속 선택하는 시그니처 룩.",
+    "shopLabel": "이 룩 담기",
+    "items": [
+      { "image": "images/look-soft-glam.jpg", "alt": "소프트 글램 룩 영상 미리보기", "label": "소프트 글램" },
+      { "image": "images/look-sunset.jpg", "alt": "선셋 글램 룩 영상 미리보기", "label": "선셋 글램" },
+      { "image": "images/look-red-lip.jpg", "alt": "레드 카펫 룩 영상 미리보기", "label": "레드 카펫" },
+      { "image": "images/look-smoky.jpg", "alt": "스모키 나이트 룩 영상 미리보기", "label": "스모키 나이트" },
+      { "image": "images/look-dewy.jpg", "alt": "듀이 프레시 룩 영상 미리보기", "label": "듀이 프레시" },
+      { "image": "images/look-editorial.jpg", "alt": "에디토리얼 룩 영상 미리보기", "label": "에디토리얼" }
+    ]
+  },
+  "newsletter": {
+    "title": "다음 룩을 가장 먼저.",
+    "description": "새로운 룩, 컬러 드롭, 스타일링 노트를 메일로 받아보세요.",
+    "placeholder": "이메일 주소",
+    "button": "구독",
+    "note": "프로토타입 안내 — 이 양식은 어떤 정보도 전송하거나 저장하지 않습니다."
+  },
   "nav": [
     {
       "label": "룩북",
@@ -294,7 +337,8 @@
     "collectionIntro": "이 룩에 대하여",
     "steps": "재현하는 방법",
     "relatedProducts": "이 룩의 제품",
-    "shopNow": "담기"
+    "shopNow": "담기",
+    "emailLabel": "이메일 주소"
   },
   "meta": {
     "title": "LUMIÈRE — 움직이는 아름다움",
