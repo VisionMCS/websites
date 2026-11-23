@@ -118,5 +118,59 @@
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "note": "Real cosmetic product photograph (vertical). Pexels License permits free commercial use without mandatory attribution."
+  },
+  {
+    "file": "remote:fanfave-1",
+    "author": "Coverr contributor (see source page)",
+    "source": "https://coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127",
+    "videoUrl": "https://cdn.coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127/720p.mp4",
+    "license": "Coverr License",
+    "licenseUrl": "https://coverr.co/license",
+    "note": "Remote streaming makeup clip for the soft-glam fan-fave card and layered player. Referenced directly from the Coverr CDN (not bundled in the build, to stay within the 100-file build limit). Coverr License permits free commercial use. Poster is the credited Unsplash look image."
+  },
+  {
+    "file": "remote:fanfave-2",
+    "author": "Coverr contributor (see source page)",
+    "source": "https://coverr.co/videos/coverr-applying-contour-9937",
+    "videoUrl": "https://cdn.coverr.co/videos/coverr-applying-contour-9937/720p.mp4",
+    "license": "Coverr License",
+    "licenseUrl": "https://coverr.co/license",
+    "note": "Remote streaming makeup clip for the sunset-glam fan-fave card and layered player. Referenced directly from the Coverr CDN (not bundled in the build, to stay within the 100-file build limit). Coverr License permits free commercial use. Poster is the credited Unsplash look image."
+  },
+  {
+    "file": "remote:fanfave-3",
+    "author": "Coverr contributor (see source page)",
+    "source": "https://coverr.co/videos/coverr-applying-dark-pink-lipstick-8447",
+    "videoUrl": "https://cdn.coverr.co/videos/coverr-applying-dark-pink-lipstick-8447/720p.mp4",
+    "license": "Coverr License",
+    "licenseUrl": "https://coverr.co/license",
+    "note": "Remote streaming makeup clip for the red-carpet fan-fave card and layered player. Referenced directly from the Coverr CDN (not bundled in the build, to stay within the 100-file build limit). Coverr License permits free commercial use. Poster is the credited Unsplash look image."
+  },
+  {
+    "file": "remote:fanfave-4",
+    "author": "Coverr contributor (see source page)",
+    "source": "https://coverr.co/videos/coverr-applying-eyeliner-8647",
+    "videoUrl": "https://cdn.coverr.co/videos/coverr-applying-eyeliner-8647/720p.mp4",
+    "license": "Coverr License",
+    "licenseUrl": "https://coverr.co/license",
+    "note": "Remote streaming makeup clip for the smoky-night fan-fave card and layered player. Referenced directly from the Coverr CDN (not bundled in the build, to stay within the 100-file build limit). Coverr License permits free commercial use. Poster is the credited Unsplash look image."
+  },
+  {
+    "file": "remote:fanfave-5",
+    "author": "Coverr contributor (see source page)",
+    "source": "https://coverr.co/videos/coverr-applying-liquid-foundation-334",
+    "videoUrl": "https://cdn.coverr.co/videos/coverr-applying-liquid-foundation-334/720p.mp4",
+    "license": "Coverr License",
+    "licenseUrl": "https://coverr.co/license",
+    "note": "Remote streaming makeup clip for the dewy-fresh fan-fave card and layered player. Referenced directly from the Coverr CDN (not bundled in the build, to stay within the 100-file build limit). Coverr License permits free commercial use. Poster is the credited Unsplash look image."
+  },
+  {
+    "file": "remote:fanfave-6",
+    "author": "Coverr contributor (see source page)",
+    "source": "https://coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561",
+    "videoUrl": "https://cdn.coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561/720p.mp4",
+    "license": "Coverr License",
+    "licenseUrl": "https://coverr.co/license",
+    "note": "Remote streaming makeup clip for the editorial fan-fave card and layered player. Referenced directly from the Coverr CDN (not bundled in the build, to stay within the 100-file build limit). Coverr License permits free commercial use. Poster is the credited Unsplash look image."
   }
 ]

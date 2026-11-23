@@ -46,7 +46,24 @@ export interface SiteContent {
     title: string;
     description: string;
     shopLabel: string;
-    items: Array<{ image: string; alt: string; label: string }>;
+    // 层级视频播放器文案 / video lightbox copy
+    watchLabel: string;
+    playLabel: string;
+    pauseLabel: string;
+    muteLabel: string;
+    closeLabel: string;
+    prevLabel: string;
+    nextLabel: string;
+    sourceLabel: string;
+    items: Array<{
+      image: string;
+      alt: string;
+      label: string;
+      // 远程竖幅/横幅视频直链（Coverr CDN，不在构建包内，不占产物文件数）
+      video: string;
+      source: string;
+      lookId: string;
+    }>;
   };
   // Email signup band (prototype only, nothing is sent) / 邮件订阅分区（仅原型，不会发送）
   newsletter: {

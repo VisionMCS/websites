@@ -83,9 +83,9 @@ export function SocialLightbox({
                   key={spotIndex}
                   className="lightbox-hotspot"
                   style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
-                  title={product?.name}
                 >
-                  {spotIndex + 1}
+                  <span className="hotspot-dot" aria-hidden="true" />
+                  <span className="hotspot-tip">{product?.name}</span>
                 </span>
               );
             })}

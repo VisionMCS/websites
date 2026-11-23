@@ -175,36 +175,62 @@
     "title": "다시 보고, 다시 하는 룩.",
     "description": "커뮤니티가 계속 선택하는 시그니처 룩.",
     "shopLabel": "이 룩 담기",
+    "watchLabel": "룩 영상 보기",
+    "playLabel": "재생",
+    "pauseLabel": "일시정지",
+    "muteLabel": "소리 켜기",
+    "closeLabel": "닫기",
+    "prevLabel": "이전",
+    "nextLabel": "다음",
+    "sourceLabel": "출처",
     "items": [
       {
         "image": "images/look-soft-glam.jpg",
         "alt": "소프트 글램 룩 영상 미리보기",
-        "label": "소프트 글램"
+        "label": "소프트 글램",
+        "video": "https://cdn.coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127",
+        "lookId": "soft-glam"
       },
       {
         "image": "images/look-sunset.jpg",
         "alt": "선셋 글램 룩 영상 미리보기",
-        "label": "선셋 글램"
+        "label": "선셋 글램",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-contour-9937/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-contour-9937",
+        "lookId": "sunset-glam"
       },
       {
         "image": "images/look-red-lip.jpg",
         "alt": "레드 카펫 룩 영상 미리보기",
-        "label": "레드 카펫"
+        "label": "레드 카펫",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-dark-pink-lipstick-8447/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-dark-pink-lipstick-8447",
+        "lookId": "red-carpet"
       },
       {
         "image": "images/look-smoky.jpg",
         "alt": "스모키 나이트 룩 영상 미리보기",
-        "label": "스모키 나이트"
+        "label": "스모키 나이트",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-eyeliner-8647/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-eyeliner-8647",
+        "lookId": "smoky-night"
       },
       {
         "image": "images/look-dewy.jpg",
         "alt": "듀이 프레시 룩 영상 미리보기",
-        "label": "듀이 프레시"
+        "label": "듀이 프레시",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-liquid-foundation-334/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-liquid-foundation-334",
+        "lookId": "dewy-fresh"
       },
       {
         "image": "images/look-editorial.jpg",
         "alt": "에디토리얼 룩 영상 미리보기",
-        "label": "에디토리얼"
+        "label": "에디토리얼",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561",
+        "lookId": "editorial"
       }
     ]
   },

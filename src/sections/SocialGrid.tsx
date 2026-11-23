@@ -42,9 +42,9 @@ export function SocialGrid() {
                   key={spotIndex}
                   className="social-hotspot"
                   style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
-                  title={productName(spot.product)}
                 >
-                  {spotIndex + 1}
+                  <span className="hotspot-dot" aria-hidden="true" />
+                  <span className="hotspot-tip">{productName(spot.product)}</span>
                 </span>
               ))}
             </button>

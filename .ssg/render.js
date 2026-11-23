@@ -191,36 +191,62 @@ var fanFaves$2 = {
 	"title": "Loved and rewatched.",
 	"description": "The looks our community reaches for again and again.",
 	"shopLabel": "Shop the look",
+	"watchLabel": "Watch the look",
+	"playLabel": "Play",
+	"pauseLabel": "Pause",
+	"muteLabel": "Unmute",
+	"closeLabel": "Close",
+	"prevLabel": "Previous",
+	"nextLabel": "Next",
+	"sourceLabel": "Source",
 	"items": [
 		{
 			"image": "images/look-soft-glam.jpg",
 			"alt": "Soft glam look video preview",
-			"label": "Soft Glam"
+			"label": "Soft Glam",
+			"video": "https://cdn.coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127",
+			"lookId": "soft-glam"
 		},
 		{
 			"image": "images/look-sunset.jpg",
 			"alt": "Sunset glam look video preview",
-			"label": "Sunset Glam"
+			"label": "Sunset Glam",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-contour-9937/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-contour-9937",
+			"lookId": "sunset-glam"
 		},
 		{
 			"image": "images/look-red-lip.jpg",
 			"alt": "Red carpet look video preview",
-			"label": "Red Carpet"
+			"label": "Red Carpet",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-dark-pink-lipstick-8447/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-dark-pink-lipstick-8447",
+			"lookId": "red-carpet"
 		},
 		{
 			"image": "images/look-smoky.jpg",
 			"alt": "Smoky night look video preview",
-			"label": "Smoky Night"
+			"label": "Smoky Night",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-eyeliner-8647/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-eyeliner-8647",
+			"lookId": "smoky-night"
 		},
 		{
 			"image": "images/look-dewy.jpg",
 			"alt": "Dewy fresh look video preview",
-			"label": "Dewy Fresh"
+			"label": "Dewy Fresh",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-liquid-foundation-334/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-liquid-foundation-334",
+			"lookId": "dewy-fresh"
 		},
 		{
 			"image": "images/look-editorial.jpg",
 			"alt": "Editorial look video preview",
-			"label": "Editorial"
+			"label": "Editorial",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561",
+			"lookId": "editorial"
 		}
 	]
 };
@@ -867,36 +893,62 @@ var fanFaves$1 = {
 	"title": "다시 보고, 다시 하는 룩.",
 	"description": "커뮤니티가 계속 선택하는 시그니처 룩.",
 	"shopLabel": "이 룩 담기",
+	"watchLabel": "룩 영상 보기",
+	"playLabel": "재생",
+	"pauseLabel": "일시정지",
+	"muteLabel": "소리 켜기",
+	"closeLabel": "닫기",
+	"prevLabel": "이전",
+	"nextLabel": "다음",
+	"sourceLabel": "출처",
 	"items": [
 		{
 			"image": "images/look-soft-glam.jpg",
 			"alt": "소프트 글램 룩 영상 미리보기",
-			"label": "소프트 글램"
+			"label": "소프트 글램",
+			"video": "https://cdn.coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127",
+			"lookId": "soft-glam"
 		},
 		{
 			"image": "images/look-sunset.jpg",
 			"alt": "선셋 글램 룩 영상 미리보기",
-			"label": "선셋 글램"
+			"label": "선셋 글램",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-contour-9937/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-contour-9937",
+			"lookId": "sunset-glam"
 		},
 		{
 			"image": "images/look-red-lip.jpg",
 			"alt": "레드 카펫 룩 영상 미리보기",
-			"label": "레드 카펫"
+			"label": "레드 카펫",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-dark-pink-lipstick-8447/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-dark-pink-lipstick-8447",
+			"lookId": "red-carpet"
 		},
 		{
 			"image": "images/look-smoky.jpg",
 			"alt": "스모키 나이트 룩 영상 미리보기",
-			"label": "스모키 나이트"
+			"label": "스모키 나이트",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-eyeliner-8647/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-eyeliner-8647",
+			"lookId": "smoky-night"
 		},
 		{
 			"image": "images/look-dewy.jpg",
 			"alt": "듀이 프레시 룩 영상 미리보기",
-			"label": "듀이 프레시"
+			"label": "듀이 프레시",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-liquid-foundation-334/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-liquid-foundation-334",
+			"lookId": "dewy-fresh"
 		},
 		{
 			"image": "images/look-editorial.jpg",
 			"alt": "에디토리얼 룩 영상 미리보기",
-			"label": "에디토리얼"
+			"label": "에디토리얼",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561",
+			"lookId": "editorial"
 		}
 	]
 };
@@ -1543,36 +1595,62 @@ var fanFaves = {
 	"title": "百看不厌的人气之选。",
 	"description": "社群反复回看、反复上手的那些妆容。",
 	"shopLabel": "入手本妆",
+	"watchLabel": "观看妆容",
+	"playLabel": "播放",
+	"pauseLabel": "暂停",
+	"muteLabel": "开启声音",
+	"closeLabel": "关闭",
+	"prevLabel": "上一个",
+	"nextLabel": "下一个",
+	"sourceLabel": "来源",
 	"items": [
 		{
 			"image": "images/look-soft-glam.jpg",
 			"alt": "柔雾日常妆视频预览",
-			"label": "柔雾日常"
+			"label": "柔雾日常",
+			"video": "https://cdn.coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127",
+			"lookId": "soft-glam"
 		},
 		{
 			"image": "images/look-sunset.jpg",
 			"alt": "落日妆视频预览",
-			"label": "落日妆"
+			"label": "落日妆",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-contour-9937/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-contour-9937",
+			"lookId": "sunset-glam"
 		},
 		{
 			"image": "images/look-red-lip.jpg",
 			"alt": "红毯妆视频预览",
-			"label": "红毯妆"
+			"label": "红毯妆",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-dark-pink-lipstick-8447/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-dark-pink-lipstick-8447",
+			"lookId": "red-carpet"
 		},
 		{
 			"image": "images/look-smoky.jpg",
 			"alt": "暗夜烟熏妆视频预览",
-			"label": "暗夜烟熏"
+			"label": "暗夜烟熏",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-eyeliner-8647/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-eyeliner-8647",
+			"lookId": "smoky-night"
 		},
 		{
 			"image": "images/look-dewy.jpg",
 			"alt": "水光裸感妆视频预览",
-			"label": "水光裸感"
+			"label": "水光裸感",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-liquid-foundation-334/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-liquid-foundation-334",
+			"lookId": "dewy-fresh"
 		},
 		{
 			"image": "images/look-editorial.jpg",
 			"alt": "杂志大片妆视频预览",
-			"label": "杂志大片"
+			"label": "杂志大片",
+			"video": "https://cdn.coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561/720p.mp4",
+			"source": "https://coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561",
+			"lookId": "editorial"
 		}
 	]
 };
@@ -2511,9 +2589,158 @@ function Collections({ collection = false }) {
 	});
 }
 //#endregion
+//#region src/sections/VideoLightbox.tsx
+function VideoLightbox({ items, index, onClose, onStep }) {
+	const item = items[index];
+	const videoRef = useRef(null);
+	useEffect(() => {
+		videoRef.current?.play().catch(() => {});
+	}, [index]);
+	useEffect(() => {
+		const onKey = (event) => {
+			if (event.key === "Escape") onClose();
+			else if (event.key === "ArrowRight") onStep(1);
+			else if (event.key === "ArrowLeft") onStep(-1);
+		};
+		document.addEventListener("keydown", onKey);
+		return () => document.removeEventListener("keydown", onKey);
+	}, [onClose, onStep]);
+	if (!item) return null;
+	return /* @__PURE__ */ jsx("div", {
+		className: "video-lightbox",
+		role: "dialog",
+		"aria-modal": "true",
+		"aria-label": `${item.label} · ${site.fanFaves.watchLabel}`,
+		onClick: onClose,
+		children: /* @__PURE__ */ jsxs("div", {
+			className: "video-lightbox-panel",
+			onClick: (event) => event.stopPropagation(),
+			children: [
+				/* @__PURE__ */ jsxs("div", {
+					className: "video-lightbox-top",
+					children: [/* @__PURE__ */ jsx("span", {
+						className: "video-lightbox-label",
+						children: item.label
+					}), /* @__PURE__ */ jsxs("div", {
+						className: "video-lightbox-controls",
+						children: [
+							/* @__PURE__ */ jsx("button", {
+								type: "button",
+								className: "lightbox-step",
+								onClick: () => onStep(-1),
+								"aria-label": site.fanFaves.prevLabel,
+								children: "‹"
+							}),
+							/* @__PURE__ */ jsx("button", {
+								type: "button",
+								className: "lightbox-step",
+								onClick: () => onStep(1),
+								"aria-label": site.fanFaves.nextLabel,
+								children: "›"
+							}),
+							/* @__PURE__ */ jsx("button", {
+								type: "button",
+								className: "lightbox-close",
+								onClick: onClose,
+								"aria-label": site.fanFaves.closeLabel,
+								children: "×"
+							})
+						]
+					})]
+				}),
+				/* @__PURE__ */ jsx("video", {
+					className: "video-lightbox-player",
+					ref: videoRef,
+					src: item.video,
+					poster: asset(item.image),
+					controls: true,
+					autoPlay: true,
+					playsInline: true
+				}),
+				/* @__PURE__ */ jsxs("div", {
+					className: "video-lightbox-foot",
+					children: [/* @__PURE__ */ jsx("a", {
+						className: "button-primary",
+						href: pageUrl("collection", { id: item.lookId }),
+						children: site.fanFaves.shopLabel
+					}), /* @__PURE__ */ jsxs("p", {
+						className: "video-lightbox-source",
+						children: [
+							site.fanFaves.sourceLabel,
+							" · ",
+							item.source
+						]
+					})]
+				})
+			]
+		})
+	});
+}
+//#endregion
 //#region src/sections/FanFaves.tsx
+function FaveCard({ item, index, onOpen }) {
+	const ref = useRef(null);
+	const videoRef = useRef(null);
+	useEffect(() => {
+		const node = ref.current;
+		if (!node) return;
+		const observer = new IntersectionObserver(([entry]) => {
+			const video = videoRef.current;
+			if (!video) return;
+			if (entry.isIntersecting) video.play().catch(() => {});
+			else video.pause();
+		}, { threshold: .6 });
+		observer.observe(node);
+		return () => observer.disconnect();
+	}, []);
+	return /* @__PURE__ */ jsxs("button", {
+		type: "button",
+		className: "fanfave-card",
+		ref,
+		onClick: () => onOpen(index),
+		onMouseEnter: () => videoRef.current?.play().catch(() => {}),
+		onFocus: () => videoRef.current?.play().catch(() => {}),
+		"aria-label": `${site.fanFaves.watchLabel}: ${item.label}`,
+		children: [
+			/* @__PURE__ */ jsx("video", {
+				className: "fanfave-video",
+				ref: videoRef,
+				src: item.video,
+				poster: asset(item.image),
+				muted: true,
+				loop: true,
+				playsInline: true,
+				preload: "metadata",
+				"aria-hidden": "true"
+			}),
+			/* @__PURE__ */ jsx("span", {
+				className: "fanfave-play",
+				"aria-hidden": "true",
+				children: /* @__PURE__ */ jsx("svg", {
+					viewBox: "0 0 24 24",
+					width: "22",
+					height: "22",
+					children: /* @__PURE__ */ jsx("path", {
+						d: "M8 5v14l11-7z",
+						fill: "currentColor"
+					})
+				})
+			}),
+			/* @__PURE__ */ jsx("span", {
+				className: "fanfave-watch",
+				children: site.fanFaves.watchLabel
+			}),
+			/* @__PURE__ */ jsx("span", {
+				className: "fanfave-label",
+				children: item.label
+			})
+		]
+	});
+}
 function FanFaves() {
+	const items = site.fanFaves.items;
 	const trackRef = useRef(null);
+	const [open, setOpen] = useState(null);
 	const scrollBy = (direction) => {
 		const track = trackRef.current;
 		if (!track) return;
@@ -2524,10 +2751,11 @@ function FanFaves() {
 			behavior: "smooth"
 		});
 	};
-	return /* @__PURE__ */ jsx("section", {
+	const step = (direction) => setOpen((current) => current === null ? current : (current + direction + items.length) % items.length);
+	return /* @__PURE__ */ jsxs("section", {
 		className: "fanfaves section",
 		"aria-labelledby": "fanfaves-title",
-		children: /* @__PURE__ */ jsxs("div", {
+		children: [/* @__PURE__ */ jsxs("div", {
 			className: "container",
 			children: [/* @__PURE__ */ jsxs("div", {
 				className: "section-head-center",
@@ -2551,71 +2779,34 @@ function FanFaves() {
 					/* @__PURE__ */ jsx("div", {
 						className: "fanfaves-track",
 						ref: trackRef,
-						children: site.fanFaves.items.map((item, index) => /* @__PURE__ */ jsxs("a", {
-							className: "fanfave-card",
-							href: pageUrl("collections"),
-							"aria-label": `${site.fanFaves.shopLabel}: ${item.label}`,
-							children: [
-								/* @__PURE__ */ jsx("img", {
-									src: asset(item.image),
-									alt: item.alt,
-									width: "600",
-									height: "800",
-									loading: "lazy"
-								}),
-								/* @__PURE__ */ jsx("span", {
-									className: "fanfave-play",
-									"aria-hidden": "true",
-									children: /* @__PURE__ */ jsx("svg", {
-										viewBox: "0 0 24 24",
-										width: "22",
-										height: "22",
-										children: /* @__PURE__ */ jsx("path", {
-											d: "M8 5v14l11-7z",
-											fill: "currentColor"
-										})
-									})
-								}),
-								/* @__PURE__ */ jsx("span", {
-									className: "fanfave-bag",
-									"aria-hidden": "true",
-									children: /* @__PURE__ */ jsx("svg", {
-										viewBox: "0 0 24 24",
-										width: "18",
-										height: "18",
-										fill: "none",
-										children: /* @__PURE__ */ jsx("path", {
-											d: "M6 8h12l-1 12H7L6 8Zm3 0a3 3 0 0 1 6 0",
-											stroke: "currentColor",
-											strokeWidth: "1.6",
-											strokeLinejoin: "round"
-										})
-									})
-								}),
-								/* @__PURE__ */ jsx("span", {
-									className: "fanfave-label",
-									children: item.label
-								})
-							]
+						children: items.map((item, index) => /* @__PURE__ */ jsx(FaveCard, {
+							item,
+							index,
+							onOpen: setOpen
 						}, index))
 					}),
 					/* @__PURE__ */ jsx("button", {
 						type: "button",
 						className: "fanfaves-arrow fanfaves-prev",
 						onClick: () => scrollBy(-1),
-						"aria-label": site.ui.backTop,
+						"aria-label": site.fanFaves.prevLabel,
 						children: "‹"
 					}),
 					/* @__PURE__ */ jsx("button", {
 						type: "button",
 						className: "fanfaves-arrow fanfaves-next",
 						onClick: () => scrollBy(1),
-						"aria-label": site.ui.allCollections,
+						"aria-label": site.fanFaves.nextLabel,
 						children: "›"
 					})
 				]
 			})]
-		})
+		}), open !== null && /* @__PURE__ */ jsx(VideoLightbox, {
+			items,
+			index: open,
+			onClose: () => setOpen(null),
+			onStep: step
+		})]
 	});
 }
 //#endregion
@@ -2720,14 +2911,19 @@ function SocialLightbox({ items, index, onClose, onStep }) {
 						alt: item.alt
 					}), item.hotspots.map((spot, spotIndex) => {
 						const product = findProduct(spot.product);
-						return /* @__PURE__ */ jsx("span", {
+						return /* @__PURE__ */ jsxs("span", {
 							className: "lightbox-hotspot",
 							style: {
 								left: `${spot.x}%`,
 								top: `${spot.y}%`
 							},
-							title: product?.name,
-							children: spotIndex + 1
+							children: [/* @__PURE__ */ jsx("span", {
+								className: "hotspot-dot",
+								"aria-hidden": "true"
+							}), /* @__PURE__ */ jsx("span", {
+								className: "hotspot-tip",
+								children: product?.name
+							})]
 						}, spotIndex);
 					})]
 				}), /* @__PURE__ */ jsxs("div", {
@@ -2829,14 +3025,19 @@ function SocialGrid() {
 							"aria-hidden": "true",
 							children: item.productIds.length
 						}),
-						item.hotspots.map((spot, spotIndex) => /* @__PURE__ */ jsx("span", {
+						item.hotspots.map((spot, spotIndex) => /* @__PURE__ */ jsxs("span", {
 							className: "social-hotspot",
 							style: {
 								left: `${spot.x}%`,
 								top: `${spot.y}%`
 							},
-							title: productName(spot.product),
-							children: spotIndex + 1
+							children: [/* @__PURE__ */ jsx("span", {
+								className: "hotspot-dot",
+								"aria-hidden": "true"
+							}), /* @__PURE__ */ jsx("span", {
+								className: "hotspot-tip",
+								children: productName(spot.product)
+							})]
 						}, spotIndex))
 					]
 				}, index))

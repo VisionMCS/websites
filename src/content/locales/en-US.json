@@ -175,36 +175,62 @@
     "title": "Loved and rewatched.",
     "description": "The looks our community reaches for again and again.",
     "shopLabel": "Shop the look",
+    "watchLabel": "Watch the look",
+    "playLabel": "Play",
+    "pauseLabel": "Pause",
+    "muteLabel": "Unmute",
+    "closeLabel": "Close",
+    "prevLabel": "Previous",
+    "nextLabel": "Next",
+    "sourceLabel": "Source",
     "items": [
       {
         "image": "images/look-soft-glam.jpg",
         "alt": "Soft glam look video preview",
-        "label": "Soft Glam"
+        "label": "Soft Glam",
+        "video": "https://cdn.coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127",
+        "lookId": "soft-glam"
       },
       {
         "image": "images/look-sunset.jpg",
         "alt": "Sunset glam look video preview",
-        "label": "Sunset Glam"
+        "label": "Sunset Glam",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-contour-9937/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-contour-9937",
+        "lookId": "sunset-glam"
       },
       {
         "image": "images/look-red-lip.jpg",
         "alt": "Red carpet look video preview",
-        "label": "Red Carpet"
+        "label": "Red Carpet",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-dark-pink-lipstick-8447/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-dark-pink-lipstick-8447",
+        "lookId": "red-carpet"
       },
       {
         "image": "images/look-smoky.jpg",
         "alt": "Smoky night look video preview",
-        "label": "Smoky Night"
+        "label": "Smoky Night",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-eyeliner-8647/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-eyeliner-8647",
+        "lookId": "smoky-night"
       },
       {
         "image": "images/look-dewy.jpg",
         "alt": "Dewy fresh look video preview",
-        "label": "Dewy Fresh"
+        "label": "Dewy Fresh",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-liquid-foundation-334/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-liquid-foundation-334",
+        "lookId": "dewy-fresh"
       },
       {
         "image": "images/look-editorial.jpg",
         "alt": "Editorial look video preview",
-        "label": "Editorial"
+        "label": "Editorial",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561",
+        "lookId": "editorial"
       }
     ]
   },

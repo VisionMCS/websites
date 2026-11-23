@@ -175,36 +175,62 @@
     "title": "百看不厌的人气之选。",
     "description": "社群反复回看、反复上手的那些妆容。",
     "shopLabel": "入手本妆",
+    "watchLabel": "观看妆容",
+    "playLabel": "播放",
+    "pauseLabel": "暂停",
+    "muteLabel": "开启声音",
+    "closeLabel": "关闭",
+    "prevLabel": "上一个",
+    "nextLabel": "下一个",
+    "sourceLabel": "来源",
     "items": [
       {
         "image": "images/look-soft-glam.jpg",
         "alt": "柔雾日常妆视频预览",
-        "label": "柔雾日常"
+        "label": "柔雾日常",
+        "video": "https://cdn.coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-a-makeup-artist-applying-makeup-1127",
+        "lookId": "soft-glam"
       },
       {
         "image": "images/look-sunset.jpg",
         "alt": "落日妆视频预览",
-        "label": "落日妆"
+        "label": "落日妆",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-contour-9937/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-contour-9937",
+        "lookId": "sunset-glam"
       },
       {
         "image": "images/look-red-lip.jpg",
         "alt": "红毯妆视频预览",
-        "label": "红毯妆"
+        "label": "红毯妆",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-dark-pink-lipstick-8447/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-dark-pink-lipstick-8447",
+        "lookId": "red-carpet"
       },
       {
         "image": "images/look-smoky.jpg",
         "alt": "暗夜烟熏妆视频预览",
-        "label": "暗夜烟熏"
+        "label": "暗夜烟熏",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-eyeliner-8647/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-eyeliner-8647",
+        "lookId": "smoky-night"
       },
       {
         "image": "images/look-dewy.jpg",
         "alt": "水光裸感妆视频预览",
-        "label": "水光裸感"
+        "label": "水光裸感",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-liquid-foundation-334/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-liquid-foundation-334",
+        "lookId": "dewy-fresh"
       },
       {
         "image": "images/look-editorial.jpg",
         "alt": "杂志大片妆视频预览",
-        "label": "杂志大片"
+        "label": "杂志大片",
+        "video": "https://cdn.coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561/720p.mp4",
+        "source": "https://coverr.co/videos/coverr-applying-glitter-with-a-makeup-brush-6561",
+        "lookId": "editorial"
       }
     ]
   },
