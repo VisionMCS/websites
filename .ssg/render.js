@@ -52,36 +52,137 @@ var social$2 = {
 	"eyebrow": "SHOP THE LOOKBOOK",
 	"title": "As worn by our community.",
 	"handle": "@lumiere.beauty",
+	"shopLabel": "Add to bag",
+	"closeLabel": "Close",
+	"prevLabel": "Previous",
+	"nextLabel": "Next",
+	"sourceLabel": "Source",
 	"items": [
 		{
 			"image": "images/look-soft-glam.jpg",
 			"alt": "Soft glam look recreated by a community member",
-			"size": "wide"
+			"size": "wide",
+			"caption": "Soft, lit-from-within glow — my everyday go-to.",
+			"source": "instagram // 20 november 2026",
+			"productIds": [
+				"skin-tint",
+				"eyeshadow-palette",
+				"highlighter"
+			],
+			"hotspots": [{
+				"x": 48,
+				"y": 38,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 60,
+				"y": 52,
+				"product": "highlighter"
+			}]
 		},
 		{
 			"image": "images/look-sunset.jpg",
 			"alt": "Sunset glam look shared on social",
-			"size": "square"
+			"size": "square",
+			"caption": "Golden-hour eyes and a glassy lip. Obsessed.",
+			"source": "instagram // 18 november 2026",
+			"productIds": [
+				"eyeshadow-palette",
+				"blush",
+				"lip-gloss"
+			],
+			"hotspots": [{
+				"x": 50,
+				"y": 37,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 50,
+				"y": 63,
+				"product": "lip-gloss"
+			}]
 		},
 		{
 			"image": "images/look-red-lip.jpg",
 			"alt": "Red carpet look with a bold red lip",
-			"size": "tall"
+			"size": "tall",
+			"caption": "That red lip never misses. Bold and timeless.",
+			"source": "instagram // 15 november 2026",
+			"productIds": [
+				"lip-liner",
+				"lip-gloss",
+				"mascara"
+			],
+			"hotspots": [{
+				"x": 50,
+				"y": 62,
+				"product": "lip-gloss"
+			}, {
+				"x": 48,
+				"y": 38,
+				"product": "mascara"
+			}]
 		},
 		{
 			"image": "images/look-smoky.jpg",
 			"alt": "Smoky night eye look",
-			"size": "square"
+			"size": "square",
+			"caption": "Sultry smoky eye for the night out.",
+			"source": "instagram // 12 november 2026",
+			"productIds": [
+				"eyeshadow-palette",
+				"mascara",
+				"lip-oil"
+			],
+			"hotspots": [{
+				"x": 48,
+				"y": 37,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 51,
+				"y": 63,
+				"product": "lip-oil"
+			}]
 		},
 		{
 			"image": "images/look-editorial.jpg",
 			"alt": "Editorial runway-inspired look",
-			"size": "square"
+			"size": "square",
+			"caption": "Runway edge, wearable finish.",
+			"source": "instagram // 09 november 2026",
+			"productIds": [
+				"highlighter",
+				"mascara",
+				"lip-liner"
+			],
+			"hotspots": [{
+				"x": 60,
+				"y": 50,
+				"product": "highlighter"
+			}, {
+				"x": 50,
+				"y": 62,
+				"product": "lip-liner"
+			}]
 		},
 		{
 			"image": "images/look-dewy.jpg",
 			"alt": "Dewy fresh everyday look",
-			"size": "tall"
+			"size": "tall",
+			"caption": "Fresh dewy skin, blush on the apples.",
+			"source": "instagram // 05 november 2026",
+			"productIds": [
+				"skin-tint",
+				"blush",
+				"lip-oil"
+			],
+			"hotspots": [{
+				"x": 58,
+				"y": 52,
+				"product": "blush"
+			}, {
+				"x": 50,
+				"y": 63,
+				"product": "lip-oil"
+			}]
 		}
 	]
 };
@@ -134,6 +235,10 @@ var nav$2 = [
 	{
 		"label": "Lookbook",
 		"href": "collections"
+	},
+	{
+		"label": "Shop",
+		"href": "shop"
 	},
 	{
 		"label": "Our story",
@@ -336,7 +441,16 @@ var products$2 = [
 		"price": "¥180",
 		"shade": "6 shades",
 		"image": "images/product-skin-tint.jpg",
-		"imageAlt": "Weightless skin tint bottle on a neutral background"
+		"imageAlt": "Weightless skin tint bottle on a neutral background",
+		"description": "A sheer, buildable tint that blurs imperfections for a second-skin glow.",
+		"highlights": [
+			"Weightless, buildable coverage",
+			"Blurs pores and fine lines",
+			"Hydrating 24-hour wear"
+		],
+		"sizes": ["30 ml", "50 ml"],
+		"howToUse": "Warm between the fingertips and press from the centre of the face outwards.",
+		"ingredients": "Water, cyclopentasiloxane, glycerin, niacinamide, sodium hyaluronate."
 	},
 	{
 		"id": "eyeshadow-palette",
@@ -345,7 +459,16 @@ var products$2 = [
 		"price": "¥300",
 		"shade": "12 tones",
 		"image": "images/product-palette.jpg",
-		"imageAlt": "Twelve-pan warm neutral eyeshadow palette"
+		"imageAlt": "Twelve-pan warm neutral eyeshadow palette",
+		"description": "Twelve warm-to-neutral shades, from matte transition to foiled toppers.",
+		"highlights": [
+			"12 blendable warm & neutral tones",
+			"Mix of matte, satin and metallic",
+			"Travel mirror and dual-ended brush"
+		],
+		"sizes": ["12 × 1.5 g", "12 × 2 g"],
+		"howToUse": "Sweep transition shades in the crease, then pack deeper tones onto the lid and glow on the inner corner.",
+		"ingredients": "Talc, mica, zinc stearate, dimethicone, iron oxides."
 	},
 	{
 		"id": "highlighter",
@@ -354,7 +477,16 @@ var products$2 = [
 		"price": "¥210",
 		"shade": "Champagne",
 		"image": "images/product-highlighter.jpg",
-		"imageAlt": "Liquid highlighter dropper bottle with a luminous finish"
+		"imageAlt": "Liquid highlighter dropper bottle with a luminous finish",
+		"description": "A liquid glow that melts into skin for a lit-from-within finish.",
+		"highlights": [
+			"Dewy, non-chunky liquid glow",
+			"Builds from sheer to intense",
+			"Blends seamlessly under or over foundation"
+		],
+		"sizes": ["15 ml", "30 ml"],
+		"howToUse": "Dot onto cheekbones and blend with a fingertip or sponge, alone or over foundation.",
+		"ingredients": "Water, isododecane, glycerin, mica, dimethicone crosspolymer."
 	},
 	{
 		"id": "blush",
@@ -363,7 +495,16 @@ var products$2 = [
 		"price": "¥190",
 		"shade": "Petal",
 		"image": "images/product-blush.jpg",
-		"imageAlt": "Cream blush compact in a soft petal pink"
+		"imageAlt": "Cream blush compact in a soft petal pink",
+		"description": "A cloud-soft blurred blush that melts for a natural flush.",
+		"highlights": [
+			"Weightless blur-soft powder",
+			"Buildable natural flush",
+			"Blurring finish that never looks patchy"
+		],
+		"sizes": ["6 g", "10 g"],
+		"howToUse": "Sweep onto the apples of the cheeks and blend upward toward the temples.",
+		"ingredients": "Talc, mica, nylon-12, zinc stearate, iron oxides."
 	},
 	{
 		"id": "lip-oil",
@@ -372,7 +513,16 @@ var products$2 = [
 		"price": "¥170",
 		"shade": "Nude 01",
 		"image": "images/product-lip-oil.jpg",
-		"imageAlt": "Nude conditioning lip oil in a frosted tube"
+		"imageAlt": "Nude conditioning lip oil in a frosted tube",
+		"description": "A velvet lip oil that conditions with a glossy, non-sticky tint.",
+		"highlights": [
+			"Cushiony glossy tint",
+			"Nourishing, never-sticky formula",
+			"Wearable solo or over lipstick"
+		],
+		"sizes": ["6 ml", "9 ml"],
+		"howToUse": "Glide the doe-foot applicator over bare lips or layer over your favourite lip colour.",
+		"ingredients": "Polybutene, hydrogenated polyisobutene, squalane, vitamin E, jojoba oil."
 	},
 	{
 		"id": "lip-liner",
@@ -381,7 +531,16 @@ var products$2 = [
 		"price": "¥140",
 		"shade": "Rosewood",
 		"image": "images/product-liner.jpg",
-		"imageAlt": "Rosewood lip liner pencil on a neutral surface"
+		"imageAlt": "Rosewood lip liner pencil on a neutral surface",
+		"description": "A precision lip liner that defines and fills for long-lasting colour.",
+		"highlights": [
+			"Creamy 1.2 mm twist tip",
+			"Defines and prevents feathering",
+			"Twelve wearable nude-to-deep tones"
+		],
+		"sizes": ["0.35 g", "0.6 g"],
+		"howToUse": "Outline the lips, then fill towards the centre for long-lasting definition.",
+		"ingredients": "Hydrogenated coconut oil, candelilla wax, isopropyl myristate, iron oxides, tocopherol."
 	},
 	{
 		"id": "mascara",
@@ -390,7 +549,16 @@ var products$2 = [
 		"price": "¥160",
 		"shade": "Black",
 		"image": "images/product-mascara.jpg",
-		"imageAlt": "Volumising mascara tube with a curved wand"
+		"imageAlt": "Volumising mascara tube with a curved wand",
+		"description": "A volumising mascara that lifts and separates without clumping.",
+		"highlights": [
+			"Instant lash volume",
+			"Lifts and separates, never clumpy",
+			"Smudge-proof, easy to remove"
+		],
+		"sizes": ["8 ml", "12 ml"],
+		"howToUse": "Wiggle the brush from root to tip and add a second coat for drama.",
+		"ingredients": "Water, beeswax, carnauba wax, acacia senegal gum, iron oxides."
 	},
 	{
 		"id": "lip-gloss",
@@ -399,7 +567,16 @@ var products$2 = [
 		"price": "¥150",
 		"shade": "Clear",
 		"image": "images/product-gloss.jpg",
-		"imageAlt": "High-shine clear lip gloss with a flocked applicator"
+		"imageAlt": "High-shine clear lip gloss with a flocked applicator",
+		"description": "A high-shine glass gloss with a cushiony, non-sticky feel.",
+		"highlights": [
+			"Mirror-like glass shine",
+			"Cushiony, never-sticky wear",
+			"Comfortable hydration all day"
+		],
+		"sizes": ["5 ml", "8 ml"],
+		"howToUse": "Sweep over bare lips or layer in the centre for a plumped, glass-like finish.",
+		"ingredients": "Polyisobutene, squalane, hydrogenated polyisobutene, vitamin E, mica."
 	}
 ];
 var story$2 = {
@@ -469,7 +646,25 @@ var ui$2 = {
 	"steps": "How to recreate it",
 	"relatedProducts": "Shop the look",
 	"shopNow": "Shop now",
-	"emailLabel": "Email address"
+	"emailLabel": "Email address",
+	"shop": "Shop",
+	"shopTitle": "Shop the Look",
+	"shopIntro": "Every product behind our signature looks, ready to build your own.",
+	"allCategories": "All",
+	"filtersLabel": "Filter by",
+	"productCount": "products",
+	"viewProduct": "View product",
+	"addToBag": "Add to bag",
+	"bagAdded": "Added to your demo bag",
+	"sizeLabel": "Size",
+	"categoryLabel": "Category",
+	"descriptionLabel": "About this look-maker",
+	"howToUseLabel": "How to use",
+	"ingredientsLabel": "Ingredients",
+	"usedInLooks": "Shop this product in",
+	"backToShop": "Back to shop",
+	"prototypeNote": "This is a design template: the bag is a non-functional prototype and no order is placed or sent.",
+	"selectSize": "Select size"
 };
 var meta$2 = {
 	"title": "LUMIÈRE — Beauty in motion",
@@ -533,36 +728,137 @@ var social$1 = {
 	"eyebrow": "룩북으로 쇼핑",
 	"title": "커뮤니티가 함께한 룩.",
 	"handle": "@lumiere.beauty",
+	"shopLabel": "장바구니 담기",
+	"closeLabel": "닫기",
+	"prevLabel": "이전",
+	"nextLabel": "다음",
+	"sourceLabel": "출처",
 	"items": [
 		{
 			"image": "images/look-soft-glam.jpg",
 			"alt": "커뮤니티가 재현한 소프트 글램 룩",
-			"size": "wide"
+			"size": "wide",
+			"caption": "부드러운 안쪽부터 빛나는 광택, 데일리 최애.",
+			"source": "instagram // 2026.11.20",
+			"productIds": [
+				"skin-tint",
+				"eyeshadow-palette",
+				"highlighter"
+			],
+			"hotspots": [{
+				"x": 48,
+				"y": 38,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 60,
+				"y": 52,
+				"product": "highlighter"
+			}]
 		},
 		{
 			"image": "images/look-sunset.jpg",
 			"alt": "소셜에 공유된 선셋 글램 룩",
-			"size": "square"
+			"size": "square",
+			"caption": "골든아워 아이와 글로시 립. 완전 반했어요.",
+			"source": "instagram // 2026.11.18",
+			"productIds": [
+				"eyeshadow-palette",
+				"blush",
+				"lip-gloss"
+			],
+			"hotspots": [{
+				"x": 50,
+				"y": 37,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 50,
+				"y": 63,
+				"product": "lip-gloss"
+			}]
 		},
 		{
 			"image": "images/look-red-lip.jpg",
 			"alt": "볼드한 레드 립의 레드 카펫 룩",
-			"size": "tall"
+			"size": "tall",
+			"caption": "레드 립은 언제나 실패 없죠. 대담하고 클래식.",
+			"source": "instagram // 2026.11.15",
+			"productIds": [
+				"lip-liner",
+				"lip-gloss",
+				"mascara"
+			],
+			"hotspots": [{
+				"x": 50,
+				"y": 62,
+				"product": "lip-gloss"
+			}, {
+				"x": 48,
+				"y": 38,
+				"product": "mascara"
+			}]
 		},
 		{
 			"image": "images/look-smoky.jpg",
 			"alt": "스모키 나이트 아이 룩",
-			"size": "square"
+			"size": "square",
+			"caption": "나이트 아웃을 위한 스모키 아이.",
+			"source": "instagram // 2026.11.12",
+			"productIds": [
+				"eyeshadow-palette",
+				"mascara",
+				"lip-oil"
+			],
+			"hotspots": [{
+				"x": 48,
+				"y": 37,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 51,
+				"y": 63,
+				"product": "lip-oil"
+			}]
 		},
 		{
 			"image": "images/look-editorial.jpg",
 			"alt": "에디토리얼 런웨이 룩",
-			"size": "square"
+			"size": "square",
+			"caption": "런웨이 무드, 데일리 피니시.",
+			"source": "instagram // 2026.11.09",
+			"productIds": [
+				"highlighter",
+				"mascara",
+				"lip-liner"
+			],
+			"hotspots": [{
+				"x": 60,
+				"y": 50,
+				"product": "highlighter"
+			}, {
+				"x": 50,
+				"y": 62,
+				"product": "lip-liner"
+			}]
 		},
 		{
 			"image": "images/look-dewy.jpg",
 			"alt": "듀이 프레시 데일리 룩",
-			"size": "tall"
+			"size": "tall",
+			"caption": "상쾌한 물광 피부, 사과 광대에 블러.",
+			"source": "instagram // 2026.11.05",
+			"productIds": [
+				"skin-tint",
+				"blush",
+				"lip-oil"
+			],
+			"hotspots": [{
+				"x": 58,
+				"y": 52,
+				"product": "blush"
+			}, {
+				"x": 50,
+				"y": 63,
+				"product": "lip-oil"
+			}]
 		}
 	]
 };
@@ -615,6 +911,10 @@ var nav$1 = [
 	{
 		"label": "룩북",
 		"href": "collections"
+	},
+	{
+		"label": "숍",
+		"href": "shop"
 	},
 	{
 		"label": "브랜드 이야기",
@@ -817,7 +1117,16 @@ var products$1 = [
 		"price": "₩36,000",
 		"shade": "6 쉐이드",
 		"image": "images/product-skin-tint.jpg",
-		"imageAlt": "중성 배경의 웨이트리스 스킨 틴트 병"
+		"imageAlt": "중성 배경의 웨이트리스 스킨 틴트 병",
+		"description": "얇게 겹쳐 바르는 틴트가 결점을 보정해 두 번째 피부처럼 빛나게 합니다.",
+		"highlights": [
+			"가볍고 겹쳐 바르는 커버력",
+			"모공과 잔주름 보정",
+			"24시간 촉촉한 지속"
+		],
+		"sizes": ["30 ml", "50 ml"],
+		"howToUse": "손끝으로 데워 얼굴 중앙에서 바깥으로 눌러 펴 바르세요.",
+		"ingredients": "정제수, 사이클로펜타실록산, 글리세린, 나이아신아마이드, 소듐하이알루로네이트."
 	},
 	{
 		"id": "eyeshadow-palette",
@@ -826,7 +1135,16 @@ var products$1 = [
 		"price": "₩60,000",
 		"shade": "12 컬러",
 		"image": "images/product-palette.jpg",
-		"imageAlt": "따뜻한 뉴트럴 12구 아이섀도 팔레트"
+		"imageAlt": "따뜻한 뉴트럴 12구 아이섀도 팔레트",
+		"description": " 매트 트랜지션부터 포일 토퍼까지 12가지 웜·뉴트럴 섀이드.",
+		"highlights": [
+			"12가지 블렌딩 가능한 웜·뉴트럴",
+			"매트·새틴·메탈릭 조합",
+			"여행용 거울과 양면 브러시"
+		],
+		"sizes": ["12 × 1.5 g", "12 × 2 g"],
+		"howToUse": "트랜지션 섀이드를 언더라인에 블렌딩하고,lid에 딥 톤을, 안쪽 눈썹에 글로를 얹으세요.",
+		"ingredients": "탈크, 마이카, 징크스테아레이트, 디메치콘, 산화철."
 	},
 	{
 		"id": "highlighter",
@@ -835,7 +1153,16 @@ var products$1 = [
 		"price": "₩42,000",
 		"shade": "샴페인",
 		"image": "images/product-highlighter.jpg",
-		"imageAlt": "빛나는 마감의 드롭형 리퀴드 하이라이터"
+		"imageAlt": "빛나는 마감의 드롭형 리퀴드 하이라이터",
+		"description": "피부에 녹아들어 안에서부터 빛나는 리퀴드 글로우.",
+		"highlights": [
+			"물광·입자 없는 리퀴드 글로우",
+			"자연스럽게 층층이 표현",
+			"파운데이션 전후 모두 블렌딩"
+		],
+		"sizes": ["15 ml", "30 ml"],
+		"howToUse": "광대에 점 찍어 손끝이나 스펀지로 두드려 펴 바르세요.",
+		"ingredients": "정제수, 이소도데칸, 글리세린, 마이카, 디메치콘크로스폴리머."
 	},
 	{
 		"id": "blush",
@@ -844,7 +1171,16 @@ var products$1 = [
 		"price": "₩38,000",
 		"shade": "페탈",
 		"image": "images/product-blush.jpg",
-		"imageAlt": "부드러운 페탈 핑크의 크림 블러시"
+		"imageAlt": "부드러운 페탈 핑크의 크림 블러시",
+		"description": "구름처럼 부드러운 블러드 블러시로 자연스러운 혈색을 연출.",
+		"highlights": [
+			"가볍고 부드러운 블러 파우더",
+			"겹쳐 바르는 자연 혈색",
+			"들뜸 없는 블러링 마감"
+		],
+		"sizes": ["6 g", "10 g"],
+		"howToUse": "광대의 사과 부분에 발라 관자놀이 쪽으로 블렌딩하세요.",
+		"ingredients": "탈크, 마이카, 나일론-12, 징크스테아레이트, 산화철."
 	},
 	{
 		"id": "lip-oil",
@@ -853,7 +1189,16 @@ var products$1 = [
 		"price": "₩34,000",
 		"shade": "누드 01",
 		"image": "images/product-lip-oil.jpg",
-		"imageAlt": "플로스트 튜브의 누드 컨디셔닝 립 오일"
+		"imageAlt": "플로스트 튜브의 누드 컨디셔닝 립 오일",
+		"description": "글로시한 틴트와 함께 매끄럽게 윤기 주는 벨벳 립 오일.",
+		"highlights": [
+			"도톰한 글로시 틴트",
+			"영양감 있고 끈적이지 않는 포뮬러",
+			"단독 또는 립스틱 위에"
+		],
+		"sizes": ["6 ml", "9 ml"],
+		"howToUse": "두루마리 앱리케이터로 맨 입술 위에, 또는 립 컬러 위에 겹쳐 바르세요.",
+		"ingredients": "폴리부텐, 수소화폴리이소부텐, 스쿠알란, 비타민E, 호호바오일."
 	},
 	{
 		"id": "lip-liner",
@@ -862,7 +1207,16 @@ var products$1 = [
 		"price": "₩28,000",
 		"shade": "로즈우드",
 		"image": "images/product-liner.jpg",
-		"imageAlt": "중성 표면 위의 로즈우드 립 라이너"
+		"imageAlt": "중성 표면 위의 로즈우드 립 라이너",
+		"description": "입술을 또렷하게 채워 오래가는 정밀 립 라이너.",
+		"highlights": [
+			"부드러운 1.2mm 트위스트 팁",
+			"윤곽 정리와 번짐 방지",
+			"누드부터 딥까지 12가지"
+		],
+		"sizes": ["0.35 g", "0.6 g"],
+		"howToUse": "입술 윤곽을 그리고 중앙으로 채워 또렷한 라인을 완성하세요.",
+		"ingredients": "수소화코코넛오일, 칸데릴라왁스, 아이소프로필미리스테이트, 산화철, 토코페롤."
 	},
 	{
 		"id": "mascara",
@@ -871,7 +1225,16 @@ var products$1 = [
 		"price": "₩32,000",
 		"shade": "블랙",
 		"image": "images/product-mascara.jpg",
-		"imageAlt": "커브드 워드가 있는 볼륨 마스카라"
+		"imageAlt": "커브드 워드가 있는 볼륨 마스카라",
+		"description": "뭉침 없이 볼륨과 컬을 살려주는 마스카라.",
+		"highlights": [
+			"즉각적인 볼륨",
+			"컬과 분리, 뭉침 없음",
+			"번짐 방지, 쉬운 클렌징"
+		],
+		"sizes": ["8 ml", "12 ml"],
+		"howToUse": "브러시를 뿌리부터 끝까지 흔들어 바르고, 2차로 볼륨을 더하세요.",
+		"ingredients": "정제수, 비즈왁스, 카나우바왁스, 아카시아감나무검, 산화철."
 	},
 	{
 		"id": "lip-gloss",
@@ -880,7 +1243,16 @@ var products$1 = [
 		"price": "₩30,000",
 		"shade": "클리어",
 		"image": "images/product-gloss.jpg",
-		"imageAlt": "플록 애플리케이터의 하이샤인 클리어 립 글로스"
+		"imageAlt": "플록 애플리케이터의 하이샤인 클리어 립 글로스",
+		"description": "쿠션감 있고 끈적이지 않는 하이샤인 글라스 글로스.",
+		"highlights": [
+			"거울 같은 글로스 광택",
+			"도톰하고 끈적임 없는 사용감",
+			"종일 편안한 수분감"
+		],
+		"sizes": ["5 ml", "8 ml"],
+		"howToUse": "맨 입술 위에, 또는 중앙에 겹쳐 글라스 광택을 완성하세요.",
+		"ingredients": "폴리이소부텐, 스쿠알란, 수소화폴리이소부텐, 비타민E, 마이카."
 	}
 ];
 var story$1 = {
@@ -950,7 +1322,25 @@ var ui$1 = {
 	"steps": "재현하는 방법",
 	"relatedProducts": "이 룩의 제품",
 	"shopNow": "담기",
-	"emailLabel": "이메일 주소"
+	"emailLabel": "이메일 주소",
+	"shop": "숍",
+	"shopTitle": "룩 상품 쇼핑",
+	"shopIntro": "시그니처 룩에 쓰인 모든 제품을 직접 조합해 보세요.",
+	"allCategories": "전체",
+	"filtersLabel": "카테고리",
+	"productCount": "개 제품",
+	"viewProduct": "제품 보기",
+	"addToBag": "장바구니 담기",
+	"bagAdded": "데모 장바구니에 담김",
+	"sizeLabel": "용량",
+	"categoryLabel": "카테고리",
+	"descriptionLabel": "제품 소개",
+	"howToUseLabel": "사용법",
+	"ingredientsLabel": "성분",
+	"usedInLooks": "이 제품이 포함된 룩",
+	"backToShop": "숍으로 돌아가기",
+	"prototypeNote": "디자인 템플릿입니다: 장바구니는 동작하지 않는 목업이며 주문은 전송되지 않습니다.",
+	"selectSize": "용량 선택"
 };
 var meta$1 = {
 	"title": "LUMIÈRE — 움직이는 아름다움",
@@ -1014,36 +1404,137 @@ var social = {
 	"eyebrow": "入手同款妆容",
 	"title": "来自社群的真实演绎。",
 	"handle": "@lumiere.beauty",
+	"shopLabel": "加入购物袋",
+	"closeLabel": "关闭",
+	"prevLabel": "上一个",
+	"nextLabel": "下一个",
+	"sourceLabel": "来源",
 	"items": [
 		{
 			"image": "images/look-soft-glam.jpg",
 			"alt": "社群成员复刻的柔雾日常妆",
-			"size": "wide"
+			"size": "wide",
+			"caption": "柔和的由内而外光泽，我的日常首选。",
+			"source": "Instagram // 2026.11.20",
+			"productIds": [
+				"skin-tint",
+				"eyeshadow-palette",
+				"highlighter"
+			],
+			"hotspots": [{
+				"x": 48,
+				"y": 38,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 60,
+				"y": 52,
+				"product": "highlighter"
+			}]
 		},
 		{
 			"image": "images/look-sunset.jpg",
 			"alt": "社群分享的落日妆",
-			"size": "square"
+			"size": "square",
+			"caption": "黄金时刻眼妆配玻璃唇，太爱了。",
+			"source": "Instagram // 2026.11.18",
+			"productIds": [
+				"eyeshadow-palette",
+				"blush",
+				"lip-gloss"
+			],
+			"hotspots": [{
+				"x": 50,
+				"y": 37,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 50,
+				"y": 63,
+				"product": "lip-gloss"
+			}]
 		},
 		{
 			"image": "images/look-red-lip.jpg",
 			"alt": "红毯妆的正红唇",
-			"size": "tall"
+			"size": "tall",
+			"caption": "红唇从不出错，大胆又经典。",
+			"source": "Instagram // 2026.11.15",
+			"productIds": [
+				"lip-liner",
+				"lip-gloss",
+				"mascara"
+			],
+			"hotspots": [{
+				"x": 50,
+				"y": 62,
+				"product": "lip-gloss"
+			}, {
+				"x": 48,
+				"y": 38,
+				"product": "mascara"
+			}]
 		},
 		{
 			"image": "images/look-smoky.jpg",
 			"alt": "暗夜烟熏眼妆",
-			"size": "square"
+			"size": "square",
+			"caption": "夜晚外出的性感烟熏眼。",
+			"source": "Instagram // 2026.11.12",
+			"productIds": [
+				"eyeshadow-palette",
+				"mascara",
+				"lip-oil"
+			],
+			"hotspots": [{
+				"x": 48,
+				"y": 37,
+				"product": "eyeshadow-palette"
+			}, {
+				"x": 51,
+				"y": 63,
+				"product": "lip-oil"
+			}]
 		},
 		{
 			"image": "images/look-editorial.jpg",
 			"alt": "杂志大片风秀场妆",
-			"size": "square"
+			"size": "square",
+			"caption": "秀场感线条，日常也能驾驭。",
+			"source": "Instagram // 2026.11.09",
+			"productIds": [
+				"highlighter",
+				"mascara",
+				"lip-liner"
+			],
+			"hotspots": [{
+				"x": 60,
+				"y": 50,
+				"product": "highlighter"
+			}, {
+				"x": 50,
+				"y": 62,
+				"product": "lip-liner"
+			}]
 		},
 		{
 			"image": "images/look-dewy.jpg",
 			"alt": "水光裸感日常妆",
-			"size": "tall"
+			"size": "tall",
+			"caption": "清透水光肌，苹果肌扫上腮红。",
+			"source": "Instagram // 2026.11.05",
+			"productIds": [
+				"skin-tint",
+				"blush",
+				"lip-oil"
+			],
+			"hotspots": [{
+				"x": 58,
+				"y": 52,
+				"product": "blush"
+			}, {
+				"x": 50,
+				"y": 63,
+				"product": "lip-oil"
+			}]
 		}
 	]
 };
@@ -1096,6 +1587,10 @@ var nav = [
 	{
 		"label": "妆容手册",
 		"href": "collections"
+	},
+	{
+		"label": "商店",
+		"href": "shop"
 	},
 	{
 		"label": "品牌故事",
@@ -1298,7 +1793,16 @@ var products = [
 		"price": "¥180",
 		"shade": "6 个色号",
 		"image": "images/product-skin-tint.jpg",
-		"imageAlt": "中性背景上的轻透肤色乳瓶身"
+		"imageAlt": "中性背景上的轻透肤色乳瓶身",
+		"description": "轻薄可叠涂的润色粉底，柔焦瑕疵，打造第二层肌肤般光泽。",
+		"highlights": [
+			"轻薄可叠涂遮瑕",
+			"柔焦毛孔与细纹",
+			"水润持妆 24 小时"
+		],
+		"sizes": ["30 毫升", "50 毫升"],
+		"howToUse": "用指腹温热后，由面部中央向外按压上妆。",
+		"ingredients": "水、环五聚二糖硅氧烷、甘油、烟酰胺、透明质酸钠。"
 	},
 	{
 		"id": "eyeshadow-palette",
@@ -1307,7 +1811,16 @@ var products = [
 		"price": "¥300",
 		"shade": "12 色",
 		"image": "images/product-palette.jpg",
-		"imageAlt": "十二色暖调中性眼影盘"
+		"imageAlt": "十二色暖调中性眼影盘",
+		"description": "12 色暖调至中性，从哑光过渡到金属高光一应俱全。",
+		"highlights": [
+			"12 色可晕染暖调/中性色",
+			"哑光、缎光、金属质地混搭",
+			"附带化妆镜与双头刷"
+		],
+		"sizes": ["12 × 1.5 克", "12 × 2 克"],
+		"howToUse": "先在眼窝晕染过渡色，再于眼皮铺深调、内眼角点亮。",
+		"ingredients": "滑石粉、云母、硬脂酸锌、聚二甲基硅氧烷、氧化铁。"
 	},
 	{
 		"id": "highlighter",
@@ -1316,7 +1829,16 @@ var products = [
 		"price": "¥210",
 		"shade": "香槟色",
 		"image": "images/product-highlighter.jpg",
-		"imageAlt": "带滴管的液体高光，呈现光泽妆效"
+		"imageAlt": "带滴管的液体高光，呈现光泽妆效",
+		"description": "融入肌肤的液态高光，打造由内而外的光泽。",
+		"highlights": [
+			"水润无颗粒液态光泽",
+			"由浅到深可叠涂",
+			"粉底前后皆可无缝晕染"
+		],
+		"sizes": ["15 毫升", "30 毫升"],
+		"howToUse": "点涂于颧骨，用指腹或海绵拍开，可单用或叠在粉底上。",
+		"ingredients": "水、异十二烷、甘油、云母、聚二甲基硅氧烷交联聚合物。"
 	},
 	{
 		"id": "blush",
@@ -1325,7 +1847,16 @@ var products = [
 		"price": "¥190",
 		"shade": "花瓣粉",
 		"image": "images/product-blush.jpg",
-		"imageAlt": "柔和花瓣粉的膏状腮红"
+		"imageAlt": "柔和花瓣粉的膏状腮红",
+		"description": "云朵般柔焦腮红，一刷晕出自然好气色。",
+		"highlights": [
+			"轻透柔焦粉质",
+			"可叠涂自然血色感",
+			"柔焦妆效不结块"
+		],
+		"sizes": ["6 克", "10 克"],
+		"howToUse": "扫于苹果肌并向太阳穴方向晕开。",
+		"ingredients": "滑石粉、云母、尼龙-12、硬脂酸锌、氧化铁。"
 	},
 	{
 		"id": "lip-oil",
@@ -1334,7 +1865,16 @@ var products = [
 		"price": "¥170",
 		"shade": "裸色 01",
 		"image": "images/product-lip-oil.jpg",
-		"imageAlt": "磨砂管身的裸色滋润唇油"
+		"imageAlt": "磨砂管身的裸色滋润唇油",
+		"description": "丝绒唇釉般润唇，光泽显色又不黏腻。",
+		"highlights": [
+			"柔润光泽显色",
+			"滋养不黏腻配方",
+			"可单涂或叠在口红上"
+		],
+		"sizes": ["6 毫升", "9 毫升"],
+		"howToUse": "用刷头顺唇形滑涂于素唇，或叠涂在口红色上。",
+		"ingredients": "聚丁烯、氢化聚异丁烯、角鲨烷、维生素 E、荷荷巴油。"
 	},
 	{
 		"id": "lip-liner",
@@ -1343,7 +1883,16 @@ var products = [
 		"price": "¥140",
 		"shade": "玫瑰木",
 		"image": "images/product-liner.jpg",
-		"imageAlt": "中性台面上的玫瑰木色唇线笔"
+		"imageAlt": "中性台面上的玫瑰木色唇线笔",
+		"description": "精准唇线笔，勾勒饱满，持久显色。",
+		"highlights": [
+			"柔滑 1.2 mm 旋转笔头",
+			"勾勒唇形防晕染",
+			"12 支裸色到深色百搭色调"
+		],
+		"sizes": ["0.35 克", "0.6 克"],
+		"howToUse": "先勾勒唇形，再向中央填色，妆效更持久。",
+		"ingredients": "氢化椰子油、小烛树蜡、肉豆蔻酸异丙酯、氧化铁、生育酚。"
 	},
 	{
 		"id": "mascara",
@@ -1352,7 +1901,16 @@ var products = [
 		"price": "¥160",
 		"shade": "黑色",
 		"image": "images/product-mascara.jpg",
-		"imageAlt": "带弧形刷头的浓密睫毛膏"
+		"imageAlt": "带弧形刷头的浓密睫毛膏",
+		"description": "丰盈睫毛膏，根根分明卷翘，不结块。",
+		"highlights": [
+			"即刻浓密",
+			"卷翘分明不结块",
+			"防晕染易卸除"
+		],
+		"sizes": ["8 毫升", "12 毫升"],
+		"howToUse": "刷头从根部向尖端小幅抖动，可叠加第二层更浓郁。",
+		"ingredients": "水、蜂蜡、巴西棕榈蜡、阿拉伯胶、氧化铁。"
 	},
 	{
 		"id": "lip-gloss",
@@ -1361,7 +1919,16 @@ var products = [
 		"price": "¥150",
 		"shade": "透明",
 		"image": "images/product-gloss.jpg",
-		"imageAlt": "带绒毛刷头的高光泽透明唇釉"
+		"imageAlt": "带绒毛刷头的高光泽透明唇釉",
+		"description": "高光泽玻璃唇蜜，柔润不黏腻。",
+		"highlights": [
+			"镜面玻璃光泽",
+			"柔润不黏腻",
+			"全天舒适水润"
+		],
+		"sizes": ["5 毫升", "8 毫升"],
+		"howToUse": "顺唇涂抹素唇，或叠在唇中央打造丰盈玻璃感。",
+		"ingredients": "聚异丁烯、角鲨烷、氢化聚异丁烯、维生素 E、云母。"
 	}
 ];
 var story = {
@@ -1431,7 +1998,25 @@ var ui = {
 	"steps": "如何复刻",
 	"relatedProducts": "入手同款",
 	"shopNow": "立即购买",
-	"emailLabel": "邮箱地址"
+	"emailLabel": "邮箱地址",
+	"shop": "商店",
+	"shopTitle": "选购同款",
+	"shopIntro": "标志妆容背后的每一件单品，随心组合属于你的妆容。",
+	"allCategories": "全部",
+	"filtersLabel": "按分类筛选",
+	"productCount": "件商品",
+	"viewProduct": "查看商品",
+	"addToBag": "加入购物袋",
+	"bagAdded": "已加入演示购物袋",
+	"sizeLabel": "规格",
+	"categoryLabel": "分类",
+	"descriptionLabel": "关于这件单品",
+	"howToUseLabel": "使用方法",
+	"ingredientsLabel": "成分",
+	"usedInLooks": "在以下妆容中查看",
+	"backToShop": "返回商店",
+	"prototypeNote": "这是设计模板：购物袋仅为不可用原型，不会下单或发送。",
+	"selectSize": "选择规格"
 };
 var meta = {
 	"title": "LUMIÈRE — 流动之美",
@@ -1490,6 +2075,21 @@ var registry_default = [
 		"path": "collections/",
 		"component": "CollectionsPage",
 		"title": "collections.pageTitle"
+	},
+	{
+		"id": "shop",
+		"path": "shop/",
+		"component": "ShopPage",
+		"title": "ui.shopTitle",
+		"description": "ui.shopIntro"
+	},
+	{
+		"id": "product",
+		"path": "products/{id}/",
+		"component": "ProductPage",
+		"collection": "products",
+		"title": "name",
+		"description": "description"
 	},
 	{
 		"id": "collection",
@@ -2058,12 +2658,142 @@ function TryOn() {
 	});
 }
 //#endregion
+//#region src/sections/SocialLightbox.tsx
+var findProduct = (id) => site.products.find((product) => product.id === id);
+function SocialLightbox({ items, index, onClose, onStep }) {
+	const item = items[index];
+	const [added, setAdded] = useState([]);
+	useEffect(() => {
+		setAdded([]);
+	}, [index]);
+	useEffect(() => {
+		const onKey = (event) => {
+			if (event.key === "Escape") onClose();
+			else if (event.key === "ArrowRight") onStep(1);
+			else if (event.key === "ArrowLeft") onStep(-1);
+		};
+		document.addEventListener("keydown", onKey);
+		return () => document.removeEventListener("keydown", onKey);
+	}, [onClose, onStep]);
+	if (!item) return null;
+	const products = item.productIds.map(findProduct).filter((product) => !!product);
+	return /* @__PURE__ */ jsx("div", {
+		className: "social-lightbox",
+		role: "dialog",
+		"aria-modal": "true",
+		"aria-label": item.alt,
+		onClick: onClose,
+		children: /* @__PURE__ */ jsxs("div", {
+			className: "lightbox-panel",
+			onClick: (event) => event.stopPropagation(),
+			children: [/* @__PURE__ */ jsxs("div", {
+				className: "lightbox-controls",
+				children: [
+					/* @__PURE__ */ jsx("button", {
+						type: "button",
+						className: "lightbox-step",
+						onClick: () => onStep(-1),
+						"aria-label": site.social.prevLabel,
+						children: "‹"
+					}),
+					/* @__PURE__ */ jsx("button", {
+						type: "button",
+						className: "lightbox-step",
+						onClick: () => onStep(1),
+						"aria-label": site.social.nextLabel,
+						children: "›"
+					}),
+					/* @__PURE__ */ jsx("button", {
+						type: "button",
+						className: "lightbox-close",
+						onClick: onClose,
+						"aria-label": site.social.closeLabel,
+						children: "×"
+					})
+				]
+			}), /* @__PURE__ */ jsxs("div", {
+				className: "lightbox-body",
+				children: [/* @__PURE__ */ jsxs("div", {
+					className: "lightbox-media",
+					children: [/* @__PURE__ */ jsx("img", {
+						src: asset(item.image),
+						alt: item.alt
+					}), item.hotspots.map((spot, spotIndex) => {
+						const product = findProduct(spot.product);
+						return /* @__PURE__ */ jsx("span", {
+							className: "lightbox-hotspot",
+							style: {
+								left: `${spot.x}%`,
+								top: `${spot.y}%`
+							},
+							title: product?.name,
+							children: spotIndex + 1
+						}, spotIndex);
+					})]
+				}), /* @__PURE__ */ jsxs("div", {
+					className: "lightbox-info",
+					children: [
+						products.map((product) => /* @__PURE__ */ jsxs("div", {
+							className: "lightbox-product",
+							children: [
+								/* @__PURE__ */ jsx("a", {
+									className: "lightbox-product-media",
+									href: pageUrl("product", { id: product.id }),
+									children: /* @__PURE__ */ jsx("img", {
+										src: asset(product.image),
+										alt: product.imageAlt
+									})
+								}),
+								/* @__PURE__ */ jsx("p", {
+									className: "lightbox-product-price",
+									children: product.price
+								}),
+								/* @__PURE__ */ jsx("a", {
+									className: "lightbox-product-name",
+									href: pageUrl("product", { id: product.id }),
+									children: product.name
+								}),
+								/* @__PURE__ */ jsx("button", {
+									type: "button",
+									className: "button-primary lightbox-add",
+									onClick: () => setAdded((current) => current.includes(product.id) ? current : [...current, product.id]),
+									children: site.social.shopLabel
+								}),
+								added.includes(product.id) && /* @__PURE__ */ jsxs("p", {
+									className: "lightbox-added",
+									children: ["✓ ", site.ui.bagAdded]
+								})
+							]
+						}, product.id)),
+						/* @__PURE__ */ jsx("p", {
+							className: "lightbox-caption",
+							children: item.caption
+						}),
+						/* @__PURE__ */ jsxs("p", {
+							className: "lightbox-source",
+							children: [
+								site.social.handle,
+								" // ",
+								item.source
+							]
+						})
+					]
+				})]
+			})]
+		})
+	});
+}
+//#endregion
 //#region src/sections/SocialGrid.tsx
 function SocialGrid() {
-	return /* @__PURE__ */ jsx("section", {
+	const items = site.social.items;
+	const [open, setOpen] = useState(null);
+	const step = (direction) => setOpen((current) => current === null ? current : (current + direction + items.length) % items.length);
+	const productName = (id) => site.products.find((product) => product.id === id)?.name ?? "";
+	return /* @__PURE__ */ jsxs("section", {
 		className: "social section",
 		"aria-labelledby": "social-title",
-		children: /* @__PURE__ */ jsxs("div", {
+		children: [/* @__PURE__ */ jsxs("div", {
 			className: "container",
 			children: [/* @__PURE__ */ jsxs("div", {
 				className: "section-head-center",
@@ -2083,16 +2813,40 @@ function SocialGrid() {
 				]
 			}), /* @__PURE__ */ jsx("div", {
 				className: "social-grid",
-				children: site.social.items.map((item, index) => /* @__PURE__ */ jsx("figure", {
+				children: items.map((item, index) => /* @__PURE__ */ jsxs("button", {
+					type: "button",
 					className: `social-item social-${item.size ?? "square"}`,
-					children: /* @__PURE__ */ jsx("img", {
-						src: asset(item.image),
-						alt: item.alt,
-						loading: "lazy"
-					})
+					onClick: () => setOpen(index),
+					"aria-label": `${item.alt} · ${site.ui.viewProduct}`,
+					children: [
+						/* @__PURE__ */ jsx("img", {
+							src: asset(item.image),
+							alt: item.alt,
+							loading: "lazy"
+						}),
+						/* @__PURE__ */ jsx("span", {
+							className: "social-bag",
+							"aria-hidden": "true",
+							children: item.productIds.length
+						}),
+						item.hotspots.map((spot, spotIndex) => /* @__PURE__ */ jsx("span", {
+							className: "social-hotspot",
+							style: {
+								left: `${spot.x}%`,
+								top: `${spot.y}%`
+							},
+							title: productName(spot.product),
+							children: spotIndex + 1
+						}, spotIndex))
+					]
 				}, index))
 			})]
-		})
+		}), open !== null && /* @__PURE__ */ jsx(SocialLightbox, {
+			items,
+			index: open,
+			onClose: () => setOpen(null),
+			onStep: step
+		})]
 	});
 }
 //#endregion
@@ -2214,8 +2968,9 @@ function CollectionsPage() {
 //#endregion
 //#region src/components/ProductCard.tsx
 function ProductCard({ product }) {
-	return /* @__PURE__ */ jsxs("article", {
+	return /* @__PURE__ */ jsxs("a", {
 		className: "product-card",
+		href: pageUrl("product", { id: product.id }),
 		children: [/* @__PURE__ */ jsx("div", {
 			className: "product-image",
 			children: /* @__PURE__ */ jsx("img", {
@@ -2236,6 +2991,10 @@ function ProductCard({ product }) {
 				/* @__PURE__ */ jsxs("p", {
 					className: "product-meta",
 					children: [/* @__PURE__ */ jsx("span", { children: product.shade }), /* @__PURE__ */ jsx("span", { children: product.price })]
+				}),
+				/* @__PURE__ */ jsxs("span", {
+					className: "product-view",
+					children: [site.ui.viewProduct, " →"]
 				})
 			]
 		})]
@@ -2257,42 +3016,54 @@ function CollectionPage() {
 	return /* @__PURE__ */ jsxs("article", {
 		className: "container collection-detail",
 		children: [
-			/* @__PURE__ */ jsxs("nav", {
-				className: "breadcrumbs",
-				"aria-label": site.ui.navigation,
-				children: [
-					/* @__PURE__ */ jsx("a", {
-						href: pageUrl(),
-						children: site.ui.home
-					}),
-					/* @__PURE__ */ jsx("span", { children: "/" }),
-					/* @__PURE__ */ jsx("a", {
-						href: pageUrl("collections"),
-						children: site.collections.pageTitle
-					}),
-					/* @__PURE__ */ jsx("span", { children: "/" }),
-					/* @__PURE__ */ jsx("span", { children: collection.name })
-				]
-			}),
-			/* @__PURE__ */ jsxs("header", {
-				className: "detail-heading",
-				children: [
-					/* @__PURE__ */ jsxs("p", {
-						className: "eyebrow",
-						children: [
-							site.ui.collectionLabel,
-							" / ",
-							collection.category
-						]
-					}),
-					/* @__PURE__ */ jsx("h1", { children: collection.name }),
-					/* @__PURE__ */ jsx("p", { children: collection.summary })
-				]
-			}),
-			/* @__PURE__ */ jsx("img", {
-				className: "detail-cover",
-				src: asset(collection.image),
-				alt: collection.imageAlt
+			/* @__PURE__ */ jsxs("section", {
+				className: "look-hero",
+				children: [/* @__PURE__ */ jsxs("div", {
+					className: "look-hero-copy",
+					children: [
+						/* @__PURE__ */ jsxs("nav", {
+							className: "breadcrumbs",
+							"aria-label": site.ui.navigation,
+							children: [
+								/* @__PURE__ */ jsx("a", {
+									href: pageUrl(),
+									children: site.ui.home
+								}),
+								/* @__PURE__ */ jsx("span", { children: "/" }),
+								/* @__PURE__ */ jsx("a", {
+									href: pageUrl("collections"),
+									children: site.collections.pageTitle
+								}),
+								/* @__PURE__ */ jsx("span", { children: "/" }),
+								/* @__PURE__ */ jsx("span", { children: collection.name })
+							]
+						}),
+						/* @__PURE__ */ jsxs("p", {
+							className: "eyebrow",
+							children: [
+								site.ui.collectionLabel,
+								" / ",
+								collection.category
+							]
+						}),
+						/* @__PURE__ */ jsx("h1", { children: collection.name }),
+						/* @__PURE__ */ jsx("p", {
+							className: "look-summary",
+							children: collection.summary
+						}),
+						/* @__PURE__ */ jsxs("a", {
+							className: "button-primary",
+							href: pageUrl("collections", { id: collection.id }),
+							children: [collection.shopLabel ?? site.ui.shopNow, /* @__PURE__ */ jsx(Arrow, { diagonal: true })]
+						})
+					]
+				}), /* @__PURE__ */ jsx("div", {
+					className: "look-hero-media",
+					children: /* @__PURE__ */ jsx("img", {
+						src: asset(collection.image),
+						alt: collection.imageAlt
+					})
+				})]
 			}),
 			/* @__PURE__ */ jsxs("div", {
 				className: "detail-body",
@@ -2328,6 +3099,195 @@ function CollectionPage() {
 				className: "text-link",
 				href: pageUrl("collections"),
 				children: ["← ", site.ui.backCollections]
+			})
+		]
+	});
+}
+//#endregion
+//#region src/pages/ShopPage.tsx
+function ShopPage() {
+	const all = "all";
+	const categories = Array.from(new Set(site.products.map((product) => product.category)));
+	const [active, setActive] = useState(all);
+	const shown = active === all ? site.products : site.products.filter((product) => product.category === active);
+	return /* @__PURE__ */ jsxs("div", {
+		className: "container shop-page",
+		children: [
+			/* @__PURE__ */ jsxs("div", {
+				className: "page-title",
+				children: [
+					/* @__PURE__ */ jsx("p", {
+						className: "eyebrow",
+						children: site.brand.name
+					}),
+					/* @__PURE__ */ jsx("h1", { children: site.ui.shopTitle }),
+					/* @__PURE__ */ jsx("p", {
+						className: "shop-intro",
+						children: site.ui.shopIntro
+					})
+				]
+			}),
+			/* @__PURE__ */ jsxs("div", {
+				className: "shop-toolbar",
+				children: [
+					/* @__PURE__ */ jsx("span", {
+						className: "shop-filters-label",
+						children: site.ui.filtersLabel
+					}),
+					/* @__PURE__ */ jsxs("div", {
+						className: "shop-filters",
+						role: "group",
+						children: [/* @__PURE__ */ jsx("button", {
+							type: "button",
+							className: active === all ? "is-active" : "",
+							onClick: () => setActive(all),
+							children: site.ui.allCategories
+						}), categories.map((category) => /* @__PURE__ */ jsx("button", {
+							type: "button",
+							className: active === category ? "is-active" : "",
+							onClick: () => setActive(category),
+							children: category
+						}, category))]
+					}),
+					/* @__PURE__ */ jsxs("p", {
+						className: "shop-count",
+						children: [
+							shown.length,
+							" ",
+							site.ui.productCount
+						]
+					})
+				]
+			}),
+			/* @__PURE__ */ jsx("div", {
+				className: "shop-grid",
+				children: shown.map((product) => /* @__PURE__ */ jsx(ProductCard, { product }, product.id))
+			})
+		]
+	});
+}
+//#endregion
+//#region src/pages/ProductPage.tsx
+function ProductPage() {
+	const product = site.products.find((item) => item.id === contentId);
+	if (!product) return /* @__PURE__ */ jsxs("section", {
+		className: "container section",
+		children: [/* @__PURE__ */ jsx("h1", { children: site.ui.notFound }), /* @__PURE__ */ jsxs("a", {
+			className: "text-link",
+			href: pageUrl("shop"),
+			children: ["← ", site.ui.backToShop]
+		})]
+	});
+	const [size, setSize] = useState(0);
+	const [added, setAdded] = useState(false);
+	const looks = site.collections.items.filter((collection) => (collection.productIds ?? []).includes(product.id));
+	return /* @__PURE__ */ jsxs("article", {
+		className: "container product-page",
+		children: [
+			/* @__PURE__ */ jsxs("nav", {
+				className: "breadcrumbs",
+				"aria-label": site.ui.navigation,
+				children: [
+					/* @__PURE__ */ jsx("a", {
+						href: pageUrl(),
+						children: site.ui.home
+					}),
+					/* @__PURE__ */ jsx("span", { children: "/" }),
+					/* @__PURE__ */ jsx("a", {
+						href: pageUrl("shop"),
+						children: site.ui.shop
+					}),
+					/* @__PURE__ */ jsx("span", { children: "/" }),
+					/* @__PURE__ */ jsx("span", { children: product.name })
+				]
+			}),
+			/* @__PURE__ */ jsxs("div", {
+				className: "product-layout",
+				children: [/* @__PURE__ */ jsx("div", {
+					className: "product-media",
+					children: /* @__PURE__ */ jsx("img", {
+						src: asset(product.image),
+						alt: product.imageAlt
+					})
+				}), /* @__PURE__ */ jsxs("div", {
+					className: "product-buy",
+					children: [
+						/* @__PURE__ */ jsx("p", {
+							className: "eyebrow",
+							children: product.category
+						}),
+						/* @__PURE__ */ jsx("h1", { children: product.name }),
+						/* @__PURE__ */ jsx("p", {
+							className: "product-price",
+							children: product.price
+						}),
+						/* @__PURE__ */ jsx("p", {
+							className: "product-summary",
+							children: product.description
+						}),
+						/* @__PURE__ */ jsxs("div", {
+							className: "product-option",
+							children: [/* @__PURE__ */ jsxs("span", {
+								className: "product-option-label",
+								children: [
+									site.ui.sizeLabel,
+									" · ",
+									product.shade
+								]
+							}), /* @__PURE__ */ jsx("div", {
+								className: "size-options",
+								role: "group",
+								children: product.sizes.map((item, index) => /* @__PURE__ */ jsx("button", {
+									type: "button",
+									className: size === index ? "is-active" : "",
+									onClick: () => setSize(index),
+									children: item
+								}, item))
+							})]
+						}),
+						/* @__PURE__ */ jsx("button", {
+							type: "button",
+							className: "button-primary add-to-bag",
+							onClick: () => setAdded(true),
+							children: site.ui.addToBag
+						}),
+						added && /* @__PURE__ */ jsxs("p", {
+							className: "bag-added",
+							children: ["✓ ", site.ui.bagAdded]
+						}),
+						/* @__PURE__ */ jsx("p", {
+							className: "prototype-note",
+							children: site.ui.prototypeNote
+						}),
+						/* @__PURE__ */ jsx("ul", {
+							className: "product-highlights",
+							children: product.highlights.map((item) => /* @__PURE__ */ jsx("li", { children: item }, item))
+						})
+					]
+				})]
+			}),
+			/* @__PURE__ */ jsxs("div", {
+				className: "product-detail-cols",
+				children: [/* @__PURE__ */ jsxs("section", { children: [/* @__PURE__ */ jsx("h2", { children: site.ui.howToUseLabel }), /* @__PURE__ */ jsx("p", { children: product.howToUse })] }), /* @__PURE__ */ jsxs("section", { children: [/* @__PURE__ */ jsx("h2", { children: site.ui.ingredientsLabel }), /* @__PURE__ */ jsx("p", { children: product.ingredients })] })]
+			}),
+			looks.length > 0 && /* @__PURE__ */ jsxs("section", {
+				className: "used-in-looks",
+				children: [/* @__PURE__ */ jsx("h2", { children: site.ui.usedInLooks }), /* @__PURE__ */ jsx("div", {
+					className: "used-looks-grid",
+					children: looks.map((look) => /* @__PURE__ */ jsxs("a", {
+						className: "used-look-card",
+						href: pageUrl("collection", { id: look.id }),
+						children: [/* @__PURE__ */ jsx("img", {
+							src: asset(look.image),
+							alt: look.imageAlt
+						}), /* @__PURE__ */ jsxs("span", { children: [look.name, /* @__PURE__ */ jsx(Arrow, { diagonal: true })] })]
+					}, look.id))
+				})]
+			}),
+			/* @__PURE__ */ jsxs("a", {
+				className: "text-link",
+				href: pageUrl("shop"),
+				children: ["← ", site.ui.backToShop]
 			})
 		]
 	});
@@ -2395,6 +3355,8 @@ var components = {
 	HomePage,
 	CollectionsPage,
 	CollectionPage,
+	ShopPage,
+	ProductPage,
 	StoryPage
 };
 //#endregion

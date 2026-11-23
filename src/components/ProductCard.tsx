@@ -1,11 +1,12 @@
-import { asset } from "../content";
+import { site, asset } from "../content";
+import { pageUrl } from "../content/links";
 import type { SiteContent } from "../content/types";
 
 type Product = SiteContent["products"][number];
 
 export function ProductCard({ product }: { product: Product }) {
   return (
-    <article className="product-card">
+    <a className="product-card" href={pageUrl("product", { id: product.id })}>
       <div className="product-image">
         <img
           src={asset(product.image)}
@@ -22,7 +23,8 @@ export function ProductCard({ product }: { product: Product }) {
           <span>{product.shade}</span>
           <span>{product.price}</span>
         </p>
+        <span className="product-view">{site.ui.viewProduct} →</span>
       </div>
-    </article>
+    </a>
   );
 }

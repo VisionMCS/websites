@@ -18,13 +18,156 @@
     "eyebrow": "入手同款妆容",
     "title": "来自社群的真实演绎。",
     "handle": "@lumiere.beauty",
+    "shopLabel": "加入购物袋",
+    "closeLabel": "关闭",
+    "prevLabel": "上一个",
+    "nextLabel": "下一个",
+    "sourceLabel": "来源",
     "items": [
-      { "image": "images/look-soft-glam.jpg", "alt": "社群成员复刻的柔雾日常妆", "size": "wide" },
-      { "image": "images/look-sunset.jpg", "alt": "社群分享的落日妆", "size": "square" },
-      { "image": "images/look-red-lip.jpg", "alt": "红毯妆的正红唇", "size": "tall" },
-      { "image": "images/look-smoky.jpg", "alt": "暗夜烟熏眼妆", "size": "square" },
-      { "image": "images/look-editorial.jpg", "alt": "杂志大片风秀场妆", "size": "square" },
-      { "image": "images/look-dewy.jpg", "alt": "水光裸感日常妆", "size": "tall" }
+      {
+        "image": "images/look-soft-glam.jpg",
+        "alt": "社群成员复刻的柔雾日常妆",
+        "size": "wide",
+        "caption": "柔和的由内而外光泽，我的日常首选。",
+        "source": "Instagram // 2026.11.20",
+        "productIds": [
+          "skin-tint",
+          "eyeshadow-palette",
+          "highlighter"
+        ],
+        "hotspots": [
+          {
+            "x": 48,
+            "y": 38,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 60,
+            "y": 52,
+            "product": "highlighter"
+          }
+        ]
+      },
+      {
+        "image": "images/look-sunset.jpg",
+        "alt": "社群分享的落日妆",
+        "size": "square",
+        "caption": "黄金时刻眼妆配玻璃唇，太爱了。",
+        "source": "Instagram // 2026.11.18",
+        "productIds": [
+          "eyeshadow-palette",
+          "blush",
+          "lip-gloss"
+        ],
+        "hotspots": [
+          {
+            "x": 50,
+            "y": 37,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 50,
+            "y": 63,
+            "product": "lip-gloss"
+          }
+        ]
+      },
+      {
+        "image": "images/look-red-lip.jpg",
+        "alt": "红毯妆的正红唇",
+        "size": "tall",
+        "caption": "红唇从不出错，大胆又经典。",
+        "source": "Instagram // 2026.11.15",
+        "productIds": [
+          "lip-liner",
+          "lip-gloss",
+          "mascara"
+        ],
+        "hotspots": [
+          {
+            "x": 50,
+            "y": 62,
+            "product": "lip-gloss"
+          },
+          {
+            "x": 48,
+            "y": 38,
+            "product": "mascara"
+          }
+        ]
+      },
+      {
+        "image": "images/look-smoky.jpg",
+        "alt": "暗夜烟熏眼妆",
+        "size": "square",
+        "caption": "夜晚外出的性感烟熏眼。",
+        "source": "Instagram // 2026.11.12",
+        "productIds": [
+          "eyeshadow-palette",
+          "mascara",
+          "lip-oil"
+        ],
+        "hotspots": [
+          {
+            "x": 48,
+            "y": 37,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 51,
+            "y": 63,
+            "product": "lip-oil"
+          }
+        ]
+      },
+      {
+        "image": "images/look-editorial.jpg",
+        "alt": "杂志大片风秀场妆",
+        "size": "square",
+        "caption": "秀场感线条，日常也能驾驭。",
+        "source": "Instagram // 2026.11.09",
+        "productIds": [
+          "highlighter",
+          "mascara",
+          "lip-liner"
+        ],
+        "hotspots": [
+          {
+            "x": 60,
+            "y": 50,
+            "product": "highlighter"
+          },
+          {
+            "x": 50,
+            "y": 62,
+            "product": "lip-liner"
+          }
+        ]
+      },
+      {
+        "image": "images/look-dewy.jpg",
+        "alt": "水光裸感日常妆",
+        "size": "tall",
+        "caption": "清透水光肌，苹果肌扫上腮红。",
+        "source": "Instagram // 2026.11.05",
+        "productIds": [
+          "skin-tint",
+          "blush",
+          "lip-oil"
+        ],
+        "hotspots": [
+          {
+            "x": 58,
+            "y": 52,
+            "product": "blush"
+          },
+          {
+            "x": 50,
+            "y": 63,
+            "product": "lip-oil"
+          }
+        ]
+      }
     ]
   },
   "fanFaves": {
@@ -33,12 +176,36 @@
     "description": "社群反复回看、反复上手的那些妆容。",
     "shopLabel": "入手本妆",
     "items": [
-      { "image": "images/look-soft-glam.jpg", "alt": "柔雾日常妆视频预览", "label": "柔雾日常" },
-      { "image": "images/look-sunset.jpg", "alt": "落日妆视频预览", "label": "落日妆" },
-      { "image": "images/look-red-lip.jpg", "alt": "红毯妆视频预览", "label": "红毯妆" },
-      { "image": "images/look-smoky.jpg", "alt": "暗夜烟熏妆视频预览", "label": "暗夜烟熏" },
-      { "image": "images/look-dewy.jpg", "alt": "水光裸感妆视频预览", "label": "水光裸感" },
-      { "image": "images/look-editorial.jpg", "alt": "杂志大片妆视频预览", "label": "杂志大片" }
+      {
+        "image": "images/look-soft-glam.jpg",
+        "alt": "柔雾日常妆视频预览",
+        "label": "柔雾日常"
+      },
+      {
+        "image": "images/look-sunset.jpg",
+        "alt": "落日妆视频预览",
+        "label": "落日妆"
+      },
+      {
+        "image": "images/look-red-lip.jpg",
+        "alt": "红毯妆视频预览",
+        "label": "红毯妆"
+      },
+      {
+        "image": "images/look-smoky.jpg",
+        "alt": "暗夜烟熏妆视频预览",
+        "label": "暗夜烟熏"
+      },
+      {
+        "image": "images/look-dewy.jpg",
+        "alt": "水光裸感妆视频预览",
+        "label": "水光裸感"
+      },
+      {
+        "image": "images/look-editorial.jpg",
+        "alt": "杂志大片妆视频预览",
+        "label": "杂志大片"
+      }
     ]
   },
   "newsletter": {
@@ -54,6 +221,10 @@
       "href": "collections"
     },
     {
+      "label": "商店",
+      "href": "shop"
+    },
+    {
       "label": "品牌故事",
       "href": "story"
     },
@@ -64,7 +235,10 @@
   ],
   "hero": {
     "eyebrow": "妆容手册",
-    "title": ["每一种妆容，", "都是一套仪式。"],
+    "title": [
+      "每一种妆容，",
+      "都是一套仪式。"
+    ],
     "description": "精选标志性妆容合集，每一个都搭配可完整复刻的对应产品。",
     "primary": "探索妆容",
     "image": "images/hero.jpg",
@@ -92,14 +266,23 @@
         "image": "images/look-soft-glam.jpg",
         "imageAlt": "模特呈现自然柔雾妆容与水光肌",
         "detail": "柔雾日常是品牌的日常标志：雾面贴肤的底妆、一抹暖调中性眼影，以及贴近肌肤的光泽。镜头前精致得体，日光下毫不费力。",
-        "highlights": ["贴肤雾面底妆", "暖调中性眼影", "由内而外的柔光"],
+        "highlights": [
+          "贴肤雾面底妆",
+          "暖调中性眼影",
+          "由内而外的柔光"
+        ],
         "steps": [
           "用轻薄肤色乳均匀全脸，向外晕染。",
           "将中性色眼影扫过眼窝并向眼褶晕开。",
           "在颧骨高点轻点高光。",
           "以裸色唇油收尾，滋润双唇。"
         ],
-        "productIds": ["skin-tint", "eyeshadow-palette", "highlighter", "lip-oil"],
+        "productIds": [
+          "skin-tint",
+          "eyeshadow-palette",
+          "highlighter",
+          "lip-oil"
+        ],
         "shopLabel": "入手本妆"
       },
       {
@@ -110,14 +293,23 @@
         "image": "images/look-sunset.jpg",
         "imageAlt": "模特呈现暖铜色眼影与光泽肌肤",
         "detail": "落日妆把黄昏的光留在脸上：铜金渐变眼影、暖调腮红与裸色亮泽唇妆，为夜晚的灯光与烛光而生。",
-        "highlights": ["铜金渐变眼影", "暖调红润腮红", "裸色亮泽唇妆"],
+        "highlights": [
+          "铜金渐变眼影",
+          "暖调红润腮红",
+          "裸色亮泽唇妆"
+        ],
         "steps": [
           "将铜色眼影按压上眼并向上晕染。",
           "在眼皮中央叠加金色细闪。",
           "用蜜桃色腮红扫出暖调气色。",
           "勾勒并填满唇形，再叠透明唇釉。"
         ],
-        "productIds": ["eyeshadow-palette", "blush", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "eyeshadow-palette",
+          "blush",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "入手本妆"
       },
       {
@@ -128,14 +320,23 @@
         "image": "images/look-red-lip.jpg",
         "imageAlt": "模特呈现经典正红唇与精致轮廓底妆",
         "detail": "永恒的红毯公式：无瑕雕塑底妆、克制的眼妆，以及作为唯一焦点的精准红唇。",
-        "highlights": ["无瑕雕塑底妆", "柔和的眼部轮廓", "高冲击力的精准红唇"],
+        "highlights": [
+          "无瑕雕塑底妆",
+          "柔和的眼部轮廓",
+          "高冲击力的精准红唇"
+        ],
         "steps": [
           "打造平滑均匀底妆并定妆 T 区。",
           "以浓密睫毛膏勾勒睫毛线。",
           "用唇线笔描出清晰唇形。",
           "填满正红并轻抿，持色更久。"
         ],
-        "productIds": ["skin-tint", "mascara", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "skin-tint",
+          "mascara",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "入手本妆"
       },
       {
@@ -146,14 +347,22 @@
         "image": "images/look-dewy.jpg",
         "imageAlt": "模特呈现水润伪素颜妆容与有色唇",
         "detail": "水光裸感是「伪素颜」妆：水润的肌肤、梳理的眉形、一抹红晕，以及看似本色却更明亮的有色唇。",
-        "highlights": ["水润玻璃肌", "自然毛流眉", "柔和有色唇"],
+        "highlights": [
+          "水润玻璃肌",
+          "自然毛流眉",
+          "柔和有色唇"
+        ],
         "steps": [
           "仅在需要的部位用轻薄肤色乳均匀。",
           "向上梳理眉形，呈现自然毛流。",
           "在颧骨高处点按膏状腮红。",
           "把唇釉点涂在唇中并向外晕开。"
         ],
-        "productIds": ["skin-tint", "blush", "lip-oil"],
+        "productIds": [
+          "skin-tint",
+          "blush",
+          "lip-oil"
+        ],
         "shopLabel": "入手本妆"
       },
       {
@@ -164,14 +373,22 @@
         "image": "images/look-smoky.jpg",
         "imageAlt": "模特呈现深邃炭黑白眼妆与裸色唇",
         "detail": "暗夜烟熏把戏剧感留给眼睛：晕染的炭黑渐变、贴根内眼线，以及安静的裸色唇，让眼神成为全部焦点。",
-        "highlights": ["晕染炭黑渐变", "贴根内眼线", "平衡的安静裸唇"],
+        "highlights": [
+          "晕染炭黑渐变",
+          "贴根内眼线",
+          "平衡的安静裸唇"
+        ],
         "steps": [
           "以哑光色铺满眼窝打底。",
           "将炭黑晕入眼褶与眼尾。",
           "贴近睫毛根部描线并刷睫毛膏。",
           "以滋润裸色唇油保持唇部柔和。"
         ],
-        "productIds": ["eyeshadow-palette", "mascara", "lip-oil"],
+        "productIds": [
+          "eyeshadow-palette",
+          "mascara",
+          "lip-oil"
+        ],
         "shopLabel": "入手本妆"
       },
       {
@@ -182,14 +399,23 @@
         "image": "images/look-editorial.jpg",
         "imageAlt": "模特呈现高对比度杂志感宣言妆容",
         "detail": "秀场宣言：利落的线条、雕塑般的光影与出人意料的妆效。杂志大片是品牌实验的所在，再把它凝练成你也能复刻的样子。",
-        "highlights": ["利落的雕塑线条", "高对比光影", "标志性的宣言妆效"],
+        "highlights": [
+          "利落的雕塑线条",
+          "高对比光影",
+          "标志性的宣言妆效"
+        ],
         "steps": [
           "以修容与高光雕塑面部轮廓。",
           "沿眼部画出利落的图形线条。",
           "叠加睫毛膏营造浓密与翘度。",
           "选定一个大胆焦点，其余保持精致。"
         ],
-        "productIds": ["highlighter", "mascara", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "highlighter",
+          "mascara",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "入手本妆"
       }
     ]
@@ -202,7 +428,19 @@
       "price": "¥180",
       "shade": "6 个色号",
       "image": "images/product-skin-tint.jpg",
-      "imageAlt": "中性背景上的轻透肤色乳瓶身"
+      "imageAlt": "中性背景上的轻透肤色乳瓶身",
+      "description": "轻薄可叠涂的润色粉底，柔焦瑕疵，打造第二层肌肤般光泽。",
+      "highlights": [
+        "轻薄可叠涂遮瑕",
+        "柔焦毛孔与细纹",
+        "水润持妆 24 小时"
+      ],
+      "sizes": [
+        "30 毫升",
+        "50 毫升"
+      ],
+      "howToUse": "用指腹温热后，由面部中央向外按压上妆。",
+      "ingredients": "水、环五聚二糖硅氧烷、甘油、烟酰胺、透明质酸钠。"
     },
     {
       "id": "eyeshadow-palette",
@@ -211,7 +449,19 @@
       "price": "¥300",
       "shade": "12 色",
       "image": "images/product-palette.jpg",
-      "imageAlt": "十二色暖调中性眼影盘"
+      "imageAlt": "十二色暖调中性眼影盘",
+      "description": "12 色暖调至中性，从哑光过渡到金属高光一应俱全。",
+      "highlights": [
+        "12 色可晕染暖调/中性色",
+        "哑光、缎光、金属质地混搭",
+        "附带化妆镜与双头刷"
+      ],
+      "sizes": [
+        "12 × 1.5 克",
+        "12 × 2 克"
+      ],
+      "howToUse": "先在眼窝晕染过渡色，再于眼皮铺深调、内眼角点亮。",
+      "ingredients": "滑石粉、云母、硬脂酸锌、聚二甲基硅氧烷、氧化铁。"
     },
     {
       "id": "highlighter",
@@ -220,7 +470,19 @@
       "price": "¥210",
       "shade": "香槟色",
       "image": "images/product-highlighter.jpg",
-      "imageAlt": "带滴管的液体高光，呈现光泽妆效"
+      "imageAlt": "带滴管的液体高光，呈现光泽妆效",
+      "description": "融入肌肤的液态高光，打造由内而外的光泽。",
+      "highlights": [
+        "水润无颗粒液态光泽",
+        "由浅到深可叠涂",
+        "粉底前后皆可无缝晕染"
+      ],
+      "sizes": [
+        "15 毫升",
+        "30 毫升"
+      ],
+      "howToUse": "点涂于颧骨，用指腹或海绵拍开，可单用或叠在粉底上。",
+      "ingredients": "水、异十二烷、甘油、云母、聚二甲基硅氧烷交联聚合物。"
     },
     {
       "id": "blush",
@@ -229,7 +491,19 @@
       "price": "¥190",
       "shade": "花瓣粉",
       "image": "images/product-blush.jpg",
-      "imageAlt": "柔和花瓣粉的膏状腮红"
+      "imageAlt": "柔和花瓣粉的膏状腮红",
+      "description": "云朵般柔焦腮红，一刷晕出自然好气色。",
+      "highlights": [
+        "轻透柔焦粉质",
+        "可叠涂自然血色感",
+        "柔焦妆效不结块"
+      ],
+      "sizes": [
+        "6 克",
+        "10 克"
+      ],
+      "howToUse": "扫于苹果肌并向太阳穴方向晕开。",
+      "ingredients": "滑石粉、云母、尼龙-12、硬脂酸锌、氧化铁。"
     },
     {
       "id": "lip-oil",
@@ -238,7 +512,19 @@
       "price": "¥170",
       "shade": "裸色 01",
       "image": "images/product-lip-oil.jpg",
-      "imageAlt": "磨砂管身的裸色滋润唇油"
+      "imageAlt": "磨砂管身的裸色滋润唇油",
+      "description": "丝绒唇釉般润唇，光泽显色又不黏腻。",
+      "highlights": [
+        "柔润光泽显色",
+        "滋养不黏腻配方",
+        "可单涂或叠在口红上"
+      ],
+      "sizes": [
+        "6 毫升",
+        "9 毫升"
+      ],
+      "howToUse": "用刷头顺唇形滑涂于素唇，或叠涂在口红色上。",
+      "ingredients": "聚丁烯、氢化聚异丁烯、角鲨烷、维生素 E、荷荷巴油。"
     },
     {
       "id": "lip-liner",
@@ -247,7 +533,19 @@
       "price": "¥140",
       "shade": "玫瑰木",
       "image": "images/product-liner.jpg",
-      "imageAlt": "中性台面上的玫瑰木色唇线笔"
+      "imageAlt": "中性台面上的玫瑰木色唇线笔",
+      "description": "精准唇线笔，勾勒饱满，持久显色。",
+      "highlights": [
+        "柔滑 1.2 mm 旋转笔头",
+        "勾勒唇形防晕染",
+        "12 支裸色到深色百搭色调"
+      ],
+      "sizes": [
+        "0.35 克",
+        "0.6 克"
+      ],
+      "howToUse": "先勾勒唇形，再向中央填色，妆效更持久。",
+      "ingredients": "氢化椰子油、小烛树蜡、肉豆蔻酸异丙酯、氧化铁、生育酚。"
     },
     {
       "id": "mascara",
@@ -256,7 +554,19 @@
       "price": "¥160",
       "shade": "黑色",
       "image": "images/product-mascara.jpg",
-      "imageAlt": "带弧形刷头的浓密睫毛膏"
+      "imageAlt": "带弧形刷头的浓密睫毛膏",
+      "description": "丰盈睫毛膏，根根分明卷翘，不结块。",
+      "highlights": [
+        "即刻浓密",
+        "卷翘分明不结块",
+        "防晕染易卸除"
+      ],
+      "sizes": [
+        "8 毫升",
+        "12 毫升"
+      ],
+      "howToUse": "刷头从根部向尖端小幅抖动，可叠加第二层更浓郁。",
+      "ingredients": "水、蜂蜡、巴西棕榈蜡、阿拉伯胶、氧化铁。"
     },
     {
       "id": "lip-gloss",
@@ -265,7 +575,19 @@
       "price": "¥150",
       "shade": "透明",
       "image": "images/product-gloss.jpg",
-      "imageAlt": "带绒毛刷头的高光泽透明唇釉"
+      "imageAlt": "带绒毛刷头的高光泽透明唇釉",
+      "description": "高光泽玻璃唇蜜，柔润不黏腻。",
+      "highlights": [
+        "镜面玻璃光泽",
+        "柔润不黏腻",
+        "全天舒适水润"
+      ],
+      "sizes": [
+        "5 毫升",
+        "8 毫升"
+      ],
+      "howToUse": "顺唇涂抹素唇，或叠在唇中央打造丰盈玻璃感。",
+      "ingredients": "聚异丁烯、角鲨烷、氢化聚异丁烯、维生素 E、云母。"
     }
   ],
   "story": {
@@ -338,7 +660,25 @@
     "steps": "如何复刻",
     "relatedProducts": "入手同款",
     "shopNow": "立即购买",
-    "emailLabel": "邮箱地址"
+    "emailLabel": "邮箱地址",
+    "shop": "商店",
+    "shopTitle": "选购同款",
+    "shopIntro": "标志妆容背后的每一件单品，随心组合属于你的妆容。",
+    "allCategories": "全部",
+    "filtersLabel": "按分类筛选",
+    "productCount": "件商品",
+    "viewProduct": "查看商品",
+    "addToBag": "加入购物袋",
+    "bagAdded": "已加入演示购物袋",
+    "sizeLabel": "规格",
+    "categoryLabel": "分类",
+    "descriptionLabel": "关于这件单品",
+    "howToUseLabel": "使用方法",
+    "ingredientsLabel": "成分",
+    "usedInLooks": "在以下妆容中查看",
+    "backToShop": "返回商店",
+    "prototypeNote": "这是设计模板：购物袋仅为不可用原型，不会下单或发送。",
+    "selectSize": "选择规格"
   },
   "meta": {
     "title": "LUMIÈRE — 流动之美",

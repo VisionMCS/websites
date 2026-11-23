@@ -18,13 +18,156 @@
     "eyebrow": "룩북으로 쇼핑",
     "title": "커뮤니티가 함께한 룩.",
     "handle": "@lumiere.beauty",
+    "shopLabel": "장바구니 담기",
+    "closeLabel": "닫기",
+    "prevLabel": "이전",
+    "nextLabel": "다음",
+    "sourceLabel": "출처",
     "items": [
-      { "image": "images/look-soft-glam.jpg", "alt": "커뮤니티가 재현한 소프트 글램 룩", "size": "wide" },
-      { "image": "images/look-sunset.jpg", "alt": "소셜에 공유된 선셋 글램 룩", "size": "square" },
-      { "image": "images/look-red-lip.jpg", "alt": "볼드한 레드 립의 레드 카펫 룩", "size": "tall" },
-      { "image": "images/look-smoky.jpg", "alt": "스모키 나이트 아이 룩", "size": "square" },
-      { "image": "images/look-editorial.jpg", "alt": "에디토리얼 런웨이 룩", "size": "square" },
-      { "image": "images/look-dewy.jpg", "alt": "듀이 프레시 데일리 룩", "size": "tall" }
+      {
+        "image": "images/look-soft-glam.jpg",
+        "alt": "커뮤니티가 재현한 소프트 글램 룩",
+        "size": "wide",
+        "caption": "부드러운 안쪽부터 빛나는 광택, 데일리 최애.",
+        "source": "instagram // 2026.11.20",
+        "productIds": [
+          "skin-tint",
+          "eyeshadow-palette",
+          "highlighter"
+        ],
+        "hotspots": [
+          {
+            "x": 48,
+            "y": 38,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 60,
+            "y": 52,
+            "product": "highlighter"
+          }
+        ]
+      },
+      {
+        "image": "images/look-sunset.jpg",
+        "alt": "소셜에 공유된 선셋 글램 룩",
+        "size": "square",
+        "caption": "골든아워 아이와 글로시 립. 완전 반했어요.",
+        "source": "instagram // 2026.11.18",
+        "productIds": [
+          "eyeshadow-palette",
+          "blush",
+          "lip-gloss"
+        ],
+        "hotspots": [
+          {
+            "x": 50,
+            "y": 37,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 50,
+            "y": 63,
+            "product": "lip-gloss"
+          }
+        ]
+      },
+      {
+        "image": "images/look-red-lip.jpg",
+        "alt": "볼드한 레드 립의 레드 카펫 룩",
+        "size": "tall",
+        "caption": "레드 립은 언제나 실패 없죠. 대담하고 클래식.",
+        "source": "instagram // 2026.11.15",
+        "productIds": [
+          "lip-liner",
+          "lip-gloss",
+          "mascara"
+        ],
+        "hotspots": [
+          {
+            "x": 50,
+            "y": 62,
+            "product": "lip-gloss"
+          },
+          {
+            "x": 48,
+            "y": 38,
+            "product": "mascara"
+          }
+        ]
+      },
+      {
+        "image": "images/look-smoky.jpg",
+        "alt": "스모키 나이트 아이 룩",
+        "size": "square",
+        "caption": "나이트 아웃을 위한 스모키 아이.",
+        "source": "instagram // 2026.11.12",
+        "productIds": [
+          "eyeshadow-palette",
+          "mascara",
+          "lip-oil"
+        ],
+        "hotspots": [
+          {
+            "x": 48,
+            "y": 37,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 51,
+            "y": 63,
+            "product": "lip-oil"
+          }
+        ]
+      },
+      {
+        "image": "images/look-editorial.jpg",
+        "alt": "에디토리얼 런웨이 룩",
+        "size": "square",
+        "caption": "런웨이 무드, 데일리 피니시.",
+        "source": "instagram // 2026.11.09",
+        "productIds": [
+          "highlighter",
+          "mascara",
+          "lip-liner"
+        ],
+        "hotspots": [
+          {
+            "x": 60,
+            "y": 50,
+            "product": "highlighter"
+          },
+          {
+            "x": 50,
+            "y": 62,
+            "product": "lip-liner"
+          }
+        ]
+      },
+      {
+        "image": "images/look-dewy.jpg",
+        "alt": "듀이 프레시 데일리 룩",
+        "size": "tall",
+        "caption": "상쾌한 물광 피부, 사과 광대에 블러.",
+        "source": "instagram // 2026.11.05",
+        "productIds": [
+          "skin-tint",
+          "blush",
+          "lip-oil"
+        ],
+        "hotspots": [
+          {
+            "x": 58,
+            "y": 52,
+            "product": "blush"
+          },
+          {
+            "x": 50,
+            "y": 63,
+            "product": "lip-oil"
+          }
+        ]
+      }
     ]
   },
   "fanFaves": {
@@ -33,12 +176,36 @@
     "description": "커뮤니티가 계속 선택하는 시그니처 룩.",
     "shopLabel": "이 룩 담기",
     "items": [
-      { "image": "images/look-soft-glam.jpg", "alt": "소프트 글램 룩 영상 미리보기", "label": "소프트 글램" },
-      { "image": "images/look-sunset.jpg", "alt": "선셋 글램 룩 영상 미리보기", "label": "선셋 글램" },
-      { "image": "images/look-red-lip.jpg", "alt": "레드 카펫 룩 영상 미리보기", "label": "레드 카펫" },
-      { "image": "images/look-smoky.jpg", "alt": "스모키 나이트 룩 영상 미리보기", "label": "스모키 나이트" },
-      { "image": "images/look-dewy.jpg", "alt": "듀이 프레시 룩 영상 미리보기", "label": "듀이 프레시" },
-      { "image": "images/look-editorial.jpg", "alt": "에디토리얼 룩 영상 미리보기", "label": "에디토리얼" }
+      {
+        "image": "images/look-soft-glam.jpg",
+        "alt": "소프트 글램 룩 영상 미리보기",
+        "label": "소프트 글램"
+      },
+      {
+        "image": "images/look-sunset.jpg",
+        "alt": "선셋 글램 룩 영상 미리보기",
+        "label": "선셋 글램"
+      },
+      {
+        "image": "images/look-red-lip.jpg",
+        "alt": "레드 카펫 룩 영상 미리보기",
+        "label": "레드 카펫"
+      },
+      {
+        "image": "images/look-smoky.jpg",
+        "alt": "스모키 나이트 룩 영상 미리보기",
+        "label": "스모키 나이트"
+      },
+      {
+        "image": "images/look-dewy.jpg",
+        "alt": "듀이 프레시 룩 영상 미리보기",
+        "label": "듀이 프레시"
+      },
+      {
+        "image": "images/look-editorial.jpg",
+        "alt": "에디토리얼 룩 영상 미리보기",
+        "label": "에디토리얼"
+      }
     ]
   },
   "newsletter": {
@@ -54,6 +221,10 @@
       "href": "collections"
     },
     {
+      "label": "숍",
+      "href": "shop"
+    },
+    {
       "label": "브랜드 이야기",
       "href": "story"
     },
@@ -64,7 +235,10 @@
   ],
   "hero": {
     "eyebrow": "룩북",
-    "title": ["모든 룩,", "하나의 의식."],
+    "title": [
+      "모든 룩,",
+      "하나의 의식."
+    ],
     "description": "시그니처 메이크업 룩 큐레이션. 각 룩을 그대로 재현하는 데 필요한 제품까지 함께 제안합니다.",
     "primary": "룩 둘러보기",
     "image": "images/hero.jpg",
@@ -92,14 +266,23 @@
         "image": "images/look-soft-glam.jpg",
         "imageAlt": "자연스러운 소프트 글램 룩과 물광 피부의 모델",
         "detail": "소프트 글램은 브랜드의 데일리 시그니처입니다. 블러드된 베이스, 따뜻한 뉴트럴 섀도, 피부 같은 광택. 카메라 앞에서는 정돈되고 낮에는 편안해 보입니다.",
-        "highlights": ["피부 같은 밀착 베이스", "따뜻한 뉴트럴 섀도", "안에서부터 번지는 은은한 광택"],
+        "highlights": [
+          "피부 같은 밀착 베이스",
+          "따뜻한 뉴트럴 섀도",
+          "안에서부터 번지는 은은한 광택"
+        ],
         "steps": [
           "가벼운 스킨 틴트로 얼굴을 고르게 바깥쪽으로 블렌딩합니다.",
           "뉴트럴 섀도를 눈두덩과 아이홀에 부드럽게 얹습니다.",
           "광대 높은 곳에 하이라이터를 살짝 더합니다.",
           "누드 톤의 립 오일로 입술을 마무리합니다."
         ],
-        "productIds": ["skin-tint", "eyeshadow-palette", "highlighter", "lip-oil"],
+        "productIds": [
+          "skin-tint",
+          "eyeshadow-palette",
+          "highlighter",
+          "lip-oil"
+        ],
         "shopLabel": "이 룩 담기"
       },
       {
@@ -110,14 +293,23 @@
         "image": "images/look-sunset.jpg",
         "imageAlt": "따뜻한 코퍼 섀도와 윤기 있는 피부의 모델",
         "detail": "선셋 글램은 황혼의 빛을 얼굴에 옮깁니다. 코퍼에서 골드 그라데이션, 따뜻한 블러시, 글로시한 누드 립. 저녁 빛과 촛불을 위한 룩입니다.",
-        "highlights": ["코퍼에서 골드 그라데이션", "따뜻하게 물든 볼", "글로시한 누드 립"],
+        "highlights": [
+          "코퍼에서 골드 그라데이션",
+          "따뜻하게 물든 볼",
+          "글로시한 누드 립"
+        ],
         "steps": [
           "코퍼 섀도를 눈두덩에 눌러 위쪽으로 블렌딩합니다.",
           "눈두덩 중앙에 골드 쉬머를 겹쳐 얹습니다.",
           "피치 블러시로 볼을 따뜻하게 물들입니다.",
           "립을 그리워 채운 뒤 클리어 글로스를 얹습니다."
         ],
-        "productIds": ["eyeshadow-palette", "blush", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "eyeshadow-palette",
+          "blush",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "이 룩 담기"
       },
       {
@@ -128,14 +320,23 @@
         "image": "images/look-red-lip.jpg",
         "imageAlt": "클래식한 레드 립과 조각된 베이스의 모델",
         "detail": "변하지 않는 레드 카펫 공식. 결점 없이 조각한 베이스, 차분하게 정리한 눈매, 그리고 유일한 초점이 되는 정밀한 레드 립.",
-        "highlights": ["결점 없는 조각된 베이스", "부드럽게 정리한 눈매", "정밀한 임팩트의 레드 립"],
+        "highlights": [
+          "결점 없는 조각된 베이스",
+          "부드럽게 정리한 눈매",
+          "정밀한 임팩트의 레드 립"
+        ],
         "steps": [
           "매끄럽고 고른 베이스를 만들고 T존을 세팅합니다.",
           "볼류마라이저 마스카라로 속눈썹 라인을 정의합니다.",
           "립 라이너로 또렷한 입술 라인을 잡습니다.",
           "볼드한 레드로 채운 뒤 틴트로 지속력을 높입니다."
         ],
-        "productIds": ["skin-tint", "mascara", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "skin-tint",
+          "mascara",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "이 룩 담기"
       },
       {
@@ -146,14 +347,22 @@
         "image": "images/look-dewy.jpg",
         "imageAlt": "상큼한 물광 노메이크업 룩과 틴티드 립의 모델",
         "detail": "듀이 프레시는 노메이크업 메이크업 룩입니다. 촉촉한 피부, 정돈된 눈썹, 은은한 혈색, 그리고 내 입술보다 한층 밝아 보이는 틴티드 립.",
-        "highlights": ["촉촉한 유리알 피부", "정돈된 눈썹", "부드러운 틴티드 립"],
+        "highlights": [
+          "촉촉한 유리알 피부",
+          "정돈된 눈썹",
+          "부드러운 틴티드 립"
+        ],
         "steps": [
           "필요한 부에만 시어 스킨 틴트로 균일하게 정리합니다.",
           "눈썹을 위로 빗어 정돈된 결을 만듭니다.",
           "광대 위에 크림 블러시를 톡톡 얹습니다.",
           "립 틴트를 입술 중앙에 눌러 바깥으로 블렌딩합니다."
         ],
-        "productIds": ["skin-tint", "blush", "lip-oil"],
+        "productIds": [
+          "skin-tint",
+          "blush",
+          "lip-oil"
+        ],
         "shopLabel": "이 룩 담기"
       },
       {
@@ -164,14 +373,22 @@
         "image": "images/look-smoky.jpg",
         "imageAlt": "깊은 차콜 스모키 아이와 뉴트럴 립의 모델",
         "detail": "스모키 나이트는 드라마를 눈에 남깁니다. 번제한 차콜 그라데이션, 타이트라인, 그리고 조용한 누드 립으로 시선만이 역할을 하게 합니다.",
-        "highlights": ["번제한 차콜 그라데이션", "타이트라인", "조용하고 균형 잡힌 누드 립"],
+        "highlights": [
+          "번제한 차콜 그라데이션",
+          "타이트라인",
+          "조용하고 균형 잡힌 누드 립"
+        ],
         "steps": [
           "매트 섀도로 눈두덩을 베이스처럼 덮습니다.",
           "차콜을 아이홀과 바깥 꼬리에 스머지합니다.",
           "속눈썹 라인을 타이트라인하고 마스카라를 얹습니다.",
           "립은 누드 오일로 부드럽게 유지합니다."
         ],
-        "productIds": ["eyeshadow-palette", "mascara", "lip-oil"],
+        "productIds": [
+          "eyeshadow-palette",
+          "mascara",
+          "lip-oil"
+        ],
         "shopLabel": "이 룩 담기"
       },
       {
@@ -182,14 +399,23 @@
         "image": "images/look-editorial.jpg",
         "imageAlt": "대비 강한 에디토리얼 스테이트먼트 메이크업의 모델",
         "detail": "런웨이 스테이트먼트. 그래픽한 라인, 조각된 빛, 예상치 못한 마감. 에디토리얼은 브랜드가 실험하는 지점이며, 그것을 당신이 입을 수 있게 정제합니다.",
-        "highlights": ["그래픽하고 조각된 라인", "대비 강한 명암", "시그니처 스테이트먼트 마감"],
+        "highlights": [
+          "그래픽하고 조각된 라인",
+          "대비 강한 명암",
+          "시그니처 스테이트먼트 마감"
+        ],
         "steps": [
           "컨투어와 하이라이터로 얼굴을 조각하듯 정리합니다.",
           "눈 주위에 또렷한 그래픽 라인을 긋습니다.",
           "마스카라로 볼륨과 컬을 쌓습니다.",
           "하나의 볼드한 초점을 고르고 나머지는 단정하게 남깁니다."
         ],
-        "productIds": ["highlighter", "mascara", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "highlighter",
+          "mascara",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "이 룩 담기"
       }
     ]
@@ -202,7 +428,19 @@
       "price": "₩36,000",
       "shade": "6 쉐이드",
       "image": "images/product-skin-tint.jpg",
-      "imageAlt": "중성 배경의 웨이트리스 스킨 틴트 병"
+      "imageAlt": "중성 배경의 웨이트리스 스킨 틴트 병",
+      "description": "얇게 겹쳐 바르는 틴트가 결점을 보정해 두 번째 피부처럼 빛나게 합니다.",
+      "highlights": [
+        "가볍고 겹쳐 바르는 커버력",
+        "모공과 잔주름 보정",
+        "24시간 촉촉한 지속"
+      ],
+      "sizes": [
+        "30 ml",
+        "50 ml"
+      ],
+      "howToUse": "손끝으로 데워 얼굴 중앙에서 바깥으로 눌러 펴 바르세요.",
+      "ingredients": "정제수, 사이클로펜타실록산, 글리세린, 나이아신아마이드, 소듐하이알루로네이트."
     },
     {
       "id": "eyeshadow-palette",
@@ -211,7 +449,19 @@
       "price": "₩60,000",
       "shade": "12 컬러",
       "image": "images/product-palette.jpg",
-      "imageAlt": "따뜻한 뉴트럴 12구 아이섀도 팔레트"
+      "imageAlt": "따뜻한 뉴트럴 12구 아이섀도 팔레트",
+      "description": " 매트 트랜지션부터 포일 토퍼까지 12가지 웜·뉴트럴 섀이드.",
+      "highlights": [
+        "12가지 블렌딩 가능한 웜·뉴트럴",
+        "매트·새틴·메탈릭 조합",
+        "여행용 거울과 양면 브러시"
+      ],
+      "sizes": [
+        "12 × 1.5 g",
+        "12 × 2 g"
+      ],
+      "howToUse": "트랜지션 섀이드를 언더라인에 블렌딩하고,lid에 딥 톤을, 안쪽 눈썹에 글로를 얹으세요.",
+      "ingredients": "탈크, 마이카, 징크스테아레이트, 디메치콘, 산화철."
     },
     {
       "id": "highlighter",
@@ -220,7 +470,19 @@
       "price": "₩42,000",
       "shade": "샴페인",
       "image": "images/product-highlighter.jpg",
-      "imageAlt": "빛나는 마감의 드롭형 리퀴드 하이라이터"
+      "imageAlt": "빛나는 마감의 드롭형 리퀴드 하이라이터",
+      "description": "피부에 녹아들어 안에서부터 빛나는 리퀴드 글로우.",
+      "highlights": [
+        "물광·입자 없는 리퀴드 글로우",
+        "자연스럽게 층층이 표현",
+        "파운데이션 전후 모두 블렌딩"
+      ],
+      "sizes": [
+        "15 ml",
+        "30 ml"
+      ],
+      "howToUse": "광대에 점 찍어 손끝이나 스펀지로 두드려 펴 바르세요.",
+      "ingredients": "정제수, 이소도데칸, 글리세린, 마이카, 디메치콘크로스폴리머."
     },
     {
       "id": "blush",
@@ -229,7 +491,19 @@
       "price": "₩38,000",
       "shade": "페탈",
       "image": "images/product-blush.jpg",
-      "imageAlt": "부드러운 페탈 핑크의 크림 블러시"
+      "imageAlt": "부드러운 페탈 핑크의 크림 블러시",
+      "description": "구름처럼 부드러운 블러드 블러시로 자연스러운 혈색을 연출.",
+      "highlights": [
+        "가볍고 부드러운 블러 파우더",
+        "겹쳐 바르는 자연 혈색",
+        "들뜸 없는 블러링 마감"
+      ],
+      "sizes": [
+        "6 g",
+        "10 g"
+      ],
+      "howToUse": "광대의 사과 부분에 발라 관자놀이 쪽으로 블렌딩하세요.",
+      "ingredients": "탈크, 마이카, 나일론-12, 징크스테아레이트, 산화철."
     },
     {
       "id": "lip-oil",
@@ -238,7 +512,19 @@
       "price": "₩34,000",
       "shade": "누드 01",
       "image": "images/product-lip-oil.jpg",
-      "imageAlt": "플로스트 튜브의 누드 컨디셔닝 립 오일"
+      "imageAlt": "플로스트 튜브의 누드 컨디셔닝 립 오일",
+      "description": "글로시한 틴트와 함께 매끄럽게 윤기 주는 벨벳 립 오일.",
+      "highlights": [
+        "도톰한 글로시 틴트",
+        "영양감 있고 끈적이지 않는 포뮬러",
+        "단독 또는 립스틱 위에"
+      ],
+      "sizes": [
+        "6 ml",
+        "9 ml"
+      ],
+      "howToUse": "두루마리 앱리케이터로 맨 입술 위에, 또는 립 컬러 위에 겹쳐 바르세요.",
+      "ingredients": "폴리부텐, 수소화폴리이소부텐, 스쿠알란, 비타민E, 호호바오일."
     },
     {
       "id": "lip-liner",
@@ -247,7 +533,19 @@
       "price": "₩28,000",
       "shade": "로즈우드",
       "image": "images/product-liner.jpg",
-      "imageAlt": "중성 표면 위의 로즈우드 립 라이너"
+      "imageAlt": "중성 표면 위의 로즈우드 립 라이너",
+      "description": "입술을 또렷하게 채워 오래가는 정밀 립 라이너.",
+      "highlights": [
+        "부드러운 1.2mm 트위스트 팁",
+        "윤곽 정리와 번짐 방지",
+        "누드부터 딥까지 12가지"
+      ],
+      "sizes": [
+        "0.35 g",
+        "0.6 g"
+      ],
+      "howToUse": "입술 윤곽을 그리고 중앙으로 채워 또렷한 라인을 완성하세요.",
+      "ingredients": "수소화코코넛오일, 칸데릴라왁스, 아이소프로필미리스테이트, 산화철, 토코페롤."
     },
     {
       "id": "mascara",
@@ -256,7 +554,19 @@
       "price": "₩32,000",
       "shade": "블랙",
       "image": "images/product-mascara.jpg",
-      "imageAlt": "커브드 워드가 있는 볼륨 마스카라"
+      "imageAlt": "커브드 워드가 있는 볼륨 마스카라",
+      "description": "뭉침 없이 볼륨과 컬을 살려주는 마스카라.",
+      "highlights": [
+        "즉각적인 볼륨",
+        "컬과 분리, 뭉침 없음",
+        "번짐 방지, 쉬운 클렌징"
+      ],
+      "sizes": [
+        "8 ml",
+        "12 ml"
+      ],
+      "howToUse": "브러시를 뿌리부터 끝까지 흔들어 바르고, 2차로 볼륨을 더하세요.",
+      "ingredients": "정제수, 비즈왁스, 카나우바왁스, 아카시아감나무검, 산화철."
     },
     {
       "id": "lip-gloss",
@@ -265,7 +575,19 @@
       "price": "₩30,000",
       "shade": "클리어",
       "image": "images/product-gloss.jpg",
-      "imageAlt": "플록 애플리케이터의 하이샤인 클리어 립 글로스"
+      "imageAlt": "플록 애플리케이터의 하이샤인 클리어 립 글로스",
+      "description": "쿠션감 있고 끈적이지 않는 하이샤인 글라스 글로스.",
+      "highlights": [
+        "거울 같은 글로스 광택",
+        "도톰하고 끈적임 없는 사용감",
+        "종일 편안한 수분감"
+      ],
+      "sizes": [
+        "5 ml",
+        "8 ml"
+      ],
+      "howToUse": "맨 입술 위에, 또는 중앙에 겹쳐 글라스 광택을 완성하세요.",
+      "ingredients": "폴리이소부텐, 스쿠알란, 수소화폴리이소부텐, 비타민E, 마이카."
     }
   ],
   "story": {
@@ -338,7 +660,25 @@
     "steps": "재현하는 방법",
     "relatedProducts": "이 룩의 제품",
     "shopNow": "담기",
-    "emailLabel": "이메일 주소"
+    "emailLabel": "이메일 주소",
+    "shop": "숍",
+    "shopTitle": "룩 상품 쇼핑",
+    "shopIntro": "시그니처 룩에 쓰인 모든 제품을 직접 조합해 보세요.",
+    "allCategories": "전체",
+    "filtersLabel": "카테고리",
+    "productCount": "개 제품",
+    "viewProduct": "제품 보기",
+    "addToBag": "장바구니 담기",
+    "bagAdded": "데모 장바구니에 담김",
+    "sizeLabel": "용량",
+    "categoryLabel": "카테고리",
+    "descriptionLabel": "제품 소개",
+    "howToUseLabel": "사용법",
+    "ingredientsLabel": "성분",
+    "usedInLooks": "이 제품이 포함된 룩",
+    "backToShop": "숍으로 돌아가기",
+    "prototypeNote": "디자인 템플릿입니다: 장바구니는 동작하지 않는 목업이며 주문은 전송되지 않습니다.",
+    "selectSize": "용량 선택"
   },
   "meta": {
     "title": "LUMIÈRE — 움직이는 아름다움",

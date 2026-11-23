@@ -18,13 +18,156 @@
     "eyebrow": "SHOP THE LOOKBOOK",
     "title": "As worn by our community.",
     "handle": "@lumiere.beauty",
+    "shopLabel": "Add to bag",
+    "closeLabel": "Close",
+    "prevLabel": "Previous",
+    "nextLabel": "Next",
+    "sourceLabel": "Source",
     "items": [
-      { "image": "images/look-soft-glam.jpg", "alt": "Soft glam look recreated by a community member", "size": "wide" },
-      { "image": "images/look-sunset.jpg", "alt": "Sunset glam look shared on social", "size": "square" },
-      { "image": "images/look-red-lip.jpg", "alt": "Red carpet look with a bold red lip", "size": "tall" },
-      { "image": "images/look-smoky.jpg", "alt": "Smoky night eye look", "size": "square" },
-      { "image": "images/look-editorial.jpg", "alt": "Editorial runway-inspired look", "size": "square" },
-      { "image": "images/look-dewy.jpg", "alt": "Dewy fresh everyday look", "size": "tall" }
+      {
+        "image": "images/look-soft-glam.jpg",
+        "alt": "Soft glam look recreated by a community member",
+        "size": "wide",
+        "caption": "Soft, lit-from-within glow — my everyday go-to.",
+        "source": "instagram // 20 november 2026",
+        "productIds": [
+          "skin-tint",
+          "eyeshadow-palette",
+          "highlighter"
+        ],
+        "hotspots": [
+          {
+            "x": 48,
+            "y": 38,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 60,
+            "y": 52,
+            "product": "highlighter"
+          }
+        ]
+      },
+      {
+        "image": "images/look-sunset.jpg",
+        "alt": "Sunset glam look shared on social",
+        "size": "square",
+        "caption": "Golden-hour eyes and a glassy lip. Obsessed.",
+        "source": "instagram // 18 november 2026",
+        "productIds": [
+          "eyeshadow-palette",
+          "blush",
+          "lip-gloss"
+        ],
+        "hotspots": [
+          {
+            "x": 50,
+            "y": 37,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 50,
+            "y": 63,
+            "product": "lip-gloss"
+          }
+        ]
+      },
+      {
+        "image": "images/look-red-lip.jpg",
+        "alt": "Red carpet look with a bold red lip",
+        "size": "tall",
+        "caption": "That red lip never misses. Bold and timeless.",
+        "source": "instagram // 15 november 2026",
+        "productIds": [
+          "lip-liner",
+          "lip-gloss",
+          "mascara"
+        ],
+        "hotspots": [
+          {
+            "x": 50,
+            "y": 62,
+            "product": "lip-gloss"
+          },
+          {
+            "x": 48,
+            "y": 38,
+            "product": "mascara"
+          }
+        ]
+      },
+      {
+        "image": "images/look-smoky.jpg",
+        "alt": "Smoky night eye look",
+        "size": "square",
+        "caption": "Sultry smoky eye for the night out.",
+        "source": "instagram // 12 november 2026",
+        "productIds": [
+          "eyeshadow-palette",
+          "mascara",
+          "lip-oil"
+        ],
+        "hotspots": [
+          {
+            "x": 48,
+            "y": 37,
+            "product": "eyeshadow-palette"
+          },
+          {
+            "x": 51,
+            "y": 63,
+            "product": "lip-oil"
+          }
+        ]
+      },
+      {
+        "image": "images/look-editorial.jpg",
+        "alt": "Editorial runway-inspired look",
+        "size": "square",
+        "caption": "Runway edge, wearable finish.",
+        "source": "instagram // 09 november 2026",
+        "productIds": [
+          "highlighter",
+          "mascara",
+          "lip-liner"
+        ],
+        "hotspots": [
+          {
+            "x": 60,
+            "y": 50,
+            "product": "highlighter"
+          },
+          {
+            "x": 50,
+            "y": 62,
+            "product": "lip-liner"
+          }
+        ]
+      },
+      {
+        "image": "images/look-dewy.jpg",
+        "alt": "Dewy fresh everyday look",
+        "size": "tall",
+        "caption": "Fresh dewy skin, blush on the apples.",
+        "source": "instagram // 05 november 2026",
+        "productIds": [
+          "skin-tint",
+          "blush",
+          "lip-oil"
+        ],
+        "hotspots": [
+          {
+            "x": 58,
+            "y": 52,
+            "product": "blush"
+          },
+          {
+            "x": 50,
+            "y": 63,
+            "product": "lip-oil"
+          }
+        ]
+      }
     ]
   },
   "fanFaves": {
@@ -33,12 +176,36 @@
     "description": "The looks our community reaches for again and again.",
     "shopLabel": "Shop the look",
     "items": [
-      { "image": "images/look-soft-glam.jpg", "alt": "Soft glam look video preview", "label": "Soft Glam" },
-      { "image": "images/look-sunset.jpg", "alt": "Sunset glam look video preview", "label": "Sunset Glam" },
-      { "image": "images/look-red-lip.jpg", "alt": "Red carpet look video preview", "label": "Red Carpet" },
-      { "image": "images/look-smoky.jpg", "alt": "Smoky night look video preview", "label": "Smoky Night" },
-      { "image": "images/look-dewy.jpg", "alt": "Dewy fresh look video preview", "label": "Dewy Fresh" },
-      { "image": "images/look-editorial.jpg", "alt": "Editorial look video preview", "label": "Editorial" }
+      {
+        "image": "images/look-soft-glam.jpg",
+        "alt": "Soft glam look video preview",
+        "label": "Soft Glam"
+      },
+      {
+        "image": "images/look-sunset.jpg",
+        "alt": "Sunset glam look video preview",
+        "label": "Sunset Glam"
+      },
+      {
+        "image": "images/look-red-lip.jpg",
+        "alt": "Red carpet look video preview",
+        "label": "Red Carpet"
+      },
+      {
+        "image": "images/look-smoky.jpg",
+        "alt": "Smoky night look video preview",
+        "label": "Smoky Night"
+      },
+      {
+        "image": "images/look-dewy.jpg",
+        "alt": "Dewy fresh look video preview",
+        "label": "Dewy Fresh"
+      },
+      {
+        "image": "images/look-editorial.jpg",
+        "alt": "Editorial look video preview",
+        "label": "Editorial"
+      }
     ]
   },
   "newsletter": {
@@ -54,6 +221,10 @@
       "href": "collections"
     },
     {
+      "label": "Shop",
+      "href": "shop"
+    },
+    {
       "label": "Our story",
       "href": "story"
     },
@@ -64,7 +235,10 @@
   ],
   "hero": {
     "eyebrow": "THE LOOKBOOK",
-    "title": ["Every look,", "one ritual."],
+    "title": [
+      "Every look,",
+      "one ritual."
+    ],
     "description": "A curated collection of signature makeup looks, each paired with the exact products to recreate it.",
     "primary": "Explore the looks",
     "image": "images/hero.jpg",
@@ -103,7 +277,12 @@
           "Add a touch of highlighter to the high points of the cheekbone.",
           "Finish the lip with a conditioning lip oil in a nude tone."
         ],
-        "productIds": ["skin-tint", "eyeshadow-palette", "highlighter", "lip-oil"],
+        "productIds": [
+          "skin-tint",
+          "eyeshadow-palette",
+          "highlighter",
+          "lip-oil"
+        ],
         "shopLabel": "Shop this look"
       },
       {
@@ -125,7 +304,12 @@
           "Warm the cheeks with a peach blush.",
           "Line and fill the lips, then add a clear gloss."
         ],
-        "productIds": ["eyeshadow-palette", "blush", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "eyeshadow-palette",
+          "blush",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "Shop this look"
       },
       {
@@ -147,7 +331,12 @@
           "Trace the lip with a liner for crisp edges.",
           "Fill with a bold red and blot for a lasting finish."
         ],
-        "productIds": ["skin-tint", "mascara", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "skin-tint",
+          "mascara",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "Shop this look"
       },
       {
@@ -169,7 +358,11 @@
           "Dab a cream blush high on the cheek.",
           "Press a lip tint onto the centre of the lips and blend."
         ],
-        "productIds": ["skin-tint", "blush", "lip-oil"],
+        "productIds": [
+          "skin-tint",
+          "blush",
+          "lip-oil"
+        ],
         "shopLabel": "Shop this look"
       },
       {
@@ -191,7 +384,11 @@
           "Tight-line the upper lash line and add mascara.",
           "Keep the lip soft with a conditioning nude oil."
         ],
-        "productIds": ["eyeshadow-palette", "mascara", "lip-oil"],
+        "productIds": [
+          "eyeshadow-palette",
+          "mascara",
+          "lip-oil"
+        ],
         "shopLabel": "Shop this look"
       },
       {
@@ -213,7 +410,12 @@
           "Load the lashes for volume and lift.",
           "Choose one bold focal point and keep the rest refined."
         ],
-        "productIds": ["highlighter", "mascara", "lip-liner", "lip-gloss"],
+        "productIds": [
+          "highlighter",
+          "mascara",
+          "lip-liner",
+          "lip-gloss"
+        ],
         "shopLabel": "Shop this look"
       }
     ]
@@ -226,7 +428,19 @@
       "price": "¥180",
       "shade": "6 shades",
       "image": "images/product-skin-tint.jpg",
-      "imageAlt": "Weightless skin tint bottle on a neutral background"
+      "imageAlt": "Weightless skin tint bottle on a neutral background",
+      "description": "A sheer, buildable tint that blurs imperfections for a second-skin glow.",
+      "highlights": [
+        "Weightless, buildable coverage",
+        "Blurs pores and fine lines",
+        "Hydrating 24-hour wear"
+      ],
+      "sizes": [
+        "30 ml",
+        "50 ml"
+      ],
+      "howToUse": "Warm between the fingertips and press from the centre of the face outwards.",
+      "ingredients": "Water, cyclopentasiloxane, glycerin, niacinamide, sodium hyaluronate."
     },
     {
       "id": "eyeshadow-palette",
@@ -235,7 +449,19 @@
       "price": "¥300",
       "shade": "12 tones",
       "image": "images/product-palette.jpg",
-      "imageAlt": "Twelve-pan warm neutral eyeshadow palette"
+      "imageAlt": "Twelve-pan warm neutral eyeshadow palette",
+      "description": "Twelve warm-to-neutral shades, from matte transition to foiled toppers.",
+      "highlights": [
+        "12 blendable warm & neutral tones",
+        "Mix of matte, satin and metallic",
+        "Travel mirror and dual-ended brush"
+      ],
+      "sizes": [
+        "12 × 1.5 g",
+        "12 × 2 g"
+      ],
+      "howToUse": "Sweep transition shades in the crease, then pack deeper tones onto the lid and glow on the inner corner.",
+      "ingredients": "Talc, mica, zinc stearate, dimethicone, iron oxides."
     },
     {
       "id": "highlighter",
@@ -244,7 +470,19 @@
       "price": "¥210",
       "shade": "Champagne",
       "image": "images/product-highlighter.jpg",
-      "imageAlt": "Liquid highlighter dropper bottle with a luminous finish"
+      "imageAlt": "Liquid highlighter dropper bottle with a luminous finish",
+      "description": "A liquid glow that melts into skin for a lit-from-within finish.",
+      "highlights": [
+        "Dewy, non-chunky liquid glow",
+        "Builds from sheer to intense",
+        "Blends seamlessly under or over foundation"
+      ],
+      "sizes": [
+        "15 ml",
+        "30 ml"
+      ],
+      "howToUse": "Dot onto cheekbones and blend with a fingertip or sponge, alone or over foundation.",
+      "ingredients": "Water, isododecane, glycerin, mica, dimethicone crosspolymer."
     },
     {
       "id": "blush",
@@ -253,7 +491,19 @@
       "price": "¥190",
       "shade": "Petal",
       "image": "images/product-blush.jpg",
-      "imageAlt": "Cream blush compact in a soft petal pink"
+      "imageAlt": "Cream blush compact in a soft petal pink",
+      "description": "A cloud-soft blurred blush that melts for a natural flush.",
+      "highlights": [
+        "Weightless blur-soft powder",
+        "Buildable natural flush",
+        "Blurring finish that never looks patchy"
+      ],
+      "sizes": [
+        "6 g",
+        "10 g"
+      ],
+      "howToUse": "Sweep onto the apples of the cheeks and blend upward toward the temples.",
+      "ingredients": "Talc, mica, nylon-12, zinc stearate, iron oxides."
     },
     {
       "id": "lip-oil",
@@ -262,7 +512,19 @@
       "price": "¥170",
       "shade": "Nude 01",
       "image": "images/product-lip-oil.jpg",
-      "imageAlt": "Nude conditioning lip oil in a frosted tube"
+      "imageAlt": "Nude conditioning lip oil in a frosted tube",
+      "description": "A velvet lip oil that conditions with a glossy, non-sticky tint.",
+      "highlights": [
+        "Cushiony glossy tint",
+        "Nourishing, never-sticky formula",
+        "Wearable solo or over lipstick"
+      ],
+      "sizes": [
+        "6 ml",
+        "9 ml"
+      ],
+      "howToUse": "Glide the doe-foot applicator over bare lips or layer over your favourite lip colour.",
+      "ingredients": "Polybutene, hydrogenated polyisobutene, squalane, vitamin E, jojoba oil."
     },
     {
       "id": "lip-liner",
@@ -271,7 +533,19 @@
       "price": "¥140",
       "shade": "Rosewood",
       "image": "images/product-liner.jpg",
-      "imageAlt": "Rosewood lip liner pencil on a neutral surface"
+      "imageAlt": "Rosewood lip liner pencil on a neutral surface",
+      "description": "A precision lip liner that defines and fills for long-lasting colour.",
+      "highlights": [
+        "Creamy 1.2 mm twist tip",
+        "Defines and prevents feathering",
+        "Twelve wearable nude-to-deep tones"
+      ],
+      "sizes": [
+        "0.35 g",
+        "0.6 g"
+      ],
+      "howToUse": "Outline the lips, then fill towards the centre for long-lasting definition.",
+      "ingredients": "Hydrogenated coconut oil, candelilla wax, isopropyl myristate, iron oxides, tocopherol."
     },
     {
       "id": "mascara",
@@ -280,7 +554,19 @@
       "price": "¥160",
       "shade": "Black",
       "image": "images/product-mascara.jpg",
-      "imageAlt": "Volumising mascara tube with a curved wand"
+      "imageAlt": "Volumising mascara tube with a curved wand",
+      "description": "A volumising mascara that lifts and separates without clumping.",
+      "highlights": [
+        "Instant lash volume",
+        "Lifts and separates, never clumpy",
+        "Smudge-proof, easy to remove"
+      ],
+      "sizes": [
+        "8 ml",
+        "12 ml"
+      ],
+      "howToUse": "Wiggle the brush from root to tip and add a second coat for drama.",
+      "ingredients": "Water, beeswax, carnauba wax, acacia senegal gum, iron oxides."
     },
     {
       "id": "lip-gloss",
@@ -289,7 +575,19 @@
       "price": "¥150",
       "shade": "Clear",
       "image": "images/product-gloss.jpg",
-      "imageAlt": "High-shine clear lip gloss with a flocked applicator"
+      "imageAlt": "High-shine clear lip gloss with a flocked applicator",
+      "description": "A high-shine glass gloss with a cushiony, non-sticky feel.",
+      "highlights": [
+        "Mirror-like glass shine",
+        "Cushiony, never-sticky wear",
+        "Comfortable hydration all day"
+      ],
+      "sizes": [
+        "5 ml",
+        "8 ml"
+      ],
+      "howToUse": "Sweep over bare lips or layer in the centre for a plumped, glass-like finish.",
+      "ingredients": "Polyisobutene, squalane, hydrogenated polyisobutene, vitamin E, mica."
     }
   ],
   "story": {
@@ -362,7 +660,25 @@
     "steps": "How to recreate it",
     "relatedProducts": "Shop the look",
     "shopNow": "Shop now",
-    "emailLabel": "Email address"
+    "emailLabel": "Email address",
+    "shop": "Shop",
+    "shopTitle": "Shop the Look",
+    "shopIntro": "Every product behind our signature looks, ready to build your own.",
+    "allCategories": "All",
+    "filtersLabel": "Filter by",
+    "productCount": "products",
+    "viewProduct": "View product",
+    "addToBag": "Add to bag",
+    "bagAdded": "Added to your demo bag",
+    "sizeLabel": "Size",
+    "categoryLabel": "Category",
+    "descriptionLabel": "About this look-maker",
+    "howToUseLabel": "How to use",
+    "ingredientsLabel": "Ingredients",
+    "usedInLooks": "Shop this product in",
+    "backToShop": "Back to shop",
+    "prototypeNote": "This is a design template: the bag is a non-functional prototype and no order is placed or sent.",
+    "selectSize": "Select size"
   },
   "meta": {
     "title": "LUMIÈRE — Beauty in motion",

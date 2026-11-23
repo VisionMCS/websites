@@ -12,6 +12,21 @@
     "title": "collections.pageTitle"
   },
   {
+    "id": "shop",
+    "path": "shop/",
+    "component": "ShopPage",
+    "title": "ui.shopTitle",
+    "description": "ui.shopIntro"
+  },
+  {
+    "id": "product",
+    "path": "products/{id}/",
+    "component": "ProductPage",
+    "collection": "products",
+    "title": "name",
+    "description": "description"
+  },
+  {
     "id": "collection",
     "path": "collections/{id}/",
     "component": "CollectionPage",

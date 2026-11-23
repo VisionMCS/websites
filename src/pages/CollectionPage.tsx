@@ -23,25 +23,34 @@ export function CollectionPage() {
     .filter((product): product is (typeof site.products)[number] => !!product);
   return (
     <article className="container collection-detail">
-      <nav className="breadcrumbs" aria-label={site.ui.navigation}>
-        <a href={pageUrl()}>{site.ui.home}</a>
-        <span>/</span>
-        <a href={pageUrl("collections")}>{site.collections.pageTitle}</a>
-        <span>/</span>
-        <span>{collection.name}</span>
-      </nav>
-      <header className="detail-heading">
-        <p className="eyebrow">
-          {site.ui.collectionLabel} / {collection.category}
-        </p>
-        <h1>{collection.name}</h1>
-        <p>{collection.summary}</p>
-      </header>
-      <img
-        className="detail-cover"
-        src={asset(collection.image)}
-        alt={collection.imageAlt}
-      />
+      {/* First screen: look intro copy paired with a full portrait image.
+          首屏：妆容介绍文案与完整竖幅人像图并排。 */}
+      <section className="look-hero">
+        <div className="look-hero-copy">
+          <nav className="breadcrumbs" aria-label={site.ui.navigation}>
+            <a href={pageUrl()}>{site.ui.home}</a>
+            <span>/</span>
+            <a href={pageUrl("collections")}>{site.collections.pageTitle}</a>
+            <span>/</span>
+            <span>{collection.name}</span>
+          </nav>
+          <p className="eyebrow">
+            {site.ui.collectionLabel} / {collection.category}
+          </p>
+          <h1>{collection.name}</h1>
+          <p className="look-summary">{collection.summary}</p>
+          <a
+            className="button-primary"
+            href={pageUrl("collections", { id: collection.id })}
+          >
+            {collection.shopLabel ?? site.ui.shopNow}
+            <Arrow diagonal />
+          </a>
+        </div>
+        <div className="look-hero-media">
+          <img src={asset(collection.image)} alt={collection.imageAlt} />
+        </div>
+      </section>
       <div className="detail-body">
         <div>
           <h2>{site.ui.collectionIntro}</h2>

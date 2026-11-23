@@ -21,10 +21,23 @@ export interface SiteContent {
     eyebrow: string;
     title: string;
     handle: string;
+    // 点击瀑布流图弹出的可购物 lightbox 文案 / shoppable lightbox copy
+    shopLabel: string;
+    closeLabel: string;
+    prevLabel: string;
+    nextLabel: string;
+    sourceLabel: string;
     items: Array<{
       image: string;
       alt: string;
       size?: "tall" | "wide" | "square";
+      // 社媒配文与来源 / caption + source line
+      caption: string;
+      source: string;
+      // 推荐产品：引用 products 表 id（双向数据关系，不写死）
+      productIds: Array<string>;
+      // 图上产品标注点（百分比坐标 + 指向的产品 id）
+      hotspots: Array<{ x: number; y: number; product: string }>;
     }>;
   };
   // Holiday fan-faves: horizontal shoppable video-card carousel / 热门单品：横向可滑动视频卡轮播
@@ -92,6 +105,12 @@ export interface SiteContent {
     shade: string;
     image: string;
     imageAlt: string;
+    // PDP 商品详情页字段（三语结构必须一致）
+    description: string;
+    highlights: Array<string>;
+    sizes: Array<string>;
+    howToUse: string;
+    ingredients: string;
   }>;
   story: {
     eyebrow: string;
@@ -141,6 +160,26 @@ export interface SiteContent {
     relatedProducts: string;
     shopNow: string;
     emailLabel: string;
+    // Shop / PLP / PDP
+    shop: string;
+    shopTitle: string;
+    shopIntro: string;
+    allCategories: string;
+    filtersLabel: string;
+    productCount: string;
+    viewProduct: string;
+    addToBag: string;
+    bagAdded: string;
+    sizeLabel: string;
+    categoryLabel: string;
+    descriptionLabel: string;
+    howToUseLabel: string;
+    ingredientsLabel:
+      string;
+    usedInLooks: string;
+    backToShop: string;
+    prototypeNote: string;
+    selectSize: string;
   };
   meta: {
     title: string;

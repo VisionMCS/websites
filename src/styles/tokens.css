@@ -10,6 +10,8 @@
   --color-surface: #ffffff;
   --color-soft: #f7f4f2;
   --color-tint: #efeae6;
+  /* Soft rose-blush band used behind the look detail hero / Look 详情页首屏的浅玫瑰粉底 */
+  --color-blush: #f3e9e8;
   --font-sans: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-serif: Georgia, "Times New Roman", "Songti SC", serif;
   --width-page: 1440px;
