@@ -1,0 +1,29 @@
+[
+  {
+    "id": "home",
+    "path": "",
+    "component": "HomePage",
+    "title": "meta.title"
+  },
+  {
+    "id": "collections",
+    "path": "collections/",
+    "component": "CollectionsPage",
+    "title": "collections.pageTitle"
+  },
+  {
+    "id": "collection",
+    "path": "collections/{id}/",
+    "component": "CollectionPage",
+    "collection": "collections.items",
+    "title": "name",
+    "description": "summary"
+  },
+  {
+    "id": "story",
+    "path": "story/",
+    "component": "StoryPage",
+    "title": "story.title",
+    "description": "story.description"
+  }
+]

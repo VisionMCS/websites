@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "brand",
+  "category": "brand",
+  "name": {
+    "en-US": "LUMIÈRE · Beauty lookbook",
+    "zh-CN": "LUMIÈRE · 美妆妆容手册",
+    "ko-KR": "LUMIÈRE · 뷰티 룩북"
+  },
+  "description": {
+    "en-US": "An editorial DTC beauty lookbook with signature looks, application steps and related products.",
+    "zh-CN": "编辑式美妆 DTC 妆容手册，包含标志性妆容、复刻步骤与关联产品。",
+    "ko-KR": "시그니처 룩, 재현 단계, 관련 제품을 담은 편집적인 DTC 뷰티 룩북."
+  },
+  "repository": "https://github.com/InYourWork/websites",
+  "branch": "templates/dtc-beauty-lookbook",
+  "stack": "react-vite",
+  "contentEntry": "src/content/locales/",
+  "styleEntry": "src/styles/tokens.css",
+  "outputDirectory": "dist",
+  "features": [
+    "responsive-navigation",
+    "lookbook-grid",
+    "collection-filter",
+    "look-detail",
+    "application-steps",
+    "related-products",
+    "brand-story",
+    "faq",
+    "email-contact",
+    "multilingual"
+  ],
+  "requiredRuntimeCapabilities": [],
+  "designReference": "https://kyliecosmetics.com/en-cn/pages/kylies-looks",
+  "localeConfig": "src/content/config.json",
+  "pages": {
+    "home": "/",
+    "collection": "/collections/",
+    "content": "/collections/{id}/",
+    "story": "/story/"
+  },
+  "rendering": "static-generation"
+}

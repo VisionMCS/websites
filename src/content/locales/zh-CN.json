@@ -1,0 +1,303 @@
+{
+  "brand": {
+    "name": "LUMIÈRE",
+    "english": "流动之美",
+    "descriptor": "值得复刻的妆容。",
+    "copyright": "LUMIÈRE · 品牌展示示例"
+  },
+  "nav": [
+    {
+      "label": "妆容手册",
+      "href": "collections"
+    },
+    {
+      "label": "品牌故事",
+      "href": "story"
+    },
+    {
+      "label": "我们的理念",
+      "href": "#approach"
+    }
+  ],
+  "hero": {
+    "eyebrow": "妆容手册",
+    "title": ["每一种妆容，", "都是一套仪式。"],
+    "description": "精选标志性妆容合集，每一个都搭配可完整复刻的对应产品。",
+    "primary": "探索妆容",
+    "image": "images/hero.jpg",
+    "imageAlt": "特写杂志感模特肖像，呈现柔和光泽的妆容",
+    "caption": "复刻妆容，入手同款仪式。",
+    "note": "第一辑"
+  },
+  "manifesto": {
+    "eyebrow": "LUMIÈRE 的视角",
+    "title": "不是更多彩妆，\n而是更有想法。",
+    "description": "利落的眉形、被点亮的高光、收束整个妆容的唇色。我们把每一个妆容设计成完整的仪式，再告诉你复刻它所需的一切。"
+  },
+  "collections": {
+    "eyebrow": "标志性妆容",
+    "title": "可日常的美妆研究。",
+    "pageTitle": "妆容手册",
+    "intro": "从妆效、色彩与情绪出发，探索六个视觉方向。以下为展示妆容，使用已记录来源的摄影素材，并搭配相关单品。",
+    "allLabel": "全部妆容",
+    "items": [
+      {
+        "id": "soft-glam",
+        "name": "柔雾日常",
+        "category": "日常",
+        "summary": "贴肤的柔雾底妆，由内而外的光感。",
+        "image": "images/look-soft-glam.jpg",
+        "imageAlt": "模特呈现自然柔雾妆容与水光肌",
+        "detail": "柔雾日常是品牌的日常标志：雾面贴肤的底妆、一抹暖调中性眼影，以及贴近肌肤的光泽。镜头前精致得体，日光下毫不费力。",
+        "highlights": ["贴肤雾面底妆", "暖调中性眼影", "由内而外的柔光"],
+        "steps": [
+          "用轻薄肤色乳均匀全脸，向外晕染。",
+          "将中性色眼影扫过眼窝并向眼褶晕开。",
+          "在颧骨高点轻点高光。",
+          "以裸色唇油收尾，滋润双唇。"
+        ],
+        "productIds": ["skin-tint", "eyeshadow-palette", "highlighter", "lip-oil"],
+        "shopLabel": "入手本妆"
+      },
+      {
+        "id": "sunset-glam",
+        "name": "落日妆",
+        "category": "晚宴",
+        "summary": "暖铜与金调，重现黄昏时分的红润。",
+        "image": "images/look-sunset.jpg",
+        "imageAlt": "模特呈现暖铜色眼影与光泽肌肤",
+        "detail": "落日妆把黄昏的光留在脸上：铜金渐变眼影、暖调腮红与裸色亮泽唇妆，为夜晚的灯光与烛光而生。",
+        "highlights": ["铜金渐变眼影", "暖调红润腮红", "裸色亮泽唇妆"],
+        "steps": [
+          "将铜色眼影按压上眼并向上晕染。",
+          "在眼皮中央叠加金色细闪。",
+          "用蜜桃色腮红扫出暖调气色。",
+          "勾勒并填满唇形，再叠透明唇釉。"
+        ],
+        "productIds": ["eyeshadow-palette", "blush", "lip-liner", "lip-gloss"],
+        "shopLabel": "入手本妆"
+      },
+      {
+        "id": "red-carpet",
+        "name": "红毯妆",
+        "category": "活动",
+        "summary": "利落雕塑底妆之上的一抹正红。",
+        "image": "images/look-red-lip.jpg",
+        "imageAlt": "模特呈现经典正红唇与精致轮廓底妆",
+        "detail": "永恒的红毯公式：无瑕雕塑底妆、克制的眼妆，以及作为唯一焦点的精准红唇。",
+        "highlights": ["无瑕雕塑底妆", "柔和的眼部轮廓", "高冲击力的精准红唇"],
+        "steps": [
+          "打造平滑均匀底妆并定妆 T 区。",
+          "以浓密睫毛膏勾勒睫毛线。",
+          "用唇线笔描出清晰唇形。",
+          "填满正红并轻抿，持色更久。"
+        ],
+        "productIds": ["skin-tint", "mascara", "lip-liner", "lip-gloss"],
+        "shopLabel": "入手本妆"
+      },
+      {
+        "id": "dewy-fresh",
+        "name": "水光裸感",
+        "category": "伪素颜",
+        "summary": "水润通透的淡颜，配一抹有色唇。",
+        "image": "images/look-dewy.jpg",
+        "imageAlt": "模特呈现水润伪素颜妆容与有色唇",
+        "detail": "水光裸感是「伪素颜」妆：水润的肌肤、梳理的眉形、一抹红晕，以及看似本色却更明亮的有色唇。",
+        "highlights": ["水润玻璃肌", "自然毛流眉", "柔和有色唇"],
+        "steps": [
+          "仅在需要的部位用轻薄肤色乳均匀。",
+          "向上梳理眉形，呈现自然毛流。",
+          "在颧骨高处点按膏状腮红。",
+          "把唇釉点涂在唇中并向外晕开。"
+        ],
+        "productIds": ["skin-tint", "blush", "lip-oil"],
+        "shopLabel": "入手本妆"
+      },
+      {
+        "id": "smoky-night",
+        "name": "暗夜烟熏",
+        "category": "晚宴",
+        "summary": "深邃晕染的炭黑白眼妆，配柔雾唇。",
+        "image": "images/look-smoky.jpg",
+        "imageAlt": "模特呈现深邃炭黑白眼妆与裸色唇",
+        "detail": "暗夜烟熏把戏剧感留给眼睛：晕染的炭黑渐变、贴根内眼线，以及安静的裸色唇，让眼神成为全部焦点。",
+        "highlights": ["晕染炭黑渐变", "贴根内眼线", "平衡的安静裸唇"],
+        "steps": [
+          "以哑光色铺满眼窝打底。",
+          "将炭黑晕入眼褶与眼尾。",
+          "贴近睫毛根部描线并刷睫毛膏。",
+          "以滋润裸色唇油保持唇部柔和。"
+        ],
+        "productIds": ["eyeshadow-palette", "mascara", "lip-oil"],
+        "shopLabel": "入手本妆"
+      },
+      {
+        "id": "editorial",
+        "name": "杂志大片",
+        "category": "秀场",
+        "summary": "高对比度的可上杂志宣言妆。",
+        "image": "images/look-editorial.jpg",
+        "imageAlt": "模特呈现高对比度杂志感宣言妆容",
+        "detail": "秀场宣言：利落的线条、雕塑般的光影与出人意料的妆效。杂志大片是品牌实验的所在，再把它凝练成你也能复刻的样子。",
+        "highlights": ["利落的雕塑线条", "高对比光影", "标志性的宣言妆效"],
+        "steps": [
+          "以修容与高光雕塑面部轮廓。",
+          "沿眼部画出利落的图形线条。",
+          "叠加睫毛膏营造浓密与翘度。",
+          "选定一个大胆焦点，其余保持精致。"
+        ],
+        "productIds": ["highlighter", "mascara", "lip-liner", "lip-gloss"],
+        "shopLabel": "入手本妆"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "skin-tint",
+      "name": "轻透肤色乳",
+      "category": "脸部",
+      "price": "¥180",
+      "shade": "6 个色号",
+      "image": "images/product-skin-tint.jpg",
+      "imageAlt": "中性背景上的轻透肤色乳瓶身"
+    },
+    {
+      "id": "eyeshadow-palette",
+      "name": "落日眼影盘",
+      "category": "眼部",
+      "price": "¥300",
+      "shade": "12 色",
+      "image": "images/product-palette.jpg",
+      "imageAlt": "十二色暖调中性眼影盘"
+    },
+    {
+      "id": "highlighter",
+      "name": "水光液体高光",
+      "category": "脸部",
+      "price": "¥210",
+      "shade": "香槟色",
+      "image": "images/product-highlighter.jpg",
+      "imageAlt": "带滴管的液体高光，呈现光泽妆效"
+    },
+    {
+      "id": "blush",
+      "name": "柔焦膏状腮红",
+      "category": "脸部",
+      "price": "¥190",
+      "shade": "花瓣粉",
+      "image": "images/product-blush.jpg",
+      "imageAlt": "柔和花瓣粉的膏状腮红"
+    },
+    {
+      "id": "lip-oil",
+      "name": "丝绒唇油",
+      "category": "唇部",
+      "price": "¥170",
+      "shade": "裸色 01",
+      "image": "images/product-lip-oil.jpg",
+      "imageAlt": "磨砂管身的裸色滋润唇油"
+    },
+    {
+      "id": "lip-liner",
+      "name": "精准唇线笔",
+      "category": "唇部",
+      "price": "¥140",
+      "shade": "玫瑰木",
+      "image": "images/product-liner.jpg",
+      "imageAlt": "中性台面上的玫瑰木色唇线笔"
+    },
+    {
+      "id": "mascara",
+      "name": "浓密睫毛膏",
+      "category": "眼部",
+      "price": "¥160",
+      "shade": "黑色",
+      "image": "images/product-mascara.jpg",
+      "imageAlt": "带弧形刷头的浓密睫毛膏"
+    },
+    {
+      "id": "lip-gloss",
+      "name": "玻璃唇釉",
+      "category": "唇部",
+      "price": "¥150",
+      "shade": "透明",
+      "image": "images/product-gloss.jpg",
+      "imageAlt": "带绒毛刷头的高光泽透明唇釉"
+    }
+  ],
+  "story": {
+    "eyebrow": "品牌故事",
+    "title": "把美妆，设计成一种仪式。",
+    "description": "LUMIÈRE 是一个虚构的美妆品牌，源于一个简单的想法：一个好看的妆容不是某件单品，而是一套你可以反复复刻的完整仪式。",
+    "image": "images/story.jpg",
+    "imageAlt": "化妆师在后台为模特上妆",
+    "link": "了解我们的故事",
+    "paragraphs": [
+      "我们从妆容出发，再倒推出它真正需要的少数几件单品。每一支配方，都以它在真实肌肤、真实光线下的表现来挑选。",
+      "这个展示模板将编辑式品牌视觉与妆容手册结合。摄影作品属于已记录来源的创作者，并非 LUMIÈRE 的真实工坊记录或在售商品。"
+    ],
+    "values": [
+      {
+        "title": "是妆容，不只是单品",
+        "description": "每个妆容都是一套完整、可复刻的仪式，附带复刻所需的步骤与搭配。"
+      },
+      {
+        "title": "为真实光线而调配",
+        "description": "我们挑选在镜头前动人、在日光下自然的妆效。"
+      },
+      {
+        "title": "秀场感，也能日常",
+        "description": "我们在秀场大胆实验，再把它变成你日常也能复刻的妆容。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "你可能想了解",
+    "items": [
+      {
+        "question": "可以购买这里展示的单品吗？",
+        "answer": "这是品牌展示模板，并非正在营业的商店。妆容与单品用于表达视觉方向，实际品牌需另行配置商品供应与购买方式。"
+      },
+      {
+        "question": "这些照片是 LUMIÈRE 的广告实拍吗？",
+        "answer": "不是。图片是来自 Unsplash 的授权参考摄影，创作者和原始链接均记录在素材清单中。"
+      },
+      {
+        "question": "如何发起咨询？",
+        "answer": "配置真实联系邮箱后，咨询入口会打开邮件应用。模板本身不收集消息，也不存储个人信息。"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "从一次对话开始",
+    "title": "有一些想法，想与我们分享？",
+    "description": "期待合作、媒体，以及新的可能。",
+    "emailLabel": "发起咨询",
+    "placeholder": "咨询入口待配置",
+    "note": "品牌展示示例。摄影素材仅作视觉参考，本站不销售商品。"
+  },
+  "ui": {
+    "menu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "viewCollection": "查看本妆容",
+    "collectionLabel": "本妆容",
+    "highlights": "妆容方向",
+    "skip": "跳到主要内容",
+    "backTop": "回到顶部",
+    "navigation": "主要导航",
+    "categories": "妆容分类",
+    "language": "选择语言",
+    "home": "首页",
+    "allCollections": "查看全部妆容",
+    "backCollections": "全部妆容",
+    "notFound": "未找到该妆容",
+    "collectionIntro": "妆容介绍",
+    "steps": "如何复刻",
+    "relatedProducts": "入手同款",
+    "shopNow": "立即购买"
+  },
+  "meta": {
+    "title": "LUMIÈRE — 流动之美",
+    "description": "精选美妆妆容手册。探索标志性妆容、复刻步骤，以及每个仪式背后的单品。"
+  }
+}

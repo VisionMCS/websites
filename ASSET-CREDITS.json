@@ -1,0 +1,122 @@
+[
+  {
+    "file": "public/images/hero.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-blue-eyes-and-black-hair-VLJV46hPLSM",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/look-soft-glam.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-pink-lipstick-and-black-mascara-LZ0wreHld90",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/look-sunset.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-wearing-black-hat-and-gold-necklace-nSfMaRZRjKE",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/look-red-lip.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-red-lipstick-holding-yellow-flower-WW-TIGWKCyc",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/look-dewy.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-blue-eyes-and-brown-eyes-pItSSy1-7R8",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/look-smoky.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/womans-face-EGVccebWodM",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/look-editorial.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/a-woman-with-blue-eyes-and-a-white-top-6eFmG1qWxJI",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/story.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/a-woman-is-putting-makeup-on-her-face-xwaQ6FFqmLQ",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/product-skin-tint.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-blue-eyes-and-brown-eyes-pItSSy1-7R8",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "note": "Demonstration placeholder reusing credited lookbook photography; replace with real product imagery before commercial use. 演示占位，复用已署名的手册摄影，商用前替换为真实产品图。"
+  },
+  {
+    "file": "public/images/product-palette.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-wearing-black-hat-and-gold-necklace-nSfMaRZRjKE",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "note": "Demonstration placeholder reusing credited lookbook photography. 演示占位，复用已署名手册摄影。"
+  },
+  {
+    "file": "public/images/product-highlighter.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-blue-eyes-and-black-hair-VLJV46hPLSM",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "note": "Demonstration placeholder reusing credited lookbook photography. 演示占位，复用已署名手册摄影。"
+  },
+  {
+    "file": "public/images/product-blush.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-pink-lipstick-and-black-mascara-LZ0wreHld90",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "note": "Demonstration placeholder reusing credited lookbook photography. 演示占位，复用已署名手册摄影。"
+  },
+  {
+    "file": "public/images/product-lip-oil.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-red-lipstick-holding-yellow-flower-WW-TIGWKCyc",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "note": "Demonstration placeholder reusing credited lookbook photography. 演示占位，复用已署名手册摄影。"
+  },
+  {
+    "file": "public/images/product-liner.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/woman-with-red-lipstick-holding-yellow-flower-WW-TIGWKCyc",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "note": "Demonstration placeholder reusing credited lookbook photography. 演示占位，复用已署名手册摄影。"
+  },
+  {
+    "file": "public/images/product-mascara.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/womans-face-EGVccebWodM",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "note": "Demonstration placeholder reusing credited lookbook photography. 演示占位，复用已署名手册摄影。"
+  },
+  {
+    "file": "public/images/product-gloss.jpg",
+    "author": "Unsplash contributor (see photo page)",
+    "source": "https://unsplash.com/photos/a-woman-with-blue-eyes-and-a-white-top-6eFmG1qWxJI",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "note": "Demonstration placeholder reusing credited lookbook photography. 演示占位，复用已署名手册摄影。"
+  }
+]

@@ -1,0 +1,303 @@
+{
+  "brand": {
+    "name": "LUMIÈRE",
+    "english": "움직이는 아름다움",
+    "descriptor": "다시 하고 싶은 메이크업 룩.",
+    "copyright": "LUMIÈRE · 데모 브랜드"
+  },
+  "nav": [
+    {
+      "label": "룩북",
+      "href": "collections"
+    },
+    {
+      "label": "브랜드 이야기",
+      "href": "story"
+    },
+    {
+      "label": "우리의 관점",
+      "href": "#approach"
+    }
+  ],
+  "hero": {
+    "eyebrow": "룩북",
+    "title": ["모든 룩,", "하나의 의식."],
+    "description": "시그니처 메이크업 룩 큐레이션. 각 룩을 그대로 재현하는 데 필요한 제품까지 함께 제안합니다.",
+    "primary": "룩 둘러보기",
+    "image": "images/hero.jpg",
+    "imageAlt": "부드럽게 빛나는 메이크업의 모델 클로즈업 편집 컷",
+    "caption": "룩을 입고, 의식을 담다.",
+    "note": "시즌 01"
+  },
+  "manifesto": {
+    "eyebrow": "LUMIÈRE의 관점",
+    "title": "더 많은 화장이 아닌\n더 깊은 의도.",
+    "description": "정돈된 눈썹, 빛나는 광대, 룩을 완성하는 입술. 우리는 모든 룩을 하나의 완성된 의식으로 설계하고, 그것을 표현하는 데 필요한 모든 것을 보여 줍니다."
+  },
+  "collections": {
+    "eyebrow": "시그니처 룩",
+    "title": "실용적인 아름다움의 탐색.",
+    "pageTitle": "룩북",
+    "intro": "마감, 컬러, 무드를 따라 여섯 가지 시각적 방향을 만나보세요. 모든 룩은 출처가 명시된 사진으로 표현한 데모이며, 관련 제품과 함께 제안됩니다.",
+    "allLabel": "전체 룩",
+    "items": [
+      {
+        "id": "soft-glam",
+        "name": "소프트 글램",
+        "category": "데일리",
+        "summary": "피부처럼 밀착된 마무리와 은은한 광택.",
+        "image": "images/look-soft-glam.jpg",
+        "imageAlt": "자연스러운 소프트 글램 룩과 물광 피부의 모델",
+        "detail": "소프트 글램은 브랜드의 데일리 시그니처입니다. 블러드된 베이스, 따뜻한 뉴트럴 섀도, 피부 같은 광택. 카메라 앞에서는 정돈되고 낮에는 편안해 보입니다.",
+        "highlights": ["피부 같은 밀착 베이스", "따뜻한 뉴트럴 섀도", "안에서부터 번지는 은은한 광택"],
+        "steps": [
+          "가벼운 스킨 틴트로 얼굴을 고르게 바깥쪽으로 블렌딩합니다.",
+          "뉴트럴 섀도를 눈두덩과 아이홀에 부드럽게 얹습니다.",
+          "광대 높은 곳에 하이라이터를 살짝 더합니다.",
+          "누드 톤의 립 오일로 입술을 마무리합니다."
+        ],
+        "productIds": ["skin-tint", "eyeshadow-palette", "highlighter", "lip-oil"],
+        "shopLabel": "이 룩 담기"
+      },
+      {
+        "id": "sunset-glam",
+        "name": "선셋 글램",
+        "category": "이브닝",
+        "summary": "황혼의 빛을 담은 따뜻한 코퍼와 골드.",
+        "image": "images/look-sunset.jpg",
+        "imageAlt": "따뜻한 코퍼 섀도와 윤기 있는 피부의 모델",
+        "detail": "선셋 글램은 황혼의 빛을 얼굴에 옮깁니다. 코퍼에서 골드 그라데이션, 따뜻한 블러시, 글로시한 누드 립. 저녁 빛과 촛불을 위한 룩입니다.",
+        "highlights": ["코퍼에서 골드 그라데이션", "따뜻하게 물든 볼", "글로시한 누드 립"],
+        "steps": [
+          "코퍼 섀도를 눈두덩에 눌러 위쪽으로 블렌딩합니다.",
+          "눈두덩 중앙에 골드 쉬머를 겹쳐 얹습니다.",
+          "피치 블러시로 볼을 따뜻하게 물들입니다.",
+          "립을 그리워 채운 뒤 클리어 글로스를 얹습니다."
+        ],
+        "productIds": ["eyeshadow-palette", "blush", "lip-liner", "lip-gloss"],
+        "shopLabel": "이 룩 담기"
+      },
+      {
+        "id": "red-carpet",
+        "name": "레드 카펫",
+        "category": "이벤트",
+        "summary": "깔끔하게 조각한 베이스 위의 강렬한 레드 립.",
+        "image": "images/look-red-lip.jpg",
+        "imageAlt": "클래식한 레드 립과 조각된 베이스의 모델",
+        "detail": "변하지 않는 레드 카펫 공식. 결점 없이 조각한 베이스, 차분하게 정리한 눈매, 그리고 유일한 초점이 되는 정밀한 레드 립.",
+        "highlights": ["결점 없는 조각된 베이스", "부드럽게 정리한 눈매", "정밀한 임팩트의 레드 립"],
+        "steps": [
+          "매끄럽고 고른 베이스를 만들고 T존을 세팅합니다.",
+          "볼류마라이저 마스카라로 속눈썹 라인을 정의합니다.",
+          "립 라이너로 또렷한 입술 라인을 잡습니다.",
+          "볼드한 레드로 채운 뒤 틴트로 지속력을 높입니다."
+        ],
+        "productIds": ["skin-tint", "mascara", "lip-liner", "lip-gloss"],
+        "shopLabel": "이 룩 담기"
+      },
+      {
+        "id": "dewy-fresh",
+        "name": "듀이 프레시",
+        "category": "노메이크업",
+        "summary": "촉촉한 민무늬 광채와 틴티드 립.",
+        "image": "images/look-dewy.jpg",
+        "imageAlt": "상큼한 물광 노메이크업 룩과 틴티드 립의 모델",
+        "detail": "듀이 프레시는 노메이크업 메이크업 룩입니다. 촉촉한 피부, 정돈된 눈썹, 은은한 혈색, 그리고 내 입술보다 한층 밝아 보이는 틴티드 립.",
+        "highlights": ["촉촉한 유리알 피부", "정돈된 눈썹", "부드러운 틴티드 립"],
+        "steps": [
+          "필요한 부에만 시어 스킨 틴트로 균일하게 정리합니다.",
+          "눈썹을 위로 빗어 정돈된 결을 만듭니다.",
+          "광대 위에 크림 블러시를 톡톡 얹습니다.",
+          "립 틴트를 입술 중앙에 눌러 바깥으로 블렌딩합니다."
+        ],
+        "productIds": ["skin-tint", "blush", "lip-oil"],
+        "shopLabel": "이 룩 담기"
+      },
+      {
+        "id": "smoky-night",
+        "name": "스모키 나이트",
+        "category": "이브닝",
+        "summary": "깊이 번제한 차콜 스모키와 차분한 립.",
+        "image": "images/look-smoky.jpg",
+        "imageAlt": "깊은 차콜 스모키 아이와 뉴트럴 립의 모델",
+        "detail": "스모키 나이트는 드라마를 눈에 남깁니다. 번제한 차콜 그라데이션, 타이트라인, 그리고 조용한 누드 립으로 시선만이 역할을 하게 합니다.",
+        "highlights": ["번제한 차콜 그라데이션", "타이트라인", "조용하고 균형 잡힌 누드 립"],
+        "steps": [
+          "매트 섀도로 눈두덩을 베이스처럼 덮습니다.",
+          "차콜을 아이홀과 바깥 꼬리에 스머지합니다.",
+          "속눈썹 라인을 타이트라인하고 마스카라를 얹습니다.",
+          "립은 누드 오일로 부드럽게 유지합니다."
+        ],
+        "productIds": ["eyeshadow-palette", "mascara", "lip-oil"],
+        "shopLabel": "이 룩 담기"
+      },
+      {
+        "id": "editorial",
+        "name": "에디토리얼",
+        "category": "런웨이",
+        "summary": "잡지 표지를 위한 대비 강한 스테이트먼트 룩.",
+        "image": "images/look-editorial.jpg",
+        "imageAlt": "대비 강한 에디토리얼 스테이트먼트 메이크업의 모델",
+        "detail": "런웨이 스테이트먼트. 그래픽한 라인, 조각된 빛, 예상치 못한 마감. 에디토리얼은 브랜드가 실험하는 지점이며, 그것을 당신이 입을 수 있게 정제합니다.",
+        "highlights": ["그래픽하고 조각된 라인", "대비 강한 명암", "시그니처 스테이트먼트 마감"],
+        "steps": [
+          "컨투어와 하이라이터로 얼굴을 조각하듯 정리합니다.",
+          "눈 주위에 또렷한 그래픽 라인을 긋습니다.",
+          "마스카라로 볼륨과 컬을 쌓습니다.",
+          "하나의 볼드한 초점을 고르고 나머지는 단정하게 남깁니다."
+        ],
+        "productIds": ["highlighter", "mascara", "lip-liner", "lip-gloss"],
+        "shopLabel": "이 룩 담기"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "skin-tint",
+      "name": "웨이트리스 스킨 틴트",
+      "category": "페이스",
+      "price": "₩36,000",
+      "shade": "6 쉐이드",
+      "image": "images/product-skin-tint.jpg",
+      "imageAlt": "중성 배경의 웨이트리스 스킨 틴트 병"
+    },
+    {
+      "id": "eyeshadow-palette",
+      "name": "선셋 아이섀도 팔레트",
+      "category": "아이",
+      "price": "₩60,000",
+      "shade": "12 컬러",
+      "image": "images/product-palette.jpg",
+      "imageAlt": "따뜻한 뉴트럴 12구 아이섀도 팔레트"
+    },
+    {
+      "id": "highlighter",
+      "name": "리퀴드 글로우 하이라이터",
+      "category": "페이스",
+      "price": "₩42,000",
+      "shade": "샴페인",
+      "image": "images/product-highlighter.jpg",
+      "imageAlt": "빛나는 마감의 드롭형 리퀴드 하이라이터"
+    },
+    {
+      "id": "blush",
+      "name": "클라우드 블러 블러시",
+      "category": "페이스",
+      "price": "₩38,000",
+      "shade": "페탈",
+      "image": "images/product-blush.jpg",
+      "imageAlt": "부드러운 페탈 핑크의 크림 블러시"
+    },
+    {
+      "id": "lip-oil",
+      "name": "벨벳 립 오일",
+      "category": "립",
+      "price": "₩34,000",
+      "shade": "누드 01",
+      "image": "images/product-lip-oil.jpg",
+      "imageAlt": "플로스트 튜브의 누드 컨디셔닝 립 오일"
+    },
+    {
+      "id": "lip-liner",
+      "name": "프리시전 립 라이너",
+      "category": "립",
+      "price": "₩28,000",
+      "shade": "로즈우드",
+      "image": "images/product-liner.jpg",
+      "imageAlt": "중성 표면 위의 로즈우드 립 라이너"
+    },
+    {
+      "id": "mascara",
+      "name": "래시 볼륨 마스카라",
+      "category": "아이",
+      "price": "₩32,000",
+      "shade": "블랙",
+      "image": "images/product-mascara.jpg",
+      "imageAlt": "커브드 워드가 있는 볼륨 마스카라"
+    },
+    {
+      "id": "lip-gloss",
+      "name": "글라스 립 글로스",
+      "category": "립",
+      "price": "₩30,000",
+      "shade": "클리어",
+      "image": "images/product-gloss.jpg",
+      "imageAlt": "플록 애플리케이터의 하이샤인 클리어 립 글로스"
+    }
+  ],
+  "story": {
+    "eyebrow": "브랜드 이야기",
+    "title": "아름다움을 의식으로 설계하다.",
+    "description": "LUMIÈRE는 하나의 생각에서 출발한 가상의 뷰티 하우스입니다. 좋은 룩은 제품이 아니라, 반복할 수 있는 완성된 의식이라는 생각.",
+    "image": "images/story.jpg",
+    "imageAlt": "백스테이지에서 모델을 위해 작업하는 메이크업 아티스트",
+    "link": "브랜드 이야기 읽기",
+    "paragraphs": [
+      "우리는 룩에서 시작해, 정말로 필요한 몇 가지 제품으로 거꾸로 좁혀 갑니다. 모든 포뮬러는 실제 피부와 실제 빛에서 어떻게 행동하는지로 선택됩니다.",
+      "이 데모는 편집적인 브랜드 아이덴티티와 룩북의 시각적 탐색을 결합합니다. 사진의 권리는 출처에 명시된 창작자에게 있으며, LUMIÈRE의 공방이나 판매 상품을 기록한 것이 아닙니다."
+    ],
+    "values": [
+      {
+        "title": "제품이 아닌 룩",
+        "description": "모든 룩은 그대로 재현하는 단계와 조합까지 갖춘 완성된 의식입니다."
+      },
+      {
+        "title": "실제 빛을 위한 처방",
+        "description": "카메라 앞에서 아름답고 낮빛에서는 자연스러운 마감을 선택합니다."
+      },
+      {
+        "title": "에디토리얼, 그러나 실용적으로",
+        "description": "런웨이에서 실험하고, 당신이 실제로 입을 수 있게 정제합니다."
+      }
+    ]
+  },
+  "faq": {
+    "title": "알아두면 좋은 이야기",
+    "items": [
+      {
+        "question": "여기 있는 제품을 구매할 수 있나요?",
+        "answer": "이 사이트는 브랜드 소개 템플릿이며 운영 중인 쇼핑몰이 아닙니다. 룩과 제품은 창작 방향을 보여 줍니다. 판매 여부와 구매 방법은 실제 브랜드가 설정해야 합니다."
+      },
+      {
+        "question": "이 사진은 LUMIÈRE 캠페인인가요?",
+        "answer": "아닙니다. Unsplash에서 제공하는 라이선스가 있는 참고 사진입니다. 창작자와 원본 출처는 소재 출처 목록에 기록되어 있습니다."
+      },
+      {
+        "question": "어떻게 문의하나요?",
+        "answer": "실제 연락 이메일이 설정되면 문의 링크가 이메일 앱을 엽니다. 이 템플릿은 메시지를 수집하거나 개인정보를 저장하지 않습니다."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "대화를 시작해 보세요",
+    "title": "나누고 싶은 이야기가 있나요?",
+    "description": "콜라보레이션, 프레스, 그리고 새로운 가능성을 기다립니다.",
+    "emailLabel": "문의하기",
+    "placeholder": "문의 창구 준비 중",
+    "note": "데모 브랜드입니다. 사진은 참고용이며 판매 상품을 제공하지 않습니다."
+  },
+  "ui": {
+    "menu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "viewCollection": "이 룩 보기",
+    "collectionLabel": "룩",
+    "highlights": "룩의 방향",
+    "skip": "본문으로 이동",
+    "backTop": "맨 위로",
+    "navigation": "주 메뉴",
+    "categories": "룩 분류",
+    "language": "언어 선택",
+    "home": "홈",
+    "allCollections": "모든 룩 보기",
+    "backCollections": "전체 룩",
+    "notFound": "룩을 찾을 수 없습니다",
+    "collectionIntro": "이 룩에 대하여",
+    "steps": "재현하는 방법",
+    "relatedProducts": "이 룩의 제품",
+    "shopNow": "담기"
+  },
+  "meta": {
+    "title": "LUMIÈRE — 움직이는 아름다움",
+    "description": "큐레이션된 메이크업 룩북. 시그니처 룩과 재현 단계, 각 의식 뒤의 제품을 만나보세요."
+  }
+}

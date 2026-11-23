@@ -1,0 +1,327 @@
+{
+  "brand": {
+    "name": "LUMIÈRE",
+    "english": "BEAUTY IN MOTION",
+    "descriptor": "Looks worth recreating.",
+    "copyright": "LUMIÈRE · Demonstration brand"
+  },
+  "nav": [
+    {
+      "label": "Lookbook",
+      "href": "collections"
+    },
+    {
+      "label": "Our story",
+      "href": "story"
+    },
+    {
+      "label": "The house",
+      "href": "#approach"
+    }
+  ],
+  "hero": {
+    "eyebrow": "THE LOOKBOOK",
+    "title": ["Every look,", "one ritual."],
+    "description": "A curated collection of signature makeup looks, each paired with the exact products to recreate it.",
+    "primary": "Explore the looks",
+    "image": "images/hero.jpg",
+    "imageAlt": "Close-up editorial portrait of a model with soft glowing makeup",
+    "caption": "Wear the look. Shop the ritual.",
+    "note": "SEASON 01"
+  },
+  "manifesto": {
+    "eyebrow": "THE LUMIÈRE PERSPECTIVE",
+    "title": "Not more makeup.\nMore intention.",
+    "description": "A defined brow. A lit cheekbone. A lip that finishes the look. We design each look as a complete ritual, then show you everything it takes to wear it."
+  },
+  "collections": {
+    "eyebrow": "SIGNATURE LOOKS",
+    "title": "A study in wearable beauty.",
+    "pageTitle": "The Lookbook",
+    "intro": "Explore six visual directions across finish, colour and mood. Every look is a demonstration, illustrated with credited photography and paired with related products.",
+    "allLabel": "All looks",
+    "items": [
+      {
+        "id": "soft-glam",
+        "name": "Soft Glam",
+        "category": "Everyday",
+        "summary": "A polished, second-skin finish with a diffused glow.",
+        "image": "images/look-soft-glam.jpg",
+        "imageAlt": "Model with a soft natural glam look and dewy skin",
+        "detail": "Soft Glam is the everyday signature: a blurred base, a warm wash of neutral shadow and a skin-like glow. It reads polished on camera and effortless in daylight.",
+        "highlights": [
+          "A second-skin, blurred base",
+          "Warm neutral shadow wash",
+          "A diffused lit-from-within glow"
+        ],
+        "steps": [
+          "Even the complexion with a light skin tint, blending outward.",
+          "Sweep a neutral shadow across the lid and softly into the crease.",
+          "Add a touch of highlighter to the high points of the cheekbone.",
+          "Finish the lip with a conditioning lip oil in a nude tone."
+        ],
+        "productIds": ["skin-tint", "eyeshadow-palette", "highlighter", "lip-oil"],
+        "shopLabel": "Shop this look"
+      },
+      {
+        "id": "sunset-glam",
+        "name": "Sunset Glam",
+        "category": "Evening",
+        "summary": "Warm copper and gold tones for a golden-hour flush.",
+        "image": "images/look-sunset.jpg",
+        "imageAlt": "Model with warm copper eyeshadow and glowing skin",
+        "detail": "Sunset Glam pulls the golden hour onto the face: copper and gold shadow, a flushed warm cheek and a glossy nude lip. Made for evening light and candlelit rooms.",
+        "highlights": [
+          "Copper-to-gold shadow gradient",
+          "A flushed warm cheek",
+          "A glossy nude lip"
+        ],
+        "steps": [
+          "Press a copper shade across the lid and blend upward.",
+          "Layer a gold shimmer on the centre of the lid.",
+          "Warm the cheeks with a peach blush.",
+          "Line and fill the lips, then add a clear gloss."
+        ],
+        "productIds": ["eyeshadow-palette", "blush", "lip-liner", "lip-gloss"],
+        "shopLabel": "Shop this look"
+      },
+      {
+        "id": "red-carpet",
+        "name": "Red Carpet",
+        "category": "Event",
+        "summary": "A bold red lip against a clean, sculpted base.",
+        "image": "images/look-red-lip.jpg",
+        "imageAlt": "Model with a bold classic red lip and sculpted complexion",
+        "detail": "The timeless red-carpet formula: a flawless sculpted base, a defined eye kept quiet, and a precise red lip as the single focal point.",
+        "highlights": [
+          "A flawless sculpted base",
+          "A softly defined eye",
+          "A precise, high-impact red lip"
+        ],
+        "steps": [
+          "Build a smooth, even base and set the T-zone.",
+          "Define the lash line with a coat of volumising mascara.",
+          "Trace the lip with a liner for crisp edges.",
+          "Fill with a bold red and blot for a lasting finish."
+        ],
+        "productIds": ["skin-tint", "mascara", "lip-liner", "lip-gloss"],
+        "shopLabel": "Shop this look"
+      },
+      {
+        "id": "dewy-fresh",
+        "name": "Dewy Fresh",
+        "category": "No-makeup",
+        "summary": "A hydrated, barely-there glow with a tinted lip.",
+        "image": "images/look-dewy.jpg",
+        "imageAlt": "Model with a fresh dewy no-makeup look and tinted lips",
+        "detail": "Dewy Fresh is the no-makeup makeup look: hydrated skin, groomed brows, a hint of flush and a soft tinted lip that looks like your own, only brighter.",
+        "highlights": [
+          "Hydrated, glass-like skin",
+          "Groomed, feathered brows",
+          "A soft tinted lip"
+        ],
+        "steps": [
+          "Hydrate and even with a sheer skin tint only where needed.",
+          "Brush the brows upward for a groomed finish.",
+          "Dab a cream blush high on the cheek.",
+          "Press a lip tint onto the centre of the lips and blend."
+        ],
+        "productIds": ["skin-tint", "blush", "lip-oil"],
+        "shopLabel": "Shop this look"
+      },
+      {
+        "id": "smoky-night",
+        "name": "Smoky Night",
+        "category": "Evening",
+        "summary": "A deep, diffused charcoal eye with a soft lip.",
+        "image": "images/look-smoky.jpg",
+        "imageAlt": "Model with a deep smoky charcoal eye and neutral lip",
+        "detail": "Smoky Night keeps the drama on the eyes: a diffused charcoal gradient, tight-lined waterline and a quiet nude lip so the gaze does all the work.",
+        "highlights": [
+          "A diffused charcoal gradient",
+          "A tight-lined waterline",
+          "A quiet, balanced nude lip"
+        ],
+        "steps": [
+          "Sweep a matte shade across the lid as a base.",
+          "Smudge charcoal into the crease and outer corner.",
+          "Tight-line the upper lash line and add mascara.",
+          "Keep the lip soft with a conditioning nude oil."
+        ],
+        "productIds": ["eyeshadow-palette", "mascara", "lip-oil"],
+        "shopLabel": "Shop this look"
+      },
+      {
+        "id": "editorial",
+        "name": "Editorial",
+        "category": "Runway",
+        "summary": "A high-contrast, magazine-ready statement look.",
+        "image": "images/look-editorial.jpg",
+        "imageAlt": "Model with a bold high-contrast editorial makeup look",
+        "detail": "The runway statement: graphic lines, sculpted light and an unexpected finish. Editorial is where the house experiments, then distils it into something you can wear.",
+        "highlights": [
+          "Graphic, sculpted lines",
+          "High-contrast light and shadow",
+          "A signature statement finish"
+        ],
+        "steps": [
+          "Sculpt the face with a defined contour and bright highlight.",
+          "Draw a clean, graphic line along the eye.",
+          "Load the lashes for volume and lift.",
+          "Choose one bold focal point and keep the rest refined."
+        ],
+        "productIds": ["highlighter", "mascara", "lip-liner", "lip-gloss"],
+        "shopLabel": "Shop this look"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "skin-tint",
+      "name": "Weightless Skin Tint",
+      "category": "Face",
+      "price": "¥180",
+      "shade": "6 shades",
+      "image": "images/product-skin-tint.jpg",
+      "imageAlt": "Weightless skin tint bottle on a neutral background"
+    },
+    {
+      "id": "eyeshadow-palette",
+      "name": "Sunset Eyeshadow Palette",
+      "category": "Eyes",
+      "price": "¥300",
+      "shade": "12 tones",
+      "image": "images/product-palette.jpg",
+      "imageAlt": "Twelve-pan warm neutral eyeshadow palette"
+    },
+    {
+      "id": "highlighter",
+      "name": "Liquid Glow Highlighter",
+      "category": "Face",
+      "price": "¥210",
+      "shade": "Champagne",
+      "image": "images/product-highlighter.jpg",
+      "imageAlt": "Liquid highlighter dropper bottle with a luminous finish"
+    },
+    {
+      "id": "blush",
+      "name": "Cloud Blur Blush",
+      "category": "Face",
+      "price": "¥190",
+      "shade": "Petal",
+      "image": "images/product-blush.jpg",
+      "imageAlt": "Cream blush compact in a soft petal pink"
+    },
+    {
+      "id": "lip-oil",
+      "name": "Velvet Lip Oil",
+      "category": "Lips",
+      "price": "¥170",
+      "shade": "Nude 01",
+      "image": "images/product-lip-oil.jpg",
+      "imageAlt": "Nude conditioning lip oil in a frosted tube"
+    },
+    {
+      "id": "lip-liner",
+      "name": "Precision Lip Liner",
+      "category": "Lips",
+      "price": "¥140",
+      "shade": "Rosewood",
+      "image": "images/product-liner.jpg",
+      "imageAlt": "Rosewood lip liner pencil on a neutral surface"
+    },
+    {
+      "id": "mascara",
+      "name": "Lash Volume Mascara",
+      "category": "Eyes",
+      "price": "¥160",
+      "shade": "Black",
+      "image": "images/product-mascara.jpg",
+      "imageAlt": "Volumising mascara tube with a curved wand"
+    },
+    {
+      "id": "lip-gloss",
+      "name": "Glass Lip Gloss",
+      "category": "Lips",
+      "price": "¥150",
+      "shade": "Clear",
+      "image": "images/product-gloss.jpg",
+      "imageAlt": "High-shine clear lip gloss with a flocked applicator"
+    }
+  ],
+  "story": {
+    "eyebrow": "OUR STORY",
+    "title": "Beauty, designed as a ritual.",
+    "description": "LUMIÈRE is an imagined beauty house built around one idea: a great look is not a product, it is a complete ritual you can repeat.",
+    "image": "images/story.jpg",
+    "imageAlt": "Makeup artist working on a model backstage",
+    "link": "Read our story",
+    "paragraphs": [
+      "We start with the look, then work backwards to the few products it truly needs. Every formula is chosen for how it behaves on real skin, in real light.",
+      "This demonstration pairs an editorial identity with a lookbook of visual directions. The photographs belong to their credited creators; they do not document a LUMIÈRE studio or products for sale."
+    ],
+    "values": [
+      {
+        "title": "Looks, not just products",
+        "description": "Each look is a complete, repeatable ritual with the exact steps and pairings to wear it."
+      },
+      {
+        "title": "Formulated for real light",
+        "description": "We choose finishes that read beautifully on camera and feel natural in daylight."
+      },
+      {
+        "title": "Editorial, but wearable",
+        "description": "We experiment on the runway, then distil it into something you can actually wear."
+      }
+    ]
+  },
+  "faq": {
+    "title": "A few things to know",
+    "items": [
+      {
+        "question": "Can I purchase the products shown here?",
+        "answer": "This is a brand presentation template, not an active shop. The looks and products illustrate a creative direction. Availability and checkout need to be configured by the actual brand."
+      },
+      {
+        "question": "Are these photographs of a LUMIÈRE campaign?",
+        "answer": "No. The images are licensed reference photographs from Unsplash. Their creators and original sources are listed in the asset credits."
+      },
+      {
+        "question": "How can I make an enquiry?",
+        "answer": "Once a real contact email is configured, the enquiry link opens your email application. This template does not collect messages or store personal information."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "BEGIN A CONVERSATION",
+    "title": "Something on your mind?",
+    "description": "For collaborations, press and new possibilities.",
+    "emailLabel": "Make an enquiry",
+    "placeholder": "Enquiries coming soon",
+    "note": "A demonstration brand. Photography is illustrative; no products are offered for sale."
+  },
+  "ui": {
+    "menu": "Open menu",
+    "closeMenu": "Close menu",
+    "viewCollection": "View this look",
+    "collectionLabel": "The look",
+    "highlights": "The direction",
+    "skip": "Skip to content",
+    "backTop": "Back to top",
+    "navigation": "Main navigation",
+    "categories": "Look categories",
+    "language": "Choose language",
+    "home": "Home",
+    "allCollections": "View all looks",
+    "backCollections": "All looks",
+    "notFound": "Look not found",
+    "collectionIntro": "About this look",
+    "steps": "How to recreate it",
+    "relatedProducts": "Shop the look",
+    "shopNow": "Shop now"
+  },
+  "meta": {
+    "title": "LUMIÈRE — Beauty in motion",
+    "description": "A curated makeup lookbook. Explore signature looks, the steps to recreate them and the products behind each ritual."
+  }
+}
