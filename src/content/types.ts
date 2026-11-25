@@ -215,6 +215,14 @@ export interface SiteContent {
     checkoutPlaceOrder: string;
     checkoutEmpty: string;
     checkoutPlaced: string;
+    // 404 / footer information architecture
+    notFoundTitle: string;
+    notFoundIntro: string;
+    notFoundHome: string;
+    notFoundShop: string;
+    footerShop: string;
+    footerDiscover: string;
+    footerSupport: string;
   };
   meta: {
     title: string;

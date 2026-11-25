@@ -41,3 +41,18 @@ An original DTC beauty lookbook template adapted from the `templates/brand` base
 ### 平台预览限制 / Preview environment note
 - 托管预览页运行在 CSP sandbox 中，`localStorage` 被平台设计禁用；购物袋在预览内自动降级为内存模式（同页交互全部可用，整页跳转后清空）。
 - Fork 后部署到正常环境（GitHub Pages / 任意静态托管）时，`localStorage` 可用，购物袋跨页持久并同步角标。
+
+## Phase 2 — site infrastructure (二期基建)
+- **购物袋移动端溢出修复**：`body { overflow-x: clip }`（保留 sticky），遮罩 `overflow: hidden` 裁掉离屏抽屉，抽屉宽度 `min(380px, 90vw)`。修复 375px 视口下遮罩被撑到 378×673 的问题。
+- **自定义 404**：`NotFoundPage` + registry `notfound` 路由生成各语言 `/404/`，并在构建时派生根级 `404.html`（GitHub Pages 约定）；`App` 对未知页面回退到 404，不再抛错。
+- **页脚信息架构**：四栏（品牌 / Shop / Discover / Support），链接仅指向已存在的路由与首页锚点（collections/approach/contact/faq 等），保证静态可解析。
+- **每页独立 SEO meta**：`renderHtml` 注入 `og:title/description/type/locale`、`twitter:card`；在 `config.json` 的 `siteUrl` 填写域名后，自动追加每页绝对 `canonical` 与 `og:url`（留空则不输出，避免臆造域名）。
+
+## 404 行为说明 / 404 behaviour
+- 构建会生成各语言 `/404/` 页面，并派生根级 `404.html`（GitHub Pages 等静态托管的 404 约定）。线上访问任意错误路径都会显示它，资源路径正确、样式完整。
+- `vite.config.ts` 设 `appType: "mpa"`：本地 `vite preview` 不再把未知路径 SPA 回退成首页（旧行为会因相对资源在子路径失效而出现"无样式裸页"）。
+- 本地想预览自定义 404 页：直接访问 `/404/`（或 `/404.html`），不要用随机错误路径。
+
+### 本地预览 404 跳转 / Local preview 404 redirect
+- 线上静态托管（GitHub Pages）对任意错误路径自动返回根 `404.html`。
+- 本地 `vite preview` 无此机制，故 `vite.config.ts` 内置 `preview-not-found` 中间件：把未命中静态文件的 GET 页面路径按语言重定向到对应 404 页（`/zh/xxx`→`/zh/404/`、`/ko/xxx`→`/ko/404/`、其余→`/404.html`）。真实页面与带扩展名资源不受影响。

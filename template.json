@@ -45,7 +45,10 @@
     "multilingual",
     "shopping-bag-drawer",
     "checkout-prototype",
-    "persistent-cart"
+    "persistent-cart",
+    "custom-404-page",
+    "footer-navigation",
+    "per-page-seo-meta"
   ],
   "requiredRuntimeCapabilities": [],
   "designReference": "https://kyliecosmetics.com/en-cn/pages/kylies-looks",
@@ -57,7 +60,8 @@
     "shop": "/shop/",
     "product": "/products/{id}/",
     "story": "/story/",
-    "checkout": "/checkout/"
+    "checkout": "/checkout/",
+    "notfound": "/404/"
   },
   "rendering": "static-generation"
 }

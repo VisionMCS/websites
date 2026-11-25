@@ -721,7 +721,14 @@
     "checkoutTotal": "合计",
     "checkoutPlaceOrder": "提交订单",
     "checkoutEmpty": "购物袋是空的，先挑选一件单品再结账。",
-    "checkoutPlaced": "这是原型演示，并未真正下单。"
+    "checkoutPlaced": "这是原型演示，并未真正下单。",
+    "notFoundTitle": "页面未找到",
+    "notFoundIntro": "我们找不到该页面，它可能已移动或链接已失效。",
+    "notFoundHome": "返回首页",
+    "notFoundShop": "逛逛商店",
+    "footerShop": "选购",
+    "footerDiscover": "发现",
+    "footerSupport": "支持"
   },
   "meta": {
     "title": "LUMIÈRE — 流动之美",

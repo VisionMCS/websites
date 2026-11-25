@@ -721,7 +721,14 @@
     "checkoutTotal": "합계",
     "checkoutPlaceOrder": "주문하기",
     "checkoutEmpty": "장바구니가 비어 있습니다. 계속하려면 상품을 추가하세요.",
-    "checkoutPlaced": "프로토타입 데모이며 실제 주문은 접수되지 않았습니다."
+    "checkoutPlaced": "프로토타입 데모이며 실제 주문은 접수되지 않았습니다.",
+    "notFoundTitle": "페이지를 찾을 수 없습니다",
+    "notFoundIntro": "페이지를 찾을 수 없습니다. 이동했거나 링크가 만료되었을 수 있습니다.",
+    "notFoundHome": "홈으로 돌아가기",
+    "notFoundShop": "상점 둘러보기",
+    "footerShop": "쇼핑",
+    "footerDiscover": "탐색",
+    "footerSupport": "지원"
   },
   "meta": {
     "title": "LUMIÈRE — 움직이는 아름다움",

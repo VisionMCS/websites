@@ -707,7 +707,14 @@ var ui$2 = {
 	"checkoutTotal": "Total",
 	"checkoutPlaceOrder": "Place order",
 	"checkoutEmpty": "Your bag is empty. Add a product to continue.",
-	"checkoutPlaced": "This is a prototype - no order was placed."
+	"checkoutPlaced": "This is a prototype - no order was placed.",
+	"notFoundTitle": "Page not found",
+	"notFoundIntro": "We couldn't find that page. It may have moved, or the link is out of date.",
+	"notFoundHome": "Back to home",
+	"notFoundShop": "Browse the shop",
+	"footerShop": "Shop",
+	"footerDiscover": "Discover",
+	"footerSupport": "Support"
 };
 var meta$2 = {
 	"title": "LUMIÈRE — Beauty in motion",
@@ -1426,7 +1433,14 @@ var ui$1 = {
 	"checkoutTotal": "합계",
 	"checkoutPlaceOrder": "주문하기",
 	"checkoutEmpty": "장바구니가 비어 있습니다. 계속하려면 상품을 추가하세요.",
-	"checkoutPlaced": "프로토타입 데모이며 실제 주문은 접수되지 않았습니다."
+	"checkoutPlaced": "프로토타입 데모이며 실제 주문은 접수되지 않았습니다.",
+	"notFoundTitle": "페이지를 찾을 수 없습니다",
+	"notFoundIntro": "페이지를 찾을 수 없습니다. 이동했거나 링크가 만료되었을 수 있습니다.",
+	"notFoundHome": "홈으로 돌아가기",
+	"notFoundShop": "상점 둘러보기",
+	"footerShop": "쇼핑",
+	"footerDiscover": "탐색",
+	"footerSupport": "지원"
 };
 var meta$1 = {
 	"title": "LUMIÈRE — 움직이는 아름다움",
@@ -2145,7 +2159,14 @@ var ui = {
 	"checkoutTotal": "合计",
 	"checkoutPlaceOrder": "提交订单",
 	"checkoutEmpty": "购物袋是空的，先挑选一件单品再结账。",
-	"checkoutPlaced": "这是原型演示，并未真正下单。"
+	"checkoutPlaced": "这是原型演示，并未真正下单。",
+	"notFoundTitle": "页面未找到",
+	"notFoundIntro": "我们找不到该页面，它可能已移动或链接已失效。",
+	"notFoundHome": "返回首页",
+	"notFoundShop": "逛逛商店",
+	"footerShop": "选购",
+	"footerDiscover": "发现",
+	"footerSupport": "支持"
 };
 var meta = {
 	"title": "LUMIÈRE — 流动之美",
@@ -2171,6 +2192,7 @@ var zh_CN_default = {
 };
 var config_default = {
 	defaultLocale: "en-US",
+	siteUrl: "",
 	locales: [
 		{
 			"code": "zh-CN",
@@ -2241,6 +2263,13 @@ var registry_default = [
 		"component": "CheckoutPage",
 		"title": "ui.checkoutTitle",
 		"description": "ui.checkoutIntro"
+	},
+	{
+		"id": "notfound",
+		"path": "404/",
+		"component": "NotFoundPage",
+		"title": "ui.notFoundTitle",
+		"description": "ui.notFoundIntro"
 	}
 ];
 //#endregion
@@ -2633,24 +2662,90 @@ function Contact() {
 			})]
 		})
 	}), /* @__PURE__ */ jsxs("footer", {
-		className: "container footer",
+		className: "footer",
 		children: [/* @__PURE__ */ jsxs("div", {
-			className: "footer-top",
-			children: [/* @__PURE__ */ jsxs("span", {
-				className: "footer-brand",
-				children: [site.brand.name, /* @__PURE__ */ jsx("small", { children: site.brand.english })]
-			}), /* @__PURE__ */ jsxs("a", {
-				href: "#top",
-				children: [site.ui.backTop, /* @__PURE__ */ jsx(Arrow, { diagonal: true })]
-			})]
+			className: "container footer-inner",
+			children: [
+				/* @__PURE__ */ jsxs("div", {
+					className: "footer-brand",
+					children: [/* @__PURE__ */ jsxs("span", {
+						className: "footer-logo",
+						children: [site.brand.name, /* @__PURE__ */ jsx("small", { children: site.brand.english })]
+					}), /* @__PURE__ */ jsx("p", {
+						className: "footer-tagline",
+						children: site.brand.descriptor
+					})]
+				}),
+				/* @__PURE__ */ jsxs("nav", {
+					className: "footer-col",
+					"aria-label": site.ui.footerShop,
+					children: [
+						/* @__PURE__ */ jsx("h3", { children: site.ui.footerShop }),
+						/* @__PURE__ */ jsx("a", {
+							href: pageUrl("shop"),
+							children: site.ui.shop
+						}),
+						/* @__PURE__ */ jsx("a", {
+							href: pageUrl("collections"),
+							children: site.ui.allCollections
+						}),
+						/* @__PURE__ */ jsx("a", {
+							href: pageUrl("checkout"),
+							children: site.ui.cartTitle
+						})
+					]
+				}),
+				/* @__PURE__ */ jsxs("nav", {
+					className: "footer-col",
+					"aria-label": site.ui.footerDiscover,
+					children: [
+						/* @__PURE__ */ jsx("h3", { children: site.ui.footerDiscover }),
+						/* @__PURE__ */ jsx("a", {
+							href: pageUrl("story"),
+							children: site.story.title
+						}),
+						/* @__PURE__ */ jsx("a", {
+							href: homeLink("#fanfaves-title"),
+							children: site.fanFaves.title
+						}),
+						/* @__PURE__ */ jsx("a", {
+							href: homeLink("#social-title"),
+							children: site.social.title
+						})
+					]
+				}),
+				/* @__PURE__ */ jsxs("nav", {
+					className: "footer-col",
+					"aria-label": site.ui.footerSupport,
+					children: [
+						/* @__PURE__ */ jsx("h3", { children: site.ui.footerSupport }),
+						/* @__PURE__ */ jsx("a", {
+							href: pageUrl("story", {}, "#faq-title"),
+							children: site.faq.title
+						}),
+						/* @__PURE__ */ jsx("a", {
+							href: homeLink("#tryon-title"),
+							children: site.tryOn.title
+						}),
+						/* @__PURE__ */ jsx("a", {
+							href: homeLink("#contact"),
+							children: site.contact.title
+						})
+					]
+				})
+			]
 		}), /* @__PURE__ */ jsxs("div", {
-			className: "footer-bottom",
+			className: "container footer-bottom",
 			children: [/* @__PURE__ */ jsxs("span", { children: [
 				"© ",
 				(/* @__PURE__ */ new Date()).getFullYear(),
 				" ",
 				site.brand.copyright
-			] }), /* @__PURE__ */ jsx("p", { children: site.contact.note })]
+			] }), /* @__PURE__ */ jsxs("a", {
+				className: "footer-top-link",
+				href: "#top",
+				children: [site.ui.backTop, /* @__PURE__ */ jsx(Arrow, { diagonal: true })]
+			})]
 		})]
 	})] });
 }
@@ -3880,6 +3975,36 @@ function CheckoutPage() {
 	});
 }
 //#endregion
+//#region src/pages/NotFoundPage.tsx
+function NotFoundPage() {
+	return /* @__PURE__ */ jsxs("section", {
+		className: "container section notfound-page",
+		children: [
+			/* @__PURE__ */ jsx("p", {
+				className: "eyebrow",
+				children: "404"
+			}),
+			/* @__PURE__ */ jsx("h1", { children: site.ui.notFoundTitle }),
+			/* @__PURE__ */ jsx("p", {
+				className: "notfound-intro",
+				children: site.ui.notFoundIntro
+			}),
+			/* @__PURE__ */ jsxs("div", {
+				className: "notfound-actions",
+				children: [/* @__PURE__ */ jsx("a", {
+					className: "button-primary",
+					href: pageUrl("home"),
+					children: site.ui.notFoundHome
+				}), /* @__PURE__ */ jsxs("a", {
+					className: "text-link",
+					href: pageUrl("shop"),
+					children: [site.ui.notFoundShop, /* @__PURE__ */ jsx(Arrow, { diagonal: true })]
+				})]
+			})
+		]
+	});
+}
+//#endregion
 //#region src/pages/components.ts
 var components = {
 	HomePage,
@@ -3888,7 +4013,8 @@ var components = {
 	ShopPage,
 	ProductPage,
 	StoryPage,
-	CheckoutPage
+	CheckoutPage,
+	NotFoundPage
 };
 //#endregion
 //#region src/sections/CartDrawer.tsx
@@ -4022,8 +4148,7 @@ function CartDrawer() {
 //#region src/App.tsx
 function App() {
 	const definition = registry_default.find((item) => item.id === page);
-	const Page = definition && components[definition.component];
-	if (!Page) throw new Error(`Missing page component: ${page}`);
+	const Page = definition && components[definition.component] || NotFoundPage;
 	return /* @__PURE__ */ jsxs("div", {
 		id: "top",
 		children: [
@@ -4068,6 +4193,7 @@ function expandPages(content, registry) {
 //#region src/render.tsx
 function renderPages() {
 	const pages = [];
+	const siteUrl = config_default.siteUrl ?? "";
 	for (const entry of config_default.locales) {
 		const content = dictionaries[entry.code];
 		for (const route of expandPages(content, registry_default)) {
@@ -4078,6 +4204,7 @@ function renderPages() {
 				locale: entry.code,
 				path,
 				root: rootPrefix(path),
+				url: siteUrl ? `${siteUrl.replace(/\/$/, "")}/${path}` : "",
 				html: renderToString(/* @__PURE__ */ jsx(App, {}))
 			});
 		}

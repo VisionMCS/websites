@@ -22,6 +22,20 @@ export function outputFile(root, path) {
   return file;
 }
 export function renderHtml(shell, page) {
+  const ogType = page.page === "product" ? "product" : "website";
+  const head = [
+    `<meta property="og:title" content="${escape(page.title)}" />`,
+    `<meta property="og:description" content="${escape(page.description)}" />`,
+    `<meta property="og:type" content="${ogType}" />`,
+    `<meta property="og:locale" content="${escape(page.locale)}" />`,
+    `<meta name="twitter:card" content="summary_large_image" />`,
+    `<meta name="twitter:title" content="${escape(page.title)}" />`,
+    `<meta name="twitter:description" content="${escape(page.description)}" />`,
+  ];
+  if (page.url) {
+    head.push(`<link rel="canonical" href="${escape(page.url)}" />`);
+    head.push(`<meta property="og:url" content="${escape(page.url)}" />`);
+  }
   return shell
     .replace(
       /<html[^>]*>/,
@@ -34,7 +48,7 @@ export function renderHtml(shell, page) {
     )
     .replace(
       /<meta name="description" content="[^"]*" \/>/,
-      () => `<meta name="description" content="${escape(page.description)}" />`,
+      () => `<meta name="description" content="${escape(page.description)}" />\n    ${head.join("\n    ")}`,
     )
     .replaceAll('"./assets/', () => `"${page.root}assets/`)
     .replace('"./favicon.svg"', () => `"${page.root}favicon.svg"`)

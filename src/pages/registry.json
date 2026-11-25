@@ -47,5 +47,12 @@
     "component": "CheckoutPage",
     "title": "ui.checkoutTitle",
     "description": "ui.checkoutIntro"
+  },
+  {
+    "id": "notfound",
+    "path": "404/",
+    "component": "NotFoundPage",
+    "title": "ui.notFoundTitle",
+    "description": "ui.notFoundIntro"
   }
 ]

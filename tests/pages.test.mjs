@@ -83,7 +83,9 @@ const readContents = new Map(
 
 test("configured language variants have matching pages and anchor targets", () => {
   const keys = new Set();
+  const notFound = resolve(root, "404.html");
   for (const [path, { html, ids }] of pages) {
+    if (path === notFound) continue;
     const kind = html.match(/data-page="([^"]+)"/)?.[1];
     const contentId = html.match(/data-content-id="([^"]*)"/)?.[1] ?? "";
     const language = html.match(/<html[^>]*lang="([^"]+)"/)?.[1];
@@ -112,4 +114,16 @@ test("configured language variants have matching pages and anchor targets", () =
     for (const route of expandPages(content, registry))
       assert.ok(keys.has(`${route.page}:${route.id}`), route.page);
   }
+});
+
+test("root 404 page exists with a single heading", () => {
+  const notFound = resolve(root, "404.html");
+  const entry = pages.get(notFound);
+  assert.ok(entry, "dist/404.html should be generated");
+  assert.equal(
+    [...entry.html.matchAll(/<h1\b/g)].length,
+    1,
+    "404 page must have exactly one h1",
+  );
+  assert.match(entry.html, /data-page="notfound"/);
 });

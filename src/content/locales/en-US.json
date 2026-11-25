@@ -721,7 +721,14 @@
     "checkoutTotal": "Total",
     "checkoutPlaceOrder": "Place order",
     "checkoutEmpty": "Your bag is empty. Add a product to continue.",
-    "checkoutPlaced": "This is a prototype - no order was placed."
+    "checkoutPlaced": "This is a prototype - no order was placed.",
+    "notFoundTitle": "Page not found",
+    "notFoundIntro": "We couldn't find that page. It may have moved, or the link is out of date.",
+    "notFoundHome": "Back to home",
+    "notFoundShop": "Browse the shop",
+    "footerShop": "Shop",
+    "footerDiscover": "Discover",
+    "footerSupport": "Support"
   },
   "meta": {
     "title": "LUMIÈRE — Beauty in motion",

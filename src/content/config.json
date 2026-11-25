@@ -1,5 +1,6 @@
 {
   "defaultLocale": "en-US",
+  "siteUrl": "",
   "locales": [
     {
       "code": "zh-CN",
