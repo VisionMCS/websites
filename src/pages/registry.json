@@ -40,5 +40,12 @@
     "component": "StoryPage",
     "title": "story.title",
     "description": "story.description"
+  },
+  {
+    "id": "checkout",
+    "path": "checkout/",
+    "component": "CheckoutPage",
+    "title": "ui.checkoutTitle",
+    "description": "ui.checkoutIntro"
   }
 ]

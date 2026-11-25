@@ -197,6 +197,24 @@ export interface SiteContent {
     backToShop: string;
     prototypeNote: string;
     selectSize: string;
+    // Shopping bag / checkout prototype
+    bag: string;
+    cartTitle: string;
+    cartEmpty: string;
+    cartEmptyCta: string;
+    cartSubtotal: string;
+    cartCheckout: string;
+    cartRemove: string;
+    cartQtyIncrease: string;
+    cartQtyDecrease: string;
+    checkoutTitle: string;
+    checkoutIntro: string;
+    checkoutShipping: string;
+    checkoutShippingFree: string;
+    checkoutTotal: string;
+    checkoutPlaceOrder: string;
+    checkoutEmpty: string;
+    checkoutPlaced: string;
   };
   meta: {
     title: string;

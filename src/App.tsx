@@ -4,6 +4,7 @@ import { AnnouncementBar } from "./sections/AnnouncementBar";
 import { Contact } from "./sections/Contact";
 import registry from "./pages/registry.json";
 import { components } from "./pages/components";
+import { CartDrawer } from "./sections/CartDrawer";
 export function App() {
   const definition = registry.find((item) => item.id === page);
   const Page = definition && components[definition.component];
@@ -19,6 +20,7 @@ export function App() {
         <Page />
         <Contact />
       </main>
+      <CartDrawer />
     </div>
   );
 }

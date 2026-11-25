@@ -2,6 +2,7 @@ import { useState } from "react";
 import { site, asset, contentId } from "../content";
 import { pageUrl } from "../content/links";
 import { Arrow } from "../components/Arrow";
+import { addToBag } from "../content/cart";
 
 export function ProductPage() {
   const product = site.products.find((item) => item.id === contentId);
@@ -59,7 +60,16 @@ export function ProductPage() {
           <button
             type="button"
             className="button-primary add-to-bag"
-            onClick={() => setAdded(true)}
+            onClick={() => {
+              addToBag({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                size: product.sizes[size] ?? "",
+                image: product.image,
+              });
+              setAdded(true);
+            }}
           >
             {site.ui.addToBag}
           </button>

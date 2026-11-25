@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { site, asset } from "../content";
 import { pageUrl } from "../content/links";
+import { addToBag } from "../content/cart";
 import type { SiteContent } from "../content/types";
 
 type Item = SiteContent["social"]["items"][number];
@@ -109,13 +110,20 @@ export function SocialLightbox({
                 <button
                   type="button"
                   className="button-primary lightbox-add"
-                  onClick={() =>
+                  onClick={() => {
+                    addToBag({
+                      id: product.id,
+                      name: product.name,
+                      price: product.price,
+                      size: product.sizes?.[0] ?? "",
+                      image: product.image,
+                    });
                     setAdded((current) =>
                       current.includes(product.id)
                         ? current
                         : [...current, product.id],
-                    )
-                  }
+                    );
+                  }}
                 >
                   {site.social.shopLabel}
                 </button>

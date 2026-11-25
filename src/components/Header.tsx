@@ -3,9 +3,12 @@ import { site } from "../content";
 import { LanguageMenu } from "./LanguageMenu";
 import { pageUrl, homeLink } from "../content/links";
 import { Arrow } from "./Arrow";
+import { useBag } from "../content/useCart";
+import { openBag } from "../content/cart";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const { count } = useBag();
   useEffect(() => {
     if (!open) return;
     const escape = (event: KeyboardEvent) => {
@@ -31,6 +34,33 @@ export function Header() {
           </span>
         </a>
         <LanguageMenu />
+        <button
+          type="button"
+          className="bag-toggle"
+          aria-label={site.ui.bag}
+          onClick={() => openBag()}
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            aria-hidden="true"
+          >
+            <path
+              d="M6 8h12l-1 12H7L6 8Z"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+            />
+            <path
+              d="M9 8V6a3 3 0 0 1 6 0v2"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+            />
+          </svg>
+          <span className="bag-badge">{count}</span>
+        </button>
         <button
           id="nav-toggle"
           type="button"

@@ -30,3 +30,14 @@ An original DTC beauty lookbook template adapted from the `templates/brand` base
 
 ## 命令 / Commands
 见 package.json：`pnpm test` / `pnpm typecheck` / `pnpm build`（云构建执行）。
+
+## Shopping bag & checkout (front-end prototype / 购物袋与结账·前端原型)
+- Header 购物袋入口带数量角标，全站共享，localStorage `lumiere.bag` 持久化并跨静态页同步。
+- 商品详情页与 IG 可购物 lightbox 的加购都会写入购物袋并自动展开右侧抽屉。
+- 抽屉支持增减数量、移除单品、小计与"去结账"。
+- `/checkout/` 汇总明细、配送（免费）与合计；"提交订单"仅为原型，不会产生真实订单。
+- 金额由本地化价格串（如 ¥180 / ₩36,000）在运行时解析数字与货币符号求和，纯展示。
+
+### 平台预览限制 / Preview environment note
+- 托管预览页运行在 CSP sandbox 中，`localStorage` 被平台设计禁用；购物袋在预览内自动降级为内存模式（同页交互全部可用，整页跳转后清空）。
+- Fork 后部署到正常环境（GitHub Pages / 任意静态托管）时，`localStorage` 可用，购物袋跨页持久并同步角标。

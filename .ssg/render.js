@@ -690,7 +690,24 @@ var ui$2 = {
 	"usedInLooks": "Shop this product in",
 	"backToShop": "Back to shop",
 	"prototypeNote": "This is a design template: the bag is a non-functional prototype and no order is placed or sent.",
-	"selectSize": "Select size"
+	"selectSize": "Select size",
+	"bag": "Bag",
+	"cartTitle": "Your bag",
+	"cartEmpty": "Your bag is empty.",
+	"cartEmptyCta": "Shop products",
+	"cartSubtotal": "Subtotal",
+	"cartCheckout": "Checkout",
+	"cartRemove": "Remove",
+	"cartQtyIncrease": "Increase quantity",
+	"cartQtyDecrease": "Decrease quantity",
+	"checkoutTitle": "Checkout",
+	"checkoutIntro": "Review your selection. Orders in this template are a front-end prototype.",
+	"checkoutShipping": "Shipping",
+	"checkoutShippingFree": "Free",
+	"checkoutTotal": "Total",
+	"checkoutPlaceOrder": "Place order",
+	"checkoutEmpty": "Your bag is empty. Add a product to continue.",
+	"checkoutPlaced": "This is a prototype - no order was placed."
 };
 var meta$2 = {
 	"title": "LUMIÈRE — Beauty in motion",
@@ -1392,7 +1409,24 @@ var ui$1 = {
 	"usedInLooks": "이 제품이 포함된 룩",
 	"backToShop": "숍으로 돌아가기",
 	"prototypeNote": "디자인 템플릿입니다: 장바구니는 동작하지 않는 목업이며 주문은 전송되지 않습니다.",
-	"selectSize": "용량 선택"
+	"selectSize": "용량 선택",
+	"bag": "장바구니",
+	"cartTitle": "장바구니",
+	"cartEmpty": "장바구니가 비어 있습니다.",
+	"cartEmptyCta": "제품 쇼핑",
+	"cartSubtotal": "소계",
+	"cartCheckout": "결제",
+	"cartRemove": "삭제",
+	"cartQtyIncrease": "수량 늘리기",
+	"cartQtyDecrease": "수량 줄이기",
+	"checkoutTitle": "결제",
+	"checkoutIntro": "선택한 상품을 확인하세요. 이 템플릿의 주문은 프론트엔드 프로토타입입니다.",
+	"checkoutShipping": "배송",
+	"checkoutShippingFree": "무료",
+	"checkoutTotal": "합계",
+	"checkoutPlaceOrder": "주문하기",
+	"checkoutEmpty": "장바구니가 비어 있습니다. 계속하려면 상품을 추가하세요.",
+	"checkoutPlaced": "프로토타입 데모이며 실제 주문은 접수되지 않았습니다."
 };
 var meta$1 = {
 	"title": "LUMIÈRE — 움직이는 아름다움",
@@ -2094,7 +2128,24 @@ var ui = {
 	"usedInLooks": "在以下妆容中查看",
 	"backToShop": "返回商店",
 	"prototypeNote": "这是设计模板：购物袋仅为不可用原型，不会下单或发送。",
-	"selectSize": "选择规格"
+	"selectSize": "选择规格",
+	"bag": "购物袋",
+	"cartTitle": "购物袋",
+	"cartEmpty": "购物袋还是空的。",
+	"cartEmptyCta": "选购单品",
+	"cartSubtotal": "小计",
+	"cartCheckout": "去结账",
+	"cartRemove": "移除",
+	"cartQtyIncrease": "增加数量",
+	"cartQtyDecrease": "减少数量",
+	"checkoutTitle": "结账",
+	"checkoutIntro": "请确认所选商品。本模板的下单为前端原型。",
+	"checkoutShipping": "配送",
+	"checkoutShippingFree": "免费",
+	"checkoutTotal": "合计",
+	"checkoutPlaceOrder": "提交订单",
+	"checkoutEmpty": "购物袋是空的，先挑选一件单品再结账。",
+	"checkoutPlaced": "这是原型演示，并未真正下单。"
 };
 var meta = {
 	"title": "LUMIÈRE — 流动之美",
@@ -2183,6 +2234,13 @@ var registry_default = [
 		"component": "StoryPage",
 		"title": "story.title",
 		"description": "story.description"
+	},
+	{
+		"id": "checkout",
+		"path": "checkout/",
+		"component": "CheckoutPage",
+		"title": "ui.checkoutTitle",
+		"description": "ui.checkoutIntro"
 	}
 ];
 //#endregion
@@ -2346,9 +2404,108 @@ function Arrow({ diagonal = false }) {
 	});
 }
 //#endregion
+//#region src/content/cart.ts
+var STORAGE_KEY = "lumiere.bag";
+var bagKey = (id, size) => `${id}::${size}`;
+function parsePrice(price) {
+	const num = parseFloat((price || "").replace(/[^0-9.]/g, ""));
+	const symbol = (price || "").replace(/[0-9.,\s]/g, "");
+	return {
+		num: Number.isFinite(num) ? num : 0,
+		symbol
+	};
+}
+function readCart() {
+	if (typeof localStorage === "undefined") return [];
+	try {
+		const raw = localStorage.getItem(STORAGE_KEY);
+		const items = raw ? JSON.parse(raw) : [];
+		return Array.isArray(items) ? items : [];
+	} catch {
+		return [];
+	}
+}
+function emit() {
+	if (typeof document !== "undefined") document.dispatchEvent(new CustomEvent("bag:update"));
+}
+function persist(items) {
+	if (typeof localStorage === "undefined") return;
+	localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+	emit();
+}
+function subscribe(callback) {
+	const handler = () => callback();
+	if (typeof document !== "undefined") document.addEventListener("bag:update", handler);
+	if (typeof window !== "undefined") window.addEventListener("storage", handler);
+	return () => {
+		if (typeof document !== "undefined") document.removeEventListener("bag:update", handler);
+		if (typeof window !== "undefined") window.removeEventListener("storage", handler);
+	};
+}
+function openBag() {
+	if (typeof document !== "undefined") document.dispatchEvent(new CustomEvent("bag:open"));
+}
+function addToBag(input, qty = 1) {
+	const items = readCart();
+	const key = bagKey(input.id, input.size);
+	const found = items.find((item) => bagKey(item.id, item.size) === key);
+	if (found) found.qty += qty;
+	else items.push({
+		...input,
+		qty
+	});
+	persist(items);
+	openBag();
+}
+function setQty(id, size, qty) {
+	persist(readCart().map((item) => bagKey(item.id, item.size) === bagKey(id, size) ? {
+		...item,
+		qty: Math.max(0, qty)
+	} : item).filter((item) => item.qty > 0));
+}
+function removeFromBag(id, size) {
+	persist(readCart().filter((item) => bagKey(item.id, item.size) !== bagKey(id, size)));
+}
+function cartTotals(items) {
+	let subtotal = 0;
+	let symbol = "";
+	let count = 0;
+	for (const item of items) {
+		const parsed = parsePrice(item.price);
+		subtotal += parsed.num * item.qty;
+		if (!symbol) symbol = parsed.symbol;
+		count += item.qty;
+	}
+	return {
+		subtotal,
+		symbol,
+		count
+	};
+}
+function formatMoney(symbol, value) {
+	return `${symbol}${value % 1 === 0 ? value.toLocaleString() : value.toFixed(2)}`;
+}
+//#endregion
+//#region src/content/useCart.ts
+function useBag() {
+	const [items, setItems] = useState([]);
+	useEffect(() => {
+		setItems(readCart());
+		return subscribe(() => setItems(readCart()));
+	}, []);
+	const { subtotal, symbol, count } = cartTotals(items);
+	return {
+		items,
+		subtotal,
+		symbol,
+		count
+	};
+}
+//#endregion
 //#region src/components/Header.tsx
 function Header() {
 	const [open, setOpen] = useState(false);
+	const { count } = useBag();
 	useEffect(() => {
 		if (!open) return;
 		const escape = (event) => {
@@ -2372,6 +2529,32 @@ function Header() {
 					children: /* @__PURE__ */ jsxs("span", { children: [site.brand.name, /* @__PURE__ */ jsx("small", { children: site.brand.english })] })
 				}),
 				/* @__PURE__ */ jsx(LanguageMenu, {}),
+				/* @__PURE__ */ jsxs("button", {
+					type: "button",
+					className: "bag-toggle",
+					"aria-label": site.ui.bag,
+					onClick: () => openBag(),
+					children: [/* @__PURE__ */ jsxs("svg", {
+						viewBox: "0 0 24 24",
+						width: "20",
+						height: "20",
+						"aria-hidden": "true",
+						children: [/* @__PURE__ */ jsx("path", {
+							d: "M6 8h12l-1 12H7L6 8Z",
+							fill: "none",
+							stroke: "currentColor",
+							strokeWidth: "1.6"
+						}), /* @__PURE__ */ jsx("path", {
+							d: "M9 8V6a3 3 0 0 1 6 0v2",
+							fill: "none",
+							stroke: "currentColor",
+							strokeWidth: "1.6"
+						})]
+					}), /* @__PURE__ */ jsx("span", {
+						className: "bag-badge",
+						children: count
+					})]
+				}),
 				/* @__PURE__ */ jsxs("button", {
 					id: "nav-toggle",
 					type: "button",
@@ -2952,7 +3135,16 @@ function SocialLightbox({ items, index, onClose, onStep }) {
 								/* @__PURE__ */ jsx("button", {
 									type: "button",
 									className: "button-primary lightbox-add",
-									onClick: () => setAdded((current) => current.includes(product.id) ? current : [...current, product.id]),
+									onClick: () => {
+										addToBag({
+											id: product.id,
+											name: product.name,
+											price: product.price,
+											size: product.sizes?.[0] ?? "",
+											image: product.image
+										});
+										setAdded((current) => current.includes(product.id) ? current : [...current, product.id]);
+									},
 									children: site.social.shopLabel
 								}),
 								added.includes(product.id) && /* @__PURE__ */ jsxs("p", {
@@ -3449,7 +3641,16 @@ function ProductPage() {
 						/* @__PURE__ */ jsx("button", {
 							type: "button",
 							className: "button-primary add-to-bag",
-							onClick: () => setAdded(true),
+							onClick: () => {
+								addToBag({
+									id: product.id,
+									name: product.name,
+									price: product.price,
+									size: product.sizes[size] ?? "",
+									image: product.image
+								});
+								setAdded(true);
+							},
 							children: site.ui.addToBag
 						}),
 						added && /* @__PURE__ */ jsxs("p", {
@@ -3551,6 +3752,129 @@ function StoryPage() {
 	] });
 }
 //#endregion
+//#region src/pages/CheckoutPage.tsx
+function CheckoutPage() {
+	const { items, subtotal, symbol, count } = useBag();
+	const [placed, setPlaced] = useState(false);
+	return /* @__PURE__ */ jsxs("article", {
+		className: "container section checkout-page",
+		children: [
+			/* @__PURE__ */ jsxs("nav", {
+				className: "breadcrumbs",
+				"aria-label": site.ui.navigation,
+				children: [
+					/* @__PURE__ */ jsx("a", {
+						href: pageUrl(),
+						children: site.ui.home
+					}),
+					/* @__PURE__ */ jsx("span", { children: "/" }),
+					/* @__PURE__ */ jsx("a", {
+						href: pageUrl("shop"),
+						children: site.ui.shop
+					}),
+					/* @__PURE__ */ jsx("span", { children: "/" }),
+					/* @__PURE__ */ jsx("span", { children: site.ui.checkoutTitle })
+				]
+			}),
+			/* @__PURE__ */ jsx("p", {
+				className: "eyebrow",
+				children: site.brand.name
+			}),
+			/* @__PURE__ */ jsx("h1", { children: site.ui.checkoutTitle }),
+			/* @__PURE__ */ jsx("p", {
+				className: "checkout-intro",
+				children: site.ui.checkoutIntro
+			}),
+			count === 0 ? /* @__PURE__ */ jsxs("div", {
+				className: "checkout-empty",
+				children: [/* @__PURE__ */ jsx("p", { children: site.ui.checkoutEmpty }), /* @__PURE__ */ jsx("a", {
+					className: "button-primary",
+					href: pageUrl("shop"),
+					children: site.ui.cartEmptyCta
+				})]
+			}) : /* @__PURE__ */ jsxs("div", {
+				className: "checkout-layout",
+				children: [/* @__PURE__ */ jsx("div", {
+					className: "checkout-summary",
+					children: /* @__PURE__ */ jsx("ul", {
+						className: "checkout-list",
+						children: items.map((item) => /* @__PURE__ */ jsxs("li", {
+							className: "checkout-row",
+							children: [
+								/* @__PURE__ */ jsx("img", {
+									className: "checkout-thumb",
+									src: asset(item.image),
+									alt: item.name
+								}),
+								/* @__PURE__ */ jsxs("div", {
+									className: "checkout-row-info",
+									children: [
+										/* @__PURE__ */ jsx("p", {
+											className: "checkout-row-name",
+											children: item.name
+										}),
+										item.size && /* @__PURE__ */ jsxs("p", {
+											className: "checkout-row-size",
+											children: [
+												site.ui.sizeLabel,
+												": ",
+												item.size
+											]
+										}),
+										/* @__PURE__ */ jsxs("p", {
+											className: "checkout-row-qty",
+											children: ["× ", item.qty]
+										})
+									]
+								}),
+								/* @__PURE__ */ jsx("p", {
+									className: "checkout-row-price",
+									children: item.price
+								})
+							]
+						}, `${item.id}-${item.size}`))
+					})
+				}), /* @__PURE__ */ jsxs("aside", {
+					className: "checkout-order",
+					children: [
+						/* @__PURE__ */ jsx("h2", { children: site.ui.cartTitle }),
+						/* @__PURE__ */ jsxs("dl", {
+							className: "checkout-totals",
+							children: [
+								/* @__PURE__ */ jsxs("div", { children: [/* @__PURE__ */ jsx("dt", { children: site.ui.cartSubtotal }), /* @__PURE__ */ jsx("dd", { children: formatMoney(symbol, subtotal) })] }),
+								/* @__PURE__ */ jsxs("div", { children: [/* @__PURE__ */ jsx("dt", { children: site.ui.checkoutShipping }), /* @__PURE__ */ jsx("dd", { children: site.ui.checkoutShippingFree })] }),
+								/* @__PURE__ */ jsxs("div", {
+									className: "checkout-total",
+									children: [/* @__PURE__ */ jsx("dt", { children: site.ui.checkoutTotal }), /* @__PURE__ */ jsx("dd", { children: formatMoney(symbol, subtotal) })]
+								})
+							]
+						}),
+						/* @__PURE__ */ jsx("button", {
+							type: "button",
+							className: "button-primary checkout-place",
+							onClick: () => setPlaced(true),
+							children: site.ui.checkoutPlaceOrder
+						}),
+						placed && /* @__PURE__ */ jsxs("p", {
+							className: "bag-added",
+							children: ["✓ ", site.ui.checkoutPlaced]
+						}),
+						/* @__PURE__ */ jsx("p", {
+							className: "prototype-note",
+							children: site.ui.prototypeNote
+						}),
+						/* @__PURE__ */ jsxs("a", {
+							className: "text-link",
+							href: pageUrl("shop"),
+							children: ["← ", site.ui.backToShop]
+						})
+					]
+				})]
+			})
+		]
+	});
+}
+//#endregion
 //#region src/pages/components.ts
 var components = {
 	HomePage,
@@ -3558,8 +3882,137 @@ var components = {
 	CollectionPage,
 	ShopPage,
 	ProductPage,
-	StoryPage
+	StoryPage,
+	CheckoutPage
 };
+//#endregion
+//#region src/sections/CartDrawer.tsx
+function CartDrawer() {
+	const { items, subtotal, symbol, count } = useBag();
+	const [open, setOpen] = useState(false);
+	useEffect(() => {
+		const onOpen = () => setOpen(true);
+		document.addEventListener("bag:open", onOpen);
+		return () => document.removeEventListener("bag:open", onOpen);
+	}, []);
+	useEffect(() => {
+		if (!open) return;
+		const onKey = (event) => {
+			if (event.key === "Escape") setOpen(false);
+		};
+		document.addEventListener("keydown", onKey);
+		return () => document.removeEventListener("keydown", onKey);
+	}, [open]);
+	return /* @__PURE__ */ jsx("div", {
+		className: open ? "bag-overlay is-open" : "bag-overlay",
+		onClick: () => setOpen(false),
+		"aria-hidden": !open,
+		children: /* @__PURE__ */ jsxs("aside", {
+			className: open ? "bag-drawer is-open" : "bag-drawer",
+			role: "dialog",
+			"aria-modal": "true",
+			"aria-label": site.ui.cartTitle,
+			onClick: (event) => event.stopPropagation(),
+			children: [/* @__PURE__ */ jsxs("div", {
+				className: "bag-head",
+				children: [/* @__PURE__ */ jsxs("h2", { children: [site.ui.cartTitle, /* @__PURE__ */ jsx("span", {
+					className: "bag-count",
+					children: count
+				})] }), /* @__PURE__ */ jsx("button", {
+					type: "button",
+					className: "bag-close",
+					"aria-label": site.ui.closeMenu,
+					onClick: () => setOpen(false),
+					children: "×"
+				})]
+			}), items.length === 0 ? /* @__PURE__ */ jsxs("div", {
+				className: "bag-empty",
+				children: [/* @__PURE__ */ jsx("p", { children: site.ui.cartEmpty }), /* @__PURE__ */ jsx("a", {
+					className: "button-primary",
+					href: pageUrl("shop"),
+					children: site.ui.cartEmptyCta
+				})]
+			}) : /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("ul", {
+				className: "bag-list",
+				children: items.map((item) => /* @__PURE__ */ jsxs("li", {
+					className: "bag-item",
+					children: [/* @__PURE__ */ jsx("a", {
+						className: "bag-item-media",
+						href: pageUrl("product", { id: item.id }),
+						onClick: () => setOpen(false),
+						children: /* @__PURE__ */ jsx("img", {
+							src: asset(item.image),
+							alt: item.name
+						})
+					}), /* @__PURE__ */ jsxs("div", {
+						className: "bag-item-info",
+						children: [
+							/* @__PURE__ */ jsx("p", {
+								className: "bag-item-name",
+								children: item.name
+							}),
+							item.size && /* @__PURE__ */ jsx("p", {
+								className: "bag-item-size",
+								children: item.size
+							}),
+							/* @__PURE__ */ jsxs("p", {
+								className: "bag-item-price",
+								children: [
+									item.price,
+									" × ",
+									item.qty
+								]
+							}),
+							/* @__PURE__ */ jsxs("div", {
+								className: "bag-qty",
+								role: "group",
+								children: [
+									/* @__PURE__ */ jsx("button", {
+										type: "button",
+										"aria-label": site.ui.cartQtyDecrease,
+										onClick: () => setQty(item.id, item.size, item.qty - 1),
+										children: "−"
+									}),
+									/* @__PURE__ */ jsx("span", { children: item.qty }),
+									/* @__PURE__ */ jsx("button", {
+										type: "button",
+										"aria-label": site.ui.cartQtyIncrease,
+										onClick: () => setQty(item.id, item.size, item.qty + 1),
+										children: "+"
+									})
+								]
+							}),
+							/* @__PURE__ */ jsx("button", {
+								type: "button",
+								className: "bag-remove",
+								onClick: () => removeFromBag(item.id, item.size),
+								children: site.ui.cartRemove
+							})
+						]
+					})]
+				}, `${item.id}-${item.size}`))
+			}), /* @__PURE__ */ jsxs("div", {
+				className: "bag-foot",
+				children: [
+					/* @__PURE__ */ jsxs("p", {
+						className: "bag-subtotal",
+						children: [/* @__PURE__ */ jsx("span", { children: site.ui.cartSubtotal }), /* @__PURE__ */ jsx("strong", { children: formatMoney(symbol, subtotal) })]
+					}),
+					/* @__PURE__ */ jsx("p", {
+						className: "prototype-note",
+						children: site.ui.prototypeNote
+					}),
+					/* @__PURE__ */ jsxs("a", {
+						className: "button-primary bag-checkout",
+						href: pageUrl("checkout"),
+						onClick: () => setOpen(false),
+						children: [site.ui.cartCheckout, /* @__PURE__ */ jsx(Arrow, { diagonal: true })]
+					})
+				]
+			})] })]
+		})
+	});
+}
 //#endregion
 //#region src/App.tsx
 function App() {
@@ -3579,7 +4032,8 @@ function App() {
 			/* @__PURE__ */ jsxs("main", {
 				id: "main",
 				children: [/* @__PURE__ */ jsx(Page, {}), /* @__PURE__ */ jsx(Contact, {})]
-			})
+			}),
+			/* @__PURE__ */ jsx(CartDrawer, {})
 		]
 	});
 }
