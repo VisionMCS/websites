@@ -2407,6 +2407,7 @@ function Arrow({ diagonal = false }) {
 //#region src/content/cart.ts
 var STORAGE_KEY = "lumiere.bag";
 var bagKey = (id, size) => `${id}::${size}`;
+var memory = null;
 function parsePrice(price) {
 	const num = parseFloat((price || "").replace(/[^0-9.]/g, ""));
 	const symbol = (price || "").replace(/[0-9.,\s]/g, "");
@@ -2416,21 +2417,25 @@ function parsePrice(price) {
 	};
 }
 function readCart() {
+	if (memory) return memory;
 	if (typeof localStorage === "undefined") return [];
 	try {
 		const raw = localStorage.getItem(STORAGE_KEY);
-		const items = raw ? JSON.parse(raw) : [];
-		return Array.isArray(items) ? items : [];
+		memory = raw ? JSON.parse(raw) : [];
 	} catch {
-		return [];
+		memory = [];
 	}
+	return Array.isArray(memory) ? memory : [];
 }
 function emit() {
 	if (typeof document !== "undefined") document.dispatchEvent(new CustomEvent("bag:update"));
 }
 function persist(items) {
+	memory = items;
 	if (typeof localStorage === "undefined") return;
-	localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+	try {
+		localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+	} catch {}
 	emit();
 }
 function subscribe(callback) {
