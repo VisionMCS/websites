@@ -1,163 +1,1822 @@
 {
   "brand": {
-    "name": "序川",
-    "english": "FORM & FIELD",
-    "descriptor": "策略 · 设计 · 数字体验",
-    "copyright": "序川 · 企业官网演示模板"
+    "name": "VANTOR",
+    "english": "万拓精密制造",
+    "descriptor": "面向定制工业零部件的数字化精密制造",
+    "copyright": "VANTOR 万拓精密制造 · 演示网站"
   },
   "nav": [
     {
-      "label": "我们能做什么",
-      "href": "#services"
+      "label": "制造服务",
+      "href": "services",
+      "description": "减材、注塑与增材制造，统一在一条数字化流程中交付。",
+      "children": [
+        {
+          "label": "CNC 加工",
+          "description": "三轴、四轴、五轴铣削与车削，覆盖手件到批量。",
+          "page": "service",
+          "id": "cnc-machining"
+        },
+        {
+          "label": "注塑成型",
+          "description": "快速模、过渡模与量产模，交付工程塑料零件。",
+          "page": "service",
+          "id": "injection-molding"
+        },
+        {
+          "label": "3D 打印",
+          "description": "SLS、SLA 与 FDM 增材制造，用于功能样件。",
+          "page": "service",
+          "id": "3d-printing"
+        },
+        {
+          "label": "钣金加工",
+          "description": "激光切割、折弯与表面处理，交付机壳与支架。",
+          "page": "service",
+          "id": "sheet-metal-fabrication"
+        }
+      ]
     },
     {
-      "label": "项目选集",
-      "href": "#work"
+      "label": "行业方案",
+      "description": "按行业要求组织的制造项目方案。",
+      "href": "industries",
+      "children": [
+        {
+          "label": "航空航天",
+          "description": "轻量化结构件与流体控制零件。",
+          "page": "industry",
+          "id": "aerospace"
+        },
+        {
+          "label": "医疗器械",
+          "description": "设备外壳、手术器械与夹具零件。",
+          "page": "industry",
+          "id": "medical"
+        },
+        {
+          "label": "汽车",
+          "description": "样件、认证试制与小批量量产零件。",
+          "page": "industry",
+          "id": "automotive"
+        },
+        {
+          "label": "机器人",
+          "description": "执行器、关节与传感组件，装配一致。",
+          "page": "industry",
+          "id": "robotics"
+        },
+        {
+          "label": "消费电子",
+          "description": "薄壁外壳、散热件与精密外观零件。",
+          "page": "industry",
+          "id": "consumer-electronics"
+        },
+        {
+          "label": "工业设备",
+          "description": "传动、液压与机架结构零件。",
+          "page": "industry",
+          "id": "industrial-equipment"
+        }
+      ]
     },
     {
-      "label": "合作方式",
-      "href": "#process"
+      "label": "案例",
+      "description": "示例项目，展示需求如何进入量产。",
+      "href": "cases",
+      "children": [
+        {
+          "label": "航空支架",
+          "description": "薄壁铝支架，一次装夹完成精加工。",
+          "page": "case",
+          "id": "aerospace-bracket"
+        },
+        {
+          "label": "医疗设备外壳",
+          "description": "诊断仪器的双色注塑外壳。",
+          "page": "case",
+          "id": "medical-housing"
+        },
+        {
+          "label": "机器人关节",
+          "description": "紧凑关节模块，轴承孔位精度受控。",
+          "page": "case",
+          "id": "robotics-joint"
+        }
+      ]
     },
     {
-      "label": "关于我们",
-      "href": "#about"
+      "label": "制造能力",
+      "href": "#capabilities",
+      "description": "设备、材料、公差与检测在同一体系内运行。",
+      "children": []
+    },
+    {
+      "label": "联系我们",
+      "href": "contact",
+      "description": "把图纸与项目需求发送给工程团队。",
+      "children": []
     }
   ],
   "hero": {
-    "eyebrow": "CLEAR THINKING. MEANINGFUL CHANGE.",
-    "title": ["想法的下一步，", "从清晰开始。"],
-    "description": "从品牌策略到数字体验，我们与团队一起梳理复杂问题，让每一个值得投入的想法，有清楚的方向和具体的表达。",
-    "primary": "聊聊你的想法",
-    "secondary": "探索我们的服务",
-    "image": "images/architecture.jpg",
-    "imageAlt": "阳光下层次分明的白色建筑立面",
-    "caption": "有秩序的思考，有温度的表达。",
-    "note": "STRATEGY MEETS DESIGN"
-  },
-  "services": {
-    "eyebrow": "01 / WHAT WE DO",
-    "title": "从找到方向，\n到让想法发生。",
-    "intro": "把策略、设计和实现连在一起。你可以从一个具体问题开始，也可以与我们一起构建完整的品牌体验。",
-    "items": [
+    "eyebrow": "数字化精密制造",
+    "title": [
+      "从三维模型到合格零件。",
+      "一条数字化制造流程。"
+    ],
+    "description": "万拓把报价、工艺规划与生产连接起来，覆盖 CNC 加工、注塑成型、3D 打印与钣金加工，让定制工业零部件从图纸到交付全程可追溯。",
+    "primary": "获取报价",
+    "secondary": "查看制造服务",
+    "image": "images/hero-factory.jpg",
+    "imageAlt": "工业厂区的航拍全景",
+    "caption": "报价 · 工艺规划 · 检测",
+    "note": "一套流程，四种工艺",
+    "statsLabel": "制造能力概览",
+    "stats": [
       {
-        "id": "strategy",
-        "title": "品牌与业务策略",
-        "description": "理解你的业务、用户与目标，找到品牌表达和产品体验的共同起点。",
-        "tags": ["品牌定位", "用户洞察", "内容策略"]
+        "value": "120",
+        "suffix": "+",
+        "label": "CNC 设备",
+        "note": "演示数据中的铣削、车削与线切割机床"
       },
       {
-        "id": "experience",
-        "title": "设计与数字体验",
-        "description": "让清晰的策略成为可以看见、感受和使用的体验，让每一次沟通更自然。",
-        "tags": ["视觉系统", "企业官网", "交互设计"]
+        "value": "5",
+        "suffix": " 轴",
+        "label": "联动加工",
+        "note": "面向复杂曲面的五轴联动能力"
       },
       {
-        "id": "delivery",
-        "title": "落地与持续迭代",
-        "description": "从设计细节到上线准备，以可维护的方式交付，为下一次改善留出空间。",
-        "tags": ["前端实现", "体验验证", "迭代支持"]
-      }
-    ]
-  },
-  "work": {
-    "eyebrow": "02 / SELECTED DIRECTIONS",
-    "title": "让不同的想法，\n找到自己的表达。",
-    "intro": "以下为模板示例项目，用来展示内容结构与视觉方向，不代表真实客户或交付案例。",
-    "allLabel": "全部",
-    "items": [
-      {
-        "id": "field",
-        "name": "有序生长",
-        "category": "品牌策略",
-        "summary": "为一家服务型企业梳理品牌叙事，让专业价值被清楚理解。",
-        "image": "images/facade.jpg",
-        "imageAlt": "整齐排列的现代建筑窗格",
-        "detail": "示例项目以信息梳理为起点，展示品牌定位、内容层级与视觉语言如何共同工作。替换时填写真实项目背景、你的角色和可公开的成果。",
-        "deliverables": ["品牌叙事结构", "关键页面信息架构", "视觉方向探索"]
+        "value": "0.005",
+        "suffix": " mm",
+        "label": "最佳演示公差",
+        "note": "各服务页面公布常规公差区间"
       },
       {
-        "id": "horizon",
-        "name": "打开新的视野",
-        "category": "数字体验",
-        "summary": "将复杂的产品能力，转化为简洁、可浏览的数字体验。",
-        "image": "images/glass.jpg",
-        "imageAlt": "映照蓝天的玻璃建筑几何结构",
-        "detail": "示例项目关注用户如何认识服务、探索内容并发起联系。替换时使用已授权的界面图片，避免展示未经确认的业务数据。",
-        "deliverables": ["响应式网站设计", "核心页面交互", "设计与开发规范"]
+        "value": "40",
+        "suffix": "+",
+        "label": "工程材料",
+        "note": "材料认证状态因工艺与牌号而异"
       }
     ],
-    "pageTitle": "项目选集"
+    "statsNote": "以上数字用于模板演示，正式发布前请替换为经审核的工厂实际数据。"
   },
-  "process": {
-    "eyebrow": "03 / HOW WE WORK",
-    "title": "每一步，都有共识。",
+  "capabilities": {
+    "eyebrow": "01 / 制造能力",
+    "title": "数字化能力，体现在过程受控上。",
+    "intro": "每个需求都进入同一条数字主线：可制造性评审、加工仿真、在线测量与留档的检测记录。",
+    "image": "images/capabilities.jpg",
+    "imageAlt": "带料仓与输送线的工业厂区构筑物",
     "items": [
       {
-        "title": "先理解，再定义",
-        "description": "聊清楚业务背景、目标与限制，共同确认真正需要解决的问题。"
+        "title": "统一报价引擎",
+        "description": "几何、材料、数量与表面处理按实时产能模型评估，你得到的交期对应真实的生产排程。"
       },
       {
-        "title": "一起探索与设计",
-        "description": "从结构到视觉，逐步呈现方案，让关键选择有依据、可讨论。"
+        "title": "工艺预先编程",
+        "description": "CAM 程序、刀具库与夹具按零件族归档，使返单在批次之间保持尺寸一致。"
       },
       {
-        "title": "认真落地与迭代",
-        "description": "完成实现与检查，交付清楚的使用说明，再根据反馈持续改进。"
+        "title": "在线测量",
+        "description": "机内测头与三坐标数据汇入同一份记录，偏差在批次内被发现，而不是等到终检。"
+      },
+      {
+        "title": "批次可追溯",
+        "description": "材料证明、设备编号、操作者与检测数据绑定到工单，可随货导出。"
+      },
+      {
+        "title": "混合零件策略",
+        "description": "机加工主体、注塑外壳与打印治具统一规划，组件到货即可装配，无需产线返修。"
+      },
+      {
+        "title": "扩产不重新验证",
+        "description": "样件、过渡与量产批次使用同一份工艺文件，从十件到万件不需要重启验证。"
+      }
+    ],
+    "metrics": [
+      {
+        "label": "加工行程（演示设备最大值）",
+        "value": "1,600 × 800 × 800 mm"
+      },
+      {
+        "label": "常规机加工公差",
+        "value": "±0.025 mm"
+      },
+      {
+        "label": "检测设备",
+        "value": "三坐标、影像仪、粗糙度仪"
+      },
+      {
+        "label": "接受的文件格式",
+        "value": "STEP、IGES、X_T、SLDPRT、2D PDF"
+      }
+    ],
+    "note": "本页能力汇总为模板演示内容，设备清单与公差表请与工程团队确认后使用。"
+  },
+  "services": {
+    "eyebrow": "02 / 制造服务",
+    "title": "四条生产路径，\n一次工程评审。",
+    "intro": "自行选择工艺，或让可制造性评审给出建议。每项服务都公布当前可以稳定加工的材料、公差与表面处理。",
+    "pageTitle": "制造服务",
+    "pageDescription": "通过统一的数字化流程交付 CNC 加工、注塑成型、3D 打印与钣金加工。",
+    "categoriesLabel": "工艺类别",
+    "viewDetail": "查看服务",
+    "items": [
+      {
+        "id": "cnc-machining",
+        "title": "CNC 加工",
+        "summary": "三轴、四轴与五轴铣削及车削，加工高精度金属与塑料零件。",
+        "description": "由整块坯料或棒料切削出铣削与车削零件，依照归档的公差计划编程。同一生产单元既支持单件样件，也支持受控的小批量量产，装夹状态可重复。",
+        "tags": [
+          "铣削",
+          "车削",
+          "五轴",
+          "高精度"
+        ],
+        "image": "images/service-cnc-machining.jpg",
+        "imageAlt": "带圆形加工孔的金属板",
+        "heroEyebrow": "减材加工",
+        "capabilities": [
+          {
+            "title": "三轴、四轴与五轴铣削",
+            "description": "五轴联动加工叶轮、歧管与曲面零件，三轴加工棱柱类零件与板类件。"
+          },
+          {
+            "title": "车铣复合与走心机",
+            "description": "带动力刀座的棒料车削，一次成形轴类、衬套与紧固件特征。"
+          },
+          {
+            "title": "线切割与磨削",
+            "description": "淬硬件、窄圆角与常规铣削难以实现的成形特征。"
+          },
+          {
+            "title": "配套表面处理",
+            "description": "阳极氧化、钝化、电镀、喷砂与喷粉与加工排程协同安排。"
+          }
+        ],
+        "materials": [
+          {
+            "name": "铝合金",
+            "grades": "6061-T6、7075-T6、5052、A356",
+            "note": "演示目录中保留可阳极氧化的牌号。"
+          },
+          {
+            "name": "不锈钢",
+            "grades": "304、316L、17-4 PH、420",
+            "note": "生物相容与耐腐蚀方案。"
+          },
+          {
+            "name": "合金钢与模具钢",
+            "grades": "4140、4340、P20、H13",
+            "note": "用于夹具、工装与耐磨件。"
+          },
+          {
+            "name": "钛合金与高温合金",
+            "grades": "Ti-6Al-4V、Inconel 625/718",
+            "note": "需要专用刀具，节拍时间更长。"
+          },
+          {
+            "name": "工程塑料",
+            "grades": "PEEK、POM、Ultem 1000、PVC",
+            "note": "绝缘、轻量或耐化学腐蚀零件。"
+          },
+          {
+            "name": "铜与黄铜",
+            "grades": "C110、C360、铍铜",
+            "note": "导电、散热与装饰类零件。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "结构件与支架",
+            "description": "薄壁框架、安装支架与机箱件，平面度受控。"
+          },
+          {
+            "title": "流体与散热",
+            "description": "歧管、阀体、冷板与散热器，含内部流道。"
+          },
+          {
+            "title": "工装与夹具",
+            "description": "装配治具、检具、模具与冲压模可与零件同步生产。"
+          },
+          {
+            "title": "传动零件",
+            "description": "壳体、轴、齿轮与轴承座，按配合等级控制。"
+          }
+        ],
+        "specs": [
+          {
+            "label": "公差",
+            "value": "常规 ±0.025 mm / 精密 ±0.005 mm"
+          },
+          {
+            "label": "表面粗糙度",
+            "value": "常规 Ra 1.6 µm / 精密 Ra 0.4 µm"
+          },
+          {
+            "label": "零件尺寸",
+            "value": "最大 1,600 × 800 × 800 mm"
+          },
+          {
+            "label": "批量范围",
+            "value": "1 至 10,000 件"
+          },
+          {
+            "label": "交期",
+            "value": "样件最快 3 个工作日内排产"
+          },
+          {
+            "label": "检测",
+            "value": "每批附三坐标报告"
+          }
+        ],
+        "quality": [
+          {
+            "title": "按零件制定公差计划",
+            "description": "关键特征在报价阶段标注，并在加工过程中测头验证。"
+          },
+          {
+            "title": "首件验证",
+            "description": "首件尺寸记录合格后才放行剩余数量。"
+          },
+          {
+            "title": "刀具磨损跟踪",
+            "description": "刀补历史与程序一同归档，下一批次从同一状态开始。"
+          }
+        ],
+        "faq": [
+          {
+            "question": "报价需要提供哪些文件？",
+            "answer": "STEP 或原生三维模型，外加标注关键尺寸、表面处理与配合要求的二维图纸。若没有形位公差标注，则按默认公差执行。"
+          },
+          {
+            "question": "可以加工淬硬材料吗？",
+            "answer": "可以。硬车、磨削与线切割覆盖热处理后的模具钢与高温合金，具体路线在工艺规划阶段确定。"
+          },
+          {
+            "question": "是否支持重复量产订单？",
+            "answer": "程序、夹具与检测流程按料号归档，返单从同一份受控文件开始生产。"
+          }
+        ]
+      },
+      {
+        "id": "injection-molding",
+        "title": "注塑成型",
+        "summary": "快速模、过渡模与量产模，交付工程塑料零件。",
+        "description": "从十件样件试模到受控量产，注塑项目围绕浇口位置、壁厚均衡与排气进行规划，使零件尺寸稳定、可直接装配。",
+        "tags": [
+          "快速模",
+          "过渡模",
+          "量产",
+          "双色"
+        ],
+        "image": "images/service-injection-molding.jpg",
+        "imageAlt": "手工装配注塑塑料零件",
+        "heroEyebrow": "高分子成型零件",
+        "capabilities": [
+          {
+            "title": "快速模与过渡模",
+            "description": "铝合金或 P20 模具用于设计验证与上市前的小批量，不必过早投入量产钢模。"
+          },
+          {
+            "title": "量产钢模",
+            "description": "硬化多腔模具配合随形或隔水式冷却，维持稳定节拍。"
+          },
+          {
+            "title": "工艺开发",
+            "description": "科学注塑设定：型腔压力、填充曲线与保压阶段记录为工艺窗口。"
+          },
+          {
+            "title": "后处理与组装",
+            "description": "咬花、移印、超声波焊接、镶件加工与组件装配协同安排。"
+          }
+        ],
+        "materials": [
+          {
+            "name": "通用塑料",
+            "grades": "ABS、PP、PS、HIPS",
+            "note": "外壳、托盘与消费类零件。"
+          },
+          {
+            "name": "工程塑料",
+            "grades": "PC、PA6/PA66、POM、PBT",
+            "note": "强度、蠕变与疲劳性能。"
+          },
+          {
+            "name": "玻纤增强",
+            "grades": "PA66-GF30、PBT-GF30、PC-GF20",
+            "note": "受力与高温下的尺寸稳定性。"
+          },
+          {
+            "name": "耐高温树脂",
+            "grades": "PEEK、PEI（Ultem）、PPS",
+            "note": "高温与化学工况。"
+          },
+          {
+            "name": "弹性体与包胶",
+            "grades": "TPE、TPU、硅胶（模压）",
+            "note": "密封、握持与双色结合面。"
+          },
+          {
+            "name": "阻燃等级",
+            "grades": "PC/ABS 阻燃、PA 阻燃",
+            "note": "可用性取决于区域树脂来源。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "机壳与外壳",
+            "description": "电子与仪器的卡扣、螺柱与密封外壳。"
+          },
+          {
+            "title": "流体零件",
+            "description": "接头、歧管、瓶盖与试剂盒，密封面受控。"
+          },
+          {
+            "title": "外观与操作件",
+            "description": "按键、面框与面板，明确纹理与色差要求。"
+          },
+          {
+            "title": "机构零件",
+            "description": "齿轮、拨杆、卡扣与活铰，按装配间隙定尺寸。"
+          }
+        ],
+        "specs": [
+          {
+            "label": "锁模力范围",
+            "value": "45 至 380 吨"
+          },
+          {
+            "label": "最小壁厚",
+            "value": "0.6 mm（视树脂而定）"
+          },
+          {
+            "label": "公差",
+            "value": "常规 ±0.05 至 ±0.15 mm"
+          },
+          {
+            "label": "模具寿命等级",
+            "value": "样件模 5k · 过渡模 100k · 量产模 1M 模次"
+          },
+          {
+            "label": "批量范围",
+            "value": "10 至 500,000 件"
+          },
+          {
+            "label": "表面纹理",
+            "value": "SPI A1 至 VDI 30"
+          }
+        ],
+        "quality": [
+          {
+            "title": "工艺窗口记录",
+            "description": "验证阶段采集注塑参数并锁定为基准配方。"
+          },
+          {
+            "title": "逐腔控制",
+            "description": "首件按腔测量，多腔偏差可以尽早发现。"
+          },
+          {
+            "title": "材料证明",
+            "description": "需要时可把树脂批次信息一并归入批次记录。"
+          }
+        ],
+        "faq": [
+          {
+            "question": "什么时候该用过渡模而不是量产钢模？",
+            "answer": "当设计仍有变更风险或销量未验证时。过渡模支撑验证与上市初期，量产钢模在几何冻结后再开。"
+          },
+          {
+            "question": "可以加入金属镶件或螺纹吗？",
+            "answer": "可以。模内镶件、后道镶件、热熔与机加工螺纹在模具设计阶段确定，首批试模即可验证装配。"
+          },
+          {
+            "question": "影响成本最大的因素是什么？",
+            "answer": "腔数、模具复杂度与外观等级。壁厚均衡与分型线位置对节拍的影响不亚于模具钢材本身。"
+          }
+        ]
+      },
+      {
+        "id": "3d-printing",
+        "title": "3D 打印",
+        "summary": "粉末床、光固化与丝材挤出工艺，用于功能件而非模型。",
+        "description": "把增材制造当作生产路径而不是演示样件：粉末床烧结用于承力机构，光固化用于精细特征，丝材挤出用于大型治具与工装。",
+        "tags": [
+          "SLS",
+          "SLA",
+          "FDM",
+          "功能样件"
+        ],
+        "image": "images/service-3d-printing.jpg",
+        "imageAlt": "浅色背景上摆放的彩色塑料齿轮零件",
+        "heroEyebrow": "增材制造",
+        "capabilities": [
+          {
+            "title": "粉末床熔融（SLS）",
+            "description": "尼龙 12 及增强粉末，无需支撑即可成形卡扣、风道与终端零件。"
+          },
+          {
+            "title": "光固化（SLA/DLP）",
+            "description": "高分辨率树脂零件，用于母模型、透明流体件与精细外壳。"
+          },
+          {
+            "title": "丝材挤出（FDM/FFF）",
+            "description": "碳纤维尼龙、ABS 与 PC，用于大型钻模、软爪与生产辅助工装。"
+          },
+          {
+            "title": "金属增材（外协）",
+            "description": "粘结剂喷射与激光粉末床路线由合作伙伴交付，报价含后处理。"
+          }
+        ],
+        "materials": [
+          {
+            "name": "尼龙粉末",
+            "grades": "PA12、PA11、PA12-GF",
+            "note": "韧性好、耐化学的功能零件。"
+          },
+          {
+            "name": "光敏树脂",
+            "grades": "标准、韧性、耐高温、铸造",
+            "note": "细节与透明度表现好，力学性能随牌号变化。"
+          },
+          {
+            "name": "丝材高分子",
+            "grades": "ABS、ASA、PC、PA6-CF、PET",
+            "note": "为工装提供刚度与耐温选项。"
+          },
+          {
+            "name": "弹性粉末",
+            "grades": "TPU 85A/95A",
+            "note": "密封圈、缓冲件与柔性握把。"
+          },
+          {
+            "name": "生物相容树脂",
+            "grades": "短期接触类别选项",
+            "note": "法规状态需按具体应用确认。"
+          },
+          {
+            "name": "阻燃等级",
+            "grades": "ABS-FR94V0、PA 阻燃",
+            "note": "用于电子治具与外壳。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "外形与装配验证",
+            "description": "在投入模具前确认装配关系。"
+          },
+          {
+            "title": "风道与歧管",
+            "description": "难以切削或成形的内部流道。"
+          },
+          {
+            "title": "生产辅助工装",
+            "description": "钻模、软爪、检具与包装内衬。"
+          },
+          {
+            "title": "小批量终端件",
+            "description": "备件与不足以摊薄模具费用的短订单。"
+          }
+        ],
+        "specs": [
+          {
+            "label": "层厚",
+            "value": "0.06 至 0.30 mm（按工艺）"
+          },
+          {
+            "label": "尺寸精度",
+            "value": "±0.1 mm 或长度的 ±0.5%"
+          },
+          {
+            "label": "最大成形尺寸",
+            "value": "700 × 380 × 380 mm（SLS）"
+          },
+          {
+            "label": "最小壁厚",
+            "value": "0.8 mm（SLS）· 1.0 mm（FDM）"
+          },
+          {
+            "label": "批量范围",
+            "value": "1 至 5,000 件"
+          },
+          {
+            "label": "后处理",
+            "value": "喷砂、染色、蒸气平滑、机加工"
+          }
+        ],
+        "quality": [
+          {
+            "title": "摆放方向留档",
+            "description": "成形方向影响力学性能，与零件一同归档。"
+          },
+          {
+            "title": "粉末与树脂管控",
+            "description": "每炉记录新旧粉比例与树脂批号。"
+          },
+          {
+            "title": "尺寸验证",
+            "description": "关键特征在后处理、冷却稳定后的成品上测量。"
+          }
+        ],
+        "faq": [
+          {
+            "question": "打印精度能达到机加工水平吗？",
+            "answer": "不能。增材工艺的尺寸离散更大，因此关键配合面通常预留余量后机加工，或直接机加工。"
+          },
+          {
+            "question": "打印件可以用于量产吗？",
+            "answer": "在材料数据支持且批量较低时可以使用，判定依据见材料表。"
+          },
+          {
+            "question": "是否提供金属打印？",
+            "answer": "金属增材通过合作伙伴交付，包含清粉、热处理与关键面机加工。"
+          }
+        ]
+      },
+      {
+        "id": "sheet-metal-fabrication",
+        "title": "钣金加工",
+        "summary": "激光切割、折弯与焊接，加工机壳、面板与机架。",
+        "description": "从平板件到焊接组件。回弹补偿来自车间自己的模具数据，因此首件与第五十块面板保持同一几何状态。",
+        "tags": [
+          "激光切割",
+          "折弯",
+          "焊接",
+          "表面处理"
+        ],
+        "image": "images/service-sheet-metal.jpg",
+        "imageAlt": "波浪成形的金属板材表面",
+        "heroEyebrow": "钣金成形与连接",
+        "capabilities": [
+          {
+            "title": "光纤激光切割",
+            "description": "碳钢、不锈钢与铝的高精度轮廓切割，切口质量明确定义。"
+          },
+          {
+            "title": "数控折弯",
+            "description": "空弯、底模与滚弯，配本厂模具的回弹数据表。"
+          },
+          {
+            "title": "连接工艺",
+            "description": "氩弧焊、二保焊、电阻点焊，以及拉铆、压铆与螺纹件植入。"
+          },
+          {
+            "title": "表面处理",
+            "description": "喷粉、喷漆、钝化、拉丝与保护膜，含遮蔽控制。"
+          }
+        ],
+        "materials": [
+          {
+            "name": "冷轧与热轧钢",
+            "grades": "SPCC 1008/1010、A36",
+            "note": "视工艺可加工 0.5 至 20 mm。"
+          },
+          {
+            "name": "不锈钢",
+            "grades": "304、316L、430",
+            "note": "焊接后钝化，适用于卫生或户外场景。"
+          },
+          {
+            "name": "铝合金",
+            "grades": "5052、6061、1100",
+            "note": "轻量化机壳与装饰面板。"
+          },
+          {
+            "name": "镀锌与预涂",
+            "grades": "GI、GL、彩涂板",
+            "note": "无需后道涂装即可防腐。"
+          },
+          {
+            "name": "铜与黄铜",
+            "grades": "C110、C260",
+            "note": "导电与装饰用途。"
+          },
+          {
+            "name": "特殊材料",
+            "grades": "弹簧钢、因科镍板",
+            "note": "需经工艺评审后报价。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "电子机壳",
+            "description": "机箱、盖板与考虑电磁干扰的面板，隔离柱尺寸受控。"
+          },
+          {
+            "title": "机架与防护罩",
+            "description": "机器框架、安全护罩与焊接结构件。"
+          },
+          {
+            "title": "装饰与标识",
+            "description": "面板、支架与饰条，明确外观等级。"
+          },
+          {
+            "title": "散热与通风",
+            "description": "风管、散热板与带孔面板。"
+          }
+        ],
+        "specs": [
+          {
+            "label": "厚度范围",
+            "value": "0.5 至 20 mm"
+          },
+          {
+            "label": "切割幅面",
+            "value": "3,000 × 1,500 mm"
+          },
+          {
+            "label": "折弯精度",
+            "value": "常规 ±0.25 mm / 精密 ±0.1 mm"
+          },
+          {
+            "label": "孔边距",
+            "value": "≥ 1.0 倍板厚"
+          },
+          {
+            "label": "批量范围",
+            "value": "1 至 50,000 件"
+          },
+          {
+            "label": "表面处理",
+            "value": "喷粉、钝化、拉丝、贴膜"
+          }
+        ],
+        "quality": [
+          {
+            "title": "展开验证",
+            "description": "首次切割前按折弯表核对展开图。"
+          },
+          {
+            "title": "焊接工艺记录",
+            "description": "受力焊缝记录操作人员与参数。"
+          },
+          {
+            "title": "组件检具",
+            "description": "焊接组件在专用检具上检查位置度与平面度。"
+          }
+        ],
+        "faq": [
+          {
+            "question": "折弯件的图纸需要标注什么？",
+            "answer": "材料、板厚、内尺寸或折弯中心线、折弯半径，以及哪些面为外观面。内空与外包尺寸不明确是最常见的返工原因。"
+          },
+          {
+            "question": "能否完成焊接与表面处理的整套组件？",
+            "answer": "可以。焊接件图纸会先规划装夹顺序、变形余量与遮蔽区域，再下发展销与切割排程。"
+          },
+          {
+            "question": "有最小起订量吗？",
+            "answer": "没有。单件样件同样生产，但批量价格反映编程、模具与装夹等按批摊薄的成本。"
+          }
+        ]
       }
     ]
   },
-  "about": {
-    "eyebrow": "04 / A SHARED PERSPECTIVE",
-    "title": "好的合作，\n从同一张桌子开始。",
-    "description": "我们相信，专业不必复杂。坦诚地沟通、认真地倾听，把不同视角放在一起，才能做出适合业务的选择。",
-    "principles": ["问题先于答案", "表达清楚，做事扎实", "为长期使用而设计"]
-  },
-  "faq": {
-    "title": "开始之前，你可能想了解",
+  "industries": {
+    "eyebrow": "03 / 行业方案",
+    "title": "把行业要求，\n写进工艺方案。",
+    "intro": "同一个零件在不同行业意味着不同的事。行业页面汇总了各类项目通常需要满足的要求、材料与检测证据。",
+    "pageTitle": "行业解决方案",
+    "pageDescription": "面向航空航天、医疗、汽车、机器人、消费电子与工业设备的精密制造方案。",
+    "viewDetail": "查看行业",
+    "challengesTitle": "需求与挑战",
+    "solutionsTitle": "制造方案",
+    "applicationsTitle": "典型零件",
+    "servicesTitle": "推荐制造服务",
+    "casesTitle": "相关案例",
+    "assuranceTitle": "能力与质量保障",
     "items": [
       {
-        "question": "一个项目通常从哪里开始？",
-        "answer": "从一次需求沟通开始。整理你的业务介绍、想解决的问题和已有素材，我们一起确认项目范围与下一步。"
+        "id": "aerospace",
+        "name": "航空航天",
+        "summary": "具备完整材料追溯的轻量化结构、散热与流体零件。",
+        "description": "航空项目把薄壁几何、难加工合金与经得起审核的文件要求结合在一起。重点是让认证件与后续每一件之间不产生差异。",
+        "image": "images/industry-aerospace.jpg",
+        "imageAlt": "停在草地跑道上的轻型飞机",
+        "challenges": [
+          {
+            "title": "薄壁与变形",
+            "description": "轻量化支架在去除材料后释放残余应力，加工中途偏离公差。"
+          },
+          {
+            "title": "难加工合金",
+            "description": "钛与镍基合金刀具消耗快，需要稳定的断屑以保持表面完整性。"
+          },
+          {
+            "title": "追溯负担",
+            "description": "炉批号、设备、操作者与检测数据在交付很久后仍需可调阅。"
+          },
+          {
+            "title": "小批量、高要求",
+            "description": "项目数量通常不值得投入专用夹具，但装夹一致性是硬性要求。"
+          }
+        ],
+        "solutions": [
+          {
+            "title": "考虑应力释放的粗加工",
+            "description": "粗精加工分道并加入中间松弛工序，精加工前用测头验证。"
+          },
+          {
+            "title": "按合金制定刀具策略",
+            "description": "刀路、参数与磨损限值按材料验证，随后在项目内复用。"
+          },
+          {
+            "title": "按批次归档",
+            "description": "材料证明、检测结果与工艺记录随货交付。"
+          },
+          {
+            "title": "柔性夹具",
+            "description": "模块化夹具覆盖同族零件，让小批量也保持统一的基准体系。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "机体支架",
+            "description": "加工的铝与钛安装结构件。",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "管路与歧管",
+            "description": "复杂内部流道，采用增材或切削加工。",
+            "service": "3d-printing"
+          },
+          {
+            "title": "面板与内饰件",
+            "description": "成形并表面处理的客舱钣金件。",
+            "service": "sheet-metal-fabrication"
+          },
+          {
+            "title": "连接器壳体",
+            "description": "尺寸稳定的注塑聚合物绝缘体。",
+            "service": "injection-molding"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "3d-printing",
+          "sheet-metal-fabrication"
+        ],
+        "assurance": [
+          {
+            "title": "检测证据",
+            "description": "含全部特性清单的首件报告，加上在线测量记录。"
+          },
+          {
+            "title": "材料来源",
+            "description": "需要时按炉批提供符合性证书。"
+          },
+          {
+            "title": "配置管理",
+            "description": "程序与版本历史绑定到批准量产的图纸版本。"
+          }
+        ]
       },
       {
-        "question": "可以只合作一个具体模块吗？",
-        "answer": "可以围绕品牌梳理、网站设计或前端实现等具体模块沟通。实际范围以双方确认的方案为准。"
+        "id": "medical",
+        "name": "医疗器械",
+        "summary": "面向诊断与手术器械的外壳、器械零件与夹具组件。",
+        "description": "医疗项目的核心是文件与一致性，而不仅是几何形状。工艺记录、受控材料与洁净操作在做出第一个零件之前就一并规划。",
+        "image": "images/industry-medical.jpg",
+        "imageAlt": "托盘上排列整齐的不锈钢医疗器具",
+        "challenges": [
+          {
+            "title": "验证过程中的设计冻结",
+            "description": "设计在项目中后期仍会变化，而工艺记录必须始终可追溯。"
+          },
+          {
+            "title": "小尺寸高公差零件",
+            "description": "表壳、外壳与器械细部同时要求微结构严格的配合。"
+          },
+          {
+            "title": "表面与清洁度",
+            "description": "咬花、毛刺与残留既影响功能也影响检测判定。"
+          },
+          {
+            "title": "批次一致性",
+            "description": "颜色、光泽与手感需要在不同树脂批次与模具寿命期内保持一致。"
+          }
+        ],
+        "solutions": [
+          {
+            "title": "面向验证的分型设计",
+            "description": "分型线、浇口与夹线位置避开功能面与清洁死角。"
+          },
+          {
+            "title": "小型件加工单元",
+            "description": "高速小件单元配专用刀具，稳定孔位与轮廓细节。"
+          },
+          {
+            "title": "受控工艺记录",
+            "description": "调机单、检测计划与变更记录按料号归档。"
+          },
+          {
+            "title": "隔离操作",
+            "description": "面向受控环境的专用工作台、手套与包装方案。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "仪器外壳",
+            "description": "诊断设备的卡扣或螺接外壳。",
+            "service": "injection-molding"
+          },
+          {
+            "title": "手术器械零件",
+            "description": "明确边缘与表面等级不锈钢与钛零件。",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "治具与训练件",
+            "description": "打印的装配、训练与装配验证治具。",
+            "service": "3d-printing"
+          },
+          {
+            "title": "机柜与推车面板",
+            "description": "成形并涂装的设备钣金件。",
+            "service": "sheet-metal-fabrication"
+          }
+        ],
+        "services": [
+          "injection-molding",
+          "cnc-machining",
+          "3d-printing"
+        ],
+        "assurance": [
+          {
+            "title": "尺寸能力",
+            "description": "关键特性以量具重复性与再现性分析为基础测量。"
+          },
+          {
+            "title": "材料文件",
+            "description": "需要时把树脂与金属证明并入批次记录。"
+          },
+          {
+            "title": "变更控制",
+            "description": "版本发布时同步说明对模具、工艺与检测的影响。"
+          }
+        ]
       },
       {
-        "question": "需要提前准备哪些素材？",
-        "answer": "公司介绍、品牌标识、产品或服务资料，以及可以公开使用的图片。还没有准备齐全，也可以先把已有想法写下来。"
+        "id": "automotive",
+        "name": "汽车",
+        "summary": "从概念样件到认证试制与小批量生产零件。",
+        "description": "汽车对机加工车间的要求通常是在保证一致性的前提下提速：样件要接近未来的量产状态，小批量零件要具备行业习惯的文件。",
+        "image": "images/industry-automotive.jpg",
+        "imageAlt": "抛光镀铬发动机零件特写",
+        "challenges": [
+          {
+            "title": "被压缩的验证周期",
+            "description": "节点会提前，同一零件需要在几天内重切。"
+          },
+          {
+            "title": "A 面与外观件",
+            "description": "可见饰件与外观件需要在加工前明确外观等级。"
+          },
+          {
+            "title": "热与介质工况",
+            "description": "机舱内零件同时面对温度、振动与介质相容性。"
+          },
+          {
+            "title": "类 PPAP 文件要求",
+            "description": "即使小批量，客户仍期望逐级传递的记录。"
+          }
+        ],
+        "solutions": [
+          {
+            "title": "用量产程序做样件",
+            "description": "尽可能使用量产程序与夹具生产样件，使装配结果有意义。"
+          },
+          {
+            "title": "表面与纹理管控",
+            "description": "外观面的抛光、纹理与涂装前处理分阶段定义。"
+          },
+          {
+            "title": "耐温耐介质选材",
+            "description": "按温度与介质接触条件映射合金与树脂选择。"
+          },
+          {
+            "title": "结构化批次记录",
+            "description": "控制计划、尺寸结果与材料数据按统一格式汇编。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "试验样件",
+            "description": "验证车用的支架、壳体与传动件。",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "内饰与面框",
+            "description": "定义纹理的注塑外观件。",
+            "service": "injection-molding"
+          },
+          {
+            "title": "风道与样件",
+            "description": "复杂气流与进气几何，打印用于装配检查。",
+            "service": "3d-printing"
+          },
+          {
+            "title": "底盘与电池托盘",
+            "description": "切割、成形与焊接的钣金结构。",
+            "service": "sheet-metal-fabrication"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "injection-molding",
+          "sheet-metal-fabrication"
+        ],
+        "assurance": [
+          {
+            "title": "受控首件",
+            "description": "批量放行前完成全尺寸检查与功能检具验证。"
+          },
+          {
+            "title": "工艺重复性",
+            "description": "保留刀补与配方数据，使返单与批准样件一致。"
+          },
+          {
+            "title": "外协协同",
+            "description": "电镀、涂装与热处理按加工计划同步排程。"
+          }
+        ]
+      },
+      {
+        "id": "robotics",
+        "name": "机器人",
+        "summary": "面向重复装配精度的执行器、关节、传感与结构组件。",
+        "description": "机器人硬件的成败在于接口精度。轴承孔、电机端面与走线位置必须在整机装配状态下对齐，而不只是单件合格。",
+        "image": "images/industry-robotics.jpg",
+        "imageAlt": "为装配摆放的电子与机器人组件",
+        "challenges": [
+          {
+            "title": "接口公差叠加",
+            "description": "多个加工面累积误差，除非共享同一基准。"
+          },
+          {
+            "title": "轻量且刚性的结构",
+            "description": "薄壁铝与塑料必须在不产生振动的前提下保持刚度。"
+          },
+          {
+            "title": "快速迭代",
+            "description": "开发阶段关节几何每隔几周就会变化。"
+          },
+          {
+            "title": "多工艺混合",
+            "description": "机加工主体、打印外壳与钣金支架需要成套到货。"
+          }
+        ],
+        "solutions": [
+          {
+            "title": "按组件定义公差",
+            "description": "关键孔与端面在一次装夹内完成，或基于共享基准配对加工。"
+          },
+          {
+            "title": "混合结构规划",
+            "description": "按刚度、重量与批量在切削、打印与钣金之间分配零件。"
+          },
+          {
+            "title": "快速换版通道",
+            "description": "设计变更可在不打乱整套排产的情况下报价与排程。"
+          },
+          {
+            "title": "成套交付",
+            "description": "组件按套分装、贴标并统一验收后发运。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "关节与齿轮箱壳体",
+            "description": "轴承孔与电机配合面按等级控制。",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "传感与走线件",
+            "description": "打印的线夹、导向与外壳。",
+            "service": "3d-printing"
+          },
+          {
+            "title": "外壳",
+            "description": "控制器与夹爪的注塑或钣金外壳。",
+            "service": "injection-molding"
+          },
+          {
+            "title": "机架与护罩",
+            "description": "焊接底座与安全护罩。",
+            "service": "sheet-metal-fabrication"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "3d-printing",
+          "sheet-metal-fabrication"
+        ],
+        "assurance": [
+          {
+            "title": "装配验证",
+            "description": "成套发运前用检具与配对样件确认接口。"
+          },
+          {
+            "title": "运动面处理",
+            "description": "针对运动组件明确表面与边缘状态要求。"
+          },
+          {
+            "title": "版本追溯",
+            "description": "每套组件记录实际生产的图纸版本。"
+          }
+        ]
+      },
+      {
+        "id": "consumer-electronics",
+        "name": "消费电子",
+        "summary": "薄壁外壳、散热件与精密外观零件。",
+        "description": "电子硬件把外观要求与紧凑的内部空间放在一起。拔模、壁厚均衡与缝隙段落差在模具设计阶段解决，而不是等首批试模之后。",
+        "image": "images/industry-electronics.jpg",
+        "imageAlt": "手工连接电路板导线",
+        "challenges": [
+          {
+            "title": "缝隙与段落差",
+            "description": "可见拼缝要求两侧零件在整个批次内保持一致。"
+          },
+          {
+            "title": "薄壁带特征",
+            "description": "薄壁上的螺柱与加强筋若不平衡就会出现缩水或翘曲。"
+          },
+          {
+            "title": "散热空间",
+            "description": "散热路径与外壳厚度限制相互竞争。"
+          },
+          {
+            "title": "改版节奏快",
+            "description": "发布节奏会在项目后期调整内部布局。"
+          }
+        ],
+        "solutions": [
+          {
+            "title": "模流指导设计",
+            "description": "在开钢模前评审浇口、壁厚策略与熔接痕预测。"
+          },
+          {
+            "title": "精密薄壁加工",
+            "description": "散热器、均热板与外观件按装配边界加工。"
+          },
+          {
+            "title": "外观等级确认",
+            "description": "在启动阶段用样件确认纹理、光泽与允收标准。"
+          },
+          {
+            "title": "跟得上改版的模具",
+            "description": "铝模与模块化结构可在设计未冻结时吸收变更。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "设备外壳",
+            "description": "定义拼缝与锁附策略的两件式外壳。",
+            "service": "injection-molding"
+          },
+          {
+            "title": "散热零件",
+            "description": "加工的冷板、均热板与鳍片块。",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "面框与饰件",
+            "description": "缝隙与段落差要求严格的小型外观件。",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "测试载具",
+            "description": "用于 ICT、老化与功能测试的打印载具。",
+            "service": "3d-printing"
+          }
+        ],
+        "services": [
+          "injection-molding",
+          "cnc-machining",
+          "3d-printing"
+        ],
+        "assurance": [
+          {
+            "title": "外观检验计划",
+            "description": "与产品团队约定抽样水准与判定界线。"
+          },
+          {
+            "title": "尺寸布局",
+            "description": "在装配整机上测量缝隙与段落差，而非仅测单件。"
+          },
+          {
+            "title": "批次隔离",
+            "description": "追踪树脂与涂装批次，使后期发现被限定在范围内。"
+          }
+        ]
+      },
+      {
+        "id": "industrial-equipment",
+        "name": "工业设备",
+        "summary": "面向工厂与流程设备的传动、液压与机架零件。",
+        "description": "资本设备零件要承受多年服役。几何、材料与连接方式围绕寿命、可维护性与现场保养的现实条件来选择。",
+        "image": "images/industry-industrial.jpg",
+        "imageAlt": "水边架高的工业建筑",
+        "challenges": [
+          {
+            "title": "厚截面与磨损",
+            "description": "厚料、淬硬表面与长节拍同时影响精度与成本。"
+          },
+          {
+            "title": "维修可达性",
+            "description": "可拆性设计改变接头与紧固件的规格方式。"
+          },
+          {
+            "title": "批量小、周期长",
+            "description": "产线停运后仍需要备件供应多年。"
+          },
+          {
+            "title": "多种工艺混合",
+            "description": "焊接件、机加工件与采购件必须能顺利装配。"
+          }
+        ],
+        "solutions": [
+          {
+            "title": "稳健的工艺选择",
+            "description": "在决定寿命的特征上采用硬车、磨削与镗削。"
+          },
+          {
+            "title": "焊接工程",
+            "description": "下料前先规划焊接可达性、变形余量与去应力工序。"
+          },
+          {
+            "title": "备件延续性",
+            "description": "程序、夹具与检测流程长期保留以支持返单。"
+          },
+          {
+            "title": "组件级验证",
+            "description": "焊接组件在与机床基准一致的检具上验证。"
+          }
+        ],
+        "applications": [
+          {
+            "title": "齿轮箱与轴承座",
+            "description": "镗、铣并精加工的铸件或锻件本体。",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "机架与护罩",
+            "description": "切割、成形并焊接的结构件。",
+            "service": "sheet-metal-fabrication"
+          },
+          {
+            "title": "液压阀块",
+            "description": "含内部油道的歧管与阀体。",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "控制柜外壳",
+            "description": "面板与操作界面的注塑或钣金外壳。",
+            "service": "injection-molding"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "sheet-metal-fabrication",
+          "injection-molding"
+        ],
+        "assurance": [
+          {
+            "title": "装配适配检查",
+            "description": "按总图验证基准体系。"
+          },
+          {
+            "title": "焊接与涂装记录",
+            "description": "工艺、焊材与涂层数据随订单归档。"
+          },
+          {
+            "title": "长期返单",
+            "description": "零件包可持续调阅，使重复需求与首次一致。"
+          }
+        ]
       }
+    ]
+  },
+  "process": {
+    "eyebrow": "04 / 项目如何推进",
+    "title": "从上传到发货，全程可追溯。",
+    "intro": "无论是单件样件还是返单量产，每个需求都走同样的文档化流程。",
+    "steps": [
+      {
+        "title": "上传与可制造性评审",
+        "description": "按实际工艺能力评估几何、公差与材料意图，评审意见与报价一同返回。",
+        "note": "典型输出：DFM 报告与报价"
+      },
+      {
+        "title": "工艺规划",
+        "description": "确定装夹方案、刀具、夹具与检测点，在编程前提出设计风险。",
+        "note": "决策记录在料号下"
+      },
+      {
+        "title": "编程与仿真",
+        "description": "生成 CAM 程序并做虚拟验证，确认干涉、余量去除与可达精度。",
+        "note": "程序按版本归档"
+      },
+      {
+        "title": "生产",
+        "description": "加工过程加入在线测量与设备监控，偏差在批次内被纠正。",
+        "note": "工单记录设备与操作者"
+      },
+      {
+        "title": "检测与文件",
+        "description": "三坐标与外观检查连同材料证明汇总为批次记录。",
+        "note": "报告随货交付"
+      },
+      {
+        "title": "交付与返单",
+        "description": "按约定方式包装发运；留存的工艺包让下一批与上一批一致。",
+        "note": "返单复用已批准数据"
+      }
+    ]
+  },
+  "quality": {
+    "eyebrow": "05 / 质量体系",
+    "title": "用证据说话，而不是形容词。",
+    "intro": "质量主张只有能体现在报告上才有意义。检测范围、记录与材料数据在报价阶段就已确定，而不是生产之后补写。",
+    "image": "images/quality.jpg",
+    "imageAlt": "工作台上摆放的精密测量工具",
+    "certificationsLabel": "质量体系占位说明",
+    "certificationsNote": "以下条目描述该行业常见体系，仅为模板占位内容：本演示品牌未取得任何认证，也不代表任何认证机构。正式发布前请替换为企业自身的审核证书。",
+    "certifications": [
+      {
+        "id": "iso-9001",
+        "name": "ISO 9001（质量管理体系）",
+        "scope": "机加工车间质量体系的基础参考。",
+        "status": "占位 · 待企业提供"
+      },
+      {
+        "id": "iso-13485",
+        "name": "ISO 13485（医疗器械）",
+        "scope": "医疗零部件供应商常见要求。",
+        "status": "占位 · 待企业提供"
+      },
+      {
+        "id": "iatf-16949",
+        "name": "IATF 16949（汽车）",
+        "scope": "涉及汽车量产供货时通常适用。",
+        "status": "占位 · 待企业提供"
+      },
+      {
+        "id": "as9100",
+        "name": "AS9100（航空航天）",
+        "scope": "航空结构件业务常见要求。",
+        "status": "占位 · 待企业提供"
+      }
+    ],
+    "controls": [
+      {
+        "title": "来料控制",
+        "description": "材料证明与规定牌号、批号核对后，才放行到生产现场。"
+      },
+      {
+        "title": "过程检验",
+        "description": "在设定工站进行机内测头检测，跑偏的调机在毁掉整批前就被发现。"
+      },
+      {
+        "title": "终尺寸报告",
+        "description": "关键与重要特性在已校准的三坐标上测量，报告随订单归档。"
+      },
+      {
+        "title": "测量能力",
+        "description": "量具分析确保检测方法足以证明它被要求验证的公差。"
+      },
+      {
+        "title": "不合格处理",
+        "description": "处置决定、遏制措施与纠正措施记录在受影响批次上。"
+      },
+      {
+        "title": "记录保存",
+        "description": "批次文件按约定周期保存，可按要求导出。"
+      }
+    ]
+  },
+  "cases": {
+    "eyebrow": "06 / 案例",
+    "title": "需求如何变成零件。",
+    "intro": "以下为模板演示案例，不代表真实客户或已交付项目，所有数字均为示意值。",
+    "allLabel": "全部行业",
+    "pageTitle": "案例研究",
+    "pageDescription": "示例制造项目，展示工程约束如何通过工艺选择、检测与交付得到解决。",
+    "demoLabel": "演示案例",
+    "viewDetail": "查看案例",
+    "backgroundTitle": "项目背景",
+    "needTitle": "客户需求",
+    "challengeTitle": "制造挑战",
+    "solutionTitle": "制造方案",
+    "outcomeTitle": "项目成果",
+    "deliverablesTitle": "交付内容",
+    "servicesTitle": "使用的服务",
+    "demoDisclaimer": "演示内容：本案例仅用于展示模板结构，不代表真实客户、合同、认证或实测结果，发布前请替换为经确认的项目数据。",
+    "items": [
+      {
+        "id": "aerospace-bracket",
+        "name": "薄壁航空支架",
+        "category": "aerospace",
+        "categoryLabel": "航空航天",
+        "summary": "一只铝加工支架，从变形的样件走到可重复的单次装夹方案。",
+        "image": "images/case-aerospace-bracket.jpg",
+        "imageAlt": "在空中悬停的小型无人机",
+        "background": "用于航电设备机箱的结构支架同时具备薄壁、大深度型腔与配合面平面度要求。早期样件在单件状态下合格，但装到结构上就出现偏移。",
+        "clientNeed": "在 60 件批次内保持配合面平面度与两个精密孔的位置度，并提供材料证明与提交给设计单位的检测报告。",
+        "challenges": [
+          {
+            "title": "残余应力位移",
+            "description": "从板材毛坯去除大量材料后应力释放，粗加工后平面度发生变化。"
+          },
+          {
+            "title": "精加工后的孔位",
+            "description": "孔位必须相对正在被修正的端面保持位置。"
+          },
+          {
+            "title": "装夹变形",
+            "description": "常规压板在精加工时把薄壁区压变形。"
+          }
+        ],
+        "solution": "把零件重新规划为两阶段工艺，在粗加工与精加工之间加入受控的去应力环节，并改用整面支撑的真空夹具，不再依赖局部压紧。",
+        "solutionPoints": [
+          "粗加工保留均匀余量，随后进入受控松弛环节再精加工。",
+          "精加工在真空夹具上一次装夹完成，以基准面定位。",
+          "孔位先机内测量，再上三坐标按位置度公差复核。",
+          "平面度在松开、自然状态下测量，避免出现假合格。"
+        ],
+        "outcomes": [
+          {
+            "label": "配合面平面度",
+            "value": "0.02 mm",
+            "note": "演示零件的示意目标值"
+          },
+          {
+            "label": "单件装夹次数",
+            "value": "1 次精加工装夹",
+            "note": "对比原方案三次装夹"
+          },
+          {
+            "label": "批次文件",
+            "value": "首件报告加材料证明",
+            "note": "与发运记录一并归档"
+          }
+        ],
+        "services": [
+          "cnc-machining"
+        ],
+        "deliverables": [
+          "铝合金加工支架",
+          "在线测量数据",
+          "三坐标首件报告",
+          "材料符合性证书"
+        ]
+      },
+      {
+        "id": "medical-housing",
+        "name": "诊断仪器外壳",
+        "category": "medical",
+        "categoryLabel": "医疗器械",
+        "summary": "一件双色塑料外壳，从外观风险走到受控工艺窗口的稳定注塑件。",
+        "image": "images/case-medical-housing.jpg",
+        "imageAlt": "实验室中使用显微镜的研究人员",
+        "background": "台式诊断设备需要一面可视顶面、支撑电路板堆叠的内部螺柱，以及在一米距离看像一整面的拼缝。",
+        "clientNeed": "提供拼缝一致的零件、满足装配的螺柱高度控制，并给出足以支撑内部验证包封的尺寸证据。",
+        "challenges": [
+          {
+            "title": "螺柱上方的缩水",
+            "description": "螺柱处的局部壁厚威胁到可见外观面。"
+          },
+          {
+            "title": "拼缝对齐",
+            "description": "缝隙与段落差同时取决于两侧零件与锁附下拉量。"
+          },
+          {
+            "title": "内部结构晚改",
+            "description": "模具设计阶段电路板堆叠仍在调整。"
+          }
+        ],
+        "solution": "根据充填分析确定浇口与保压设定，螺柱改为减胶与加强筋结构，并用铝过渡模吸收剩余的改动，之后再开量产钢模。",
+        "solutionPoints": [
+          "调整螺柱与加强筋几何，让冷却远离外观面。",
+          "使用过渡模承受变更，量产钢模在冻结后再加工。",
+          "注塑参数记录为后续批次的基准配方。",
+          "缝隙与段落差在装配整机上用统一治具测量。"
+        ],
+        "outcomes": [
+          {
+            "label": "外观面缩水",
+            "value": "在设计阶段消除",
+            "note": "评审环节的示意结论"
+          },
+          {
+            "label": "首先使用的模具等级",
+            "value": "铝过渡模",
+            "note": "冻结后加工量产钢模"
+          },
+          {
+            "label": "每批证据",
+            "value": "配方加全尺寸",
+            "note": "与料号一同归档"
+          }
+        ],
+        "services": [
+          "injection-molding",
+          "cnc-machining"
+        ],
+        "deliverables": [
+          "注塑外壳两侧件",
+          "过渡模具方案评审",
+          "工艺窗口记录",
+          "整机装配全尺寸报告"
+        ]
+      },
+      {
+        "id": "robotics-joint",
+        "name": "协作机器人关节模组",
+        "category": "robotics",
+        "categoryLabel": "机器人",
+        "summary": "紧凑关节模块，通过共享基准与单次装夹保证轴承孔同轴度。",
+        "image": "images/case-robotics-joint.jpg",
+        "imageAlt": "组装小型机器人用的零散部件",
+        "background": "双轴关节模组把机加工壳体、打印上盖与钣金走线护罩组合在一起。运动是否顺滑，取决于锁附之后两个轴承孔是否仍然同轴。",
+        "clientNeed": "交付在装配状态下仍保持孔系同轴度的壳体套件，并且三种工艺的零件到货即配套，不需要现场修整。",
+        "challenges": [
+          {
+            "title": "跨装夹的同轴度",
+            "description": "对称的两个孔在翻身二次装夹后出现偏移。"
+          },
+          {
+            "title": "多工艺套件",
+            "description": "打印与钣金件必须贴合机加工基准体系。"
+          },
+          {
+            "title": "每周改版",
+            "description": "开发阶段走线路径持续变化，上盖几何随之调整。"
+          }
+        ],
+        "solution": "两个孔在一次连续装夹中完成加工并统一从同一基准定位，打印上盖与钣金护罩改为按壳体实测尺寸定公差，而不是按三维模型包络。",
+        "solutionPoints": [
+          "单次连续装夹并完成两个孔的在线测量。",
+          "夹具围绕装配状态设计，而不是围绕单件。",
+          "打印上盖按安装轴向强度重新确定摆放方向。",
+          "按套件验收，三种工艺一起判定合格。"
+        ],
+        "outcomes": [
+          {
+            "label": "轴承孔同轴度",
+            "value": "0.015 mm",
+            "note": "演示模组的示意目标值"
+          },
+          {
+            "label": "装配返修",
+            "value": "在设计阶段消除",
+            "note": "套件级验收后再发运"
+          },
+          {
+            "label": "改版周期",
+            "value": "上盖重切不影响壳体",
+            "note": "无需重新验证壳体"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "3d-printing",
+          "sheet-metal-fabrication"
+        ],
+        "deliverables": [
+          "机加工关节壳体",
+          "打印上盖",
+          "钣金护罩",
+          "套件级检测单"
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "eyebrow": "07 / 资源与洞察",
+    "title": "少绕路的工程笔记。",
+    "intro": "从制造端出发的简短建议：应该标注什么、应该避免什么，以及一张图纸如何改变结果。",
+    "categoryLabel": "主题",
+    "items": [
+      {
+        "id": "tolerance-guide",
+        "title": "选择零件真正能稳定保持的公差",
+        "summary": "为什么一句全局 ±0.01 mm 只会抬高成本而不会提升质量，以及如何只标注必须严控的特征。",
+        "category": "可制造性设计",
+        "image": "images/architecture.jpg",
+        "imageAlt": "阳光下的白色建筑立面层次",
+        "page": "service",
+        "id_target": "cnc-machining"
+      },
+      {
+        "id": "process-selection",
+        "title": "切削、注塑还是打印：如何选路线",
+        "summary": "从批量、几何与材料限制四个维度对比四种生产工艺。",
+        "category": "工艺规划",
+        "image": "images/facade.jpg",
+        "imageAlt": "现代建筑规整的窗格排列",
+        "page": "services",
+        "id_target": ""
+      },
+      {
+        "id": "inspection-evidence",
+        "title": "一份合格的检测报告应包含什么",
+        "summary": "测量与证据的差别：基准、能力，以及一份经得起审核的报告。",
+        "category": "质量管理",
+        "image": "images/glass.jpg",
+        "imageAlt": "映射蓝天的几何玻璃幕墙",
+        "page": "industries",
+        "id_target": ""
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "08 / 常见问题",
+    "title": "工程团队最先问的问题",
+    "intro": "关于文件、公差、材料与重复量产的实用回答。",
+    "items": [
+      {
+        "question": "报价定制零件需要提供什么？",
+        "answer": "STEP、IGES、Parasolid 或原生三维模型，外加标注关键尺寸、表面处理与配合要求的二维图纸。若未标注形位公差，则按所选工艺的默认公差执行。"
+      },
+      {
+        "question": "可以按客户的公差标准验收吗？",
+        "answer": "可以。检测计划依据图纸标注编写，能力要求会在可制造性评审阶段确认，然后再承诺批量。"
+      },
+      {
+        "question": "是否提供材料证明？",
+        "answer": "在牌号与供应商支持的前提下可按批次提供符合性证书；该要求在报价阶段确认，以便采购匹配。"
+      },
+      {
+        "question": "返单如何保证一致？",
+        "answer": "程序、刀路、刀补、夹具与检测流程按料号与受控版本归档，返单从已批准状态开始生产。"
+      },
+      {
+        "question": "一个项目可以混合多种工艺吗？",
+        "answer": "可以。混合装配按套件规划，把切削、注塑、打印与钣金统一安排，并按同一份接口图纸验收。"
+      },
+      {
+        "question": "这个网站是真实供应商吗？",
+        "answer": "不是。本站为使用虚构品牌的演示模板，所有数字、案例与能力描述均为待替换的示意内容。"
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "开始一个项目",
+    "title": "发送三维模型，\n得到可制造的方案。",
+    "description": "把模型和你真正在意的约束——公差、材料、批量与使用环境——发给工程团队。工程评审会连同工艺建议与理由一起返回。",
+    "primary": "获取报价",
+    "secondary": "查看制造服务",
+    "points": [
+      "报价同时附可制造性反馈",
+      "量产前确认公差与检测范围",
+      "返单基于留存的工艺数据发布"
     ]
   },
   "contact": {
-    "eyebrow": "LET’S MAKE IT CLEAR.",
-    "title": "下一个好想法，\n也许就从这次对话开始。",
-    "description": "告诉我们你正在思考的问题。",
-    "emailLabel": "通过邮件联系",
-    "placeholder": "联系方式待配置",
-    "note": "这是企业官网演示模板。示例品牌、项目和文案请在使用前替换。"
+    "eyebrow": "联系与询盘",
+    "title": "与工程团队沟通",
+    "description": "发送图纸、目标与约束条件。以下联系方式使用站点内容统一管理，询盘表单在接入后端服务之前仅作为前端原型运行。",
+    "emailLabel": "发送邮件",
+    "placeholder": "邮箱地址尚未配置",
+    "note": "演示网站。正式使用前请配置真实邮箱并接入询盘服务。",
+    "infoTitle": "企业信息",
+    "officeLabel": "注册地址",
+    "officeValue": "待站点所有者提供",
+    "hoursLabel": "工程支持时间",
+    "hoursValue": "待站点所有者提供",
+    "responseLabel": "报价响应时效",
+    "responseValue": "未公布 · 本模板不作任何时效承诺",
+    "channels": [
+      {
+        "label": "邮箱",
+        "value": "在 business.json 中配置后启用",
+        "state": "unconfigured"
+      },
+      {
+        "label": "电话",
+        "value": "待企业提供",
+        "state": "unconfigured"
+      },
+      {
+        "label": "销售区域",
+        "value": "待企业提供",
+        "state": "unconfigured"
+      }
+    ],
+    "formTitle": "项目询盘",
+    "formIntro": "请描述零件、批量与真正关键的约束条件。标记为必填的字段会在浏览器中先行校验。",
+    "backendNoticeTitle": "本表单尚未接入后端服务",
+    "backendNotice": "提交本表单不会发送任何数据。数据不会被传输、存储、记录或上传到服务器：本站是纯静态构建，当前运行环境未提供表单、数据库或文件存储服务。下方的提交成功界面只是本次浏览器会话中展示的本地预览。",
+    "integrationTitle": "正式收集询盘前需要接入的服务",
+    "integration": [
+      "用于接收已校验数据的表单提交接口或托管询盘服务",
+      "图纸与模型的对象存储服务，并在服务端限制大小与文件类型",
+      "符合运营地区要求的垃圾信息防护与同意信息记录",
+      "通知与 CRM 通道，使工程团队能接收并跟踪每一条询盘",
+      "覆盖提交内容的隐私声明与数据保存期限政策"
+    ],
+    "privacyTitle": "你在本页输入的内容会怎样",
+    "privacy": "表单内容仅保留在页面的内存状态中：不写入存储、不随请求发出、页面关闭后即消失。预览状态下请勿填写保密图纸或客户信息。",
+    "fields": {
+      "name": "联系人",
+      "namePlaceholder": "请输入姓名",
+      "company": "公司名称",
+      "companyPlaceholder": "企业或项目名称",
+      "email": "工作邮箱",
+      "emailPlaceholder": "name@company.com",
+      "country": "国家或地区",
+      "countryPlaceholder": "零件的使用地区",
+      "service": "制造服务",
+      "servicePlaceholder": "选择一种工艺",
+      "quantity": "目标数量",
+      "quantityPlaceholder": "例如每批 250 件",
+      "material": "材料或规格",
+      "materialPlaceholder": "例如铝合金 6061-T6",
+      "tolerance": "关键公差",
+      "tolerancePlaceholder": "例如两个孔 ±0.02 mm",
+      "budget": "预算区间",
+      "budgetPlaceholder": "选填，仅用于排产参考",
+      "drawings": "图纸与说明",
+      "drawingsPlaceholder": "在提交服务可用后，在此描述附件内容",
+      "message": "项目需求",
+      "messagePlaceholder": "用途、环境、批量、节点与验收标准",
+      "optional": "选填",
+      "required": "必填"
+    },
+    "upload": {
+      "label": "图纸与三维模型",
+      "hint": "支持 STEP、IGES、X_T、SLDPRT、PDF、DXF。文件仅留在你的设备上，当前未接入上传服务。",
+      "button": "选择文件",
+      "accepted": "接受的文件类型",
+      "maxFiles": "界面预览最多选择 5 个文件",
+      "clear": "清空文件",
+      "empty": "尚未选择文件"
+    },
+    "submit": "提交询盘",
+    "submitting": "正在校验字段…",
+    "validation": {
+      "required": "请补全下方标出的必填字段。",
+      "email": "请输入有效的邮箱地址。",
+      "summary": "校验状态"
+    },
+    "preview": {
+      "title": "本地预览：数据未发送",
+      "intro": "这是浏览器组装出的内容，仅存在于当前页面，离开页面即消失。",
+      "filesLabel": "本地列出的文件（未上传）",
+      "filesNone": "未添加文件",
+      "reset": "清空表单"
+    }
   },
   "ui": {
     "menu": "打开导航",
     "closeMenu": "关闭导航",
-    "viewProject": "查看示例项目",
-    "projectLabel": "示例项目",
-    "closeProject": "关闭项目详情",
-    "deliverables": "示例交付内容",
     "skip": "跳到主要内容",
-    "backTop": "回到顶部",
-    "navigation": "主要导航",
-    "categories": "项目分类",
+    "backTop": "返回顶部",
+    "navigation": "主导航",
     "language": "选择语言",
     "home": "首页",
-    "allProjects": "查看全部项目",
-    "backProjects": "返回项目列表",
-    "notFound": "未找到该项目",
-    "projectIntro": "项目介绍",
-    "languageCurrent": "当前语言"
+    "notFound": "未找到页面",
+    "viewProject": "查看案例",
+    "projectLabel": "演示内容",
+    "deliverables": "交付内容",
+    "categories": "按行业筛选",
+    "allProjects": "查看全部案例",
+    "backProjects": "返回案例列表",
+    "projectIntro": "项目背景",
+    "languageCurrent": "当前语言",
+    "openMega": "展开栏目",
+    "closeMega": "收起栏目",
+    "breadcrumbs": "面包屑导航",
+    "requestQuote": "获取报价",
+    "quoteCta": "开始项目",
+    "capabilitiesTitle": "技术能力",
+    "specsTitle": "工艺参数",
+    "materialsTitle": "制造材料",
+    "applicationsTitle": "应用场景",
+    "qualityTitle": "质量控制",
+    "processTitle": "制造流程",
+    "faqTitle": "服务常见问题",
+    "relatedServices": "相关制造服务",
+    "backToServices": "返回服务列表",
+    "backToIndustries": "返回行业列表",
+    "backToCases": "返回案例列表",
+    "filterLabel": "当前显示",
+    "filterCount": "个案例",
+    "demoBadge": "演示",
+    "unconfigured": "未配置",
+    "materialGroupLabel": "材料类别",
+    "materialGradesLabel": "常用牌号",
+    "materialNoteLabel": "说明",
+    "imagePlaceholder": "示意图",
+    "footerServices": "制造服务",
+    "footerIndustries": "行业方案",
+    "footerCompany": "企业",
+    "footerLegal": "本站为使用虚构品牌的演示模板，发布前请替换全部内容。",
+    "revealLabel": "展开内容"
   },
   "meta": {
-    "title": "序川 · 策略与数字体验",
-    "description": "序川：以策略、设计与数字体验，梳理企业的下一步。企业官网演示模板。"
+    "title": "VANTOR 万拓精密制造 · 定制工业零部件",
+    "description": "面向 CNC 加工、注塑成型、3D 打印与钣金加工的 B2B 数字化制造官网模板，含三语内容与询盘流程。"
   }
 }

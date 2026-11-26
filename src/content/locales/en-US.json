@@ -1,179 +1,1822 @@
 {
   "brand": {
-    "name": "Form & Field",
-    "english": "STRATEGY & DESIGN",
-    "descriptor": "Strategy · Design · Digital experiences",
-    "copyright": "Form & Field · Company website demo"
+    "name": "VANTOR",
+    "english": "PRECISION MANUFACTURING",
+    "descriptor": "Digital precision manufacturing for custom industrial components",
+    "copyright": "VANTOR Precision Manufacturing · demonstration website"
   },
   "nav": [
     {
-      "label": "Our services",
-      "href": "#services"
+      "label": "Services",
+      "href": "services",
+      "description": "Subtractive, molding and additive manufacturing under one digital workflow.",
+      "children": [
+        {
+          "label": "CNC Machining",
+          "description": "3-, 4- and 5-axis milling plus turning, from prototype to production.",
+          "page": "service",
+          "id": "cnc-machining"
+        },
+        {
+          "label": "Injection Molding",
+          "description": "Rapid, bridge and production tooling for engineered plastic parts.",
+          "page": "service",
+          "id": "injection-molding"
+        },
+        {
+          "label": "3D Printing",
+          "description": "SLS, SLA and FDM additive manufacturing for functional prototypes.",
+          "page": "service",
+          "id": "3d-printing"
+        },
+        {
+          "label": "Sheet Metal Fabrication",
+          "description": "Laser cutting, forming and finishing for enclosures and brackets.",
+          "page": "service",
+          "id": "sheet-metal-fabrication"
+        }
+      ]
     },
     {
-      "label": "Selected work",
-      "href": "#work"
+      "label": "Industries",
+      "description": "Manufacturing programs shaped around sector requirements.",
+      "href": "industries",
+      "children": [
+        {
+          "label": "Aerospace",
+          "description": "Lightweight structural and fluid-control components.",
+          "page": "industry",
+          "id": "aerospace"
+        },
+        {
+          "label": "Medical",
+          "description": "Device housings, surgical instruments and fixture components.",
+          "page": "industry",
+          "id": "medical"
+        },
+        {
+          "label": "Automotive",
+          "description": "Prototype, homologation and low-volume production parts.",
+          "page": "industry",
+          "id": "automotive"
+        },
+        {
+          "label": "Robotics",
+          "description": "Actuator, joint and sensor assemblies with repeatable fit.",
+          "page": "industry",
+          "id": "robotics"
+        },
+        {
+          "label": "Consumer Electronics",
+          "description": "Thin-wall housings, heatsinks and precision trim parts.",
+          "page": "industry",
+          "id": "consumer-electronics"
+        },
+        {
+          "label": "Industrial Equipment",
+          "description": "Drivetrain, fluid power and machine-frame components.",
+          "page": "industry",
+          "id": "industrial-equipment"
+        }
+      ]
     },
     {
-      "label": "Our process",
-      "href": "#process"
+      "label": "Case studies",
+      "description": "Sample programs that show how requests move into production.",
+      "href": "cases",
+      "children": [
+        {
+          "label": "Aerospace bracket",
+          "description": "Thin-wall aluminium bracket machined in a single setup.",
+          "page": "case",
+          "id": "aerospace-bracket"
+        },
+        {
+          "label": "Medical device housing",
+          "description": "Two-shot enclosure for a diagnostic instrument.",
+          "page": "case",
+          "id": "medical-housing"
+        },
+        {
+          "label": "Robotics joint module",
+          "description": "Compact actuator joint with tight bearing bores.",
+          "page": "case",
+          "id": "robotics-joint"
+        }
+      ]
     },
     {
-      "label": "About us",
-      "href": "#about"
+      "label": "Capabilities",
+      "href": "#capabilities",
+      "description": "Machines, materials, tolerances and inspection under one roof.",
+      "children": []
+    },
+    {
+      "label": "Contact",
+      "href": "contact",
+      "description": "Send drawings and project requirements to the engineering team.",
+      "children": []
     }
   ],
   "hero": {
-    "eyebrow": "CLEAR THINKING. MEANINGFUL CHANGE.",
-    "title": ["A clearer direction.", "A meaningful next step."],
-    "description": "We help teams make sense of complex challenges, connecting brand strategy with thoughtful digital experiences.",
-    "primary": "Let’s talk",
-    "secondary": "Explore our services",
-    "image": "images/architecture.jpg",
-    "imageAlt": "Layered white architectural facade in sunlight",
-    "caption": "Structured thinking. Human expression.",
-    "note": "STRATEGY MEETS DESIGN"
-  },
-  "services": {
-    "eyebrow": "01 / WHAT WE DO",
-    "title": "From finding direction\nto making it happen.",
-    "intro": "Strategy, design and implementation, working together. Start with a specific challenge or shape a complete brand experience with us.",
-    "items": [
+    "eyebrow": "DIGITAL PRECISION MANUFACTURING",
+    "title": [
+      "From CAD to certified parts.",
+      "One digital manufacturing workflow."
+    ],
+    "description": "VANTOR connects quoting, process planning and production across CNC machining, injection molding, 3D printing and sheet metal, so custom industrial components move from drawing to delivery on a traceable path.",
+    "primary": "Request a quote",
+    "secondary": "Explore manufacturing services",
+    "image": "images/hero-factory.jpg",
+    "imageAlt": "Aerial view of an industrial factory complex",
+    "caption": "Quoting · Process planning · Inspection",
+    "note": "ONE WORKFLOW, FOUR PROCESSES",
+    "statsLabel": "Manufacturing footprint",
+    "stats": [
       {
-        "id": "strategy",
-        "title": "Brand and business strategy",
-        "description": "Understand your business, audience and ambitions to find a shared starting point for brand and product.",
-        "tags": ["Positioning", "User insight", "Content strategy"]
+        "value": "120",
+        "suffix": "+",
+        "label": "CNC machine tools",
+        "note": "Milling, turning and wire EDM in the demonstration dataset"
       },
       {
-        "id": "experience",
-        "title": "Design and digital experiences",
-        "description": "Turn a clear strategy into experiences people can see, feel and use.",
-        "tags": ["Visual identity", "Company websites", "Interaction design"]
+        "value": "5",
+        "suffix": "-axis",
+        "label": "Simultaneous machining",
+        "note": "Continuous 5-axis capability for complex geometry"
       },
       {
-        "id": "delivery",
-        "title": "Delivery and iteration",
-        "description": "Thoughtful implementation, practical handover and room for the next improvement.",
-        "tags": [
-          "Frontend development",
-          "Experience review",
-          "Ongoing iteration"
-        ]
-      }
-    ]
-  },
-  "work": {
-    "eyebrow": "02 / SELECTED DIRECTIONS",
-    "title": "Different ideas.\nDistinct expressions.",
-    "intro": "These demonstration projects illustrate content and visual direction. They are not real clients or completed commissions.",
-    "allLabel": "All",
-    "items": [
-      {
-        "id": "field",
-        "name": "Room to grow",
-        "category": "Brand strategy",
-        "summary": "A clearer narrative for a service business.",
-        "image": "images/facade.jpg",
-        "imageAlt": "Regular window patterns on a modern building",
-        "detail": "This sample explores how positioning, content hierarchy and visual language work together. Replace it with a real project, your role and results you can share.",
-        "deliverables": [
-          "Brand narrative",
-          "Information architecture",
-          "Visual exploration"
-        ]
+        "value": "0.005",
+        "suffix": " mm",
+        "label": "Best demonstrated tolerance",
+        "note": "Typical tolerance band is published per service"
       },
       {
-        "id": "horizon",
-        "name": "A wider perspective",
-        "category": "Digital experience",
-        "summary": "Making complex product capabilities easier to explore.",
-        "image": "images/glass.jpg",
-        "imageAlt": "Geometric glass architecture reflecting a blue sky",
-        "detail": "This sample explores how visitors discover services and start a conversation. Use authorized images and verified information when replacing it.",
-        "deliverables": [
-          "Responsive website",
-          "Core interactions",
-          "Design and development guidelines"
-        ]
+        "value": "40",
+        "suffix": "+",
+        "label": "Engineering materials",
+        "note": "Qualification status varies by material and process"
       }
     ],
-    "pageTitle": "Selected work"
+    "statsNote": "Demonstration figures for template evaluation. Replace them with audited plant data before publication."
   },
-  "process": {
-    "eyebrow": "03 / HOW WE WORK",
-    "title": "A shared understanding, at every step.",
+  "capabilities": {
+    "eyebrow": "01 / MANUFACTURING CAPABILITY",
+    "title": "Digital capability, measured in process control.",
+    "intro": "Every request enters the same digital thread: design-for-manufacturing review, machine simulation, in-process measurement and a documented inspection record.",
+    "image": "images/capabilities.jpg",
+    "imageAlt": "Industrial plant structures with silos and conveyors",
     "items": [
       {
-        "title": "Understand, then define",
-        "description": "Discuss the context, goals and constraints to agree on the problem worth solving."
+        "title": "Unified quoting engine",
+        "description": "Geometry, material, volume and finish are evaluated against a live machine-capacity model, so the lead time you receive reflects a real production slot."
       },
       {
-        "title": "Explore and design together",
-        "description": "Develop structure and visual direction step by step, making key decisions clear and open to discussion."
+        "title": "Programmed, not improvised",
+        "description": "CAM programs, tool libraries and fixtures are versioned per part family, which keeps repeat orders dimensionally consistent between batches."
       },
       {
-        "title": "Deliver with care",
-        "description": "Implement, review and hand over clear guidance, then improve through feedback."
+        "title": "In-process metrology",
+        "description": "On-machine probing and coordinate measuring machines feed the same record, so deviations are caught inside the batch instead of at final inspection."
+      },
+      {
+        "title": "Traceable batches",
+        "description": "Material certificates, machine assignment, operator and inspection data are attached to each work order and can be exported with the shipment."
+      },
+      {
+        "title": "Hybrid part strategy",
+        "description": "Machined cores, molded housings and printed jigs are planned together, so assemblies arrive matched rather than reworked on your line."
+      },
+      {
+        "title": "Scale without requalification",
+        "description": "Prototype, bridge and production runs use the same process documentation, so moving from ten parts to ten thousand does not restart validation."
+      }
+    ],
+    "metrics": [
+      {
+        "label": "Machining envelope (largest demonstration axis travel)",
+        "value": "1,600 × 800 × 800 mm"
+      },
+      {
+        "label": "Typical machined tolerance",
+        "value": "±0.025 mm"
+      },
+      {
+        "label": "Inspection equipment",
+        "value": "CMM, optical comparator, surface tester"
+      },
+      {
+        "label": "File formats accepted",
+        "value": "STEP, IGES, X_T, SLDPRT, 2D PDF"
+      }
+    ],
+    "note": "Capability summary shown for template demonstration. Confirm current machine lists and tolerance tables with the engineering team."
+  },
+  "services": {
+    "eyebrow": "02 / MANUFACTURING SERVICES",
+    "title": "Four production routes.\nOne engineering review.",
+    "intro": "Select a process or let the DFM review recommend one. Each service publishes the materials, tolerances and finishes it can hold today.",
+    "pageTitle": "Manufacturing services",
+    "pageDescription": "CNC machining, injection molding, 3D printing and sheet metal fabrication delivered through one digital workflow.",
+    "categoriesLabel": "Process family",
+    "viewDetail": "View service",
+    "items": [
+      {
+        "id": "cnc-machining",
+        "title": "CNC Machining",
+        "summary": "3-, 4- and 5-axis milling and turning for high-precision metal and plastic parts.",
+        "description": "Milled and turned components from solid billet or bar stock, programmed against a documented tolerance plan. The same cell supports one-off prototypes and controlled low-rate production with repeatable setup.",
+        "tags": [
+          "Milling",
+          "Turning",
+          "5-axis",
+          "High precision"
+        ],
+        "image": "images/service-cnc-machining.jpg",
+        "imageAlt": "Perforated metal sheet with machined round holes",
+        "heroEyebrow": "SUBTRACTIVE MACHINING",
+        "capabilities": [
+          {
+            "title": "3-, 4- and 5-axis milling",
+            "description": "Continuous 5-axis for impellers, manifolds and organic surfaces; 3-axis for prismatic parts and plates."
+          },
+          {
+            "title": "Mill-turn and Swiss turning",
+            "description": "Bar-fed turning with live tooling for shafts, bushings and fastener-class geometry in a single cycle."
+          },
+          {
+            "title": "Wire EDM and grinding",
+            "description": "Hardened tooling details, tight radii and form features that are impractical to mill conventionally."
+          },
+          {
+            "title": "Integrated finishing",
+            "description": "Anodising, passivation, plating, bead blast and powder coat coordinated with the machining schedule."
+          }
+        ],
+        "materials": [
+          {
+            "name": "Aluminium",
+            "grades": "6061-T6, 7075-T6, 5052, A356",
+            "note": "Anodisable grades held in the demonstration catalogue."
+          },
+          {
+            "name": "Stainless steel",
+            "grades": "304, 316L, 17-4 PH, 420",
+            "note": "Biocompatible and corrosion-resistant options."
+          },
+          {
+            "name": "Alloy and tool steel",
+            "grades": "4140, 4340, P20, H13",
+            "note": "Fixture, tooling and wear-part applications."
+          },
+          {
+            "name": "Titanium and superalloys",
+            "grades": "Ti-6Al-4V, Inconel 625/718",
+            "note": "Requires dedicated tooling and longer cycle times."
+          },
+          {
+            "name": "Engineering plastics",
+            "grades": "PEEK, POM, Ultem 1000, PVC",
+            "note": "Insulating, low-weight or chemical-resistant parts."
+          },
+          {
+            "name": "Copper and brass",
+            "grades": "C110, C360, CuBe",
+            "note": "Conductive, thermal and decorative components."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Structural and brackets",
+            "description": "Thin-wall frames, mounting brackets and chassis elements with controlled flatness."
+          },
+          {
+            "title": "Fluid and thermal",
+            "description": "Manifolds, valve bodies, cold plates and heat sinks with internal passages."
+          },
+          {
+            "title": "Tooling and fixtures",
+            "description": "Assembly jigs, gauges, molds and press tooling produced alongside parts."
+          },
+          {
+            "title": "Drive components",
+            "description": "Housings, shafts, gears and bearing seats held to fit-class tolerances."
+          }
+        ],
+        "specs": [
+          {
+            "label": "Tolerance",
+            "value": "±0.025 mm standard / ±0.005 mm tight"
+          },
+          {
+            "label": "Surface finish",
+            "value": "Ra 1.6 µm typical / Ra 0.4 µm fine"
+          },
+          {
+            "label": "Part size",
+            "value": "up to 1,600 × 800 × 800 mm"
+          },
+          {
+            "label": "Batch size",
+            "value": "1 to 10,000 pieces"
+          },
+          {
+            "label": "Lead time",
+            "value": "Sample run inside 3 working days"
+          },
+          {
+            "label": "Inspection",
+            "value": "CMM report with each batch"
+          }
+        ],
+        "quality": [
+          {
+            "title": "Tolerance plan per part",
+            "description": "Critical features are flagged at quoting and probed during the cycle."
+          },
+          {
+            "title": "First-article verification",
+            "description": "FAI dimensions are recorded before the remaining quantity is released."
+          },
+          {
+            "title": "Tool-wear tracking",
+            "description": "Offset history is stored with the program so the next batch starts from the same state."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Which files do you need to quote a machined part?",
+            "answer": "A STEP or native CAD model plus a 2D drawing that marks critical dimensions, finish and any fit requirements. Without GD&T the default tolerance block applies."
+          },
+          {
+            "question": "Can you machine hardened material?",
+            "answer": "Yes. Hard turning, grinding and wire EDM cover heat-treated tooling steel and superalloys; the route is selected during process planning."
+          },
+          {
+            "question": "Do you support repeat production orders?",
+            "answer": "Programs, fixtures and inspection routines are versioned per part number, so reorders run from the same documented state."
+          }
+        ]
+      },
+      {
+        "id": "injection-molding",
+        "title": "Injection Molding",
+        "summary": "Rapid, bridge and production tooling for engineered thermoplastic components.",
+        "description": "From a ten-part prototype shot to a controlled production run, molding programs are planned around gate location, wall balance and egress so parts arrive dimensionally stable and ready for assembly.",
+        "tags": [
+          "Rapid tooling",
+          "Bridge tooling",
+          "Production",
+          "Two-shot"
+        ],
+        "image": "images/service-injection-molding.jpg",
+        "imageAlt": "Hands assembling moulded plastic components",
+        "heroEyebrow": "MOLDED POLYMER COMPONENTS",
+        "capabilities": [
+          {
+            "title": "Rapid and bridge tooling",
+            "description": "Aluminium or P20 molds for design validation and pre-launch volumes without committing to production steel."
+          },
+          {
+            "title": "Production steel tooling",
+            "description": "Hardened multi-cavity molds with conformal or baffle cooling for sustained cycle rates."
+          },
+          {
+            "title": "Process development",
+            "description": "Scientific molding setup: cavity pressure, fill profile and packing stage recorded as the process window."
+          },
+          {
+            "title": "Finishing and assembly",
+            "description": "Texturing, pad printing, ultrasonic welding, machining inserts and sub-assembly coordination."
+          }
+        ],
+        "materials": [
+          {
+            "name": "General purpose",
+            "grades": "ABS, PP, PS, HIPS",
+            "note": "Enclosures, trays and consumer components."
+          },
+          {
+            "name": "Engineered thermoplastics",
+            "grades": "PC, PA6/PA66, POM, PBT",
+            "note": "Strength, creep and fatigue performance."
+          },
+          {
+            "name": "Glass-filled grades",
+            "grades": "PA66-GF30, PBT-GF30, PC-GF20",
+            "note": "Dimensional stability under load and heat."
+          },
+          {
+            "name": "High-temperature resins",
+            "grades": "PEEK, PEI (Ultem), PPS",
+            "note": "Thermal and chemical duty cycles."
+          },
+          {
+            "name": "Elastomers and overmolds",
+            "grades": "TPE, TPU, silicone (compression)",
+            "note": "Seals, grips and two-shot interfaces."
+          },
+          {
+            "name": "Flame-retardant grades",
+            "grades": "PC/ABS FR, PA FR",
+            "note": "Availability depends on regional resin sourcing."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Housings and enclosures",
+            "description": "Snap-fit, screw-boss and sealed enclosures for electronics and instruments."
+          },
+          {
+            "title": "Fluid handling",
+            "description": "Connectors, manifolds, caps and cartridges with controlled sealing faces."
+          },
+          {
+            "title": "Trim and interface parts",
+            "description": "Visually critical buttons, bezels and panels with defined texture and colour."
+          },
+          {
+            "title": "Mechanical details",
+            "description": "Gears, levers, clips and living hinges dimensioned for assembly clearance."
+          }
+        ],
+        "specs": [
+          {
+            "label": "Clamp force range",
+            "value": "45 to 380 tonnes"
+          },
+          {
+            "label": "Wall thickness",
+            "value": "0.6 mm minimum (resin dependent)"
+          },
+          {
+            "label": "Tolerance",
+            "value": "±0.05 mm to ±0.15 mm typical"
+          },
+          {
+            "label": "Tool life class",
+            "value": "Prototype 5k · Bridge 100k · Production 1M shots"
+          },
+          {
+            "label": "Batch size",
+            "value": "10 to 500,000 pieces"
+          },
+          {
+            "label": "Surface texture",
+            "value": "SPI A1 to VDI 30"
+          }
+        ],
+        "quality": [
+          {
+            "title": "Process window record",
+            "description": "Shot parameters are captured at validation and locked as the reference recipe."
+          },
+          {
+            "title": "Cavity-level control",
+            "description": "Each cavity is measured at first article so multi-cavity drift is visible early."
+          },
+          {
+            "title": "Material certificates",
+            "description": "Resin lot data is attached to the batch record on request."
+          }
+        ],
+        "faq": [
+          {
+            "question": "When should I choose bridge tooling instead of production steel?",
+            "answer": "When the design still carries risk or launch volumes are unproven. Bridge tools carry the part through validation and early sales, then the production tool is cut from the frozen geometry."
+          },
+          {
+            "question": "Can you add metal inserts or threads?",
+            "answer": "Yes. Molded-in and post-mold inserts, heat staking and machined threads are planned during mold design so access and parting lines are correct from the first shot."
+          },
+          {
+            "question": "What drives the biggest cost difference?",
+            "answer": "Cavitation, tool complexity and cosmetic class. Wall balance and parting-line placement affect cycle time as much as the mold steel itself."
+          }
+        ]
+      },
+      {
+        "id": "3d-printing",
+        "title": "3D Printing",
+        "summary": "Powder-bed, stereolithography and filament processes for functional parts.",
+        "description": "Additive manufacturing used as a production route, not a mock-up: powder-bed fusion for robust mechanisms, stereolithography for fine detail, and material extrusion for large fixtures and jigs.",
+        "tags": [
+          "SLS",
+          "SLA",
+          "FDM",
+          "Functional prototypes"
+        ],
+        "image": "images/service-3d-printing.jpg",
+        "imageAlt": "Colourful moulded plastic gear parts",
+        "heroEyebrow": "ADDITIVE MANUFACTURING",
+        "capabilities": [
+          {
+            "title": "Powder-bed fusion (SLS)",
+            "description": "Nylon 12 and reinforced powders for snap fits, ducts and end-use parts without support structures."
+          },
+          {
+            "title": "Stereolithography (SLA/DLP)",
+            "description": "High-resolution resin parts for master models, clear fluidic devices and fine-detail enclosures."
+          },
+          {
+            "title": "Material extrusion (FDM/FFF)",
+            "description": "CF-nylon, ABS and PC-FRAM for large jigs, soft jaws and production aids."
+          },
+          {
+            "title": "Metal additive (service partner)",
+            "description": "Binder-jet and LPBF routes are coordinated externally and quoted with post-processing."
+          }
+        ],
+        "materials": [
+          {
+            "name": "Nylon powders",
+            "grades": "PA12, PA11, PA12-GF",
+            "note": "Tough, chemical-resistant functional parts."
+          },
+          {
+            "name": "Photopolymer resins",
+            "grades": "Standard, tough, high-temp, castable",
+            "note": "Detail and clarity; mechanical limits vary by grade."
+          },
+          {
+            "name": "Filament polymers",
+            "grades": "ABS, ASA, PC, PA6-CF, PET",
+            "note": "Stiffness and thermal options for fixtures."
+          },
+          {
+            "name": "Elastomeric powders",
+            "grades": "TPU 85A/95A",
+            "note": "Gaskets, bumpers and compliant grips."
+          },
+          {
+            "name": "Biocompatible resins",
+            "grades": "Class II short-contact options",
+            "note": "Regulatory status must be verified per application."
+          },
+          {
+            "name": "Flame-retardant grades",
+            "grades": "ABS-FR94V0, PA-FR",
+            "note": "Used for electronics fixtures and housings."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Form and fit models",
+            "description": "Assembly verification before tooling investment."
+          },
+          {
+            "title": "Ducts and manifolds",
+            "description": "Internal geometry that is impractical to machine or mold."
+          },
+          {
+            "title": "Production aids",
+            "description": "Drill jigs, soft jaws, gauges and packaging inserts."
+          },
+          {
+            "title": "Low-rate end use",
+            "description": "Spare parts and short runs where tooling cannot be justified."
+          }
+        ],
+        "specs": [
+          {
+            "label": "Layer height",
+            "value": "0.06 to 0.30 mm by process"
+          },
+          {
+            "label": "Dimensional accuracy",
+            "value": "±0.1 mm or ±0.5% of length"
+          },
+          {
+            "label": "Maximum build",
+            "value": "700 × 380 × 380 mm (SLS)"
+          },
+          {
+            "label": "Minimum wall",
+            "value": "0.8 mm (SLS) · 1.0 mm (FDM)"
+          },
+          {
+            "label": "Batch size",
+            "value": "1 to 5,000 pieces"
+          },
+          {
+            "label": "Post-processing",
+            "value": "Bead blast, dye, vapour smooth, machining"
+          }
+        ],
+        "quality": [
+          {
+            "title": "Orientation record",
+            "description": "Build orientation affects strength; the chosen layout is documented with the part."
+          },
+          {
+            "title": "Powder and resin control",
+            "description": "Fresh-to- recycled powder ratio and resin batch data are logged per build."
+          },
+          {
+            "title": "Dimensional verification",
+            "description": "Critical features are checked on the finished, conditioned part rather than off the plate."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Is printed accuracy comparable to machining?",
+            "answer": "No. Additive processes carry larger dimensional variance, so critical interfaces are usually machined or printed oversized and finished."
+          },
+          {
+            "question": "Can printed parts be used in production?",
+            "answer": "Yes for low-rate and duty-cycled parts where material data supports the application. The qualification basis is provided in the material table."
+          },
+          {
+            "question": "Do you support metal printing?",
+            "answer": "Metal additive is delivered through a coordinated service partner, including depowdering, heat treatment and machining of critical interfaces."
+          }
+        ]
+      },
+      {
+        "id": "sheet-metal-fabrication",
+        "title": "Sheet Metal Fabrication",
+        "summary": "Laser cutting, forming and welding for enclosures, panels and frames.",
+        "description": "Flat parts through to welded assemblies. Bend compensation is learned from the shop's own tooling, so a first article and the fiftieth panel carry the same geometry.",
+        "tags": [
+          "Laser cutting",
+          "Press brake",
+          "Welding",
+          "Finishing"
+        ],
+        "image": "images/service-sheet-metal.jpg",
+        "imageAlt": "Wave-formed sheet metal surface",
+        "heroEyebrow": "FORMED AND JOINED SHEET",
+        "capabilities": [
+          {
+            "title": "Fibre laser cutting",
+            "description": "Precision contours in mild steel, stainless and aluminium with defined edge quality."
+          },
+          {
+            "title": "Press brake forming",
+            "description": "Air bending, bottom forming and roll forming with a tool-specific springback table."
+          },
+          {
+            "title": "Joining",
+            "description": "TIG, MIG and resistance welding plus riveting, clinching and threaded fastener insertion."
+          },
+          {
+            "title": "Surface finishing",
+            "description": "Powder coat, wet paint, passivation, brushing and protective film with masking control."
+          }
+        ],
+        "materials": [
+          {
+            "name": "Mild steel",
+            "grades": "CRS 1008/1010, HRS A36",
+            "note": "0.5 to 20 mm depending on process."
+          },
+          {
+            "name": "Stainless steel",
+            "grades": "304, 316L, 430",
+            "note": "Welded and passivated for hygienic or outdoor use."
+          },
+          {
+            "name": "Aluminium",
+            "grades": "5052, 6061, 1100",
+            "note": "Lightweight enclosures and decorative panels."
+          },
+          {
+            "name": "Galvanised and coated",
+            "grades": "GI, GL, pre-painted",
+            "note": "Corrosion protection without post-paint."
+          },
+          {
+            "name": "Copper and brass",
+            "grades": "C110, C260",
+            "note": "Conductive and decorative applications."
+          },
+          {
+            "name": "Specialty",
+            "grades": "Spring steel, Inconel sheet",
+            "note": "Quoted with process review."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Electronics enclosures",
+            "description": "Chassis, covers and EMI-oriented panels with controlled standoff geometry."
+          },
+          {
+            "title": "Frames and guards",
+            "description": "Machine frames, safety guarding and structural sub-assemblies."
+          },
+          {
+            "title": "Architectural and signage",
+            "description": "Panels, brackets and trim with defined cosmetic class."
+          },
+          {
+            "title": "Thermal and airflow",
+            "description": "Ducting, heat-sink plates and vented covers."
+          }
+        ],
+        "specs": [
+          {
+            "label": "Thickness range",
+            "value": "0.5 to 20 mm"
+          },
+          {
+            "label": "Cut size",
+            "value": "3,000 × 1,500 mm"
+          },
+          {
+            "label": "Bend accuracy",
+            "value": "±0.25 mm typical / ±0.1 mm precision"
+          },
+          {
+            "label": "Hole-to-edge",
+            "value": "≥ 1.0 × sheet thickness"
+          },
+          {
+            "label": "Batch size",
+            "value": "1 to 50,000 pieces"
+          },
+          {
+            "label": "Finish",
+            "value": "Powder coat, passivate, brush, film"
+          }
+        ],
+        "quality": [
+          {
+            "title": "Unfold validation",
+            "description": "Flatten patterns are checked against the bend table before the first cut."
+          },
+          {
+            "title": "Weld procedure records",
+            "description": "Operators and parameters are recorded for structural joints."
+          },
+          {
+            "title": "Assembly gauging",
+            "description": "Welded sub-assemblies are checked on a dedicated fixture for position and flatness."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What should my drawing define for a folded part?",
+            "answer": "Material, gauge, inside dimensions or bend centre-lines, bend radius, and which faces are cosmetic. Ambiguity between inside and outside dimensions is the usual source of rework."
+          },
+          {
+            "question": "Can you weld and finish complete assemblies?",
+            "answer": "Yes. Weldment drawings are planned with fixturing sequence, distortion allowance and finishing masking before the cutting schedule is released."
+          },
+          {
+            "question": "Is there a minimum order quantity?",
+            "answer": "No. Single prototypes are produced, though batch pricing reflects setup, tooling and programming costs that spread across quantity."
+          }
+        ]
       }
     ]
   },
-  "about": {
-    "eyebrow": "04 / A SHARED PERSPECTIVE",
-    "title": "Good collaboration\nstarts at the same table.",
-    "description": "Expertise does not need to be complicated. We listen carefully, speak openly and bring different perspectives together to make decisions that fit your business.",
-    "principles": [
-      "Questions before answers",
-      "Clear words, careful work",
-      "Designed for long-term use"
+  "industries": {
+    "eyebrow": "03 / INDUSTRIES",
+    "title": "Sector requirements,\nbuilt into the process plan.",
+    "intro": "The same part means different things in different sectors. Industry pages collect the requirements, materials and inspection evidence each program normally needs.",
+    "pageTitle": "Industry solutions",
+    "pageDescription": "Precision manufacturing solutions for aerospace, medical, automotive, robotics, electronics and industrial equipment programs.",
+    "viewDetail": "View industry",
+    "challengesTitle": "Requirements and challenges",
+    "solutionsTitle": "Manufacturing approach",
+    "applicationsTitle": "Typical components",
+    "servicesTitle": "Recommended services",
+    "casesTitle": "Related case studies",
+    "assuranceTitle": "Capability and quality",
+    "items": [
+      {
+        "id": "aerospace",
+        "name": "Aerospace",
+        "summary": "Lightweight structural, thermal and fluid components with full material traceability.",
+        "description": "Aerospace programs combine thin-wall geometry, difficult alloys and documentation that must survive audit. The priority is removing variation between the qualification article and every part that follows it.",
+        "image": "images/industry-aerospace.jpg",
+        "imageAlt": "Light aircraft on a grass airfield",
+        "challenges": [
+          {
+            "title": "Thin walls and distortion",
+            "description": "Material removal in lightweight brackets releases residual stress and moves the part off tolerance mid-cycle."
+          },
+          {
+            "title": "Difficult alloys",
+            "description": "Titanium and nickel-based grades consume tooling and demand stable chip control to hold surface integrity."
+          },
+          {
+            "title": "Traceability burden",
+            "description": "Heat lot, machine, operator and inspection data must be retrievable long after delivery."
+          },
+          {
+            "title": "Low volumes, high rigor",
+            "description": "Program quantities rarely justify dedicated fixtures, yet setup repeatability is mandatory."
+          }
+        ],
+        "solutions": [
+          {
+            "title": "Stress-aware roughing",
+            "description": "Rough-finish splitting with interim relaxation stages, verified by probing before the finishing pass."
+          },
+          {
+            "title": "Dedicated tooling strategy",
+            "description": "Tool paths, speeds and wear limits are qualified per alloy, then reused across the program."
+          },
+          {
+            "title": "Lot-level documentation",
+            "description": "Certificates, inspection results and process records are compiled with each shipment."
+          },
+          {
+            "title": "Reusable flexible fixturing",
+            "description": "Modular fixtures hold the family, so low volumes keep a controlled datum scheme."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Airframe brackets",
+            "description": "Machined aluminium and titanium mounting structure.",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "Ducting and manifolds",
+            "description": "Complex internal paths produced additively or machined.",
+            "service": "3d-printing"
+          },
+          {
+            "title": "Panel and console hardware",
+            "description": "Formed and finished sheet components for interiors.",
+            "service": "sheet-metal-fabrication"
+          },
+          {
+            "title": "Connector housings",
+            "description": "Dimensionally stable molded polymer insulators.",
+            "service": "injection-molding"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "3d-printing",
+          "sheet-metal-fabrication"
+        ],
+        "assurance": [
+          {
+            "title": "Inspection evidence",
+            "description": "FAI reports with full characteristic accounting, plus in-process probe logs."
+          },
+          {
+            "title": "Material provenance",
+            "description": "Certificates of conformity supplied per heat or lot where the grade requires it."
+          },
+          {
+            "title": "Configuration control",
+            "description": "Program and revision history are tied to the drawing level released for production."
+          }
+        ]
+      },
+      {
+        "id": "medical",
+        "name": "Medical",
+        "summary": "Device housings, instrument components and fixture parts for diagnostics and surgical tools.",
+        "description": "Medical programs are defined by documentation and repeatability rather than geometry alone. Process records, controlled materials and clean handling are planned together before the first part is made.",
+        "image": "images/industry-medical.jpg",
+        "imageAlt": "Stainless steel medical instruments arranged on a tray",
+        "challenges": [
+          {
+            "title": "Design freeze under validation",
+            "description": "Geometry changes late in the program, but the process record must remain defensible."
+          },
+          {
+            "title": "Small, tight-tolerance parts",
+            "description": "Meters, housings and instrument details combine micro features with strict fit."
+          },
+          {
+            "title": "Surface and cleanliness",
+            "description": "Molded texture, burr control and residue affect both function and inspection."
+          },
+          {
+            "title": "Batch-to-batch identity",
+            "description": "Colour, gloss and dimensional feel must match across resin lots and tool age."
+          }
+        ],
+        "solutions": [
+          {
+            "title": "Design-for-validation parting",
+            "description": "Parting lines, gates and witness marks are placed where they do not compromise function or cleanability."
+          },
+          {
+            "title": "Micro-machining cells",
+            "description": "High-speed small-part cells with dedicated tooling hold bore and profile detail."
+          },
+          {
+            "title": "Controlled process records",
+            "description": "Setup sheets, inspection plans and change history are archived per part number."
+          },
+          {
+            "title": "Segregated handling",
+            "description": "Dedicated benches, gloves and packaging for parts intended for controlled environments."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Instrument housings",
+            "description": "Snap-fit or screwed enclosures for diagnostic devices.",
+            "service": "injection-molding"
+          },
+          {
+            "title": "Surgical components",
+            "description": "Stainless and titanium parts with defined edge and finish class.",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "Jigs and trainers",
+            "description": "Printed fixtures for assembly, training and fit verification.",
+            "service": "3d-printing"
+          },
+          {
+            "title": "Cabinet and trolley panels",
+            "description": "Formed and coated sheet parts for equipment bodies.",
+            "service": "sheet-metal-fabrication"
+          }
+        ],
+        "services": [
+          "injection-molding",
+          "cnc-machining",
+          "3d-printing"
+        ],
+        "assurance": [
+          {
+            "title": "Dimensional capability",
+            "description": "Critical characteristics are measured with a documented gauge R&R basis."
+          },
+          {
+            "title": "Material documentation",
+            "description": "Resin and metal certificates are attached to the batch record on request."
+          },
+          {
+            "title": "Change control",
+            "description": "Revisions are released with an impact note covering tooling, process and inspection."
+          }
+        ]
+      },
+      {
+        "id": "automotive",
+        "name": "Automotive",
+        "summary": "Prototype, test and low-volume components from concept models through homologation builds.",
+        "description": "Automotive demand on a job shop is usually about speed with consistency: prototype builds that match the future production part, and low-rate components with automotive-grade documentation.",
+        "image": "images/industry-automotive.jpg",
+        "imageAlt": "Close-up of a polished chrome engine component",
+        "challenges": [
+          {
+            "title": "Compressed validation windows",
+            "description": "Program milestones move, and the same part must be re-cut within days."
+          },
+          {
+            "title": "A-plus surfaces",
+            "description": "Visible trim and exterior details need cosmetic class agreed before machining."
+          },
+          {
+            "title": "Thermal and fluid duty",
+            "description": "Under-hood parts combine temperature, vibration and media compatibility."
+          },
+          {
+            "title": "PPAP-style expectations",
+            "description": "Customers expect flow-down documentation even for low volumes."
+          }
+        ],
+        "solutions": [
+          {
+            "title": "Same-code prototyping",
+            "description": "Prototype parts run the production program and fixture where possible, so fit is meaningful."
+          },
+          {
+            "title": "Surface and texture control",
+            "description": "Class A style surfacing with defined polish, texture and paint preparation stages."
+          },
+          {
+            "title": "Heat- and media-rated materials",
+            "description": "Alloy and resin selection mapped to temperature and fluid exposure."
+          },
+          {
+            "title": "Structured batch records",
+            "description": "Control plans, dimensional results and material data compiled in a consistent format."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Test and mule parts",
+            "description": "Brackets, housings and drives for validation vehicles.",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "Trim and bezels",
+            "description": "Molded cosmetic parts with defined texture.",
+            "service": "injection-molding"
+          },
+          {
+            "title": "Ducts and prototypes",
+            "description": "Complex airflow and intake geometry printed for fit checks.",
+            "service": "3d-printing"
+          },
+          {
+            "title": "Chassis and battery trays",
+            "description": "Cut, formed and welded sheet structures.",
+            "service": "sheet-metal-fabrication"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "injection-molding",
+          "sheet-metal-fabrication"
+        ],
+        "assurance": [
+          {
+            "title": "Controlled first article",
+            "description": "Layout reports and function gauging before batch release."
+          },
+          {
+            "title": "Process repeatability",
+            "description": "Offset and recipe data retained so reorders match the approved sample."
+          },
+          {
+            "title": "Supplier coordination",
+            "description": "Plating, coating and heat treatment scheduled with the machining plan."
+          }
+        ]
+      },
+      {
+        "id": "robotics",
+        "name": "Robotics",
+        "summary": "Actuator, joint, sensor and structural assemblies built for repeatable fit.",
+        "description": "Robot hardware lives or dies on interface accuracy. Bearing bores, motor faces and cable routes must align in the assembled unit, not just in the individual part.",
+        "image": "images/industry-robotics.jpg",
+        "imageAlt": "Electronic and robotic components laid out for assembly",
+        "challenges": [
+          {
+            "title": "Stacked interface tolerance",
+            "description": "Multiple machined faces accumulate error unless datums are shared."
+          },
+          {
+            "title": "Lightweight rigid structures",
+            "description": "Thin-wall aluminium and polymer must hold stiffness without vibration."
+          },
+          {
+            "title": "Rapid design iteration",
+            "description": "Joint geometry changes every few weeks during development."
+          },
+          {
+            "title": "Mixed-process assemblies",
+            "description": "Machined cores, printed covers and formed brackets arrive as one kit."
+          }
+        ],
+        "solutions": [
+          {
+            "title": "Assembly-based tolerancing",
+            "description": "Critical bores and faces are machined in one setup or matched on a shared datum."
+          },
+          {
+            "title": "Hybrid structure planning",
+            "description": "Machined, printed and sheet components allocated by stiffness, weight and volume."
+          },
+          {
+            "title": "Short-turn prototype lanes",
+            "description": "Revision changes are quoted and scheduled without re-planning the whole kit."
+          },
+          {
+            "title": "Kitted delivery",
+            "description": "Sub-assemblies are grouped, labelled and inspected together before shipment."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Joint and gear housings",
+            "description": "Bearing seats and motor interfaces held to fit class.",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "Sensor and cable carriers",
+            "description": "Printed clips, guides and covers for routing.",
+            "service": "3d-printing"
+          },
+          {
+            "title": "Enclosure shells",
+            "description": "Molded or formed housings for controllers and grippers.",
+            "service": "injection-molding"
+          },
+          {
+            "title": "Frames and guards",
+            "description": "Welded base plates and safety covers for cells.",
+            "service": "sheet-metal-fabrication"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "3d-printing",
+          "sheet-metal-fabrication"
+        ],
+        "assurance": [
+          {
+            "title": "Fit verification",
+            "description": "Gauges and mating samples confirm interfaces before kitting."
+          },
+          {
+            "title": "Dynamic-friendly finish",
+            "description": "Surface and edge conditions specified for moving assemblies."
+          },
+          {
+            "title": "Revision traceability",
+            "description": "Each kit records the drawing revision actually manufactured."
+          }
+        ]
+      },
+      {
+        "id": "consumer-electronics",
+        "name": "Consumer Electronics",
+        "summary": "Thin-wall housings, thermal components and precision trim for electronic products.",
+        "description": "Electronics hardware combines cosmetic expectations with tight internal packaging. Draft, wall balance and gap-and-flush targets are resolved during tool design rather than after the first shot.",
+        "image": "images/industry-electronics.jpg",
+        "imageAlt": "Hands wiring a printed circuit board",
+        "challenges": [
+          {
+            "title": "Gap and flush control",
+            "description": "Visible seams need consistent parting and fastener positions across the batch."
+          },
+          {
+            "title": "Thin walls with features",
+            "description": "Bosses and ribs on thin sections sink or warp if not balanced."
+          },
+          {
+            "title": "Thermal envelopes",
+            "description": "Heat dissipation paths compete with enclosure thickness limits."
+          },
+          {
+            "title": "Fast revision cycles",
+            "description": "Product launches shift internal layouts late in the program."
+          }
+        ],
+        "solutions": [
+          {
+            "title": "Mold-flow guided design",
+            "description": "Gate placement, wall strategy and weld-line prediction reviewed before cutting steel."
+          },
+          {
+            "title": "Precision thin-wall machining",
+            "description": "Heatsinks, spreaders and machined trim produced to packaging limits."
+          },
+          {
+            "title": "Cosmetic class agreement",
+            "description": "Texture, gloss and defect acceptance defined with samples at kickoff."
+          },
+          {
+            "title": "Tooling that keeps pace",
+            "description": "Aluminium and modular tools absorb revisions while the product is still moving."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Device enclosures",
+            "description": "Two-piece housings with defined seam and fastener strategy.",
+            "service": "injection-molding"
+          },
+          {
+            "title": "Thermal components",
+            "description": "Machined cold plates, spreaders and finned blocks.",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "Bezel and trim parts",
+            "description": "Small cosmetic parts with tight gap-and-flush targets.",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "Fixture and test carriers",
+            "description": "Printed carriers for ICT, burn-in and functional testing.",
+            "service": "3d-printing"
+          }
+        ],
+        "services": [
+          "injection-molding",
+          "cnc-machining",
+          "3d-printing"
+        ],
+        "assurance": [
+          {
+            "title": "Cosmetic inspection plan",
+            "description": "AQL-style visual sampling agreed with the product team."
+          },
+          {
+            "title": "Dimensional layout",
+            "description": "Gap and flush measured on assembled units, not only on loose parts."
+          },
+          {
+            "title": "Lot segregation",
+            "description": "Resin and finish batches tracked so late findings stay contained."
+          }
+        ]
+      },
+      {
+        "id": "industrial-equipment",
+        "name": "Industrial Equipment",
+        "summary": "Drivetrain, fluid power and machine-frame components for factory and process hardware.",
+        "description": "Capital equipment parts are expected to survive years of duty. Geometry, material and joining method are chosen around service life, serviceability and the reality of field maintenance.",
+        "image": "images/industry-industrial.jpg",
+        "imageAlt": "Industrial building raised on stilts beside water",
+        "challenges": [
+          {
+            "title": "Heavy sections and wear",
+            "description": "Thick materials, hardened surfaces and long cycles affect accuracy and cost."
+          },
+          {
+            "title": "Service access",
+            "description": "Design for disassembly changes how joints and fasteners are specified."
+          },
+          {
+            "title": "Low volume, long tail",
+            "description": "Spares are needed for years after the machine line stops."
+          },
+          {
+            "title": "Mixed fabrication",
+            "description": "Weldments, machined details and purchased items must assemble cleanly."
+          }
+        ],
+        "solutions": [
+          {
+            "title": "Robust process selection",
+            "description": "Hard turning, grinding and boring chosen where wear life governs the feature."
+          },
+          {
+            "title": "Weldment engineering",
+            "description": "Joint access, distortion allowance and stress relief planned before cutting."
+          },
+          {
+            "title": "Spare-part continuity",
+            "description": "Programs, fixtures and inspection routines retained for reorders."
+          },
+          {
+            "title": "Assembly-level verification",
+            "description": "Sub-assemblies gauged on a fixture that mirrors the machine datum."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Gear and bearing housings",
+            "description": "Bored, milled and finished cast or billet bodies.",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "Machine frames and guards",
+            "description": "Cut, formed and welded structures with finishing.",
+            "service": "sheet-metal-fabrication"
+          },
+          {
+            "title": "Fluid power blocks",
+            "description": "Manifolds and valve bodies with internal passages.",
+            "service": "cnc-machining"
+          },
+          {
+            "title": "Controls enclosures",
+            "description": "Molded or formed housings for panels and interfaces.",
+            "service": "injection-molding"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "sheet-metal-fabrication",
+          "injection-molding"
+        ],
+        "assurance": [
+          {
+            "title": "Fit-for-assembly checks",
+            "description": "Datum schemes verified against the machine drawing."
+          },
+          {
+            "title": "Weld and finish records",
+            "description": "Procedure, filler and coating data recorded with the order."
+          },
+          {
+            "title": "Long-term reorders",
+            "description": "Part packages stay retrievable so repeat demand matches the original."
+          }
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "04 / HOW A PROGRAM RUNS",
+    "title": "A traceable path from upload to shipment.",
+    "intro": "Every request follows the same documented stages, whether it is a single prototype or a repeat production batch.",
+    "steps": [
+      {
+        "title": "Upload and DFM review",
+        "description": "Geometry, tolerances and material intent are reviewed against live process capability, with a marked-up report returned alongside the price.",
+        "note": "Typical output: DFM report plus quotation"
+      },
+      {
+        "title": "Process planning",
+        "description": "Setup strategy, tooling, fixtures and inspection points are selected, and any design risk is raised before programming is committed.",
+        "note": "Decisions recorded against the part number"
+      },
+      {
+        "title": "Programming and simulation",
+        "description": "CAM is generated and virtually verified for collision, stock removal and achievable accuracy.",
+        "note": "Programs are versioned per revision"
+      },
+      {
+        "title": "Production",
+        "description": "Parts are manufactured with in-process probing and machine monitoring, so drift is corrected inside the batch.",
+        "note": "Work order captures machine and operator"
+      },
+      {
+        "title": "Inspection and documentation",
+        "description": "Coordinate measurement and visual checks are compiled with material certificates into the batch record.",
+        "note": "Report delivered with the shipment"
+      },
+      {
+        "title": "Delivery and reorder",
+        "description": "Parts are packed to specification; the stored process package makes the next batch identical to the last.",
+        "note": "Repeat orders reuse the approved data"
+      }
+    ]
+  },
+  "quality": {
+    "eyebrow": "05 / QUALITY SYSTEM",
+    "title": "Evidence, not adjectives.",
+    "intro": "A quality claim is only useful if it can be shown on a report. Inspection coverage, records and material data are defined at quotation, not after production.",
+    "image": "images/quality.jpg",
+    "imageAlt": "Precision measuring tools laid out on a workbench",
+    "certificationsLabel": "Quality framework placeholders",
+    "certificationsNote": "The entries below describe common frameworks for this industry. They are template placeholders: no certificate has been issued for this demonstration brand, and no certification body is represented here. Replace them with your own audited certificates before publication.",
+    "certifications": [
+      {
+        "id": "iso-9001",
+        "name": "ISO 9001 (quality management)",
+        "scope": "Common baseline for a job-shop quality system.",
+        "status": "Placeholder — awaiting customer data"
+      },
+      {
+        "id": "iso-13485",
+        "name": "ISO 13485 (medical devices)",
+        "scope": "Frequently requested for medical component suppliers.",
+        "status": "Placeholder — awaiting customer data"
+      },
+      {
+        "id": "iatf-16949",
+        "name": "IATF 16949 (automotive)",
+        "scope": "Applied where automotive production supply is in scope.",
+        "status": "Placeholder — awaiting customer data"
+      },
+      {
+        "id": "as9100",
+        "name": "AS9100 (aerospace)",
+        "scope": "Commonly required for aerospace structural work.",
+        "status": "Placeholder — awaiting customer data"
+      }
+    ],
+    "controls": [
+      {
+        "title": "Incoming material control",
+        "description": "Certificates reviewed against the specified grade and lot before the material is released to the floor."
+      },
+      {
+        "title": "In-process verification",
+        "description": "On-machine probing at defined stages so a drifting setup is caught before it consumes the batch."
+      },
+      {
+        "title": "Final dimensional report",
+        "description": "Critical and major characteristics measured on a calibrated CMM with the report attached to the order."
+      },
+      {
+        "title": "Measurement capability",
+        "description": "Gauge studies keep inspection methods traceable to the tolerance they are asked to prove."
+      },
+      {
+        "title": "Nonconformance handling",
+        "description": "Disposition decisions, containment and corrective action recorded against the affected lot."
+      },
+      {
+        "title": "Record retention",
+        "description": "Batch documentation kept for the agreed program period and exportable on request."
+      }
+    ]
+  },
+  "cases": {
+    "eyebrow": "06 / CASE STUDIES",
+    "title": "How a request becomes a part.",
+    "intro": "These are demonstration case studies written for the template. They are not real customers or delivered projects, and every figure is illustrative.",
+    "allLabel": "All industries",
+    "pageTitle": "Case studies",
+    "pageDescription": "Sample manufacturing programs showing how engineering constraints are resolved through process selection, inspection and delivery.",
+    "demoLabel": "Demonstration case",
+    "viewDetail": "Read case study",
+    "backgroundTitle": "Project background",
+    "needTitle": "Customer requirement",
+    "challengeTitle": "Manufacturing challenge",
+    "solutionTitle": "Manufacturing solution",
+    "outcomeTitle": "Programme outcome",
+    "deliverablesTitle": "Delivered outputs",
+    "servicesTitle": "Services used",
+    "demoDisclaimer": "Demonstration content: this case study illustrates template structure only. It does not represent a real customer, contract, certification or measured result. Replace it with verified project data before publication.",
+    "items": [
+      {
+        "id": "aerospace-bracket",
+        "name": "Thin-wall aerospace bracket",
+        "category": "aerospace",
+        "categoryLabel": "Aerospace",
+        "summary": "A machined aluminium bracket that moved from distorted prototypes to a repeatable single-setup process.",
+        "image": "images/case-aerospace-bracket.jpg",
+        "imageAlt": "Compact drone hovering in open air",
+        "background": "A structural bracket for an avionics enclosure combined thin walls, large milled pockets and a flatness requirement on the mating face. Early prototypes were within tolerance when loose but moved once installed.",
+        "clientNeed": "Hold a flat mating face and positional tolerance on two precision bores across a 60-piece batch, with material certification and an inspection report for the design authority.",
+        "challenges": [
+          {
+            "title": "Residual stress movement",
+            "description": "Removing mass from a plate blank released stress and changed flatness after roughing."
+          },
+          {
+            "title": "Bore position after finish",
+            "description": "Bores had to stay in position relative to a face that was itself being corrected."
+          },
+          {
+            "title": "Clamp-induced distortion",
+            "description": "Conventional clamping deflected the thin section during the finishing cut."
+          }
+        ],
+        "solution": "The part was re-planned as a two-stage process with a stress-relief stage between roughing and finishing, and a vacuum fixture that supported the full face instead of clamping at points.",
+        "solutionPoints": [
+          "Roughing left uniform stock, followed by a controlled relief stage before finishing.",
+          "Finishing cut in a single setup on a vacuum fixture to hold the datum face.",
+          "Bores probed in-machine, then verified on the CMM against the true position callout.",
+          "Flatness measured on the relaxed, unclamped part to avoid false passes."
+        ],
+        "outcomes": [
+          {
+            "label": "Flatness on the mating face",
+            "value": "0.02 mm",
+            "note": "Illustrative target for the demonstration part"
+          },
+          {
+            "label": "Setups per part",
+            "value": "1 finishing setup",
+            "note": "Compared with a three-setup route"
+          },
+          {
+            "label": "Batch documentation",
+            "value": "FAI plus certificates",
+            "note": "Compiled with the shipment record"
+          }
+        ],
+        "services": [
+          "cnc-machining"
+        ],
+        "deliverables": [
+          "Machined aluminium bracket",
+          "In-process probe data",
+          "CMM first-article report",
+          "Material certificate of conformity"
+        ]
+      },
+      {
+        "id": "medical-housing",
+        "name": "Diagnostic instrument housing",
+        "category": "medical",
+        "categoryLabel": "Medical",
+        "summary": "A two-piece polymer enclosure taken from an appearance risk to a stable molded part with a defined process window.",
+        "image": "images/case-medical-housing.jpg",
+        "imageAlt": "Scientist using a microscope in a laboratory",
+        "background": "A benchtop diagnostic device needed a housing with a visible top face, internal bosses for a PCB stack and a seam that read as a single surface from one metre away.",
+        "clientNeed": "Provide cosmetic parts with a consistent seam, controlled boss heights for assembly, and enough dimensional evidence to support an internal validation package.",
+        "challenges": [
+          {
+            "title": "Sink marks over bosses",
+            "description": "Local wall thickness at the bosses threatened the visible outer face."
+          },
+          {
+            "title": "Seam alignment",
+            "description": "Gap and flush depended on both halves and on fastener pull-down."
+          },
+          {
+            "title": "Late internal changes",
+            "description": "The PCB stack was still being revised during tool design."
+          }
+        ],
+        "solution": "Gate location and packing were set from a filling study, bosses were cored to a rib geometry, and an aluminium bridge tool absorbed the remaining internal changes before production steel was cut.",
+        "solutionPoints": [
+          "Boss and rib geometry revised so cooling stayed away from the cosmetic face.",
+          "Bridge tooling allowed design changes without re-cutting production steel.",
+          "Shot parameters recorded as the reference recipe for later batches.",
+          "Gap and flush measured on assembled units using a common fixture."
+        ],
+        "outcomes": [
+          {
+            "label": "Visible sink on the A-face",
+            "value": "Resolved in design",
+            "note": "Illustrative outcome of the review stage"
+          },
+          {
+            "label": "Tooling class used first",
+            "value": "Bridge aluminium",
+            "note": "Production steel cut after freeze"
+          },
+          {
+            "label": "Evidence per batch",
+            "value": "Recipe plus layout",
+            "note": "Archived with the part number"
+          }
+        ],
+        "services": [
+          "injection-molding",
+          "cnc-machining"
+        ],
+        "deliverables": [
+          "Molded enclosure halves",
+          "Bridge tool design review",
+          "Process window record",
+          "Assembled-unit layout report"
+        ]
+      },
+      {
+        "id": "robotics-joint",
+        "name": "Collaborative robot joint module",
+        "category": "robotics",
+        "categoryLabel": "Robotics",
+        "summary": "A compact actuator joint where bearing bore alignment was guaranteed by shared datums and one-setup machining.",
+        "image": "images/case-robotics-joint.jpg",
+        "imageAlt": "Parts laid out for assembling a small robot",
+        "background": "A two-axis joint module paired a machined housing with a printed cover and a formed cable guard. Smooth motion depended on two bearing bores staying coaxial once fastened.",
+        "clientNeed": "Deliver housing kits where bore coaxiality survives assembly, with parts from three processes that arrive matched rather than reworked.",
+        "challenges": [
+          {
+            "title": "Coaxiality across setups",
+            "description": "Two bores opposite each other drifted when flipped between operations."
+          },
+          {
+            "title": "Mixed-process kit",
+            "description": "Printed and formed parts needed to fit the machined datum scheme."
+          },
+          {
+            "title": "Weekly revisions",
+            "description": "The cable route changed during development, moving cover geometry."
+          }
+        ],
+        "solution": "Both bores were finished in one continuous setup indexed from a single datum, while the printed cover and formed guard were toleranced to the housing rather than to the CAD envelope.",
+        "solutionPoints": [
+          "Single continuous setup with in-process probing of both bores.",
+          "Fixture designed around the assembled datum, not the loose part.",
+          "Printed cover re-orientated for strength along the mounting axis.",
+          "Kit-level inspection so all three processes were accepted together."
+        ],
+        "outcomes": [
+          {
+            "label": "Bore coaxiality",
+            "value": "0.015 mm",
+            "note": "Illustrative target for the demonstration module"
+          },
+          {
+            "label": "Assembly rework",
+            "value": "Designed out",
+            "note": "Kit-level acceptance before shipment"
+          },
+          {
+            "label": "Revision turnaround",
+            "value": "Cover re-cut within the kit",
+            "note": "No housing requalification required"
+          }
+        ],
+        "services": [
+          "cnc-machining",
+          "3d-printing",
+          "sheet-metal-fabrication"
+        ],
+        "deliverables": [
+          "Machined joint housings",
+          "Printed covers",
+          "Formed cable guards",
+          "Kit-level inspection sheet"
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "eyebrow": "07 / RESOURCES",
+    "title": "Engineering notes that shorten the path.",
+    "intro": "Short guidance from the manufacturing side of the table: what to specify, what to avoid, and how a drawing changes the outcome.",
+    "categoryLabel": "Topic",
+    "items": [
+      {
+        "id": "tolerance-guide",
+        "title": "Choosing tolerances that parts can actually hold",
+        "summary": "Why a blanket ±0.01 mm note raises cost without raising quality, and how to mark only the features that need it.",
+        "category": "Design for manufacturing",
+        "image": "images/architecture.jpg",
+        "imageAlt": "Layered white architectural facade in sunlight",
+        "page": "service",
+        "id_target": "cnc-machining"
+      },
+      {
+        "id": "process-selection",
+        "title": "Machined, molded or printed: picking the route",
+        "summary": "A practical comparison of volume, geometry and material limits across the four production processes.",
+        "category": "Process planning",
+        "image": "images/facade.jpg",
+        "imageAlt": "Regular window patterns on a modern building",
+        "page": "services",
+        "id_target": ""
+      },
+      {
+        "id": "inspection-evidence",
+        "title": "What a good inspection record contains",
+        "summary": "The difference between a measurement and evidence: datums, capability and a report that survives audit.",
+        "category": "Quality",
+        "image": "images/glass.jpg",
+        "imageAlt": "Geometric glass architecture reflecting a blue sky",
+        "page": "industries",
+        "id_target": ""
+      }
     ]
   },
   "faq": {
-    "title": "Before we get started",
+    "eyebrow": "08 / FAQ",
+    "title": "Questions engineering teams ask first",
+    "intro": "Practical answers about files, tolerancing, materials and repeat production.",
     "items": [
       {
-        "question": "Where does a project begin?",
-        "answer": "With a conversation about your business, the challenge and your existing materials. Together we define the scope and next steps."
+        "question": "What do you need to quote a custom part?",
+        "answer": "A 3D model in STEP, IGES, Parasolid or native CAD, plus a 2D drawing showing critical dimensions, finish and any fit requirements. Where GD&T is absent, the default tolerance block for the selected process applies."
       },
       {
-        "question": "Can we work on one specific area?",
-        "answer": "Yes. We can discuss brand strategy, website design or frontend implementation as a focused engagement. The final scope is agreed together."
+        "question": "Can you work to a customer tolerance standard?",
+        "answer": "Yes. Inspection plans are written from the drawing callouts, and capability expectations are confirmed during DFM review before a batch is committed."
       },
       {
-        "question": "What should we prepare?",
-        "answer": "A company introduction, brand assets, service information and images you have permission to use. You can also begin by sharing your initial ideas."
+        "question": "Do you supply material certificates?",
+        "answer": "Certificates of conformity can be attached per batch where the grade and supplier support them; the requirement is confirmed at quotation so sourcing matches."
+      },
+      {
+        "question": "How do repeat orders stay identical?",
+        "answer": "Programs, tool paths, offsets, fixtures and inspection routines are versioned against the part number and released configuration, so a reorder starts from the approved state."
+      },
+      {
+        "question": "Can one project combine several processes?",
+        "answer": "Yes. Hybrid assemblies are planned as a kit, with machining, molding, printing and fabrication scheduled together and inspected against a common interface drawing."
+      },
+      {
+        "question": "Is this website a real supplier?",
+        "answer": "No. This site is a demonstration template with a fictional brand. All figures, case studies and capability statements are illustrative placeholders intended for evaluation and replacement."
       }
     ]
   },
+  "quote": {
+    "eyebrow": "START A PROGRAM",
+    "title": "Send the geometry.\nGet a manufacturable answer.",
+    "description": "Share a model and the constraints that matter — tolerance, material, volume and environment. The engineering review comes back with the process recommendation and the reasons behind it.",
+    "primary": "Request a quote",
+    "secondary": "Review manufacturing services",
+    "points": [
+      "DFM feedback alongside the quotation",
+      "Tolerance and inspection scope agreed before production",
+      "Repeat orders released from stored process data"
+    ]
+  },
   "contact": {
-    "eyebrow": "LET’S MAKE IT CLEAR.",
-    "title": "The next good idea\ncould start with a conversation.",
-    "description": "Tell us what you are thinking about.",
-    "emailLabel": "Contact us by email",
-    "placeholder": "Contact details coming soon",
-    "note": "Demonstration website. Replace the sample brand, projects and copy before use."
+    "eyebrow": "CONTACT AND INQUIRY",
+    "title": "Talk to the engineering team",
+    "description": "Send drawings, targets and constraints. The contact details below are managed in the site content, and the inquiry form is a front-end prototype until a backend service is connected.",
+    "emailLabel": "Email the team",
+    "placeholder": "Email address not configured yet",
+    "note": "Demonstration website. Configure a real address and connect an inquiry service before using this form in production.",
+    "infoTitle": "Company information",
+    "officeLabel": "Registered office",
+    "officeValue": "To be provided by the site owner",
+    "hoursLabel": "Engineering support window",
+    "hoursValue": "To be provided by the site owner",
+    "responseLabel": "Quotation turnaround",
+    "responseValue": "Not published — no service level is claimed in this template",
+    "channels": [
+      {
+        "label": "Email",
+        "value": "Set business.email in src/content/business.json to enable",
+        "state": "unconfigured"
+      },
+      {
+        "label": "Telephone",
+        "value": "Awaiting company data",
+        "state": "unconfigured"
+      },
+      {
+        "label": "Sales region",
+        "value": "Awaiting company data",
+        "state": "unconfigured"
+      }
+    ],
+    "formTitle": "Project inquiry",
+    "formIntro": "Describe the part, the volume and the constraints that matter. Fields marked as required are checked in your browser before anything else happens.",
+    "backendNoticeTitle": "This form is not connected to a backend",
+    "backendNotice": "Submitting this form does not send any data. Nothing is transmitted, stored, logged or uploaded to a server: the site is a static build and the current runtime provides no form, database or file storage service. The success screen below is a local preview of what a completed inquiry would contain, shown only in this browser session.",
+    "integrationTitle": "Required before this form can collect enquiries",
+    "integration": [
+      "A form submission endpoint or managed inquiry service to receive validated payloads",
+      "Object storage for drawing and model uploads, with size and file-type limits enforced on the server",
+      "Spam protection and consent capture appropriate to the operating region",
+      "A notification and CRM route so the engineering team receives and tracks each enquiry",
+      "A privacy notice and retention policy covering submitted contact data"
+    ],
+    "privacyTitle": "What happens to the data you type here",
+    "privacy": "Form values stay in the page's in-memory state only. They are not written to storage, not attached to a request and not retained once the page is closed. Do not enter confidential drawings while this template is in preview.",
+    "fields": {
+      "name": "Contact name",
+      "namePlaceholder": "Your full name",
+      "company": "Company",
+      "companyPlaceholder": "Organisation or project name",
+      "email": "Work email",
+      "emailPlaceholder": "name@company.com",
+      "country": "Country or region",
+      "countryPlaceholder": "Where the parts will be used",
+      "service": "Manufacturing service",
+      "servicePlaceholder": "Select a process",
+      "quantity": "Target quantity",
+      "quantityPlaceholder": "For example 250 per batch",
+      "material": "Material or specification",
+      "materialPlaceholder": "For example Aluminium 6061-T6",
+      "tolerance": "Critical tolerance",
+      "tolerancePlaceholder": "For example ±0.02 mm on two bores",
+      "budget": "Budget range",
+      "budgetPlaceholder": "Optional planning range",
+      "drawings": "Drawings and notes",
+      "drawingsPlaceholder": "Summarise what is attached once a submission service is available",
+      "message": "Project requirements",
+      "messagePlaceholder": "Application, environment, volumes, milestones and acceptance criteria",
+      "optional": "optional",
+      "required": "required"
+    },
+    "upload": {
+      "label": "Drawings and models",
+      "hint": "STEP, IGES, X_T, SLDPRT, PDF, DXF. Files stay on your device: no upload service is connected.",
+      "button": "Select files",
+      "accepted": "Accepted formats",
+      "maxFiles": "Up to 5 files in the interface preview",
+      "clear": "Remove all files",
+      "empty": "No files selected"
+    },
+    "submit": "Submit inquiry",
+    "submitting": "Checking fields…",
+    "validation": {
+      "required": "Complete the required fields highlighted below.",
+      "email": "Enter a valid email address.",
+      "summary": "Validation status"
+    },
+    "preview": {
+      "title": "Local preview: nothing was sent",
+      "intro": "This is the payload your browser assembled. It remains in this page only and disappears when you navigate away.",
+      "filesLabel": "Files listed locally (not uploaded)",
+      "filesNone": "No files attached",
+      "reset": "Clear the form"
+    }
   },
   "ui": {
     "menu": "Open navigation",
     "closeMenu": "Close navigation",
-    "viewProject": "View sample project",
-    "projectLabel": "Demo project",
-    "closeProject": "Close project details",
-    "deliverables": "Sample deliverables",
     "skip": "Skip to main content",
     "backTop": "Back to top",
     "navigation": "Main navigation",
-    "categories": "Project categories",
     "language": "Choose language",
     "home": "Home",
-    "allProjects": "View all projects",
-    "backProjects": "Back to projects",
-    "notFound": "Project not found",
-    "projectIntro": "About this project",
-    "languageCurrent": "Current language"
+    "notFound": "Page not found",
+    "viewProject": "View case study",
+    "projectLabel": "Demonstration",
+    "deliverables": "Delivered outputs",
+    "categories": "Filter by industry",
+    "allProjects": "View all case studies",
+    "backProjects": "Back to case studies",
+    "projectIntro": "Project background",
+    "languageCurrent": "Current language",
+    "openMega": "Show sections",
+    "closeMega": "Hide sections",
+    "breadcrumbs": "Breadcrumb",
+    "requestQuote": "Request a quote",
+    "quoteCta": "Start a program",
+    "capabilitiesTitle": "Technical capability",
+    "specsTitle": "Process capability",
+    "materialsTitle": "Manufacturing materials",
+    "applicationsTitle": "Typical applications",
+    "qualityTitle": "Quality control",
+    "processTitle": "Manufacturing process",
+    "faqTitle": "Service questions",
+    "relatedServices": "Related manufacturing services",
+    "backToServices": "Back to services",
+    "backToIndustries": "Back to industries",
+    "backToCases": "Back to case studies",
+    "filterLabel": "Showing",
+    "filterCount": "cases",
+    "demoBadge": "Demo",
+    "unconfigured": "Not configured",
+    "materialGroupLabel": "Material group",
+    "materialGradesLabel": "Common grades",
+    "materialNoteLabel": "Notes",
+    "imagePlaceholder": "Illustration",
+    "footerServices": "Manufacturing services",
+    "footerIndustries": "Industries",
+    "footerCompany": "Company",
+    "footerLegal": "Demonstration website with a fictional brand. Replace all content before publication.",
+    "revealLabel": "Reveal section"
   },
   "meta": {
-    "title": "Form & Field · Strategy and digital experiences",
-    "description": "Clear strategy, thoughtful design and digital experiences. A demonstration company website."
+    "title": "VANTOR Precision Manufacturing · Custom industrial components",
+    "description": "B2B digital manufacturing template for CNC machining, injection molding, 3D printing and sheet metal fabrication, with multilingual content and inquiry workflow."
   }
 }

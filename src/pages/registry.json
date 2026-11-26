@@ -6,17 +6,55 @@
     "title": "meta.title"
   },
   {
-    "id": "projects",
-    "path": "projects/",
-    "component": "ProjectsPage",
-    "title": "work.pageTitle"
+    "id": "services",
+    "path": "services/",
+    "component": "ServicesPage",
+    "title": "services.pageTitle",
+    "description": "services.pageDescription"
   },
   {
-    "id": "project",
-    "path": "projects/{id}/",
-    "component": "ProjectPage",
-    "collection": "work.items",
+    "id": "service",
+    "path": "services/{id}/",
+    "component": "ServicePage",
+    "collection": "services.items",
+    "title": "title",
+    "description": "summary"
+  },
+  {
+    "id": "industries",
+    "path": "industries/",
+    "component": "IndustriesPage",
+    "title": "industries.pageTitle",
+    "description": "industries.pageDescription"
+  },
+  {
+    "id": "industry",
+    "path": "industries/{id}/",
+    "component": "IndustryPage",
+    "collection": "industries.items",
     "title": "name",
     "description": "summary"
+  },
+  {
+    "id": "cases",
+    "path": "case-studies/",
+    "component": "CasesPage",
+    "title": "cases.pageTitle",
+    "description": "cases.pageDescription"
+  },
+  {
+    "id": "case",
+    "path": "case-studies/{id}/",
+    "component": "CasePage",
+    "collection": "cases.items",
+    "title": "name",
+    "description": "summary"
+  },
+  {
+    "id": "contact",
+    "path": "contact/",
+    "component": "ContactPage",
+    "title": "contact.title",
+    "description": "contact.description"
   }
 ]

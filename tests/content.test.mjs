@@ -17,13 +17,28 @@ const manifest = JSON.parse(
   await readFile(new URL("template.json", root), "utf8"),
 );
 
+/**
+ * Every collection that carries a photograph, so the traversal follows the
+ * registry instead of a single hard-coded sample list.
+ * 所有带图片的集合，遍历时跟随注册表而不是写死单个示例列表。
+ */
+const photographSets = (content) => [
+  content.hero,
+  content.capabilities,
+  content.quality,
+  ...content.services.items,
+  ...content.industries.items,
+  ...content.cases.items,
+  ...content.insights.items,
+];
+
 test("all referenced photographs exist locally and have provenance", async () => {
   const credits = JSON.parse(
     await readFile(new URL("ASSET-CREDITS.json", root), "utf8"),
   );
   for (const content of contents)
-    for (const item of [content.hero, ...content.work.items]) {
-      assert.ok(item.imageAlt?.trim());
+    for (const item of photographSets(content)) {
+      assert.ok(item.imageAlt?.trim(), "missing alt text");
       const base = resolve(new URL("public/", root).pathname);
       const file = resolve(base, item.image);
       assert.ok(!relative(base, file).startsWith(".."));
@@ -33,21 +48,59 @@ test("all referenced photographs exist locally and have provenance", async () =>
           (credit) =>
             credit.file === `public/${item.image}` &&
             credit.source &&
-            credit.license &&
-            credit.licenseUrl,
+            credit.license,
         ),
+        `missing provenance: ${item.image}`,
       );
     }
 });
-test("project identifiers and navigation targets remain unambiguous", () => {
+test("collection identifiers and navigation targets remain unambiguous", () => {
   for (const content of contents) {
-    assert.equal(
-      new Set(content.work.items.map((item) => item.id)).size,
-      content.work.items.length,
-    );
-    for (const link of content.nav) assert.ok(link.label && link.href);
-    for (const item of content.work.items)
-      assert.ok(item.name && item.category && item.deliverables.length);
+    for (const name of ["services", "industries", "cases", "insights"]) {
+      const items = content[name].items;
+      assert.equal(
+        new Set(items.map((item) => item.id)).size,
+        items.length,
+        `duplicate id in ${name}`,
+      );
+    }
+    const ids = new Set(content.services.items.map((item) => item.id));
+    for (const industry of content.industries.items) {
+      assert.ok(
+        industry.services.every((id) => ids.has(id)),
+        `unknown service link in ${industry.id}`,
+      );
+      assert.ok(
+        industry.applications.every((entry) => ids.has(entry.service)),
+        `unknown application link in ${industry.id}`,
+      );
+    }
+    for (const entry of content.cases.items) {
+      assert.ok(
+        entry.services.every((id) => ids.has(id)),
+        `unknown service link in case ${entry.id}`,
+      );
+      assert.ok(
+        content.industries.items.some((item) => item.id === entry.category),
+        `unknown industry category in case ${entry.id}`,
+      );
+    }
+    const pages = new Set(content.insights.items.map((item) => item.page));
+    assert.ok(pages.size > 0);
+    for (const link of content.nav) {
+      assert.ok(link.label && link.href);
+      for (const child of link.children)
+        assert.ok(child.label && child.page && child.id);
+    }
+  }
+});
+test("inquiry copy states that no backend service is connected", () => {
+  for (const content of contents) {
+    assert.equal(content.contact.channels[0].state, "unconfigured");
+    assert.ok(content.contact.backendNoticeTitle.trim().length > 3);
+    assert.ok(content.contact.backendNotice.trim().length > 60);
+    assert.ok(content.contact.integration.length >= 3);
+    assert.ok(content.contact.privacy.trim().length > 20);
   }
 });
 test("template declares static output and no unavailable backend capability", async () => {

@@ -1,5 +1,8 @@
 import { site, asset } from "../content";
+import { pageUrl } from "../content/links";
 import { Arrow } from "../components/Arrow";
+import { CountUp } from "../components/CountUp";
+import { Reveal } from "../components/Reveal";
 
 export function Hero() {
   return (
@@ -16,33 +19,52 @@ export function Hero() {
         </h1>
         <p className="hero-description">{site.hero.description}</p>
         <div className="hero-actions">
-          <a className="button primary" href="#contact">
+          <a className="button primary" href={pageUrl("contact")}>
             {site.hero.primary}
             <Arrow diagonal />
           </a>
-          <a className="text-link" href="#services">
+          <a className="text-link" href={pageUrl("services")}>
             {site.hero.secondary}
             <Arrow />
           </a>
         </div>
         <p className="hero-signature">{site.brand.descriptor}</p>
       </div>
-      <figure className="hero-visual">
-        <img
-          src={asset(site.hero.image)}
-          alt={site.hero.imageAlt}
-          width="750"
-          height="900"
-          fetchPriority="high"
-        />
-        <span className="image-index" aria-hidden="true">
-          F / F — 01
-        </span>
-        <figcaption>
-          <span>{site.hero.note}</span>
-          <strong>{site.hero.caption}</strong>
-        </figcaption>
-      </figure>
+      <div>
+        <Reveal className="hero-visual">
+          <img
+            src={asset(site.hero.image)}
+            alt={site.hero.imageAlt}
+            width="1400"
+            height="940"
+            fetchPriority="high"
+          />
+          <span className="image-index" aria-hidden="true">
+            V / MFG — 01
+          </span>
+          <figcaption>
+            <span>{site.hero.note}</span>
+            <strong>{site.hero.caption}</strong>
+          </figcaption>
+        </Reveal>
+        <Reveal className="hero-stats" delay={80}>
+          <p className="hero-stats-label">{site.hero.statsLabel}</p>
+          <dl>
+            {site.hero.stats.map((stat) => (
+              <div className="hero-stat" key={stat.label}>
+                <dt>
+                  <CountUp value={stat.value} suffix={stat.suffix} />
+                </dt>
+                <dd>
+                  <strong>{stat.label}</strong>
+                  <span>{stat.note}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p className="hero-stats-note">{site.hero.statsNote}</p>
+        </Reveal>
+      </div>
     </section>
   );
 }

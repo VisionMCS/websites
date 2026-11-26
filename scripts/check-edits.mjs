@@ -46,10 +46,10 @@ try {
   const content = await readJson(contentPath);
   content.brand.name = "Authoring fixture";
   content.nav.reverse();
-  content.work.items.push({
-    ...content.work.items[0],
-    id: "added-project",
-    name: "Added project",
+  content.services.items.push({
+    ...content.services.items[0],
+    id: "added-service",
+    title: "Added service",
   });
   await writeJson(contentPath, content);
   await writeJson("src/content/business.json", { email: "hello@example.com" });
@@ -58,13 +58,14 @@ try {
     id: "about",
     path: "about/",
     component: "AboutPage",
-    title: "about.title",
+    title: "contact.title",
+    description: "contact.description",
   });
   await writeJson("src/pages/registry.json", registry);
   await writeFile(
     join(fixture, "src/pages/AboutPage.tsx"),
     `import { site } from '../content';
-export function AboutPage() { return <section><h1>{site.about.title}</h1><p>{site.about.description}</p></section>; }
+export function AboutPage() { return <section><h1>{site.contact.title}</h1><p>{site.contact.description}</p></section>; }
 `,
   );
   const componentsPath = join(fixture, "src/pages/components.ts");
@@ -83,11 +84,11 @@ export function AboutPage() { return <section><h1>{site.about.title}</h1><p>{sit
   const homepage = await readFile(join(fixture, "dist/index.html"), "utf8");
   assert.ok(homepage.includes("mailto:hello@example.com"));
   const collection = await readFile(
-    join(fixture, "dist/projects/index.html"),
+    join(fixture, "dist/services/index.html"),
     "utf8",
   );
   assert.ok(collection.includes("Authoring fixture"));
-  assert.ok(collection.includes(`<h1>${content.work.pageTitle}</h1>`));
+  assert.ok(collection.includes(`<h1>${content.services.pageTitle}</h1>`));
   assert.ok(
     (await readFile(join(fixture, "dist/about/index.html"), "utf8")).includes(
       "<h1>",
@@ -96,10 +97,10 @@ export function AboutPage() { return <section><h1>{site.about.title}</h1><p>{sit
   assert.ok(
     (
       await readFile(
-        join(fixture, "dist/projects/added-project/index.html"),
+        join(fixture, "dist/services/added-service/index.html"),
         "utf8",
       )
-    ).includes("Added project"),
+    ).includes("Added service"),
   );
   console.log(
     "PASS: single-language build, removed translation, configured email, reordered navigation, replaced brand, added project and registered page.",

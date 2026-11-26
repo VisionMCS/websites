@@ -1,18 +1,28 @@
 import { Hero } from "../sections/Hero";
+import { Capabilities } from "../sections/Capabilities";
 import { Services } from "../sections/Services";
-import { Projects } from "../sections/Projects";
+import { Industries } from "../sections/Industries";
 import { Process } from "../sections/Process";
-import { About } from "../sections/About";
+import { Quality } from "../sections/Quality";
+import { Cases } from "../sections/Cases";
+import { Insights } from "../sections/Insights";
 import { Faq } from "../sections/Faq";
+import { QuoteCta } from "../sections/QuoteCta";
+
+/** Home page: capability, services, industries, process, quality, cases, resources. */
 export function HomePage() {
   return (
     <>
       <Hero />
+      <Capabilities />
       <Services />
-      <Projects />
+      <Industries />
       <Process />
-      <About />
+      <Quality />
+      <Cases />
+      <Insights />
       <Faq />
+      <QuoteCta />
     </>
   );
 }

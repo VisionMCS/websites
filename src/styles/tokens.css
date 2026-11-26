@@ -1,18 +1,82 @@
+/*
+ * Design tokens for the B2B digital manufacturing template.
+ * B2B 数字化精密制造模板的设计变量。
+ *
+ * Light industrial system: white surfaces, cool ink text, restrained steel-blue
+ * accent, fine borders, modest rounding. No large gradients or glow.
+ * 浅色工业体系：白色页面、冷调深灰文字、克制的钢蓝强调色、细边框与适量圆角；
+ * 不使用大面积渐变或发光。
+ */
 :root {
   color-scheme: light;
-  --color-ink: #17313b;
-  --color-muted: #64747b;
-  --color-accent: #1b7499;
-  --color-accent-hover: #145c7a;
-  --color-line: #dce4e7;
+
+  /* Colour / 颜色 */
+  --color-ink: #11232e;
+  --color-ink-soft: #2a4049;
+  --color-muted: #5c6d77;
+  --color-faint: #8a9aa3;
+  --color-accent: #0f6f8c;
+  --color-accent-hover: #0b5670;
+  --color-accent-soft: #d9ebf2;
+  --color-signal: #a4531f;
+  --color-line: #dfe6e9;
+  --color-line-strong: #c7d3d8;
   --color-surface: #ffffff;
-  --color-soft: #f3f7f8;
-  --color-tint: #eaf4f8;
+  --color-soft: #f5f8f9;
+  --color-tint: #eaf3f7;
+  --color-inverse: #11232e;
+  --color-inverse-text: #e6eef1;
+  --color-inverse-line: #ffffff26;
+
+  /* Typography / 字体与字号 */
   --font-sans:
     Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-    "Microsoft YaHei", sans-serif;
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans KR", "Malgun Gothic",
+    sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 15px;
+  --text-md: 16px;
+  --text-lg: 19px;
+  --text-xl: clamp(22px, 2vw, 26px);
+  --text-2xl: clamp(28px, 3.2vw, 40px);
+  --text-3xl: clamp(34px, 4.4vw, 56px);
+  --text-4xl: clamp(38px, 5.2vw, 68px);
+  --weight-regular: 400;
+  --weight-medium: 550;
+  --weight-semibold: 650;
+  --tracking-eyebrow: 0.14em;
+  --tracking-tight: -0.03em;
+
+  /* Spacing and layout / 间距与布局 */
+  --space-1: 6px;
+  --space-2: 12px;
+  --space-3: 18px;
+  --space-4: 26px;
+  --space-5: 36px;
+  --space-6: 52px;
+  --space-7: 72px;
+  --space-8: 104px;
   --width-page: 1240px;
+  --width-narrow: 820px;
   --gutter: clamp(22px, 5vw, 72px);
   --space-section: clamp(64px, 8vw, 112px);
+  --grid-gap: 24px;
+
+  /* Shape and depth / 形状与层次 */
+  --radius-sm: 4px;
   --radius: 6px;
+  --radius-lg: 10px;
+  --border: 1px solid var(--color-line);
+  --shadow-soft: 0 10px 30px -18px #11232e40;
+  --shadow-panel: 0 18px 44px -22px #11232e55;
+
+  /* Motion / 动效 */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-fast: 0.18s;
+  --duration: 0.32s;
+  --duration-slow: 0.62s;
+  --reveal-offset: 16px;
 }

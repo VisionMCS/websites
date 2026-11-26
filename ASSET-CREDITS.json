@@ -19,5 +19,141 @@
     "source": "https://unsplash.com/photos/Y2lnILwr3nY",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/hero-factory.jpg",
+    "author": "Matthew Henry",
+    "source": "https://www.shopify.com/stock-photos/photos/an-aerial-shot-of-a-factory-complex",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/capabilities.jpg",
+    "author": "Matthew Henry",
+    "source": "https://www.shopify.com/stock-photos/photos/an-industrial-complex-underneath-a-grey-sky",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/quality.jpg",
+    "author": "Matthew Henry",
+    "source": "https://www.shopify.com/stock-photos/photos/jewelers-measuring-tools-on-workbench",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/service-cnc-machining.jpg",
+    "author": "Shopify Partners",
+    "source": "https://www.shopify.com/stock-photos/photos/circles-in-metal",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/service-injection-molding.jpg",
+    "author": "Gabriela Juri",
+    "source": "https://www.shopify.com/stock-photos/photos/plastic-building-blocks-with-parts-scattered-around",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/service-3d-printing.jpg",
+    "author": "Matthew Henry",
+    "source": "https://www.shopify.com/stock-photos/photos/colorful-toy-gears",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/service-sheet-metal.jpg",
+    "author": "Sergei Akulich",
+    "source": "https://www.shopify.com/stock-photos/photos/sheet-metal-waves",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/industry-aerospace.jpg",
+    "author": "Samantha Hurley",
+    "source": "https://www.shopify.com/stock-photos/photos/cessna-aircraft-on-tarmac",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/industry-medical.jpg",
+    "author": "Matthew Henry",
+    "source": "https://www.shopify.com/stock-photos/photos/metal-dental-tools",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/industry-automotive.jpg",
+    "author": "Matthew Henry",
+    "source": "https://www.shopify.com/stock-photos/photos/chrome-engine-close-up",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/industry-robotics.jpg",
+    "author": "Sarah Pflug",
+    "source": "https://www.shopify.com/stock-photos/photos/robot-components",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/industry-electronics.jpg",
+    "author": "Jeswin Thomas",
+    "source": "https://www.shopify.com/stock-photos/photos/adjusting-wires-on-a-circuit-board",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/industry-industrial.jpg",
+    "author": "Thom Bradley",
+    "source": "https://www.shopify.com/stock-photos/photos/industrial-building-on-stilts-over-lake",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/case-aerospace-bracket.jpg",
+    "author": "Brodie",
+    "source": "https://www.shopify.com/stock-photos/photos/drone-in-flight",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/case-medical-housing.jpg",
+    "author": "Shopify Partners",
+    "source": "https://www.shopify.com/stock-photos/photos/scientist-in-lab-with-microscope",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/images/case-robotics-joint.jpg",
+    "author": "Sarah Pflug",
+    "source": "https://www.shopify.com/stock-photos/photos/pieces-needed-for-building-a-robot",
+    "license": "Burst Photo License (free for commercial and noncommercial use; attribution not required)",
+    "licenseUrl": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+    "note": "Photograph downloaded from the Burst photo page listed in source and resized for web delivery. Not a real customer project."
+  },
+  {
+    "file": "public/favicon.svg",
+    "author": "Created for this template",
+    "source": "This project",
+    "license": "MIT (same as project code)",
+    "licenseUrl": null,
+    "note": "Original brand mark drawn for the fictional demonstration brand."
   }
 ]

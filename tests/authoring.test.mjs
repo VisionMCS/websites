@@ -74,7 +74,7 @@ test("invalid language config and unsafe output paths fail before writes", () =>
     ),
   );
 });
-test("single language, project additions and new pages derive from configuration", () => {
+test("single language, record additions and new pages derive from configuration", () => {
   const single = {
     defaultLocale: config.defaultLocale,
     locales: config.locales.filter(
@@ -84,10 +84,15 @@ test("single language, project additions and new pages derive from configuration
   validateConfig(single);
   assert.equal(routePath(single, single.defaultLocale), "");
   const modified = structuredClone(content);
-  modified.work.items.push({
-    ...modified.work.items[0],
-    id: "new-project",
-    name: "New project",
+  modified.services.items.push({
+    ...modified.services.items[0],
+    id: "new-service",
+    title: "New service",
+  });
+  modified.cases.items.push({
+    ...modified.cases.items[0],
+    id: "new-case",
+    name: "New case",
   });
   modified.nav.reverse();
   const definitions = [
@@ -96,18 +101,28 @@ test("single language, project additions and new pages derive from configuration
       id: "about",
       path: "about/",
       component: "AboutPage",
-      title: "about.title",
+      title: "contact.title",
+      description: "contact.description",
     },
   ];
   const pages = expandPages(modified, definitions);
-  assert.ok(pages.some((page) => page.id === "new-project"));
+  assert.ok(pages.some((page) => page.id === "new-service"));
+  assert.ok(pages.some((page) => page.id === "new-case"));
   assert.ok(pages.some((page) => page.page === "about"));
   assert.equal(
-    pages.find((page) => page.page === "projects").title,
-    `${content.work.pageTitle} | ${content.meta.title}`,
+    pages.find((page) => page.page === "services").title,
+    `${content.services.pageTitle} | ${content.meta.title}`,
+  );
+  assert.equal(
+    pages.find((page) => page.page === "contact").description,
+    content.contact.description,
   );
   assert.equal(
     routePath(single, single.defaultLocale, "about", "", definitions),
     "about/",
+  );
+  assert.equal(
+    routePath(single, single.defaultLocale, "case", "new-case", definitions),
+    "case-studies/new-case/",
   );
 });

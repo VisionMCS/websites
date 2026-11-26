@@ -3,14 +3,14 @@
   "id": "company",
   "category": "company",
   "name": {
-    "zh-CN": "序川 · 企业官网",
-    "en-US": "Form & Field · Company",
-    "ko-KR": "Form & Field · 기업 웹사이트"
+    "zh-CN": "VANTOR · B2B 数字化精密制造",
+    "en-US": "VANTOR · B2B Digital Manufacturing",
+    "ko-KR": "VANTOR · B2B 디지털 정밀제조"
   },
   "description": {
-    "zh-CN": "清晰、克制的企业服务官网，包含服务、项目、合作流程与联系入口。",
-    "en-US": "A calm company website with services, projects, process and contact sections.",
-    "ko-KR": "명확한 전략, 세심한 디자인과 디지털 경험을 소개하는 기업 웹사이트 데모."
+    "zh-CN": "面向数字化精密制造与工业零部件定制的三语 B2B 官网模板，含服务、行业、案例与询盘结构。",
+    "en-US": "A trilingual B2B template for digital precision manufacturing: services, industries, case studies and an inquiry workflow.",
+    "ko-KR": "디지털 정밀제조를 위한 3개 언어 B2B 템플릿: 제조 서비스, 산업, 사례, 문의 워크플로우."
   },
   "repository": "https://github.com/InYourWork/websites",
   "branch": "templates/company",
@@ -19,21 +19,31 @@
   "styleEntry": "src/styles/tokens.css",
   "outputDirectory": "dist",
   "features": [
-    "responsive-navigation",
-    "project-filter",
+    "mega-navigation",
+    "capability-metrics",
+    "service-collection",
+    "service-detail",
+    "industry-collection",
+    "industry-detail",
+    "case-study-filter",
+    "case-study-detail",
+    "certification-placeholders",
     "faq",
-    "email-contact",
-    "multilingual",
-    "project-collection",
-    "project-detail"
+    "inquiry-form-prototype",
+    "multilingual"
   ],
   "requiredRuntimeCapabilities": [],
   "designReference": "https://designmd.ai/heerentanna/clutch-clean-trust",
   "localeConfig": "src/content/config.json",
   "pages": {
     "home": "/",
-    "collection": "/projects/",
-    "content": "/projects/{projectId}/"
+    "services": "/services/",
+    "service": "/services/{id}/",
+    "industries": "/industries/",
+    "industry": "/industries/{id}/",
+    "cases": "/case-studies/",
+    "case": "/case-studies/{id}/",
+    "contact": "/contact/"
   },
   "rendering": "static-generation"
 }

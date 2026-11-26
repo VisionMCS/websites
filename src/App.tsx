@@ -1,6 +1,6 @@
 import { site, page } from "./content";
 import { Header } from "./components/Header";
-import { Contact } from "./sections/Contact";
+import { Footer } from "./components/Footer";
 import registry from "./pages/registry.json";
 import { components } from "./pages/components";
 export function App() {
@@ -15,8 +15,8 @@ export function App() {
       <Header />
       <main id="main">
         <Page />
-        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -1,9 +1,19 @@
 import type { ComponentType } from "react";
 import { HomePage } from "./HomePage";
-import { ProjectsPage } from "./ProjectsPage";
-import { ProjectPage } from "./ProjectPage";
+import { ServicesPage } from "./ServicesPage";
+import { ServicePage } from "./ServicePage";
+import { IndustriesPage } from "./IndustriesPage";
+import { IndustryPage } from "./IndustryPage";
+import { CasesPage } from "./CasesPage";
+import { CasePage } from "./CasePage";
+import { ContactPage } from "./ContactPage";
 export const components: Record<string, ComponentType> = {
   HomePage,
-  ProjectsPage,
-  ProjectPage,
+  ServicesPage,
+  ServicePage,
+  IndustriesPage,
+  IndustryPage,
+  CasesPage,
+  CasePage,
+  ContactPage,
 };
