@@ -2437,6 +2437,19 @@ function Arrow({ diagonal = false }) {
 var STORAGE_KEY = "lumiere.bag";
 var bagKey = (id, size) => `${id}::${size}`;
 var memory = null;
+var store;
+function getStore() {
+	if (store !== void 0) return store;
+	try {
+		const probe = "__lumiere_probe__";
+		window.localStorage.setItem(probe, "1");
+		window.localStorage.removeItem(probe);
+		store = window.localStorage;
+	} catch {
+		store = null;
+	}
+	return store;
+}
 function parsePrice(price) {
 	const num = parseFloat((price || "").replace(/[^0-9.]/g, ""));
 	const symbol = (price || "").replace(/[0-9.,\s]/g, "");
@@ -2447,9 +2460,10 @@ function parsePrice(price) {
 }
 function readCart() {
 	if (memory) return memory;
-	if (typeof localStorage === "undefined") return [];
+	const storage = getStore();
+	if (!storage) return [];
 	try {
-		const raw = localStorage.getItem(STORAGE_KEY);
+		const raw = storage.getItem(STORAGE_KEY);
 		memory = raw ? JSON.parse(raw) : [];
 	} catch {
 		memory = [];
@@ -2461,9 +2475,9 @@ function emit() {
 }
 function persist(items) {
 	memory = items;
-	if (typeof localStorage === "undefined") return;
-	try {
-		localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+	const storage = getStore();
+	if (storage) try {
+		storage.setItem(STORAGE_KEY, JSON.stringify(items));
 	} catch {}
 	emit();
 }
