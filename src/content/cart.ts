@@ -14,9 +14,24 @@ export type CartItem = {
 const STORAGE_KEY = "lumiere.bag";
 export const bagKey = (id: string, size: string) => `${id}::${size}`;
 
-// Sandboxed previews can throw on any localStorage access; keep a module-level
-// mirror so the bag still works in-memory when persistence is unavailable.
+// Sandboxed previews can throw on any localStorage access — even `typeof
+// localStorage` triggers the accessor and raises SecurityError. So we never
+// touch the global outside a try/catch: probe once, then fall back to an
+// in-memory mirror so the bag still works when persistence is unavailable.
 let memory: CartItem[] | null = null;
+let store: Storage | null | undefined;
+function getStore(): Storage | null {
+  if (store !== undefined) return store;
+  try {
+    const probe = "__lumiere_probe__";
+    window.localStorage.setItem(probe, "1");
+    window.localStorage.removeItem(probe);
+    store = window.localStorage;
+  } catch {
+    store = null;
+  }
+  return store;
+}
 
 // Split a localized price string such as "¥180" or "₩36,000" into its numeric
 // amount and currency symbol so totals can be summed at runtime.
@@ -28,9 +43,10 @@ export function parsePrice(price: string): { num: number; symbol: string } {
 
 export function readCart(): CartItem[] {
   if (memory) return memory;
-  if (typeof localStorage === "undefined") return [];
+  const storage = getStore();
+  if (!storage) return [];
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = storage.getItem(STORAGE_KEY);
     memory = raw ? (JSON.parse(raw) as CartItem[]) : [];
   } catch {
     memory = [];
@@ -45,11 +61,13 @@ function emit() {
 
 function persist(items: CartItem[]) {
   memory = items;
-  if (typeof localStorage === "undefined") return;
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
-  } catch {
-    // Sandboxed environment: in-memory mirror above keeps the bag usable.
+  const storage = getStore();
+  if (storage) {
+    try {
+      storage.setItem(STORAGE_KEY, JSON.stringify(items));
+    } catch {
+      // Quota or sandbox errors: the in-memory mirror above keeps the bag usable.
+    }
   }
   emit();
 }
